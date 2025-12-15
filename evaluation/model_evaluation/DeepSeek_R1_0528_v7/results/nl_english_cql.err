@@ -1,0 +1,875 @@
+'lemmas ending with -ment\tpreloaded/ententen21_tt31\t[lemma=".*ment"]\n'
+On line 1
+[lemma_lc=".*ment$"]
+'tokens that are exactly semicolons\tpreloaded/ententen21_tt31\t[word==";"]\n'
+On line 2
+[word=";"]
+'five-letter lowercase words\tpreloaded/ententen21_tt31\t[word="[[:lower:]]{5}"]\n'
+On line 3
+[lc="^[a-z]{5}$"]
+'words starting with trans-\tpreloaded/ententen21_tt31\t[word="trans.*"]\n'
+On line 4
+[lc="trans.*"]
+'words ending with -able or -ible\tpreloaded/ententen21_tt31\t[word=".*[ai]ble"]\n'
+On line 5
+[lc=".*(able|ible)$"]
+'lemmas starting with micro- and ending with -scope\tpreloaded/ententen21_tt31\t[lemma="micro.*scope"]\n'
+On line 6
+[lemma_lc="micro.*scope"]
+'tokens that contain a hyphen\tpreloaded/ententen21_tt31\t[word=".*-.*"]\n'
+On line 7
+[word=".*-.*"]
+'tokens that are only digits\tpreloaded/ententen21_tt31\t[word="\\d+"]\n'
+On line 8
+[word="[0-9]+"]
+'tokens that are punctuation\tpreloaded/ententen21_tt31\t[word="[[:punct:]]+"]\n'
+On line 9
+[tag=",|:|SENT|\(|\)|\"|'"]
+'any finite verb\tpreloaded/ententen21_tt31\t[tag="V[VBH][PZD]"]\n'
+On line 10
+[tag="(MD|VB[DPZ]|VH[DPZ]|VV[DPZ])"]
+'any common noun\tpreloaded/ententen21_tt31\t[tag="NN|NNS"]\n'
+On line 11
+[tag="NN.*"]
+'any proper noun token\tpreloaded/ententen21_tt31\t[tag="NP|NPS"]\n'
+On line 12
+[tag="NP.*"]
+'wh-determiners\tpreloaded/ententen21_tt31\t[tag="WDT"]\n'
+On line 13
+[tag="WDT"]
+'wh-adverbs\tpreloaded/ententen21_tt31\t[tag="WRB"]\n'
+On line 14
+[tag="WRB"]
+'base adjectives\tpreloaded/ententen21_tt31\t[tag="JJ"]\n'
+On line 15
+[tag=="JJ"]
+'base adverbs\tpreloaded/ententen21_tt31\t[tag="RB"]\n'
+On line 16
+[tag="RB"]
+'coordinating conjunction "and"\tpreloaded/ententen21_tt31\t[lemma=="and" & tag="CC"]\n'
+On line 17
+[lc="and" & tag="CC"]
+'determiners \'a|an|the\'\tpreloaded/ententen21_tt31\t[lemma="a|an|the" & tag="DT"]\n'
+On line 18
+[tag="DT" & (lc="a" | lc="an" | lc="the")]
+'comparatives ending by -er\tpreloaded/ententen21_tt31\t[word=".*er" & tag="JJR"]\n'
+On line 19
+[tag="JJR" & word=".*er"]
+'superlatives ending by -est\tpreloaded/ententen21_tt31\t[word=".*est" & tag="JJS"]\n'
+On line 20
+[tag="JJS" & lc=".*est"]
+'comparatives not ending by -er\tpreloaded/ententen21_tt31\t[word!=".*er" & tag="JJR"]\n'
+On line 21
+[tag="JJR" & !lc=".*er"]
+'superlatives not ending by -est\tpreloaded/ententen21_tt31\t[word!=".*est" & tag="JJS"]\n'
+On line 22
+[tag="JJS" & lc!=".*est"]
+'plural nouns ending with -ies\tpreloaded/ententen21_tt31\t[word=".*ies" & tag="NNS"]\n'
+On line 23
+[(tag="NNS" | tag="NPS") & lc=".*ies"]
+'plural nouns ending with -s\tpreloaded/ententen21_tt31\t[word=".*s" & tag="NNS"]\n'
+On line 24
+[ ( tag="NNS" | tag="NPS" | tag="NNSZ" | tag="NPSZ" ) & lc=".*s" ]
+'verbs ending with -ed (past forms)\tpreloaded/ententen21_tt31\t[word=".*ed" & tag="V[VBH][DN]"]\n'
+On line 25
+[lc=".*ed" & tag="VV.*"]
+'contractions ending n\'t\tpreloaded/ententen21_tt31\t</g>[word="n\'t"]\n'
+On line 26
+[word="n't" & tag="RB"]
+'tokens with an apostrophe\tpreloaded/ententen21_tt31\t[word=".*\'.*"]\n'
+On line 27
+[lc=".*'.*"]
+'currency symbols $ £ €\tpreloaded/ententen21_tt31\t[word="$|£|€"]\n'
+On line 28
+[tag="$"]
+'tokens like (c) or (R)\tpreloaded/ententen21_tt31\t[word=="("][word="(c|C|r|R)"][word==")"]\n'
+On line 29
+[word=="(c)"] | [word=="(R)"]
+'cardinal numbers with decimals\tpreloaded/ententen21_tt31\t[word="\\d+\\.\\d+" & tag="CD"]\n'
+On line 30
+[tag="CD" & word=".*\\..*"]
+'numbers with percent sign\tpreloaded/ententen21_tt31\t[word="\\d+(\\.\\d+)?"][word="%"]\n'
+On line 31
+( [tag="CD" & word=".*%"] ) | ( [tag="CD"] [word="%"] )
+'time like 7:30 pm\tpreloaded/ententen21_tt31\t[word="[1-2]?\\d:[0-5]\\d"][word="am|pm|AM|PM"]\n'
+On line 32
+[tag="CD"] [word="[:.]"] ( ( [tag="CD"] [lc="am"|lc="pm"] ) | ( [lc="[0-9]+(am|pm)"] ) )
+'sentence starts with a quote\tpreloaded/ententen21_tt31\t<s> [word="\\"|“|‘|\'"]\n'
+On line 33
+<s> [word="[\"']"]
+'sentence ends with an exclamation mark\tpreloaded/ententen21_tt31\t[word=="!"] </s>\n'
+On line 34
+<s> []* [word="!"] </s>
+'tokens that are open parenthesis\tpreloaded/ententen21_tt31\t[word=="("]\n'
+On line 35
+[tag=="("]
+'tokens that are close parenthesis\tpreloaded/ententen21_tt31\t[word==")"]\n'
+On line 36
+[word=")"]
+'bracketed content up to 7 tokens\tpreloaded/ententen21_tt31\t[word=="("][]{0,7}[word==")"]\n'
+On line 37
+(  [word="["][ ]{0,5}[word="]"] |  [word="("][ ]{0,5}[word=")"] |  [word="{"][ ]{0,5}[word="}"])
+'quoted spans up to 6 tokens\tpreloaded/ententen21_tt31\t[word="\\""][]{0,6}[word="\\""]\n'
+On line 38
+[lc=("\"|'|“|”|‘|’")] [ ]{0,6} [lc=("\"|'|“|”|‘|’")]
+[lc="[\"''‘’“”]"] [ ]{0,6} [lc="[\"''‘’“”]"]
+'‘Mr.’ or ‘Ms.’ before a name\tpreloaded/ententen21_tt31\t[word="Mr\\.|Ms\\.|Mrs\\.|Dr\\."][tag="NP"]\n'
+On line 39
+[word="Mr\." | word="Ms\."] [tag="NP.*"]
+'personal pronoun followed by be\tpreloaded/ententen21_tt31\t[tag="PP"][lemma="be"]\n'
+On line 40
+[tag="PP"] [tag="VB.*"]
+'proper noun followed by be\tpreloaded/ententen21_tt31\t[tag="NP"][lemma="be"]\n'
+On line 41
+[tag="NP.*"] [lemma="be"]
+'noun preceded by exactly one adjective\tpreloaded/ententen21_tt31\t[tag="J.*"][tag="N.*"]\n'
+On line 42
+( ( <s> [tag="J.*"] [tag="N.*"] ) | ( [tag!="J.*"] [tag="J.*"] [tag="N.*"] ) )
+'noun preceded by two adjectives\tpreloaded/ententen21_tt31\t[tag="J.*"]{2}[tag="N.*"]\n'
+On line 43
+[tag="J.*"] [tag="J.*"] [tag="N.*"]
+'noun preceded by 0–3 adjectives\tpreloaded/ententen21_tt31\t[tag="J.*"]{0,3}[tag="N.*"]\n'
+On line 44
+[tag="J.*"]{0,3} [tag="N.*"]
+'adverb immediately before an adjective\tpreloaded/ententen21_tt31\t[tag="RB.*"][tag="J.*"]\n'
+On line 45
+[tag="RB.*"] [tag="JJ.*"]
+'adjective immediately before a verb\tpreloaded/ententen21_tt31\t[tag="J.*"][tag="V.*"]\n'
+On line 46
+[tag="J.*"] [tag="V.*"|tag="MD"]
+'verb immediately before a noun\tpreloaded/ententen21_tt31\t[tag="V.*"][tag="N.*"]\n'
+On line 47
+[tag="V.*"] [tag="N.*"]
+'determiner + adjective + noun\tpreloaded/ententen21_tt31\t[tag="DT"][tag="J.*"][tag="N.*"]\n'
+On line 48
+[tag="DT" | tag="PDT" | tag="PPZ"] [tag="JJ.*"] [tag="N.*"]
+'proper-noun bigrams\tpreloaded/ententen21_tt31\t[tag="NP|NPS"]{2}\n'
+On line 49
+[tag="NP.*"] [tag="NP.*"]
+'three-token proper-noun sequences\tpreloaded/ententen21_tt31\t[tag="NP|NPS"]{3}\n'
+On line 50
+[tag="NP.*"] [tag="NP.*"] [tag="NP.*"]
+'noun-noun compounds of length 3\tpreloaded/ententen21_tt31\t[tag="N.*"]{3}\n'
+On line 51
+[tag="N.*"]{3}
+'verb + particle (RP) with <3 gap\tpreloaded/ententen21_tt31\t[tag="V.*"][]{0,2}[tag="RP"]\n'
+On line 52
+[tag="V.*"] [ ]{0,2} [tag="RP"]
+'verb + adverb + particle\tpreloaded/ententen21_tt31\t[tag="V.*"][tag="RB.*"][tag="RP"]\n'
+On line 53
+[tag="V.*"] [tag="RB.*"] [tag="RP"]
+'be + not + adjective\tpreloaded/ententen21_tt31\t[lemma="be"][lemma="not"][tag="J.*"]\n'
+On line 54
+[lemma="be"] [lemma="not"] [tag="JJ.*"]
+'do-support negation + base verb\tpreloaded/ententen21_tt31\t[lemma="do"][lemma="not"][tag="V[BHV]"]\n'
+On line 55
+[lemma="do" & (tag="VVP"|tag="VVZ"|tag="VVD")] [word=~"not|n['’]t"] [tag="VV"|tag="VH"]
+[lemma="do" & (tag="VVP"|tag="VVZ"|tag="VVD")] [lc="not|n['’]t"] [tag="VV"|tag="VH"]
+'want to + base verb\tpreloaded/ententen21_tt31\t[lemma="want"][lemma="to"][tag="V[BHV]"]\n'
+On line 56
+[lemma="want"] [lemma="to" & tag="TO"] [tag="VB" | tag="VH" | tag="VV"]
+'need to + base verb\tpreloaded/ententen21_tt31\t[lemma="need"][lemma="to"][tag="V[BHV]"]\n'
+On line 57
+[lemma="need" & tag="V.*"] [tag="TO"] [tag="VB" | tag="VH" | tag="VV"]
+'plan to + base verb\tpreloaded/ententen21_tt31\t[lemma="plan"][lemma="to"][tag="V[BHV]"]\n'
+On line 58
+[lemma="plan" & tag="V.*"] [tag="TO"] [tag="VB" | tag="VH" | tag="VV"]
+'try to + base verb\tpreloaded/ententen21_tt31\t[lemma="try"][lemma="to"][tag="V[BHV]"]\n'
+On line 59
+[lemma="try" & tag="V.*"] [lc="to" & tag="TO"] [tag="VB" | tag="VH" | tag="VV"]
+'be going to + base verb\tpreloaded/ententen21_tt31\t[lemma="be"][lemma="going"][lemma="to"][tag="V[BHV]"]\n'
+On line 60
+[lemma="be"] [ ]{0,2} [lemma="go" & tag="VVG"] [tag="TO"] [ ]{0,3} [tag="V[BHV]"] within <s/>
+'have to + base verb\tpreloaded/ententen21_tt31\t[lemma="have"][lemma="to"][tag="V[BHV]"]\n'
+On line 61
+[lemma="have"] [lemma="to" & tag="TO"] [tag="VV"]
+'used to + base verb\tpreloaded/ententen21_tt31\t[lemma="use"][lemma="to"][tag="V[BHV]"]\n'
+On line 62
+[lc="used" & tag="VVD"] [lc="to" & tag="TO"] []{0,2} [tag="VV"]
+'would rather + base verb\tpreloaded/ententen21_tt31\t[word=="would"][word=="rather"][tag="V[BHV]"]\n'
+On line 63
+[lemma="would" & tag="MD"] [lemma="rather" & tag="RB"] [tag="VB" | tag="VH" | tag="VV"]
+'had better + base verb\tpreloaded/ententen21_tt31\t[word=="had"][word=="better"][tag="V[BHV]"]\n'
+On line 64
+[lemma="have" & tag="VHD"] [lc="better"] [tag!="V.*"]{0,3} [tag="VB"|tag="VH"|tag="VV"]
+'prefer to + base verb\tpreloaded/ententen21_tt31\t[lemma="prefer"][lemma="to"][tag="V[BHV]"]\n'
+On line 65
+[lemma="prefer"] [lc="to" & tag="TO"] [tag="VB|VH|VV"]
+'ask NOUN to + base verb\tpreloaded/ententen21_tt31\t[lemma="ask"][tag="N.*"][lemma="to"][tag="V[BHV]"]\n'
+On line 66
+[tag="N.*"] [tag="TO"] [tag="V[BH]?"]
+'tell NOUN to + base verb\tpreloaded/ententen21_tt31\t[lemma="tell"][tag="N.*"][lemma="to"][tag="V[BHV]"]\n'
+On line 67
+[lemma="tell"] [ ]{0,3} [tag="N.*"] [tag="TO"] [tag="VB" | tag="VH" | tag="VV"]
+'allow PRON to + base verb\tpreloaded/ententen21_tt31\t[lemma="allow"][tag="PP|WP|WPZ"][lemma="to"][tag="V[BHV]"]\n'
+On line 68
+[tag="PP|PPZ|WP|WPZ"][word="to" & tag="TO"][tag="VB|VH|VV"]
+'promise to + base verb\tpreloaded/ententen21_tt31\t[lemma="promise"][lemma="to"][tag="V[BHV]"]\n'
+On line 69
+[lemma="promise"] [] [lc="to" & tag="TO"] [] [tag="V[VBH]"] within <s/>
+'begin to + base verb\tpreloaded/ententen21_tt31\t[lemma="begin"][lemma="to"][tag="V[BHV]"]\n'
+On line 70
+[lemma="begin"] [tag="TO"] [tag="VB" | tag="VH" | tag="VV"]
+'continue to + base verb\tpreloaded/ententen21_tt31\t[lemma="continue"][lemma="to"][tag="V[BHV]"]\n'
+On line 71
+[lemma="continue"][tag="TO"][tag="VB"|tag="VH"|tag="VV"]
+'seem to + base verb\tpreloaded/ententen21_tt31\t[lemma="seem"][lemma="to"][tag="V[BHV]"]\n'
+On line 72
+[lemma="seem"] [tag="TO"] [tag="VB" | tag="VH" | tag="VV"]
+'happen to + base verb\tpreloaded/ententen21_tt31\t[lemma="happen"][lemma="to"][tag="V[BHV]"]\n'
+On line 73
+[lemma="happen"][lemma="to" & tag="TO"][tag="VB"|tag="VH"|tag="VV"]
+'appear to + base verb\tpreloaded/ententen21_tt31\t[lemma="appear"][lemma="to"][tag="V[BHV]"]\n'
+On line 74
+[lemma="appear"] [tag="TO"] [tag="VB" | tag="VH" | tag="VV"]
+'be about to + base verb\tpreloaded/ententen21_tt31\t[lemma="be"][lemma="about"][lemma="to"][tag="V[BHV]"]\n'
+On line 75
+[lemma="be"] [lemma="about"] [word="to" & tag="TO"] [tag="VB" | tag="VH" | tag="VV"]
+'try not to + base verb\tpreloaded/ententen21_tt31\t[lemma="try"][lemma="not"][lemma="to"][tag="V[BHV]"]\n'
+On line 76
+[lemma="try"] [lemma="not"] [lemma="to" & tag="TO"] [tag="VB" | tag="VH" | tag="VV"]
+'adjective with not\tpreloaded/ententen21_tt31\t[lemma="not"][tag="J.*"]\n'
+On line 77
+(meet [tag="J.*"] [lemma="not"] -3 -1)
+'noun with no\tpreloaded/ententen21_tt31\t[lemma="no"][tag="N.*"]\n'
+On line 78
+[tag="N.*"] [word="no"]
+'no + adjective + noun\tpreloaded/ententen21_tt31\t[lemma="no"][tag="J.*"]?[tag="N.*"]\n'
+On line 79
+[lc="no"] [tag="J.*"] [tag="N.*"]
+'not + verb within one token\tpreloaded/ententen21_tt31\t(meet [tag="V.*"] [lemma="not"] -1 1)\n'
+On line 80
+[lc="not"] [tag="V.*" | tag="MD"]
+'verb within three tokens of risk\tpreloaded/ententen21_tt31\t(meet [tag="V.*"] [lemma="risk"] -3 3)\n'
+On line 81
+(meet [tag="V.*"|tag="MD"] [lemma="risk"] -3 3)
+'adjectives within two tokens of seem\tpreloaded/ententen21_tt31\t(meet [tag="J.*"] [lemma="seem"] -2 2)\n'
+On line 82
+(meet [tag="J.*"] [lemma="seem"] -2 2)
+'noun within five tokens of increase\tpreloaded/ententen21_tt31\t(meet [tag="N.*"] [lemma="increase"] -5 5)\n'
+On line 83
+(meet [tag="N.*"] [lemma="increase"] -5 5)
+'union of verbs/adjectives near be\tpreloaded/ententen21_tt31\t(union (meet [tag="V.*"] [lemma="be"] -3 3) (meet [tag="J.*"] [lemma="be"] -2 2))\n'
+On line 84
+(union (meet [tag="V.*"] [lemma="be"] -5 5) (meet [tag="J.*"] [lemma="be"] -5 5))
+'"either" and "or" within 6 tokens\tpreloaded/ententen21_tt31\t[word="either"][]{0,6}[word="or"]\n'
+On line 85
+( [lc="either"] []{0,6} [lc="or"] ) | ( [lc="or"] []{0,6} [lc="either"] )
+'"neither" and "nor" within 6 tokens\tpreloaded/ententen21_tt31\t[word="neither"][]{0,6}[word="nor"]\n'
+On line 86
+([lc="neither"] [ ]{0,6} [lc="nor"]) | ([lc="nor"] [ ]{0,6} [lc="neither"])
+'"not only" and "but also" within 8 tokens\tpreloaded/ententen21_tt31\t[word=="not"][word="only"][]{0,8}[word=="but"][word=="also"]\n'
+On line 87
+[lc="not"] [lc="only"] []{0,8} [lc="but"] [lc="also"]
+'as ADJ as within same sentence\tpreloaded/ententen21_tt31\t[word="as"][tag="J.*"][word="as"] within <s/>\n'
+On line 88
+[lc="as"] [tag="J.*"] [lc="as"] within <s/>
+'like a|an NOUN similes\tpreloaded/ententen21_tt31\t[lemma="like"][lemma="a|an"][tag="N.*"][word="similes"]\n'
+On line 89
+[lemma="like" & tag="IN"] [lemma="a" & tag="DT"] []{0,3} [tag="N.*"]
+'such a|an NOUN\tpreloaded/ententen21_tt31\t[word="such"][word="a|an"][tag="N.*"]\n'
+On line 90
+[lemma="such"] [lemma="a"] []{0,5} [tag="N.*"]
+'so ADJ that within 3 tokens\tpreloaded/ententen21_tt31\t[lemma="so"][tag="J.*"][]{0,3}[word="that"]\n'
+On line 91
+[lc="so"] [tag="J.*"] [ ]{0,3} [lc="that"]
+'too ADJ to VB\tpreloaded/ententen21_tt31\t[word="too"][tag="J.*"][word=="to"][tag="V[BHV]"]\n'
+On line 92
+[lemma="too"] [tag="J.*"] [lemma="to" & tag="TO"] [tag="VB" | tag="VH" | tag="VV"]
+'enough NOUN\tpreloaded/ententen21_tt31\t[word="enough"][tag="N.*"]\n'
+On line 93
+[lempos_lc="enough-n"]
+'very ADJ patterns\tpreloaded/ententen21_tt31\t[word="very"][tag="J.*"]\n'
+On line 94
+[lemma="very"] [ ]? [tag="JJ.*"]
+'more/most ADJ\tpreloaded/ententen21_tt31\t[word="more|most"][tag="J.*"]\n'
+On line 95
+( [lemma="more" & tag="RBR"] | [lemma="most" & tag="RBS"] ) [tag="JJ.*"]
+'more NOUN than NOUN\tpreloaded/ententen21_tt31\t[word="more"][tag="N.*"][word="than"][tag="N.*"]\n'
+On line 96
+[lc="more" & (tag="DT"|tag="JJR")] [tag="N.*"] [lc="than"] [tag="N.*"]
+'the most ADJ\tpreloaded/ententen21_tt31\t[word="the"][word="most"][tag="J.*"]\n'
+On line 97
+[lemma="the"] [lemma="most" & tag="RBS"] [tag="JJ"]
+'the least ADJ\tpreloaded/ententen21_tt31\t[word="the"][word="least"][tag="J.*"]\n'
+On line 98
+[lc="the"] [word="least"] [tag="J.*"]
+'as soon as\tpreloaded/ententen21_tt31\t[word="as"][word="soon"][word="as"]\n'
+On line 99
+[lc="as"] [lc="soon"] [lc="as"]
+'kind of NOUN\tpreloaded/ententen21_tt31\t[word=="kind"][word=="of"][tag="N.*"]\n'
+On line 100
+[lemma="kind"][lemma="of"][tag="N.*"]
+'sort of NOUN\tpreloaded/ententen21_tt31\t[word=="sort"][word=="of"][tag="N.*"]\n'
+On line 101
+[lemma="sort"] [lemma="of"] []{0,3} [tag="N.*"]
+'according to NOUN/PRON\tpreloaded/ententen21_tt31\t[lemma="according"][lemma="to"][tag="N.*|PP|WP|WPZ"]\n'
+On line 102
+[lemma_lc="according"] [lemma_lc="to"] [tag="N.*|PP|PPZ|WP|WPZ"]
+'due to NOUN\tpreloaded/ententen21_tt31\t[lemma="due"][lemma="to"][tag="N.*"]\n'
+On line 103
+[lemma_lc="due"] [lemma_lc="to"] [tag="N.*"]
+'because of NOUN\tpreloaded/ententen21_tt31\t[lemma="because"][lemma="of"][tag="N.*"]\n'
+On line 104
+[lemma="because"][lemma="of"][tag="N.*"]
+'from NOUN to NOUN\tpreloaded/ententen21_tt31\t[word=="from"][tag="N.*"][word=="to"][tag="N.*"]\n'
+On line 105
+[lc="from"] [tag="N.*"] [lc="to"] [tag="N.*"]
+'between NOUN and NOUN\tpreloaded/ententen21_tt31\t[word=="between"][tag="N.*"][word=="and"][tag="N.*"]\n'
+On line 106
+[lc="between"] [tag="N.*"] [lc="and"] [tag="N.*"]
+'NOUN such as NOUN\tpreloaded/ententen21_tt31\t[tag="N.*"][word=="such"][word=="as"][tag="N.*"]\n'
+On line 107
+[tag="N.*"][word="such"][word="as"][tag="N.*"]
+'NOUN including NOUN\tpreloaded/ententen21_tt31\t[tag="N.*"][lemma="include"][tag="N.*"]\n'
+On line 108
+[tag="N.*"] [lc="including"] []{0,2} [tag="N.*"]
+'NOUN especially NOUN\tpreloaded/ententen21_tt31\t[tag="N.*"][lemma="especially"][tag="N.*"]\n'
+On line 109
+[tag="N.*"] [lc="especially"] [tag="N.*"]
+'NOUN like NOUN\tpreloaded/ententen21_tt31\t[tag="N.*"][lemma="like"][tag="N.*"]\n'
+On line 110
+[tag="N.*"] [lc="like"] [tag="N.*"]
+'NOUN named NOUN\tpreloaded/ententen21_tt31\t[tag="N.*"][lemma="name"][tag="N.*"]\n'
+On line 111
+[tag="NN|NNS|NP|NPS"] [lc="named" & tag="VVN"] [tag="NN|NNS|NP|NPS"]
+'NOUN called NOUN\tpreloaded/ententen21_tt31\t[tag="N.*"][lemma="call"][tag="N.*"]\n'
+On line 112
+[tag="N.*"] [lc="called" & (tag="VVD"|tag="VVN")] [tag="N.*"]
+'number of NOUN\tpreloaded/ententen21_tt31\t[lemma="number"][lemma="of"][tag="N.*"]\n'
+On line 113
+[tag="N.*"]
+'amount of NOUN\tpreloaded/ententen21_tt31\t[lemma="amount"][lemma="of"][tag="N.*"]\n'
+On line 114
+[lemma_lc="amount"] [lemma_lc="of" & tag="IN"] [tag="N.*"]
+'pair of NOUNS\tpreloaded/ententen21_tt31\t[lemma="pair"][lemma="of"][tag="N.*"]\n'
+On line 115
+[tag="N.*"] [tag="N.*"]
+'group of NOUNS\tpreloaded/ententen21_tt31\t[lemma="group"][lemma="of"][tag="N.*"]\n'
+On line 116
+[lemma="group"] [lemma="of"] []{0,3} [tag="N.*"]
+'lack of NOUN\tpreloaded/ententen21_tt31\t[lemma="lack"][lemma="of"][tag="N.*"]\n'
+On line 117
+[lemma="lack"] [lemma="of"] [tag="N.*"]
+'while ANY TOKEN\tpreloaded/ententen21_tt31\t[lemma="while"][]\n'
+On line 118
+[lc="while"] [ ]
+'if <token>\tpreloaded/ententen21_tt31\t[lemma="if"][]\n'
+On line 119
+[lc="if"] [ ]
+'unless [token]\tpreloaded/ententen21_tt31\t[lemma="unless"][]\n'
+On line 120
+[lc="unless"] [ ]
+'since []\tpreloaded/ententen21_tt31\t[lemma="since"][]\n'
+On line 121
+[lc="since"] [ ]
+'during NOUN\tpreloaded/ententen21_tt31\t[lemma="during"][tag="N.*"]\n'
+On line 122
+[lemma="during"] [tag="N.*"]
+'within NOUN\tpreloaded/ententen21_tt31\t[lemma="within"][tag="N.*"]\n'
+On line 123
+[tag="N.*"]
+'outside NOUN\tpreloaded/ententen21_tt31\t[lemma="outside"][tag="N.*"]\n'
+On line 124
+[lemma="outside" & tag="N.*"]
+'into NOUN\tpreloaded/ententen21_tt31\t[lemma="into"][tag="N.*"]\n'
+On line 125
+[lc="into"] [tag="N.*"]
+'out of NOUN\tpreloaded/ententen21_tt31\t[lemma="out"][lemma="of"][tag="N.*"]\n'
+On line 126
+[lemma="out"] [lemma="of"] [tag="N.*"]
+'onto NOUN\tpreloaded/ententen21_tt31\t[lemma="onto"][tag="N.*"]\n'
+On line 127
+[lc="onto" & tag="N.*"]
+'upon NOUN\tpreloaded/ententen21_tt31\t[lemma="upon"][tag="N.*"]\n'
+On line 128
+[lemma="upon"][tag="N.*"]
+'towards NOUN\tpreloaded/ententen21_tt31\t[lemma="toward"][tag="N.*"]\n'
+On line 129
+[lc="towards"] [tag="N.*"]
+'sentence without commas\tpreloaded/ententen21_tt31\t<s/> !containing [word==","]\n'
+On line 130
+<s/> !containing [tag=","]
+'sentence with colon\tpreloaded/ententen21_tt31\t<s/> containing [word==":"]\n'
+On line 131
+<s/> containing [word=":"]
+'sentence with semicolon\tpreloaded/ententen21_tt31\t<s/> containing [word==";"]\n'
+On line 132
+<s/> containing [word=";"]
+'sentence starting with capitalized word\tpreloaded/ententen21_tt31\t<s> [word="[[:upper:]].+"]\n'
+On line 133
+<s> [word="[A-Z].*"]
+'sentence ending with proper noun\tpreloaded/ententen21_tt31\t[tag="NP|NPS"] </s>\n'
+On line 134
+[tag="NP|NPS|NPZ|NPSZ"] [tag="SENT"] within <s/>
+'sentence beginning with adverb then comma\tpreloaded/ententen21_tt31\t<s> [tag="RB.*"][word==","]\n'
+On line 135
+<s> [tag="RB.*"] [tag=","]
+'paragraph containing a year\tpreloaded/ententen21_tt31\t<p/> containing [word="\\d{4}"]\n'
+On line 136
+<p/> containing [tag="CD" & word="[0-9]{4}"]
+'paragraph without digits\tpreloaded/ententen21_tt31\t<p/> !containing [word=".*\\d.*"]\n'
+On line 137
+<p/> !containing [word=".*[0-9].*"]
+'sentences inside docs genre=news\tpreloaded/ententen21_tt31\t<s/> within <doc genre=="news"/>\n'
+On line 138
+<s/> containing [] within <doc genre="news"/>
+'sentences with no capitalized token\tpreloaded/ententen21_tt31\t<s/> !containing [word="[[:upper:]].*"]\n'
+On line 139
+<s/> !containing [word="[A-Z].*"]
+'quotation spans lacking nouns (<9 tokens) in one sentence\tpreloaded/ententen21_tt31\t([word="\\""][word!="\\""]{1,8}[word="\\""] !containing [tag="N.*"]) within <s/>\n'
+On line 140
+(  ( [word="\""] [ !(tag="N.*") & word!="\"" & word!="'" ]{0,8} [word="\""] )  |  ( [word="'"] [ !(tag="N.*") & word!="\"" & word!="'" ]{0,8} [word="'"] )) within <s/>
+'climate change in one sentence\tpreloaded/ententen21_tt31\t[lemma="climate"][lemma="change"] within <s/>\n'
+On line 141
+[lemma="climate"] [lemma="change"] within <s/>
+'data-driven or data driven\tpreloaded/ententen21_tt31\t[word=="data-driven"] | ([word="data"][word="driven"])\n'
+On line 142
+( [lc="data-driven"] ) | ( [lemma_lc="data"] [lemma_lc="drive" & tag="VVN"] )
+'on the one hand ... on the other hand\tpreloaded/ententen21_tt31\t[word="on"][word="the"][word="one"][word="hand"][]{1,8}[word="on"][word="the"][word="other"][word="hand"]\n'
+On line 143
+[lc="on"][lc="the"][lc="one"][lc="hand"][ ]{0,50}[lc="on"][lc="the"][lc="other"][lc="hand"]
+'repeated bigram A B ... A B within 6 tokens\tpreloaded/ententen21_tt31\t1:[] 2:[] []{0,6} 3:[] 4:[] & 1.word=3.word & 2.word=4.word\n'
+On line 144
+1:[word] 2:[word] [ ]{0,6} 3:[word] 4:[word] & 1.word = 3.word & 2.word = 4.word
+1:[word] 2:[word] [ ]{0,6} 3:[word] 4:[word] & 1.word = 3.word & 2.word = 4.word
+1:[] 2:[] [ ]{0,6} 3:[] 4:[] & 1.word = 3.word & 2.word = 4.word
+1:[] 2:[] [ ]{0,6} 3:[] 4:[] & 1.word=3.word & 2.word=4.word
+'two identical adjacent words\tpreloaded/ententen21_tt31\t1:[] 2:[] & 1.word = 2.word\n'
+On line 145
+1:[word] 2:[word] & 1.word = 2.word
+1:[] 2:[] & 1.word = 2.word
+[] [word="%0"]
+'two adjacent tokens with same lemma\tpreloaded/ententen21_tt31\t1:[] 2:[] & 1.lemma = 2.lemma\n'
+On line 146
+1:[] 2:[] & 1.lemma = 2.lemma
+1:[] 2:[] & 1.lemma_lc = 2.lemma_lc
+1:[] 2:[] & 1.lempos_lc = 2.lempos_lc
+1:[] 2:[] & 1.lemma = 2.lemma
+'coordinated adjectives sharing lemma\tpreloaded/ententen21_tt31\t1:[tag="J.*"][tag="CC"] 2:[tag="J.*"] & 1.lemma = 2.lemma\n'
+On line 147
+1:[tag="JJ.*"] 2:([tag=","])? 3:[tag="CC"] 4:[tag="JJ.*"] & 1.lemma = 4.lemma
+1:[tag="JJ.*"] [tag=","]? [tag="CC"] 3:[tag="JJ.*"] & 1.lemma = 3.lemma
+1:[tag="JJ.*"] 2:[tag=","]{0,1} 3:[tag="CC"] 4:[tag="JJ.*"] & 1.lemma = 4.lemma
+[tag="JJ.*"] [tag=","]? [tag="CC"] [tag="JJ.*"] & 0.lemma = 3.lemma
+'coordinated nouns with different lemmas\tpreloaded/ententen21_tt31\t1:[tag="N.*"][tag="CC"] 2:[tag="N.*"] & 1.lemma != 2.lemma\n'
+On line 148
+1:[tag="N.*"] 2:[tag="CC"] 3:[tag="N.*"] & 1.lemma_lc != 3.lemma_lc
+1:[tag="N.*"] 2:[tag="CC"] 3:[tag="N.*"] & 1.lemma != 3.lemma
+[tag="N.*" & lempos_lc!=""] [tag="CC"] [tag="N.*" & lempos_lc!="" & lempos_lc != $$[0].lempos_lc]
+(meet [tag="N.*"] [tag="N.*"] -2 2) & $$[0].lemma_lc != $$[1].lemma_lc & exists([tag="CC"] in $$[-1:1])
+'adjective not followed by noun\tpreloaded/ententen21_tt31\t[tag="J.*"][tag!="N.*"]\n'
+On line 149
+[tag="J.*"] [tag!="N.*"]?
+'verb not preceded by determiner\tpreloaded/ententen21_tt31\t[tag!="DT"][tag="V.*"]\n'
+On line 150
+( <s> [tag="V.*"] ) | ( [tag!="DT"] [tag="V.*"] )
+'present that is not a verb\tpreloaded/ententen21_tt31\t[word="present" & !tag="V.*"]\n'
+On line 151
+[lc="present" & !tag="V.*"]
+'object that is a noun not verb\tpreloaded/ententen21_tt31\t[lemma="object" & tag="N.*"]\n'
+On line 152
+[tag="N.*" & !tag="V.*"]
+'record as noun only\tpreloaded/ententen21_tt31\t[lemma="record" & tag="N.*"]\n'
+On line 153
+[lemma="record" & tag="N.*"]
+'read as verb only\tpreloaded/ententen21_tt31\t[lemma="read" & tag="V.*"]\n'
+On line 154
+[lempos="read-v"]
+'exact token "U.S."\tpreloaded/ententen21_tt31\t[word=="U.S."]\n'
+On line 155
+[word=="U.S."]
+'colour/color spelling variants\tpreloaded/ententen21_tt31\t[lemma="colou?r"]\n'
+On line 156
+[lemma_lc="colou?r"]
+'centre/center variants\tpreloaded/ententen21_tt31\t[lemma="cent(er|re)"]\n'
+On line 157
+[lemma_lc="cent(?:re|er)"]
+'organisation/organization variants\tpreloaded/ententen21_tt31\t[word="organi[sz]ation"]\n'
+On line 158
+[lc="organi[sz]ations?"]
+'analyse/analyze variants\tpreloaded/ententen21_tt31\t[lemma="analys(e|z)"]\n'
+On line 159
+[ lemma_lc="analy[sz]e" & tag="V.*" ]
+'e-mail/email variants\tpreloaded/ententen21_tt31\t[word="e-?mail"]\n'
+On line 160
+[lc="e-?mail"]
+'cooperate/co-operate variants\tpreloaded/ententen21_tt31\t[lemma="co-?operate"]\n'
+On line 161
+[tag="V.*" & lc="co-?operate.*"]
+'re-creation/recreation variants\tpreloaded/ententen21_tt31\t[lemma="re-?creation"]\n'
+On line 162
+[lemma_lc="re-creation"] | [lemma_lc="recreation"]
+'wellbeing/well-being variants\tpreloaded/ententen21_tt31\t[lemma="well-?being"]\n'
+On line 163
+( [lc="^well-?beings?$"] | ( [lc="^well$"] [lc="^beings?$"] ) )
+'healthcare / health care variants\tpreloaded/ententen21_tt31\t[lemma="healthcare"] | [lemma="health"][lemma="care"]\n'
+On line 164
+[lemma_lc="healthcare"] | ([lemma_lc="health"] [lemma_lc="care"])
+'New York in any case\tpreloaded/ententen21_tt31\t[lc="new"][lc="york"]\n'
+On line 165
+[lc="new"] [lc="york"]
+'United States in any case\tpreloaded/ententen21_tt31\t[lc="united"][lc="states"]\n'
+On line 166
+[lc="united"] [lc="states"]
+'adjectives ending with -ious\tpreloaded/ententen21_tt31\t[lemma=".*ious" & tag="J.*"]\n'
+On line 167
+[ lc=".*ious$" & tag="JJ.*" ]
+'verbs ending -ise/-ize\tpreloaded/ententen21_tt31\t[lemma=".*i[sz]e" & tag="V.*"]\n'
+On line 168
+[lc=".*i[sz]es?$" & (tag="VV" | tag="VVP" | tag="VVZ")]
+'nouns ending -tion\tpreloaded/ententen21_tt31\t[lemma=".*tion" & tag="N.*"]\n'
+On line 169
+[lc=".*tion" & tag="N.*"]
+'agentive nouns ending -er/-or\tpreloaded/ententen21_tt31\t[lemma=".*(er|or)" & tag="N.*"]\n'
+On line 170
+[ lc=".*[eo]rs?$" & tag="NN.*" ]
+'words starting micro-\tpreloaded/ententen21_tt31\t[word="micro.*"]\n'
+On line 171
+[lc="micro.*"]
+'words ending -ology\tpreloaded/ententen21_tt31\t[word=".*ology"]\n'
+On line 172
+[lc=".*ology"]
+'Title Case tokens\tpreloaded/ententen21_tt31\t[word=[[:upper:]][[:lower:]]+]\n'
+On line 173
+[word="[A-Z][a-z]*"]
+'lowercase-only tokens\tpreloaded/ententen21_tt31\t[word="[[:lower:]]+"]\n'
+On line 174
+[word == lc]
+[word="[^A-Z]*"]
+'uppercase-only tokens\tpreloaded/ententen21_tt31\t[word="[[:upper:]]+"]\n'
+On line 175
+[word!=".*[a-z].*" & word=".*[A-Z].*"]
+'US or U.S. as regex\tpreloaded/ententen21_tt31\t[word=(US|U\\.S\\.)]\n'
+On line 176
+[lc="u\\.?s\\.?"]
+'tokens not a dot (exact)\tpreloaded/ententen21_tt31\t[word!="."]\n'
+On line 177
+[word !== "."]
+'tokens lexicographically >= m\tpreloaded/ententen21_tt31\t[word>="m"]\n'
+On line 178
+[lc>="m"]
+'tokens lexicographically < m\tpreloaded/ententen21_tt31\t[word<"m"]\n'
+On line 179
+[word !>= "m"]
+'verbs within documents topic=tech\tpreloaded/ententen21_tt31\t[tag="V.*"] within <doc topic=".*tech.*"/>\n'
+On line 180
+[tag="V.*"] within <doc topic="tech"/>
+'sentences not containing digits\tpreloaded/ententen21_tt31\t<s/> !containing [word=".*\\d.*"]\n'
+On line 181
+<s/> !containing [word=".*[0-9].*"]
+'nouns outside quotations\tpreloaded/ententen21_tt31\t[tag="N.*"] !within ([word="\\""][]{1,30}[word="\\""] within <s/>)\n'
+On line 182
+[tag="N.*"] !within ([word="\"" | word="'"] [ ]* [word="\"" | word="'"])
+'paragraphs not containing proper nouns\tpreloaded/ententen21_tt31\t<p/> !containing [tag="NP.*"]\n'
+On line 183
+<p/> !containing [tag="NP.*"]
+'tokens between quotes not verbs\tpreloaded/ententen21_tt31\t([word="\\""][word!="\\""]{1,10}[word="\\""] !containing [tag="V.*"]) within <s/>\n'
+On line 184
+<s>(  ([word="\""] []{0,20} [tag!="V.*" & word!="\"" & word!="'"] []{0,20} [word="\""])  |  ([word="'"] []{0,20} [tag!="V.*" & word!="\"" & word!="'"] []{0,20} [word="'"]))</s>
+'thesaurus: metals around corrosion +-4\tpreloaded/ententen21_tt31\t(meet ~"copper-n" [lemma="corrosion"] -4 4)\n'
+On line 185
+(meet ~"metal-n" [lemma="corrosion"] -4 4)
+(meet [~"metal-n"] [lemma="corrosion"] -4 4)
+(meet ~"metal-n" [lemma="corrosion"] -4 4)
+(meet [lemma=~"metal-n"] [lemma="corrosion"] -4 4)
+'thesaurus: vegetables after chop within 0–2\tpreloaded/ententen21_tt31\t[lemma="chop"][]{0,2} ~"carrot-n"\n'
+On line 186
+[lemma="chop"] [ ]{0,2} [~"vegetable-n"]
+[lemma="chop"] [ ]{0,2} ~"vegetable-n"
+[lemma="chop"] [ ]{0,2} [~"vegetable-n"]
+(meet [lemma="chop"] ~"vegetable-n" 1 3)
+'thesaurus: 20 similar to city-n\tpreloaded/ententen21_tt31\t~20"city-n"\n'
+On line 187
+[~20"city-n"]
+'invest followed by renewable-like within 3\tpreloaded/ententen21_tt31\t[lemma="invest"][]{0,3} ~"renewable-n"\n'
+On line 188
+[lemma="invest"] []{0,2} ~"renewable-j"
+[lemma="invest"] []{0,2} [~"renewable-j"]
+(meet [lemma="invest"] ~"renewable-j" 1 3)
+1:[lemma="invest"] 2:[] 3:[] 4:[] & 2.lc = 3.lc & 4.lc ~ "renewable.*"
+'contact followed by doctor-like within 2\tpreloaded/ententen21_tt31\t[lemma="contact"][]{0,2} ~"doctor-n"\n'
+On line 189
+[lemma="contact"] [ ]{0,2} [ ~"doctor-n" ]
+[lemma="contact"] [ ]{0,2} ~"doctor-n"
+(meet [lemma="contact"] ~"doctor-n" 1 2)
+[lemma="contact"] [ ]{0,2} [ ~"doctor-n" ]
+'reduce near emission-like (+-5)\tpreloaded/ententen21_tt31\t(meet [lemma="reduce"] ~"emission-n" -5 5)\n'
+On line 190
+( [lemma_lc="reduce"] []{0,5} [lemma_lc="emission.*"] | [lemma_lc="emission.*"] []{0,5} [lemma_lc="reduce"] ) within <s/>
+'noun within 2 tokens of adjective\tpreloaded/ententen21_tt31\t(meet [tag="N.*"] [tag="J.*"] -2 2)\n'
+On line 191
+(meet [tag="N.*"] [tag="J.*"] -2 2)
+'verb within 1–4 tokens of noun to the right\tpreloaded/ententen21_tt31\t(meet [tag="V.*"] [tag="N.*"] 1 4)\n'
+On line 192
+[tag="V.*"] []{1,4} [tag="N.*"] within <s/>
+'adjectives within 2–5 tokens of noun on left\tpreloaded/ententen21_tt31\t(meet [tag="J.*"] [tag="N.*"] -5 -2)\n'
+On line 193
+[tag="N.*"] [ ]{2,5} [tag="J.*"]
+'Nouns near was/were and adjectives near be\tpreloaded/ententen21_tt31\t(union (meet [tag="N.*"] [word=="was|were"] -2 2) (meet [tag="J.*"] [lemma="be"] -2 2))\n'
+On line 194
+(union (meet [tag="N.*"] [lemma="be" & tag="VBD"] -5 5) (meet [tag="J.*"] [lemma="be" & tag="VB"] -5 5))
+'Markers like (1) (2) ...\tpreloaded/ententen21_tt31\t[word=="("][word="\\d+"][word==")"]\n'
+On line 195
+[tag="("] [tag="CD"] [tag=")"]
+'dash-only tokens\tpreloaded/ententen21_tt31\t[word="-+"]\n'
+On line 196
+[word="-"]
+'commas inside parentheses\tpreloaded/ententen21_tt31\t[word=="("][word=","][word==")"]\n'
+On line 197
+(meet (meet [word=","] [word="("] -100 -1) [word=")"] 1 100)
+'proper noun + year\tpreloaded/ententen21_tt31\t[tag="NP"][word="\\d{4}"]\n'
+On line 198
+[tag="NP.*"] [tag="CD" & word=".*[0-9]{4}.*"]
+'please + base verb\tpreloaded/ententen21_tt31\t[lemma="please"][tag="V[BHV]"]\n'
+On line 199
+[lc="please"] [tag=","]{0,1} [tag="V[BH]|VV"]
+'so that sequences\tpreloaded/ententen21_tt31\t[word="so"][word="that"]\n'
+On line 200
+[lemma="so"][lemma="that"][ ]{1,5}
+'in case sequences\tpreloaded/ententen21_tt31\t[word="in"][word="case"]\n'
+On line 201
+[lc="in"] [lc="case"]
+'as long as sequences\tpreloaded/ententen21_tt31\t[word="as"][word="long"][word="as"]\n'
+On line 202
+[word="as"] [word="long"] [word="as"] [lemma="sequence" & tag="N.*"]
+'modal + not + base verb\tpreloaded/ententen21_tt31\t[word="can|could|may|might|must|shall|should|will|would"][lemma="not"][tag="V[BHV]"]\n'
+On line 203
+[tag="MD"] [lc="not"] [tag="VB|VH|VV"]
+'Word Sketch: modifiers of policy-n\tpreloaded/ententen21_tt31\t[ws("policy-n","modifiers of \\"%w\\"",".*")]\n'
+On line 204
+[ws("policy-n", "modifiers of \"%w\"", ".*")]
+'Word Sketch: objects of approve-v\tpreloaded/ententen21_tt31\t[ws("approve-v",".*objects of \\"%w\\"",".*")]\n'
+On line 205
+[ws("approve-v", "objects of \"%w\"", ".*")]
+'Word Sketch: subjects of increase-v\tpreloaded/ententen21_tt31\t[ws("increase-v",".*subjects of \\"%w\\"",".*")]\n'
+On line 206
+[ws("increase-v", "subjects of \"%w\"", ".*")]
+'Word Sketch: decision-n as object of make-v\tpreloaded/ententen21_tt31\t[ws("decision-n",".*object.*","make-v")]\n'
+On line 207
+[ws("decision-n", "verbs with \"%w\" as object", "make-v")]
+'Word Sketch: test-n modified by blood-n\tpreloaded/ententen21_tt31\t[ws("test-n",".*modifiers of \\"%w\\"","blood-n")]\n'
+On line 208
+[ws("test-n", "modifiers of \"%w\"", "blood-n")]
+'Word Sketch: any relation of climate-n mentioning change\tpreloaded/ententen21_tt31\t[ws("climate-n",".*","change.*")]\n'
+On line 209
+[ws("climate-n", ".*", "change-.*")]
+'Word Sketch: verbs with %w as subject\tpreloaded/ententen21_tt31\t[ws(".*","verbs with \\"%w\\" as subject",".*-v")]\n'
+On line 210
+[ws("headword-n", "verbs with \"%w\" as subject", ".*")]
+'car in English where German segment has Auto\tpreloaded/europarl7_en\t[word="car"] within europarl7_de_1: [word="Auto"]\n'
+On line 211
+[lemma="car"] within europarl7_de: [lemma="Auto"]
+[lemma="car"] within <align lang="de"/> : [lemma="Auto"]
+[lemma="car"] within de: [lemma="Auto"]
+[lemma="car"] within preloaded/europarl7_de: [lemma="Auto"]
+'house in English where French segment has maison\tpreloaded/europarl7_en\t[word="house"] within europarl7_fr: [word="maison"]\n'
+On line 212
+[lemma="house"] within europarl7_fr: [lemma="maison"]
+[lemma="house"] within fr: [lemma="maison"]
+[lemma="house"] within europarl7_fr: [lemma="maison"]
+[lc="house"] within europarl7_fr: [lc="maison"]
+'Find a sentence consisting of as many words as is the meaning of life.\tpreloaded/ententen21_tt31\t<s> []{42} <s/>\n'
+On line 213
+<s> [ ]{42} </s>
+'Find a sentence having as many words as the meaning of life.\tpreloaded/ententen21_tt31\t<s> []{42,} <s/>\n'
+On line 214
+<s> [ ]{42} </s>
+'Find a sentence having exactly as many words as the meaning of life.\tpreloaded/ententen21_tt31\t<s> []{42} <s/>\n'
+On line 215
+<s> [ ]{42} </s>
+'Find a sequence of as many tokens as is the meaning of life.\tpreloaded/ententen21_tt31\t[]{42}\n'
+On line 216
+[ ]{42}
+'Find examples of subject and predicate. The subject should be a noun phrase.\tpreloaded/ententen21_tt31\t[ws(".*", "verbs with \\"%w\\" as subject", ".*-v")]\n'
+On line 217
+<s> [tag="DT"]? [tag="JJ.*"]{0,3} [tag="(NN|NNS|NP|NPS|PP)"] []{0,5} [tag="V.*"]
+'Find examples of subject and predicate.\tpreloaded/ententen21_tt31\t[ws(".*", "verbs with \\"%w\\" as subject", ".*-v")]\n'
+On line 218
+<s>  [ (tag="N.*") | (tag="PP") | (tag="WP") | (tag="EX") ]  []{0,10}  [tag="V.*"]</s>
+'Give me all the objects of a verb test.\tpreloaded/ententen21_tt31\t[ws("test-v", "objects of \\"%w\\"", ".*")]\n'
+On line 219
+[ws("test-v", "objects of \"%w\"", ".*")]
+'Give me all the objects of the verb "test".\tpreloaded/ententen21_tt31\t[ws("test-v", "objects of \\"%w\\"", ".*")]\n'
+On line 220
+[ws("test-v", "objects of \"%w\"", ".*")]
+'How do I find direct speech?\tpreloaded/ententen21_tt31\t[word="\\""] [word!="\\""]+ [word="\\""] within <s/>\n'
+On line 221
+( [word="\""] []{1,500} [word="\""] ) | ( [word="'"] []{1,500} [word="'"] )
+'How to find all noun phrases?\tpreloaded/ententen21_tt31\t[tag="J.*"]{0,5} [tag="N.*"]\n'
+On line 222
+[tag="(DT|PDT|JJ.*|CD)"]{0,4} [tag="(N.*|PP.*)"] [tag="Z"]? [tag="N.*"]{0,2}
+'I need to find all examples of direct speech.\tpreloaded/ententen21_tt31\t[word="\\""] [word!="\\""]+ [word="\\""] within <s/>\n'
+On line 223
+1:[word="\"" | word="'"] 2:[ ]{0,200} 3:[word="\"" | word="'"] & 1.word = 3.word
+[word="\"" | word="'"] []{0,200} [word="\"" | word="'"]
+'I would like to filter out all simple prepositions in a corpus.\tpreloaded/ententen21_tt31\t<s/> !containing [tag="IN"]\n'
+On line 224
+[tag=="IN"]
+'Please give me all the objects of a verb test.\tpreloaded/ententen21_tt31\t[ws("test-v", "objects of \\"%w\\"", ".*")]\n'
+On line 225
+[ws("test-v", "objects of \"%w\"", ".*")]
+'Hyphenated compounds with ≥3 parts (e.g., state-of-the-art)\tpreloaded/ententen21_tt31\t[word="[A-Za-z]+(-[A-Za-z]+){2,}"]\n'
+On line 226
+[tag!=":"] ( [lc="-" & tag=":"] [tag!=":"] ){2,}
+'Prefix re-, un-, de-, (optionally hyphenated)\tpreloaded/ententen21_tt31\t[word="(re|un|de)-?[a-z]+"]\n'
+On line 227
+[lc="^(re|un|de)(-.*|.+)$"]
+'Prefix re-, un-, de- (must be hyphenated)\tpreloaded/ententen21_tt31\t[word="(re|un|de)-[a-z]+"]\n'
+On line 228
+[lc=~"^(re|un|de)-.+"]
+[lc="^(re|un|de)-."]
+'Case-insensitive match of "Internet"\tpreloaded/ententen21_tt31\t[lc="internet"]\n'
+On line 229
+[lc="internet"]
+'The noun "policy".\tpreloaded/ententen21_tt31\t[lempos="policy-n"]\n'
+On line 230
+[lempos="policy-n"]
+'Coordinating prepositions after "hand".\tpreloaded/ententen21_tt31\t[lemma="hand"][word="in|over|out"]\n'
+On line 231
+[lemma_lc="hand"] [ ]{0,2} [tag="IN"]
+'Verb–particle constructions with short gaps\tpreloaded/ententen21_tt31\t[tag="V.*"] []{,2} [tag="RP"]\n'
+On line 232
+[tag="V.*"] [ ]{1,4} [tag="RP"] within <s/>
+'Examples of similes\tpreloaded/ententen21_tt31\t[lemma="like"] [word="the|a|an"]? [tag="N.*"]) | ([word="as"] [tag="J.*|RB.*"] [word="as"]\n'
+On line 233
+( []{0,3} [lc="like" & tag="IN"] [tag="DT"]? [tag="J.*"]{0,5} [tag="N.*"] ) | ( []{0,3} [lc="as" & tag="RB"] [ tag="R.*" | tag="J.*" ]{1,2} [lc="as" & tag="IN"] [tag="DT"]? [tag="J.*"]{0,5} [tag="N.*"] )
+'Coordinated nouns captured as the whole sentence\tpreloaded/ententen21_tt31\t<s/> containing [tag="N.*"] [tag="CC"] [tag="DT"]? [tag="N.*"]\n'
+On line 234
+<s/> containing ([tag="N.*"] []* [tag="CC"] []* [tag="N.*"])
+'Email domains like .edu or .org\tpreloaded/ententen21_tt31\t[word=".*@.*\\.(edu|org)"]\n'
+On line 235
+[word="\\.[a-z]{2,}"]
+'Hex color codes\tpreloaded/ententen21_tt31\t[word="#([0-9A-Fa-f]{3}|[0-9A-Fa-f]{6})"]\n'
+On line 236
+[word="#[0-9a-fA-F]{3}([0-9a-fA-F]{3})?([0-9a-fA-F]{2})?"]
+'IPv4 addresses\tpreloaded/ententen21_tt31\t[word="([12]?[0-9]?[0-9]\\.){3}[12]?[0-9]?[0-9]"]\n'
+On line 237
+( [word="((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)"] ) | ( [word="(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)"] [word=="."] [word="(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)"] [word=="."] [word="(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)"] [word=="."] [word="(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)"] )
+'Usernames beginning with @\tpreloaded/ententen21_tt31\t[word="@\\w+"]\n'
+On line 238
+[tag="NP|NPS" & lc="@[a-z0-9_-]+"]
+'Roman numerals I–X\tpreloaded/ententen21_tt31\t[word="(I|II|III|IV|V|VI|VII|VIII|IX|X)"]\n'
+On line 239
+[lc="^(i|ii|iii|iv|v|vi|vii|viii|ix|x)$"]
+'A month name followed by a year\tpreloaded/ententen21_tt31\t[lemma="january|february|march|april|may|june|july|august|september|october|november|december"][word="\\d{4}"]\n'
+On line 240
+[lemma_lc="january|february|march|april|may|june|july|august|september|october|november|december"] [word=","]{0,1} [word="[0-9]{4}"]
+'A weekday followed by a comma\tpreloaded/ententen21_tt31\t[lemma="monday|tuesday|wednesday|thursday|friday|saturday|sunday"][word==","]\n'
+On line 241
+[lemma_lc="(monday|tuesday|wednesday|thursday|friday|saturday|sunday)"] [tag=","]
+'Any sentence that contains negation.\tpreloaded/ententen21_tt31\t<s/> containing [lemma="not"]\n'
+On line 242
+<s/> containing [lemma="(not|never|no|nobody|nothing|nowhere|neither|nor|none)"]
+'Any token followed by a noun in a sentence.\tpreloaded/ententen21_tt31\t[][tag="N.*"] within <s/>\n'
+On line 243
+[ ] [tag="N.*"] within <s/>
+'Any word followed by a noun in one sentence.\tpreloaded/ententen21_tt31\t[][tag="N.*"] within <s/>\n'
+On line 244
+[][tag="N.*"] within <s/>
+'Any word followed by a noun.\tpreloaded/ententen21_tt31\t[][tag="N.*"]\n'
+On line 245
+[] [tag="N.*"]
+'Find adjectives followed by nouns.\tpreloaded/ententen21_tt31\t[tag="J.*"][tag="N.*"]\n'
+On line 246
+[tag="J.*"] [tag="N.*"]
+'Find all nouns with the verb to be at a distance of 3 tokens to the left or right and find all adjectives with the verb to be at a distance of 2 tokens to the left or right.\tpreloaded/ententen21_tt31\t(union (meet [tag="N.*"] [tag="VB.*"] -3 3) (meet [tag="J.*"] [tag="VB.*"] -2 2))\n'
+On line 247
+(union (meet [tag="N.*"] [tag="VB.*"] -3 3) (meet [tag="JJ.*"] [tag="VB.*"] -2 2))
+'Find sentences that begin with the word An\tpreloaded/ententen21_tt31\t<s> [word="An"]\n'
+On line 248
+<s> [word="An"]
+'Find sentences that begin with the word The\tpreloaded/ententen21_tt31\t<s> [word="The"]\n'
+On line 249
+<s> [word="The"]
+'Find sentences that begin with the word "The"\tpreloaded/ententen21_tt31\t<s> [word="The"]\n'
+On line 250
+<s> [word="The"]
+'Find the word however followed by a comma\tpreloaded/ententen21_tt31\t[word="however"] [word=","]\n'
+On line 251
+[lc="however"][word=","]
+'Find the word however not followed by comma\tpreloaded/ententen21_tt31\t[word="however"] [word!="," ]\n'
+On line 252
+[lc="however"] !-> [word=","]
+[lc="however"] [word!=","]?
+'Find all four digits number starting with 19 following by word "a.d.".\tpreloaded/ententen21_tt31\t[word="19\\d{2}"][word="a"][word=="."][word="d"][word=="."]\n'
+On line 253
+[tag="CD" & word="19[0-9]{2}"] [lc="a.d."]
+'Find examples of noun phrases consisting of a minimum of three tokens.\tpreloaded/ententen21_tt31\t[tag="J.*|N.*"]{2,} [tag="N.*"]\n'
+On line 254
+[tag="(DT|PDT|CD|CDZ|JJ|JJR|JJS|NN|NNS|NNZ|NNSZ|NP|NPS|NPZ|NPSZ|PP|PPZ)"]{2,} [tag="(NN|NNS|NNZ|NNSZ|NP|NPS|NPZ|NPSZ)"]
+'find patterns: "noun|adjective" or "adjective|noun\tpreloaded/ententen21_tt31\t([tag="N.*"][tag="J.*"]) | ([tag="J.*"][tag="N.*"])\n'
+On line 255
+( [tag="N.*"] [tag="JJ.*"] ) | ( [tag="JJ.*"] [tag="N.*"] )
+'Phrase "no longer" or "no more"\tpreloaded/ententen21_tt31\t[lemma="no"][word="longer|more"]\n'
+On line 256
+[lc="no"] [lc="longer"|lc="more"]
+'Sentences ending with a question mark\tpreloaded/ententen21_tt31\t[word=="?"] </s>\n'
+On line 257
+<s> []{0,} [word="?"] </s>
+'Paragraphs that contain a 4-digit year.\tpreloaded/ententen21_tt31\t[word="[0-9]{4}"] within <p/>\n'
+On line 258
+<p/> containing [tag="CD" & word="[0-9]{4}"]
+'NP bigrams\tpreloaded/ententen21_tt31\t[tag="NP|NPS"]{2}\n'
+On line 259
+[tag="NP.*"] [tag="NP.*"]
+'Nouns inside quotation spans\tpreloaded/ententen21_tt31\t[tag="N.*"] within [word="\\""] []{1,5} [word="\\""]\n'
+On line 260
+[tag="N.*"] within (  ( [tag="\""] ( [tag!="\""] )* [tag="\""] ) |   ( [tag="'"] ( [tag!="'"] )* [tag="'"] ))
+'Quatation marks not containing a noun in one sentence.\tpreloaded/ententen21_tt31\t([word="\\""][word!="\\""]{5,}[word="\\""] !containing [tag="N.*"]) within <s/>\n'
+On line 261
+<s/> containing ( [tag="\""] | [tag="'"] ) !containing [tag="N.*"]
+'Negation near change verbs increase/decrease.\tpreloaded/ententen21_tt31\t(meet [lemma="increase" | lemma="decrease" & tag="V.*"] [lemma="not|never|none|neither"] -1 1)\n'
+On line 262
+(meet [ (lemma="increase"|lemma="decrease") & tag="V.*" ] [ lemma="not"|lemma="never"|lemma="no" ] -5 5) within <s/>
+'Risk with a mitigate verb somewhere to its left (1–5 tokens away)\tpreloaded/ententen21_tt31\t(meet [lemma="risk"] [lemma="mitigate"] -5 -1)\n'
+On line 263
+[lemma="mitigate" & tag="V.*"] []{0,4} [lemma="risk" & tag="N.*"]
+'Coordinated adjectives where the lemmas are the same.\tpreloaded/ententen21_tt31\t1:[tag="J.*"] [tag="CC"] 2:[tag="J.*"] & 1.lemma = 2.lemma\n'
+On line 264
+1:[tag="JJ.*"] [tag=","]? [tag="CC"] 2:[tag="JJ.*"] & 1.lemma = 2.lemma
+1:[tag="JJ.*"] [tag=","]{0,1} [tag="CC"] 2:[tag="JJ.*"] & 1.lemma = 2.lemma
+[tag="JJ.*" & lemma="(.*)"] [tag=","]{0,1} [tag="CC"] [tag="JJ.*" & lemma="\1" & lc="\1"]
+'Immediate word repetitions\tpreloaded/ententen21_tt31\t1:[] 2:[] & 1.word = 2.word\n'
+On line 265
+1:[] 2:[] & 1.word = 2.word
+[lc=".*"] [lc="\0"]
+'Any relation of policy-n where the collocation mentions climate.\tpreloaded/ententen21_tt31\t[ws("policy-n",".*",".*climate.*")]\n'
+On line 266
+[ws("policy-n", ".*", "climate.*")]
+'Sentences where policy-n has a collocation reform-v in an “object-like” relation, and it’s preceded by governmental within 2 tokens.\tpreloaded/ententen21_tt31\t[word="governmental"] []{0,2} [ws("policy-n",".*object.*","reform-v")]\n'
+On line 267
+[lemma="governmental"] []{0,2} [ws("policy-n", ".*object.*", "reform-v")] within <s/>
+'"see" followed by a word similar to doctor-like profession.\tpreloaded/ententen21_tt31\t[lemma="see"] [tag="DT"]? ~10"doctor-n"\n'
+On line 268
+[lemma="see"] [tag="DT" | tag="PPZ"]? [~"doctor-n"]
+[lemma="see"] [tag="DT|PPZ"]? [~"doctor-n"]
+[lemma="see"] [tag="DT|PPZ"]{0,1} [~"doctor-n"]
+[lemma="see"] [tag="DT|PPZ"]{0,1} ~"doctor-n"
+'Words similar to noun renewable with invest 0–3 to the left.\tpreloaded/ententen21_tt31\t[lemma="invest"] []{0,3} ~"renewable-n"\n'
+On line 269
+[lemma="invest"] []{0,3} [ ~"renewable-n" ]
+[lemma="invest"] []{0,3} ~"renewable-n"
+(meet [ ~"renewable-n" ] [lemma="invest"] -3 -1)
+(meet ~"renewable-n" [lemma="invest"] -3 0)
+'Thousands separators\tpreloaded/ententen21_tt31\t[word="[0-9]{1,3}(,[0-9]{3})+"]\n'
+On line 270
+[tag="CD"] [word=","] [tag="CD"]
+'capitalized words not sentence-initial\tpreloaded/ententen21_tt31\t[word="[A-Z].*"] within !<s> []\n'
+On line 271
+[] [word="[A-Z].*"] within <s/>
+'Any token.\tpreloaded/ententen21_tt31\t[]\n'
+On line 272
+[ ]
+'Find all verbs in the past tense.\tpreloaded/ententen21_tt31\t[tag="V.D"]\n'
+On line 273
+[tag="V[BH]?D"]
+'Find any pronoun.\tpreloaded/ententen21_tt31\t[tag="PP.?|WP.?"]\n'
+On line 274
+[tag="PP|PPZ|WP|WPZ"]
+'All-caps acronyms with 2+ letters\tpreloaded/ententen21_tt31\t[word="[A-Z]{2,}"]\n'
+On line 275
+[word="[A-Z]{2,}"]
+'Ordinal numbers\tpreloaded/ententen21_tt31\t[word="\\d+(st|nd|rd|th)"]\n'
+On line 276
+[tag="J.*" & (word="first" | word="second" | word="third" | word=".*th" | word="[0-9]+(st|nd|rd|th)")]

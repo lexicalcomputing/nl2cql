@@ -1,0 +1,843 @@
+'Tous les mots.\tpreloaded/ententen21_tt31\t[]\n'
+On line 1
+[word=".*"]
+"Trouver n'importe quel token\tpreloaded/frtenten22_fl4\t[]\n"
+On line 2
+[word=".*"]
+'Tous les noms communs\tpreloaded/frtenten22_fl4\t[tag="NC.*"]\n'
+On line 3
+[tag="N.C.*"]
+'Tous les noms propres\tpreloaded/frtenten22_fl4\t[tag="NP.*"]\n'
+On line 4
+[tag="N.P.*"]
+'Noms féminins singuliers\tpreloaded/frtenten22_fl4\t[tag="N.FS.*"]\n'
+On line 5
+[tag="N.FS.*"]
+'Noms masculins pluriels\tpreloaded/frtenten22_fl4\t[tag="N.MP.*"]\n'
+On line 6
+[tag="N.MP.*"]
+'Adjectifs qualificatifs\tpreloaded/frtenten22_fl4\t[tag="AQ.*"]\n'
+On line 7
+[tag="A.Q.*"]
+'Adjectifs ordinaux\tpreloaded/frtenten22_fl4\t[tag="AO.*"]\n'
+On line 8
+[tag="A.O.*"]
+'Déterminants articles\tpreloaded/frtenten22_fl4\t[tag="DA.*"]\n'
+On line 9
+[tag="D.A.*"]
+'Pronoms personnels\tpreloaded/frtenten22_fl4\t[tag="PP.*"]\n'
+On line 10
+[tag="P.P.*"]
+'Pronoms possessifs\tpreloaded/frtenten22_fl4\t[tag="PX.*"]\n'
+On line 11
+[tag="P.X.*"]
+'Adverbes généraux\tpreloaded/frtenten22_fl4\t[tag="RG"]\n'
+On line 12
+[tag="R.G.*"]
+'Adverbes négatifs\tpreloaded/frtenten22_fl4\t[tag="RN"]\n'
+On line 13
+[tag="R.N.*"]
+'Prépositions\tpreloaded/frtenten22_fl4\t[tag="SP.*"]\n'
+On line 14
+[tag="S.P.*"]
+'Conjonctions de coordination\tpreloaded/frtenten22_fl4\t[tag="CC.*"]\n'
+On line 15
+[tag="C.C.*"]
+'Conjonctions de subordination\tpreloaded/frtenten22_fl4\t[tag="CS.*"]\n'
+On line 16
+[tag="C.S.*"]
+'Interjections\tpreloaded/frtenten22_fl4\t[tag="I.*"]\n'
+On line 17
+[tag="I.*"]
+'Nombres\tpreloaded/frtenten22_fl4\t[tag="Z.*"]\n'
+On line 18
+[word="nombres"]
+'Ponctuation point\tpreloaded/frtenten22_fl4\t[tag="Fp"]\n'
+On line 19
+[tag="Fp"]
+'Ponctuation virgule\tpreloaded/frtenten22_fl4\t[tag="Fc"]\n'
+On line 20
+[tag="Fc"]
+'Ponctuation point d\'interrogation\tpreloaded/frtenten22_fl4\t[tag="Fit"]\n'
+On line 21
+[tag="Fq"]
+'Verbes a l\'infinitif\tpreloaded/frtenten22_fl4\t[tag="V.N.*"]\n'
+On line 22
+[tag="V..N.*"]
+'Verbes au participe\tpreloaded/frtenten22_fl4\t[tag="V.P.*"]\n'
+On line 23
+[tag="V.P.*"]
+'Verbes au gérondif\tpreloaded/frtenten22_fl4\t[tag="V.G.*"]\n'
+On line 24
+[tag="V.*P.*"]
+'Verbes à l\'indicatif\tpreloaded/frtenten22_fl4\t[tag="V.I.*"]\n'
+On line 25
+[tag="V.I.*"]
+'Verbes à l\'indicatif et au present\tpreloaded/frtenten22_fl4\t[tag="V.IP.*"]\n'
+On line 26
+[tag="V.*I.P.*"]
+'Verbes au subjonctif\tpreloaded/frtenten22_fl4\t[tag="V.S.*"]\n'
+On line 27
+[tag="V.S.*"]
+'Verbes à l\'impératif\tpreloaded/frtenten22_fl4\t[tag="V.M.*"]\n'
+On line 28
+[tag="V.M.*"]
+'Verbes au présent\tpreloaded/frtenten22_fl4\t[tag="V..P.*"]\n'
+On line 29
+[tag="V..P.*"]
+'Verbes au futur\tpreloaded/frtenten22_fl4\t[tag="V..F.*"]\n'
+On line 30
+[tag="V..F.*"]
+'Verbes au conditionnel\tpreloaded/frtenten22_fl4\t[tag="V..C.*"]\n'
+On line 31
+[tag="V.I.C.*"]
+'Mots avec seulement des majuscules\tpreloaded/frtenten22_fl4\t[word="[A-ZÀ-ÖØ-Ý]+"]\n'
+On line 32
+[word="^[A-Z]+$"]
+'Mots avec seulement des minuscules\tpreloaded/frtenten22_fl4\t[word="[a-zà-öø-ý]+"]\n'
+On line 33
+[word = lc]
+'Acronymes de 2+ lettres\tpreloaded/frtenten22_fl4\t[word="[A-Z]{2,}"]\n'
+On line 34
+[word="[A-Z]{2,}"]
+'Nombres à quatre chiffres\tpreloaded/frtenten22_fl4\t[word="\\d{4}"]\n'
+On line 35
+[word="[0-9]{4}"]
+'Nombres avec séparateurs de milliers\tpreloaded/frtenten22_fl4\t[word="\\d{1,3}(,\\d{3})+"]\n'
+On line 36
+[word="^\d+(\s\d{3})*$"]
+'Pourcentages\tpreloaded/frtenten22_fl4\t[word="\\d+([, ]?\\d+|\\.\\d+)?%"]\n'
+On line 37
+[lemma="pourcentage"]
+'Hashtags\tpreloaded/frtenten22_fl4\t[word="#\\w+"]\n'
+On line 38
+[word="#.*"]
+'Mentions starting with an arobase\tpreloaded/frtenten22_fl4\t[word="@\\w+"]\n'
+On line 39
+[word="@.*"]
+'Couleurs hex\tpreloaded/frtenten22_fl4\t[word="^#([0-9A-Fa-f]{3}|[0-9A-Fa-f]{6})$"]\n'
+On line 40
+[word="couleurs"] [word="hex"]
+'Lemmes commençant par télé-\tpreloaded/frtenten22_fl4\t[lemma="télé.*"]\n'
+On line 41
+[lemma="télé.*"]
+'Lemmes finissant par -ment\tpreloaded/frtenten22_fl4\t[lemma=".*ment"]\n'
+On line 42
+[lemma=".*ment"]
+'Lemma être\tpreloaded/frtenten22_fl4\t[lemma="être"]\n'
+On line 43
+[lemma="être"]
+'Lemma avoir\tpreloaded/frtenten22_fl4\t[lemma="avoir"]\n'
+On line 44
+[lemma="avoir"]
+'Lemma faire\tpreloaded/frtenten22_fl4\t[lemma="faire"]\n'
+On line 45
+[lemma="faire"]
+'Toutes les formes du lemme aller\tpreloaded/frtenten22_fl4\t[lemma="aller"]\n'
+On line 46
+[lemma="aller"]
+'Adjectif suivi d\'un nom\tpreloaded/frtenten22_fl4\t[tag="A.*"][tag="N.*"]\n'
+On line 47
+[tag="A.*"] [tag="N.*"]
+'Nom suivi d\'un adjectif\tpreloaded/frtenten22_fl4\t[tag="N.*"][tag="A.*"]\n'
+On line 48
+[tag="N.*"][tag="A.*"]
+'Déterminant + nom\tpreloaded/frtenten22_fl4\t[tag="D.*"][tag="N.*"]\n'
+On line 49
+[tag="D.*"] [tag="N.*"]
+'Déterminant + adjectif + nom\tpreloaded/frtenten22_fl4\t[tag="D.*"][tag="A.*"][tag="N.*"]\n'
+On line 50
+[tag="D.*"] [tag="A.*"] [tag="N.*"]
+'Préposition + déterminant + nom\tpreloaded/frtenten22_fl4\t[tag="SP.*"][tag="D.*"][tag="N.*"]\n'
+On line 51
+[tag="S.P.*"] [tag="D.*"] [tag="N.*"]
+'Verbe + pronom clitique\tpreloaded/frtenten22_fl4\t[tag="V.*"][tag="P.*"]\n'
+On line 52
+[tag="V.*"] [tag="P.*"]
+'Négation avec ne et pas\tpreloaded/frtenten22_fl4\t[lemma="ne" & tag="RN"][lemma!="pas" | tag!="RN"]{0,3}[lemma="pas" & tag="RN"] within <s/>\n'
+On line 53
+[lemma="ne"] [ ]{0,} [lemma="pas"]
+'Coordination nominale\tpreloaded/frtenten22_fl4\t[tag="N.*"][word="et"][tag="N.*"]\n'
+On line 54
+[tag="N.*"] [tag="C.C"] [tag="N.*"]
+'Séquence de trois noms\tpreloaded/frtenten22_fl4\t[tag="N.*"]{3}\n'
+On line 55
+[tag="N.*"] [tag="N.*"] [tag="N.*"]
+'Adverbe suivi d\'un adjectif\tpreloaded/frtenten22_fl4\t[tag="R.*"][tag="A.*"]\n'
+On line 56
+[tag="R.*"] [tag="A.*"]
+'Deux adjectifs consécutifs\tpreloaded/frtenten22_fl4\t[tag="A.*"][tag="A.*"]\n'
+On line 57
+[tag="A.*"][tag="A.*"]
+'Phrases finissant par un point d\'interrogation\tpreloaded/frtenten22_fl4\t[word=="?"] </s>\n'
+On line 58
+<s> [tag="Fq"] </s>
+'Phrases finissant par un point d\'exclamation\tpreloaded/frtenten22_fl4\t[word=="!"] </s>\n'
+On line 59
+[tag="Fat"]
+'Phrases d\'un seul mot\tpreloaded/frtenten22_fl4\t<s> [] [tag="F[^z].*"] </s>\n'
+On line 60
+[word=".*"]
+'Première position de la phrase\tpreloaded/frtenten22_fl4\t<s> []\n'
+On line 61
+<s> [word=".*"]
+'Phrases sans verbe\tpreloaded/frtenten22_fl4\t<s/> !containing [tag="V.*"]\n'
+On line 62
+<s/> !containing [tag="V.*"]
+'Phrases contenant un nombre\tpreloaded/frtenten22_fl4\t<s/> containing [tag="Z.*"]\n'
+On line 63
+<s/> containing [tag="Z.*"]
+'Documents du domaine gouv.fr\tpreloaded/frtenten22_fl4\t<doc urldomain=".*\\.gouv\\.fr" />\n'
+On line 64
+<doc url=".*gouv\.fr">
+'Documents en .fr\tpreloaded/frtenten22_fl4\t<doc tld="fr" />\n'
+On line 65
+[doc=".*\\.fr$"]
+'Titres contenant rapport\tpreloaded/frtenten22_fl4\t<doc title=".*rapport.*" />\n'
+On line 66
+<doc title=".*rapport.*">
+'Articles de presse\tpreloaded/frtenten22_fl4\t<doc genre="news" />\n'
+On line 67
+<doc genre="presse">
+'Documents publiés en 2020\tpreloaded/frtenten22_fl4\t<doc crawl_year="2020" />\n'
+On line 68
+<doc year="2020">
+'Paragraphes contenant un nombre\tpreloaded/frtenten22_fl4\t<p/> containing [tag="Z.*"]\n'
+On line 69
+<p/> containing [tag="Z.*"]
+'Paragraphes sans nom propre\tpreloaded/frtenten22_fl4\t<p/> !containing [tag="NP.*"]\n'
+On line 70
+<p/> !containing [tag="N.P.*"]
+'Phrases contenant des guillemets\tpreloaded/frtenten22_fl4\t<s/> containing [tag="Fra|Frc|Fe"]\n'
+On line 71
+<s/> containing ([word="«"] | [word="»"])
+'Nom à +-3 tokens d\'un verbe\tpreloaded/frtenten22_fl4\t(meet [tag="N.*"] [tag="V.*"] -3 3)\n'
+On line 72
+(meet [tag="N.*"] [tag="V.*"] -3 3)
+'Union de noms près de "être" ou adjectifs près de "être"\tpreloaded/frtenten22_fl4\t(union (meet [tag="N.*"] [lemma="être"] -2 2) (meet [tag="A.*"] [lemma="être"] -2 2))\n'
+On line 73
+(union (meet [tag="N.*"] [lemma="être"] -3 3) (meet [tag="A.*"] [lemma="être"] -3 3))
+'Noms près de "être" ou adjectifs près de "être"\tpreloaded/frtenten22_fl4\t(union (meet [tag="N.*"] [lemma="être"] -2 2) (meet [tag="A.*"] [lemma="être"] -2 2))\n'
+On line 74
+(union (meet [lemma="être"] [tag="N.*"] -3 3) (meet [lemma="être"] [tag="A.*"] -3 3))
+'Répétition immédiate du même mot\tpreloaded/frtenten22_fl4\t1:[] 2:[] & 1.word = 2.word\n'
+On line 75
+1:[] 2:[] & 1.word = 2.word
+'Répétition immédiate du même lemma\tpreloaded/frtenten22_fl4\t1:[] 2:[] & 1.lemma = 2.lemma\n'
+On line 76
+1:[] 2:[] & 1.lemma = 2.lemma
+'Deux tokens consécutifs avec même lemme\tpreloaded/frtenten22_fl4\t1:[] 2:[] & 1.lemma = 2.lemma\n'
+On line 77
+1:[] 2:[] & 1.lemma = 2.lemma
+'Deux tokens adjacents avec même tag\tpreloaded/frtenten22_fl4\t1:[] 2:[] & 1.tag = 2.tag\n'
+On line 78
+1:[tag=".*"] 2:[tag=".*"] & 1.tag = 2.tag
+'Deux adjectifs coordonnés avec même lemme\tpreloaded/frtenten22_fl4\t1:[tag="A.*"] [tag="CC.*"] 2:[tag="A.*"] & 1.lemma = 2.lemma\n'
+On line 79
+1:[tag="A.*"] 2:[word="et"] 3:[tag="A.*"] & 1.lemma = 3.lemma
+'Séquences de points de suspension\tpreloaded/frtenten22_fl4\t[tag="Fs"]\n'
+On line 80
+[tag="Fp"]
+'Guillemets français ouvrants\tpreloaded/frtenten22_fl4\t[word="«"]\n'
+On line 81
+[word="«"]
+'Guillemets français fermants\tpreloaded/frtenten22_fl4\t[word="»"]\n'
+On line 82
+[word="»"]
+'Parenthèses ouvrante et fermante\tpreloaded/frtenten22_fl4\t[word="\\(|\\)"]\n'
+On line 83
+[word="("] | [word=")"]
+'Text au parenthèses ouvrante et fermante\tpreloaded/frtenten22_fl4\t[word=="("] []{0,5} [word==")"]\n'
+On line 84
+[word="("] [word=".*"]{1,} [word=")"]
+'Adjectifs féminins pluriels\tpreloaded/frtenten22_fl4\t[tag="A..FP.*"]\n'
+On line 85
+[tag="A..F.P.*"]
+'Déterminants masculins singuliers\tpreloaded/frtenten22_fl4\t[tag="D..MS.*"]\n'
+On line 86
+[tag="D.*.*.M.S"]
+'Pronoms relatifs pluriels\tpreloaded/frtenten22_fl4\t[tag="PR..P.*"]\n'
+On line 87
+[tag="PR..P.."]
+'Pronoms personnels 3e personne\tpreloaded/frtenten22_fl4\t[tag="PP3.*"]\n'
+On line 88
+[tag="P.P3.*"]
+'Verbes principaux indicatif présent 3sg\tpreloaded/frtenten22_fl4\t[tag="VMIP3S.*"]\n'
+On line 89
+[tag="V.M.I.P.3.S.*"]
+'Verbes principaux indicatif présent 3pl\tpreloaded/frtenten22_fl4\t[tag="VMIP3P.*"]\n'
+On line 90
+[tag="V.M.I.P.3.P.*"]
+'Auxiliaires au passé\tpreloaded/frtenten22_fl4\t[tag="VA.S.*"]\n'
+On line 91
+[lemma="avoir"] | [lemma="être"]
+'Semi-auxiliaires à l\'infinitif\tpreloaded/frtenten22_fl4\t[tag="VSN.*"]\n'
+On line 92
+[tag="V.S.N.*"]
+'Négation avec « ne » et « jamais »\tpreloaded/frtenten22_fl4\t[lemma="ne" & tag="RN"] []{0,3} [lemma="jamais"]\n'
+On line 93
+[lemma="ne"] [ ]{0,} [lemma="jamais"]
+'Négation « ne » et « plus »\tpreloaded/frtenten22_fl4\t[lemma="ne" & tag="RN"] []{0,3} [word="plus"]\n'
+On line 94
+[word="ne"] [ ]{1,} [word="plus"]
+'Négation « ne » et « rian »\tpreloaded/frtenten22_fl4\t[lemma="ne" & tag="RN"] []{0,3} [word="rian"]\n'
+On line 95
+[word="ne"] [word="rien"]
+'Phrase commençant par guillemet\tpreloaded/frtenten22_fl4\t<s> [tag="Fe|Fr."]\n'
+On line 96
+<s/> [tag="Fg"]
+'Phrase contenant des parenthèses\tpreloaded/frtenten22_fl4\t<s/> containing [word="\\(|\\)"]\n'
+On line 97
+<s/> containing [tag="Fp"]
+'Objets du verbe "tester"\tpreloaded/frtenten22_fl4\t[ws("tester-v", "objects of \\"%w\\"", ".*")]\n'
+On line 98
+[ws("tester-v", ".*object.*", ".*")]
+'Modifieurs du nom "livre"\tpreloaded/frtenten22_fl4\t[ws("livre-n", "modifiers of \\"%w\\"", ".*")]\n'
+On line 99
+[ws("livre-n", "modifiers of \"%w\"", ".*")]
+'Sujets du verbe "augmenter"\tpreloaded/frtenten22_fl4\t[ws("augmenter-v", "subjects of \\"%w\\"", ".*")]\n'
+On line 100
+[ws("augmenter-v", "subjects of \"%w\"", ".*")]
+'"politique-n" comme objet de "réformer-v"\tpreloaded/frtenten22_fl4\t[ws("réformer-v", ".*object.*", "politique-n")]\n'
+On line 101
+[ws("réformer-v", ".*object.*", "politique-n")]
+'10 mots similaires au mot "médecin-n" après "voir"\tpreloaded/frtenten22_fl4\t[lemma="voir"] []{0,3} ~10"médecin-n"\n'
+On line 102
+[word="voir"] [] ~10"médecin-n"
+'15 mots similaires au mot "énergie-n" près de "renouvelable"\tpreloaded/frtenten22_fl4\t[lemma="renouvelable"] []{0,3} ~15"énergie-n"\n'
+On line 103
+(meet [~15"énergie-n"] [lemma="renouvelable"] -3 3)
+'Métaux à +-5 de mots similaires au mot « corrosion ».\tpreloaded/frtenten22_fl4\t(meet ~"métal-n" [lemma="corrosion"] -5 5)\n'
+On line 104
+(meet [lemma="métal"] ~"corrosion-n" -5 5)
+'Nombre suivi du symbole %\tpreloaded/frtenten22_fl4\t[tag="Z.*"][word="%"]\n'
+On line 105
+[tag="Z.*"] [word="%"]
+'Un nombre suivi du symbole % sans espace\tpreloaded/frtenten22_fl4\t[tag="Z.*"][word="%"] !containing <g/>\n'
+On line 106
+[word="\d+%"]
+'Un nombre suivi du symbole % avec espace\tpreloaded/frtenten22_fl4\t[tag="Z.*"][word="%"] containing <g/>\n'
+On line 107
+[tag="Z"] [word="%"]
+'Nom ou pronom avant verbe à 1–3 tokens\tpreloaded/frtenten22_fl4\t(meet [tag="N.*|P.*"] [tag="V.*"] 1 3)\n'
+On line 108
+[tag="N.*" | tag="P.*"] [ ]{1,3} [tag="V.*"]
+'Adjectif précédé d\'un adverbe\tpreloaded/frtenten22_fl4\t[tag="R.*"][tag="A.*"]\n'
+On line 109
+[tag="R.*"] [tag="A.*"]
+'Nom précédé de deux adjectifs\tpreloaded/frtenten22_fl4\t[tag="A.*"]{2}[tag="N.*"]\n'
+On line 110
+[tag="A.*"] [tag="A.*"] [tag="N.*"]
+'Le pronom "qui" pour remplacer le sujet d\'une phrase\tpreloaded/frtenten22_fl4\t[tag="N.*"][word="qui"]\n'
+On line 111
+[lemma="qui"] [tag="P.R.*"]
+'Paragraphes contenant un point-virgule\tpreloaded/frtenten22_fl4\t<p/> containing [tag="Fx"]\n'
+On line 112
+<p/> containing [tag="F;"]
+'Phrases ne contenant pas de virgule\tpreloaded/frtenten22_fl4\t<s/> !containing [tag="Fc"]\n'
+On line 113
+<s/> !containing [tag="Fc"]
+'Titres ne contenant pas de majuscules\tpreloaded/frtenten22_fl4\t[] within <doc title!=".*[A-ZÀ-ÖØ-Ý].*" />\n'
+On line 114
+<doc title="[^A-Z]*">
+'Documents .edu\tpreloaded/frtenten22_fl4\t<doc tld="edu" />\n'
+On line 115
+<doc url=".*\\.edu">
+'Documents dont l\'URL contient /blog/\tpreloaded/frtenten22_fl4\t<doc url=".*\\/blog\\/.*" />\n'
+On line 116
+<doc url=".*\/blog\/.*">
+'Bigramme répété à distance <6 in one sentence\tpreloaded/frtenten22_fl4\t1:[] 2:[] []{0,5} 3:[] 4:[] & 1.word=3.word & 2.word=4.word within <s/>\n'
+On line 117
+Traceback (most recent call last):
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL/venv/lib64/python3.13/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL/venv/lib64/python3.13/site-packages/urllib3/connection.py", line 565, in getresponse
+    httplib_response = super().getresponse()
+  File "/usr/lib64/python3.13/http/client.py", line 1430, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "/usr/lib64/python3.13/http/client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib64/python3.13/http/client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.13/socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+TimeoutError: timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL/venv/lib64/python3.13/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL/venv/lib64/python3.13/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL/venv/lib64/python3.13/site-packages/urllib3/util/retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL/venv/lib64/python3.13/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL/venv/lib64/python3.13/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL/venv/lib64/python3.13/site-packages/urllib3/connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL/venv/lib64/python3.13/site-packages/urllib3/connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+        self, url, f"Read timed out. (read timeout={timeout_value})"
+    ) from err
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='localhost', port=8070): Read timed out. (read timeout=360)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL/run_model.py", line 39, in <module>
+    translation = model.auto_call(params)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL/models/Qwen3_30B_A3B_Thinking_2507_IQ4_NL.py", line 599, in auto_call
+    cql = call(params)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL/models/Qwen3_30B_A3B_Thinking_2507_IQ4_NL.py", line 576, in call
+    model_response = call_einfra(prompt, api_key)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL/models/Qwen3_30B_A3B_Thinking_2507_IQ4_NL.py", line 213, in call_einfra
+    resp = requests.post("http://localhost:8070/v1/chat/completions", headers=headers, json=payload, timeout=360)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL/venv/lib64/python3.13/site-packages/requests/api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL/venv/lib64/python3.13/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL/venv/lib64/python3.13/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL/venv/lib64/python3.13/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL/venv/lib64/python3.13/site-packages/requests/adapters.py", line 690, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPConnectionPool(host='localhost', port=8070): Read timed out. (read timeout=360)
+'Bigramme répété à distance <6 in one sentence\tpreloaded/frtenten22_fl4\t1:[] 2:[] []{0,5} 3:[] 4:[] & 1.word=3.word & 2.word=4.word within <s/>\n'
+On line 1
+[word=".*"][word=".*"] [ ]{0,4} [word=".*"][word=".*"] within <s/>
+'Guillemets sans nom à l\'intérieur. La phrase est <=8.\tpreloaded/frtenten22_fl4\t([tag="Fe|Fra"] [tag!="Fe|Frc"]{1,8} [tag="Fe|Frc"] !containing [tag="N.*"]) within <s/>\n'
+On line 2
+[word="«"] [tag!="N.P.*"]{1,8} [word="»"]
+'Verbe à +-2 du nom « risque »\tpreloaded/frtenten22_fl4\t(meet [tag="V.*"] [lemma="risque"] -2 2)\n'
+On line 3
+(meet [lemma="risque"] [tag="V.*"] -2 2)
+'Adjectif à +-2 du verbe « sembler »\tpreloaded/frtenten22_fl4\t(meet [tag="A.*"] [lemma="sembler"] -2 2)\n'
+On line 4
+(meet [lemma="sembler"] [tag="A.*"] -2 2)
+'Nom dans une phrase qui contient un verbe au futur\tpreloaded/frtenten22_fl4\t[tag="N.*"] within (<s/> containing [tag="V..F.*"])\n'
+On line 5
+Traceback (most recent call last):
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL/venv/lib64/python3.13/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL/venv/lib64/python3.13/site-packages/urllib3/connection.py", line 565, in getresponse
+    httplib_response = super().getresponse()
+  File "/usr/lib64/python3.13/http/client.py", line 1430, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "/usr/lib64/python3.13/http/client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib64/python3.13/http/client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.13/socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+TimeoutError: timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL/venv/lib64/python3.13/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL/venv/lib64/python3.13/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL/venv/lib64/python3.13/site-packages/urllib3/util/retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL/venv/lib64/python3.13/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL/venv/lib64/python3.13/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL/venv/lib64/python3.13/site-packages/urllib3/connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL/venv/lib64/python3.13/site-packages/urllib3/connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+        self, url, f"Read timed out. (read timeout={timeout_value})"
+    ) from err
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='localhost', port=8070): Read timed out. (read timeout=360)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL/run_model.py", line 39, in <module>
+    translation = model.auto_call(params)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL/models/Qwen3_30B_A3B_Thinking_2507_IQ4_NL.py", line 599, in auto_call
+    cql = call(params)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL/models/Qwen3_30B_A3B_Thinking_2507_IQ4_NL.py", line 576, in call
+    model_response = call_einfra(prompt, api_key)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL/models/Qwen3_30B_A3B_Thinking_2507_IQ4_NL.py", line 213, in call_einfra
+    resp = requests.post("http://localhost:8070/v1/chat/completions", headers=headers, json=payload, timeout=360)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL/venv/lib64/python3.13/site-packages/requests/api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL/venv/lib64/python3.13/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL/venv/lib64/python3.13/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL/venv/lib64/python3.13/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL/venv/lib64/python3.13/site-packages/requests/adapters.py", line 690, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPConnectionPool(host='localhost', port=8070): Read timed out. (read timeout=360)
+'Nom dans une phrase qui contient un verbe au futur\tpreloaded/frtenten22_fl4\t[tag="N.*"] within (<s/> containing [tag="V..F.*"])\n'
+On line 1
+[tag="N.*"] within <s/> containing [tag="V.*F.*"]
+'Nom dans une phrase qui ne contient pas un verbe au futur\tpreloaded/frtenten22_fl4\t[tag="N.*"] within (<s/> !containing [tag="V..F.*"])\n'
+On line 2
+[tag="N.*"] within <s/> !containing [tag="V.M.F.*"]
+'Documents au sujet "science"\tpreloaded/frtenten22_fl4\t<doc topic="science" />\n'
+On line 3
+<doc/> containing [lemma="science"]
+'Mots avec accent aigu\tpreloaded/frtenten22_fl4\t[word=".*[é].*"]\n'
+On line 4
+[word=".*[éÉ].*"]
+'Mots avec cédille\tpreloaded/frtenten22_fl4\t[word=".*[ç].*"]\n'
+On line 5
+[word=".*ç.*"]
+'Mots avec tréma\tpreloaded/frtenten22_fl4\t[word=".*[ëïü].*"]\n'
+On line 6
+[word=".*[ëïü].*"]
+'Déterminants pluriels\tpreloaded/frtenten22_fl4\t[tag="D...P.*"]\n'
+On line 7
+[tag="D.*.P.*"]
+'Déterminants singuliers\tpreloaded/frtenten22_fl4\t[tag="D...S.*"]\n'
+On line 8
+[tag="D.*S"]
+'Pronoms à l\'accusatif ou datif\tpreloaded/frtenten22_fl4\t[tag="P....A.*|P....D.*"]\n'
+On line 9
+[tag="P.*A"] | [tag="P.*D"]
+'Au moins deux points d\'exclamation\tpreloaded/frtenten22_fl4\t[tag="Fa.*"]{2,}\n'
+On line 10
+[tag="Fat"]{2,} within <s/>
+'Au moins deux points d\'interrogation\tpreloaded/frtenten22_fl4\t[tag="Fi.*"]{2,}\n'
+On line 11
+<s/> containing [word="?"] [ ]{0,} [word="?"]
+'Phrases commençant par "Le"\tpreloaded/frtenten22_fl4\t<s> [word="Le"]\n'
+On line 12
+<s> [word="Le"]
+'Token à la position 100\tpreloaded/frtenten22_fl4\t[#100]\n'
+On line 13
+[word=".*"]
+'Token à la position 1\tpreloaded/frtenten22_fl4\t[#1]\n'
+On line 14
+<s> [word=".*"]
+'Articles définis ou indéfinis\tpreloaded/frtenten22_fl4\t[tag="D[AI].*"]\n'
+On line 15
+[tag="D.A.*"] | [tag="D.I.*"]
+'Deux adjectifs suivis d\'un nom. La fréquence du premier adjectif est supérieure à 100k.\tpreloaded/frtenten22_fl4\t1:[tag="A.*"] [tag="A.*"] [tag="N.*"] & f(1.lemma) > 100000\n'
+On line 16
+1:[tag="A.*"] 2:[tag="A.*"] 3:[tag="N.*"] & f(1.lemma) > 100000
+'Répétition du lemme sur deux tokens\tpreloaded/frtenten22_fl4\t1:[] 2:[] & 1.lemma = 2.lemma\n'
+On line 17
+1:[] 2:[] & 1.lemma = 2.lemma
+'Nombres supérieurs à 100\tpreloaded/frtenten22_fl4\t[tag="Z.*" & word>="101"]\n'
+On line 18
+[tag="Z.*"] & [word="10[1-9]|1[1-9][0-9]|[2-9][0-9]{2}|[1-9][0-9]{3,}"]
+'Heures au format HH:MM\tpreloaded/frtenten22_fl4\t([word="[1-2]?[0-9]:[0-5][0-9]"]|[word="[1-2]?[0-9]"][word=":"][word="[0-5][0-9]"])\n'
+On line 19
+[word="\\d{2}:\\d{2}"]
+'Adresses e-mail\tpreloaded/frtenten22_fl4\t[word=".+@.+\\..*"]\n'
+On line 20
+[word=".*@.*\\..*"]
+'Préposition + nom propre\tpreloaded/frtenten22_fl4\t[tag="SP.*"][tag="NP.*"]\n'
+On line 21
+[tag="S.P.*"] [tag="N.P.*"]
+'Verbe + "se"\tpreloaded/frtenten22_fl4\t[tag="V.*"][lemma="se"]\n'
+On line 22
+[tag="V.*"] [word="se"]
+'Det + nombre + nom\tpreloaded/frtenten22_fl4\t[tag="D.*"][tag="Z.*"][tag="N.*"]\n'
+On line 23
+[tag="D.*"] [word="nombre"] [word="nom"]
+'Objets pronominaux de "parler-v"\tpreloaded/frtenten22_fl4\t[ws("parler-v",".*pronominal objects of.*",".*")]\n'
+On line 24
+[ws("parler-v", ".*object.*", ".*") & tag="P.*"]
+'marché-n modifié par financier\tpreloaded/frtenten22_fl4\t[ws("marché-n",".*modifiers of.*","financier-j")]\n'
+On line 25
+[ws("marché-n", "modifiers of \"%w\"", "financier-j")]
+'« école-n » sujet de « ouvrir-v »\tpreloaded/frtenten22_fl4\t[ws("ouvrir-v",".*subjects of.*","école-n")]\n'
+On line 26
+[ws("école-n", "subjects of \"%w\"", "ouvrir-v")]
+'Thesaurus "ville-n" avant "banlieue"\tpreloaded/frtenten22_fl4\t~"ville-n" [lemma="banlieue"] within <s/>\n'
+On line 27
+~"ville-n" [word="banlieue"]
+'Thesaurus 20 « voiture-n »\tpreloaded/frtenten22_fl4\t~20"voiture-n"\n'
+On line 28
+~20"voiture-n"
+'Mots similaires "argent-n" après "investir"\tpreloaded/frtenten22_fl4\t[lemma="investir"] []{0,2} ~"argent-n" within <s/>\n'
+On line 29
+[lemma="investir"] [] ~"argent-n"
+'« boire » et « eau » avec deux adjectifs entre\tpreloaded/frtenten22_fl4\t[lemma="boire"] [tag="A.*"]{2} [lemma="eau"] within <s/>\n'
+On line 30
+[lemma="boire"] [tag="A.*"] [tag="A.*"] [lemma="eau"]
+'« parce que » dans la même phrase\tpreloaded/frtenten22_fl4\t[word="parce"][word="que"] within <s/>\n'
+On line 31
+[word="parce"][word="que"] within <s/>
+'Documents gathered en janvier\tpreloaded/frtenten22_fl4\t<doc crawl_date="....-01-.*" />\n'
+On line 32
+<doc date=".*janvier.*">
+'Phrases commençant par "Il y a"\tpreloaded/frtenten22_fl4\t<s> [word="Il"] [word="y"] [word="a"]\n'
+On line 33
+[word="Il"][word="y"][word="a"]
+'Questions commençant par « Pourquoi »\tpreloaded/frtenten22_fl4\t<s> [word="Pourquoi"]\n'
+On line 34
+<s> [word="Pourquoi"]
+'Mots avec un trait d\'union\tpreloaded/frtenten22_fl4\t[word=".*-.*"]\n'
+On line 35
+[word=".*-.*"]
+'Composés avec au moins 3 traits d\'union\tpreloaded/frtenten22_fl4\t[word=".+(-.+){2,}"]\n'
+On line 36
+[word=".*-.*-.*-.*"]
+'« Internet » insensible à la casse\tpreloaded/frtenten22_fl4\t[lc="internet"]\n'
+On line 37
+[lc="internet"]
+'Passif avec « être » + participe\tpreloaded/frtenten22_fl4\t[lemma="être"] []{0,2} [tag="V.P.*"] within <s/>\n'
+On line 38
+[lemma="être"] [tag="V.P.S.*"]
+'Verbe « parler » suivi de « de »\tpreloaded/frtenten22_fl4\t[lemma="parler" & tag="V.*"] []{0,2} [lemma="de" & tag="SP"]\n'
+On line 39
+[lemma="parler"] [lemma="de"]
+'Verbe + pronom objet « le/la/les/l\' »\tpreloaded/frtenten22_fl4\t[tag="V.*"] [tag="DA.*"]\n'
+On line 40
+[tag="V.*"] [word="le|la|les|l'"]
+'Séquence pronom réfléchi + verbe\tpreloaded/frtenten22_fl4\t[tag="PP.*"] [tag="V.*"]\n'
+On line 41
+[tag="P.X.*"] [tag="V.*"]
+'Phrase contenant "si" et "alors" »\tpreloaded/frtenten22_fl4\t(<s/> containing [word="si"]) containing [word="alors"]\n'
+On line 42
+<s/> containing [word="si"] and containing [word="alors"]
+'Questions avec « est-ce que »\tpreloaded/frtenten22_fl4\t[word="est-ce"] [word="que"] | [word="est"] [word="ce"] [word="que"]\n'
+On line 43
+[word="Est"][word="ce"][word="que"]
+'Phrases contenant au moins deux verbes\tpreloaded/frtenten22_fl4\t<s/> containing ([tag="V.*"] []* [tag="V.*"])\n'
+On line 44
+[tag="V.*"] [ ]* [tag="V.*"] within <s/>
+'Subordonnée introduite par "que"\tpreloaded/frtenten22_fl4\t[word="que"] within <s/>\n'
+On line 45
+[word="que" & tag="C.S.*"]
+'« à » suivi d\'un infinitif\tpreloaded/frtenten22_fl4\t[word="à|a"] []{0,2} [tag="V.N.*"]\n'
+On line 46
+[word="à"] [tag="V.*.N.*"]
+'Nombres ordinaux\tpreloaded/frtenten22_fl4\t[word="\\d+(er|e)"]\n'
+On line 47
+[tag="A.O.*"]
+'Montants en euros\tpreloaded/frtenten22_fl4\t[word="\\d+(,\\d+)?"][word="€"]\n'
+On line 48
+[lemma="montant"] [lemma="en"] [lemma="euro"]
+'Titres ne contenant pas aucune une majuscule\tpreloaded/frtenten22_fl4\t<doc title!=".*[A-ZÀ-ÖØ-Ý].*" />\n'
+On line 49
+[doc.title="[^A-Z]*"]
+'Paragraphes qui commencent par un trait d’union\tpreloaded/frtenten22_fl4\t<p> [word="-|–|—"]\n'
+On line 50
+<p> [word="-"]
+'Parenthèses sans nom à l\'intérieur\tpreloaded/frtenten22_fl4\t([word=="("] [word!="\\)"]+ [word==")"] !containing [tag="N.*"]) within <s/>\n'
+On line 51
+[word="("][word=")"]
+'Comparatif aves "plus" et "que"\tpreloaded/frtenten22_fl4\t[word="plus"] []{0,5} [word="que"] within <s/>\n'
+On line 52
+[word="plus"] [tag="A.*"] [word="que"]
+'Intensif "si ... que"\tpreloaded/frtenten22_fl4\t[word="si"] []{0,5} [word="que"] within <s/>\n'
+On line 53
+[word="si"] [ ]* [word="que"]
+'Coordination "ni ... ni"\tpreloaded/frtenten22_fl4\t[word="ni"] []{0,3} [word="ni"] within <s/>\n'
+On line 54
+[word="ni"] [ ]{0,} [word="ni"]
+'Coordination "soit ... soit"\tpreloaded/frtenten22_fl4\t[word="soit"] []{0,3} [word="soit"] within <s/>\n'
+On line 55
+[word="soit"] [ ]{1,} [word="soit"]
+'Coordination "ou ... ou"\tpreloaded/frtenten22_fl4\t[word="ou"] []{0,3} [word="ou"] within <s/>\n'
+On line 56
+[word=".*"] [word="ou"] [word=".*"]
+'Mot avec apostrophe\tpreloaded/frtenten22_fl4\t[word=".*\'.*"]\n'
+On line 57
+[word=".*'"]
+'Un mot avec une apostrophe qui comporte plus de deux lettres\tpreloaded/frtenten22_fl4\t[word=".*\'.*" & word=".{2,}"]\n'
+On line 58
+Traceback (most recent call last):
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL/venv/lib64/python3.13/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL/venv/lib64/python3.13/site-packages/urllib3/connection.py", line 565, in getresponse
+    httplib_response = super().getresponse()
+  File "/usr/lib64/python3.13/http/client.py", line 1430, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "/usr/lib64/python3.13/http/client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib64/python3.13/http/client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.13/socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+TimeoutError: timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL/venv/lib64/python3.13/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL/venv/lib64/python3.13/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL/venv/lib64/python3.13/site-packages/urllib3/util/retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL/venv/lib64/python3.13/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL/venv/lib64/python3.13/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL/venv/lib64/python3.13/site-packages/urllib3/connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL/venv/lib64/python3.13/site-packages/urllib3/connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+        self, url, f"Read timed out. (read timeout={timeout_value})"
+    ) from err
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='localhost', port=8070): Read timed out. (read timeout=360)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL/run_model.py", line 39, in <module>
+    translation = model.auto_call(params)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL/models/Qwen3_30B_A3B_Thinking_2507_IQ4_NL.py", line 599, in auto_call
+    cql = call(params)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL/models/Qwen3_30B_A3B_Thinking_2507_IQ4_NL.py", line 576, in call
+    model_response = call_einfra(prompt, api_key)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL/models/Qwen3_30B_A3B_Thinking_2507_IQ4_NL.py", line 213, in call_einfra
+    resp = requests.post("http://localhost:8070/v1/chat/completions", headers=headers, json=payload, timeout=360)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL/venv/lib64/python3.13/site-packages/requests/api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL/venv/lib64/python3.13/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL/venv/lib64/python3.13/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL/venv/lib64/python3.13/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL/venv/lib64/python3.13/site-packages/requests/adapters.py", line 690, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPConnectionPool(host='localhost', port=8070): Read timed out. (read timeout=360)
+'Un mot avec une apostrophe qui comporte plus de deux lettres\tpreloaded/frtenten22_fl4\t[word=".*\'.*" & word=".{2,}"]\n'
+On line 1
+[word=".*'"]
+'« que » suivi d\'un verbe au subjonctif\tpreloaded/frtenten22_fl4\t[word="que"] []{0,2} [tag="V..S.*"]\n'
+On line 2
+[tag="C.S.*"] [tag="V..S.*"]
+'« si » suivi d\'un verbe à l\'imparfait\tpreloaded/frtenten22_fl4\t[word="si"] []{0,2} [tag="V..I.*"]\n'
+On line 3
+[word="si"] [tag="V..I.*"]
+'Verbe "devoir" à toutes formes\tpreloaded/frtenten22_fl4\t[lemma="devoir"]\n'
+On line 4
+[lemma="devoir"]
+'Verbe "pouvoir"\tpreloaded/frtenten22_fl4\t[lemma="pouvoir"]\n'
+On line 5
+[lemma="pouvoir"]
+'Adverbes en -ment\tpreloaded/frtenten22_fl4\t[tag="R.*" & lemma=".*ment"]\n'
+On line 6
+[tag="R.*" & word=".*ment$"]
+'Noms en -tion\tpreloaded/frtenten22_fl4\t[tag="N.*" & lemma=".*tion"]\n'
+On line 7
+[tag="N.*" & lemma=".*tion"]
+'Adjectifs féminins en -euse\tpreloaded/frtenten22_fl4\t[tag="A..F.*" & lemma=".*euse"]\n'
+On line 8
+[lemma=".*euse"] & [tag="A.*F.*"]
+'Phrases contenant un deux-points\tpreloaded/frtenten22_fl4\t<s/> containing [tag="Fd"]\n'
+On line 9
+[tag="Fd"]
+'Phrases commençant par une majuscule\tpreloaded/frtenten22_fl4\t<s> [word="[A-ZÀ-ÖØ-Ý].*"]\n'
+On line 10
+[word="[A-Z].*"]
+'Mots lexicographiquement >= m\tpreloaded/frtenten22_fl4\t[word>="m"]\n'
+On line 11
+[lemma >= "m"]
+'Noms propres de personne\tpreloaded/frtenten22_fl4\t[tag="NP..S.*"]\n'
+On line 12
+[tag="N.P.*.S.*"]
+'Noms propres de lieu\tpreloaded/frtenten22_fl4\t[tag="NP..G.*"]\n'
+On line 13
+[tag="N.P..G.*"]
+'Noms propres d\'organisation\tpreloaded/frtenten22_fl4\t[tag="NP..O.*"]\n'
+On line 14
+[tag="N.P..O.*"]
+'Adjectifs superlatifs\tpreloaded/frtenten22_fl4\t[tag="A.S.*"]\n'
+On line 15
+[tag="A..S.*"]
+'Adjectifs évaluatifs\tpreloaded/frtenten22_fl4\t[tag="A.V.*"]\n'
+On line 16
+[tag="A..V.*"]
+'Participes passés masculins singuliers\tpreloaded/frtenten22_fl4\t[tag="V.PS.SM.*"]\n'
+On line 17
+[tag="VMPSS.SM"]
+'Tous les lempos terminés par -n dont la fréquence globale dépasse 1000.\tpreloaded/ententen21_tt31\t1:[lempos_lc=".*-n"] & f(1.lempos_lc) > 1000\n'
+On line 18
+1:[lempos=".*-n"] & f(1.lempos) > 1000
+'Une paire de nombres où le second nombre est identique au premier.\tpreloaded/ententen21_tt31\t1:[tag="CD"] 2:[tag="CD"] & 2.word = 1.word\n'
+On line 19
+1:[word="\d+"] 2:[word="\d+"] & 1.word = 2.word
+'Même mot répété aux même sentence, mais avec deux tagging différentes\tpreloaded/ententen21_tt31\t(1:[] 2:[] within <s/>) & 1.word = 2.word & 1.tag != 2.tag\n'
+On line 20
+1:[] 2:[] & 1.word = 2.word & 1.tag != 2.tag within <s/>
+'Mot répété immédiatement dans la même phrase.\tpreloaded/ententen21_tt31\t1:[] 2:[] within <s/> & 1.word = 2.word\n'
+On line 21
+1:[] 2:[] & 1.word = 2.word within <s/>
+'Expressions de type day by day, step by step - même nom de part et d’autre de "by"\tpreloaded/ententen21_tt31\t1:[tag="N.*"] [word="by"] 2:[tag="N.*"] & 1.lemma_lc = 2.lemma_lc\n'
+On line 22
+1:[lemma=".*"] [tag="IN" & lemma="by"] 2:[lemma=".*"] & 1.lemma = 2.lemma
+'Phrases contenant l’expression climate change: le mot-clé climate suivi de change à 0 ou 1 mot de distance.\tpreloaded/ententen21_tt31\t[lemma_lc="climate"] []{0,1} [lemma_lc="change"] within <s/>\n'
+On line 23
+[lemma="climate"] [ ]{0,1} [lemma="change"]
+'Phrases interrogatives commençant par un mot en wh- adverbial. Utilise tag.\tpreloaded/ententen21_tt31\t<s> [tag="WRB"]\n'
+On line 24
+<s> [tag="WRB"]
+'Constructions du type \'not only ... but also ...\' dans la même phrase.\tpreloaded/ententen21_tt31\t[lc="not"] [lc="only"] []* [lc="but"] [lc="also"] within <s/>\n'
+On line 25
+[lc="not"] [lc="only"] []{0,10} [lc="but"] [lc="also"] within <s/>
+'Négation de type "no" + NOUN (ex. no evidence, no problem, no answers).\tpreloaded/ententen21_tt31\t[lc="no" & tag="DT"] [tag="N.*"]\n'
+On line 26
+[word="no"] [tag="N.*"]
+'Phrases qui ne contiennent aucun nom propre\tpreloaded/ententen21_tt31\t<s/> !containing [tag="NP.*"]\n'
+On line 27
+<s/> !containing [tag="NP.*"]

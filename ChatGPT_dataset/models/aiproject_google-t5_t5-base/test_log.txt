@@ -1,0 +1,17 @@
+Working on: models/google-t5_t5-base/model_train_data_20_final.pt | 256/4280 | AVG Bleu: 0.7969703080481602 | Time: 10 | ETA: 177 sec | 
+Working on: models/google-t5_t5-base/model_train_data_20_final.pt | 512/4280 | AVG Bleu: 0.7922450696132192 | Time: 21 | ETA: 199 sec | 
+Working on: models/google-t5_t5-base/model_train_data_20_final.pt | 768/4280 | AVG Bleu: 0.8000603111746449 | Time: 38 | ETA: 258 sec | 
+Working on: models/google-t5_t5-base/model_train_data_20_final.pt | 1024/4280 | AVG Bleu: 0.807589158153496 | Time: 58 | ETA: 318 sec | 
+Working on: models/google-t5_t5-base/model_train_data_20_final.pt | 1280/4280 | AVG Bleu: 0.7886442773303839 | Time: 85 | ETA: 405 sec | 
+Working on: models/google-t5_t5-base/model_train_data_20_final.pt | 1536/4280 | AVG Bleu: 0.7846809224010675 | Time: 108 | ETA: 469 sec | 
+Working on: models/google-t5_t5-base/model_train_data_20_final.pt | 1792/4280 | AVG Bleu: 0.7936485577912594 | Time: 143 | ETA: 587 sec | 
+Working on: models/google-t5_t5-base/model_train_data_20_final.pt | 2048/4280 | AVG Bleu: 0.7858010789460965 | Time: 170 | ETA: 681 sec | 
+Working on: models/google-t5_t5-base/model_train_data_20_final.pt | 2304/4280 | AVG Bleu: 0.7773022039273365 | Time: 198 | ETA: 796 sec | 
+Working on: models/google-t5_t5-base/model_train_data_20_final.pt | 2560/4280 | AVG Bleu: 0.7757389993748249 | Time: 213 | ETA: 886 sec | 
+Working on: models/google-t5_t5-base/model_train_data_20_final.pt | 2816/4280 | AVG Bleu: 0.7703560282247245 | Time: 239 | ETA: 1061 sec | 
+Working on: models/google-t5_t5-base/model_train_data_20_final.pt | 3072/4280 | AVG Bleu: 0.7726844523811979 | Time: 252 | ETA: 1243 sec | 
+Working on: models/google-t5_t5-base/model_train_data_20_final.pt | 3328/4280 | AVG Bleu: 0.7714866475229347 | Time: 287 | ETA: 1659 sec | 
+Working on: models/google-t5_t5-base/model_train_data_20_final.pt | 3584/4280 | AVG Bleu: 0.7739973116411683 | Time: 313 | ETA: 2298 sec | 
+Working on: models/google-t5_t5-base/model_train_data_20_final.pt | 3840/4280 | AVG Bleu: 0.7778517398652693 | Time: 335 | ETA: 3632 sec | 
+Working on: models/google-t5_t5-base/model_train_data_20_final.pt | 4096/4280 | AVG Bleu: 0.7750518667842591 | Time: 358 | ETA: 8701 sec | 
+Working on: models/google-t5_t5-base/model_train_data_20_final.pt | 4280/4280 | AVG Bleu: 0.7764824914296823 | Time: 371 | ETA: 0 sec | 

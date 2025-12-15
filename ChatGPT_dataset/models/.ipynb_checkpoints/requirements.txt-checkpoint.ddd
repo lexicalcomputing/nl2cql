@@ -1,0 +1,13 @@
+accelerate
+bitsandbytes
+datasets
+jupyter
+numpy
+pandas
+peft
+rouge_score
+sentencepiece
+torch
+transformers
+trl
+lark

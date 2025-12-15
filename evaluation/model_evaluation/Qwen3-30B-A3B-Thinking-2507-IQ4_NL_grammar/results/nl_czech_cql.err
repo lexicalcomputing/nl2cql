@@ -1,0 +1,1960 @@
+'Najdi lemmata končící na -nost\tpreloaded/cstenten23_mj2\t[lemma=".*nost"]\n'
+On line 1
+[lemma=".*nost"]
+'Najdi přesně středník\tpreloaded/cstenten23_mj2\t[word==";"]\n'
+On line 2
+[word="středník"]
+'Pětipísmenná malá slova\tpreloaded/cstenten23_mj2\t[word="[[:lower:]]{5}"]\n'
+On line 3
+[lc="....."]
+'Slova začínající na pře-\tpreloaded/cstenten23_mj2\t[lc="pře.*"]\n'
+On line 4
+[word="pře.*"]
+'Slova končící na -ový nebo -ová\tpreloaded/cstenten23_mj2\t[word=".*ov[ýá]"]\n'
+On line 5
+[lemma=".*ový|.*ová"]
+'Lemmata začínající mikro- a končící -skop\tpreloaded/cstenten23_mj2\t[lemma="mikro.*skop"]\n'
+On line 6
+[lemma="mikro.*skop"]
+'Slovo začínající s velkým písmenem uvnitř věty, ne však na začátku\tpreloaded/cstenten23_mj2\t[][word="[[:upper:]].+"] within <s/>\n'
+On line 7
+[word=".*"] [word="[A-Z].*"] within <s/>
+'Tokeny s pomlčkou\tpreloaded/cstenten23_mj2\t[word=".*-.*"]\n'
+On line 8
+[word=".*-.*"]
+'Tokeny složené jen z číslic\tpreloaded/cstenten23_mj2\t[word="\\d+"]\n'
+On line 9
+[word="[0-9]+"]
+'Tokeny složené jen z interpunkce s více jak jedním znakem\tpreloaded/cstenten23_mj2\t[word="[[:punct:]]{2,}"]\n'
+On line 10
+[word="[^A-Za-z0-9]{2,}"]
+'Vlastní jména\tpreloaded/cstenten23_mj2\t[tag="k1.*" & word="[[:upper:]].*"]\n'
+On line 11
+[tag="k1.*" & word="[A-Z].*"]
+'Zájmena tázací/relativní\tpreloaded/cstenten23_mj2\t[tag="k3.*" & word="kdo|co|který|jenž"]\n'
+On line 12
+[tag="k3x[QR].*"]
+'Příslovce zakončená na -ě\tpreloaded/cstenten23_mj2\t[word=".*ě" & tag="k6.*"]\n'
+On line 13
+[tag="k6.*"] [lemma=".*ě"]
+'Přídavná jména v 1. stupni\tpreloaded/cstenten23_mj2\t[tag="k2.*d1.*"]\n'
+On line 14
+[tag="k7.*d1"]
+'Přídavná jména v 2. stupni\tpreloaded/cstenten23_mj2\t[tag="k2.*d2.*"]\n'
+On line 15
+Traceback (most recent call last):
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/run_model.py", line 39, in <module>
+    translation = model.auto_call(params)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/models/Qwen3_30B_A3B_Thinking_2507_IQ4_NL.py", line 596, in auto_call
+    cql = call(params)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/models/Qwen3_30B_A3B_Thinking_2507_IQ4_NL.py", line 573, in call
+    model_response = call_einfra(prompt, api_key, use_grammar=True, corpname=params["corpname"])
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/models/Qwen3_30B_A3B_Thinking_2507_IQ4_NL.py", line 216, in call_einfra
+    resp = requests.post("http://localhost:8060/v1/chat/completions", headers=headers, json=payload, timeout=1200)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/requests/api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/connection.py", line 571, in getresponse
+    httplib_response = super().getresponse()
+  File "/usr/lib64/python3.13/http/client.py", line 1430, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "/usr/lib64/python3.13/http/client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib64/python3.13/http/client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.13/socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+KeyboardInterrupt
+'Přídavná jména v 2. stupni\tpreloaded/cstenten23_mj2\t[tag="k2.*d2.*"]\n'
+On line 1
+[tag="k2.*d2"]
+'Přídavná jména v 3. stupni\tpreloaded/cstenten23_mj2\t[tag="k2.*d3.*"]\n'
+On line 2
+[tag="k2.*d3.*"]
+'Spojka "a"\tpreloaded/cstenten23_mj2\t[word=="a" & tag="k8.*"]\n'
+On line 3
+[word="a" & tag="k8.*"]
+'Slova ten, tento, tamhleten\tpreloaded/cstenten23_mj2\t[word="ten|tento|tamhleten"]\n'
+On line 4
+[word="ten"] | [word="tento"] | [word="tamhleten"]
+'Pluralia v -i\tpreloaded/cstenten23_mj2\t[word=".*i" & tag="k1.*nP.*"]\n'
+On line 5
+[tag="k1.*" & word=".*i$"]
+'Podstatná jména v 6. pádě\tpreloaded/cstenten23_mj2\t[tag="k1.*c6.*"]\n'
+On line 6
+[tag="k1.*c6.*"]
+'Podstatná jména v 7. pádě\tpreloaded/cstenten23_mj2\t[tag="k1.*c7.*"]\n'
+On line 7
+[tag="k1.*c7.*"]
+'Tokeny s apostrofem\tpreloaded/cstenten23_mj2\t[word=".*\'.*"]\n'
+On line 8
+[word=".*'.*"]
+'Měnové symboly Kč/€/$\tpreloaded/cstenten23_mj2\t[word="Kč|€|\\$"]\n'
+On line 9
+[word=="Kč"] | [word=="€"] | [word=="$"]
+'Domény končící na .cz\tpreloaded/cstenten23_mj2\t[word=".*\\.cz"]\n'
+On line 10
+Traceback (most recent call last):
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/connection.py", line 571, in getresponse
+    httplib_response = super().getresponse()
+  File "/usr/lib64/python3.13/http/client.py", line 1430, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "/usr/lib64/python3.13/http/client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib64/python3.13/http/client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.13/socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+TimeoutError: timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/util/retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+        self, url, f"Read timed out. (read timeout={timeout_value})"
+    ) from err
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='localhost', port=8060): Read timed out. (read timeout=1200)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/run_model.py", line 39, in <module>
+    translation = model.auto_call(params)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/models/Qwen3_30B_A3B_Thinking_2507_IQ4_NL.py", line 596, in auto_call
+    cql = call(params)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/models/Qwen3_30B_A3B_Thinking_2507_IQ4_NL.py", line 573, in call
+    model_response = call_einfra(prompt, api_key, use_grammar=True, corpname=params["corpname"])
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/models/Qwen3_30B_A3B_Thinking_2507_IQ4_NL.py", line 216, in call_einfra
+    resp = requests.post("http://localhost:8060/v1/chat/completions", headers=headers, json=payload, timeout=1200)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/requests/api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/requests/adapters.py", line 690, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPConnectionPool(host='localhost', port=8060): Read timed out. (read timeout=1200)
+'Domény končící na .cz\tpreloaded/cstenten23_mj2\t[word=".*\\.cz"]\n'
+On line 1
+Traceback (most recent call last):
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/connection.py", line 571, in getresponse
+    httplib_response = super().getresponse()
+  File "/usr/lib64/python3.13/http/client.py", line 1430, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "/usr/lib64/python3.13/http/client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib64/python3.13/http/client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.13/socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+TimeoutError: timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/util/retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+        self, url, f"Read timed out. (read timeout={timeout_value})"
+    ) from err
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='localhost', port=8060): Read timed out. (read timeout=1200)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/run_model.py", line 39, in <module>
+    translation = model.auto_call(params)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/models/Qwen3_30B_A3B_Thinking_2507_IQ4_NL.py", line 596, in auto_call
+    cql = call(params)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/models/Qwen3_30B_A3B_Thinking_2507_IQ4_NL.py", line 573, in call
+    model_response = call_einfra(prompt, api_key, use_grammar=True, corpname=params["corpname"])
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/models/Qwen3_30B_A3B_Thinking_2507_IQ4_NL.py", line 216, in call_einfra
+    resp = requests.post("http://localhost:8060/v1/chat/completions", headers=headers, json=payload, timeout=1200)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/requests/api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/requests/adapters.py", line 690, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPConnectionPool(host='localhost', port=8060): Read timed out. (read timeout=1200)
+'Domény končící na .cz\tpreloaded/cstenten23_mj2\t[word=".*\\.cz"]\n'
+On line 1
+[!tag="k1.*"] & [!tag="k5.*"] & [tag="k3.*"]
+'Hex barvy\tpreloaded/cstenten23_mj2\t[word="#([0-9A-Fa-f]{3}|[0-9A-Fa-f]{6})"]\n'
+On line 2
+[word="Hex"][word="barvy"]
+'Uživatelská jména začínající @\tpreloaded/cstenten23_mj2\t[word="@\\w+"]\n'
+On line 3
+[word="^@.*"]
+'Hashtagy\tpreloaded/cstenten23_mj2\t[word="#\\w+"]\n'
+On line 4
+[word="#.*"]
+'URL končící .pdf\tpreloaded/cstenten23_mj2\t[word="https?://.+\\.pdf"]\n'
+On line 5
+<doc url=".*\\.pdf$">
+'Symbol © nebo ® jako c nebo r v závorkách\tpreloaded/cstenten23_mj2\t[word=="("][word="[cCrR]"][word==")"]\n'
+On line 6
+([word="("][word="©"][word=")"]) | ([word="("][word="®"][word=")"])
+'Římské číslice I–X\tpreloaded/cstenten23_mj2\t[word="I|II|III|IV|V|VI|VII|VIII|IX|X"]\n'
+On line 7
+[word="I|II|III|IV|V|VI|VII|VIII|IX|X"]
+'Čísla s desetinnou tečkou\tpreloaded/cstenten23_mj2\t[word="\\d+\\.\\d+"]\n'
+On line 8
+[word="\\d+\\.\\d+"]
+'Procenta s číslem\tpreloaded/cstenten23_mj2\t[word="\\d+(\\.\\d+)?%"]\n'
+On line 9
+[word="procenta"][word="s"][word="číslem"]
+'Název měsíce následovaný rokem\tpreloaded/cstenten23_mj2\t[word="Leden|Únor|Březen|Duben|Květen|Červen|Červenec|Srpen|Září|Říjen|Listopad|Prosinec"][word="\\d{4}"]\n'
+On line 10
+[lemma="leden" | lemma="únor" | lemma="březen" | lemma="duben" | lemma="květen" | lemma="červen" | lemma="červenec" | lemma="srpen" | lemma="září" | lemma="říjen" | lemma="listopad" | lemma="prosinec"] [word="\\d{4}"]
+'Den v týdnu následovaný čárkou\tpreloaded/cstenten23_mj2\t[word="Pondělí|Úterý|Středa|Čtvrtek|Pátek|Sobota|Neděle"][word==","]\n'
+On line 11
+[lemma="pondělí|úterý|středa|čtvrtek|pátek|sobota|neděle"] [word=","]
+'Čas ve formátu HH:MM nebo HH.MM.\tpreloaded/cstenten23_mj2\t[word="[012]?[0-9][:\\.][0-5][0-9]"]\n'
+On line 12
+[word="\d{2}[:.]\d{2}"]
+'Věta začínající uvozovkou\tpreloaded/cstenten23_mj2\t<s> [word="\\"|„|‚|“|’|\'"]\n'
+On line 13
+<s> [word="„"]
+'Věta končící vykřičníkem\tpreloaded/cstenten23_mj2\t[word=="!"] </s>\n'
+On line 14
+[word=="!"] within <s/>
+'Chci všechny výskyty otevřené závorky\tpreloaded/cstenten23_mj2\t[word=="("]\n'
+On line 15
+[word="\("]
+'Výskyty zavírací závorky\tpreloaded/cstenten23_mj2\t[word==")"]\n'
+On line 16
+[word==")"]
+'Obsah v závorkách do 20 tokenů\tpreloaded/cstenten23_mj2\t[word=="("][]{0,20}[word==")"] within <s/>\n'
+On line 17
+[word="("] [ ]{0,20} [word=")"]
+'Úsek v uvozovkách do 12 tokenů\tpreloaded/cstenten23_mj2\t[word="\\"|„|‚|“|’|\'"][word!="\\"|„|‚|“|’|\'"]{0,12}[word="\\"|„|‚|“|’|\'"] within <s/>\n'
+On line 18
+[tag="kI.x\\\""] [ ]{0,12} [tag="kI.x\\\""]
+'"Pan/Paní" před jménem\tpreloaded/cstenten23_mj2\t[word="Pan|Paní"][tag="k1.*" & word="[[:upper:]].*"]\n'
+On line 19
+[lemma="pan|pani"] [tag="k1.*"]
+'Zájmeno + být\tpreloaded/cstenten23_mj2\t[tag="k3.*"][lemma="být"]\n'
+On line 20
+[tag="k3.*"] [lemma="být"]
+'Podst. jméno s jedním předcházejícím adj.\tpreloaded/cstenten23_mj2\t[tag="k2.*"][tag="k1.*"]\n'
+On line 21
+[tag="k2.*"] [tag="k1.*"]
+'Podst. jméno se dvěma adjektivy před\tpreloaded/cstenten23_mj2\t[tag="k2.*"]{2}[tag="k1.*"]\n'
+On line 22
+[tag="k2.*"] [tag="k2.*"] [tag="k1.*"]
+'Podst. jméno s 0-3 adjektivy před\tpreloaded/cstenten23_mj2\t[tag="k2.*"]{0,3}[tag="k1.*"]\n'
+On line 23
+[tag="k2.*"]{0,3}[tag="k1.*"]
+'Příslovce těsně před adjektivem\tpreloaded/cstenten23_mj2\t[tag="k6.*"][tag="k2.*"]\n'
+On line 24
+[tag="k6.*"] [tag="k2.*"]
+'Adjektivum těsně před slovesem\tpreloaded/cstenten23_mj2\t[tag="k2.*"][tag="k5.*"]\n'
+On line 25
+[tag="k2.*"][tag="k5.*"]
+'Sloveso těsně před podst. jménem\tpreloaded/cstenten23_mj2\t[tag="k5.*"][tag="k1.*"]\n'
+On line 26
+[tag="k5.*"][tag="k1.*"]
+'Zájméno + adjektivum + podstatné jméno\tpreloaded/cstenten23_mj2\t[tag="k3.*"][tag="k2.*"][tag="k1.*"]\n'
+On line 27
+[tag="k3.*"] [tag="k2.*"] [tag="k1.*"]
+'Dvě vlastní jména za sebou\tpreloaded/cstenten23_mj2\t[tag="k1.*" & word="[[:upper:]].*"]{2}\n'
+On line 28
+[word="^[A-Z].*"][word="^[A-Z].*"]
+'Tři vlastní jména za sebou\tpreloaded/cstenten23_mj2\t[tag="k1.*" & word="[[:upper:]].*"]{3}\n'
+On line 29
+[tag="k1.*"][tag="k1.*"][tag="k1.*"]
+'Tři po sobě jdoucí podst. jména\tpreloaded/cstenten23_mj2\t[tag="k1.*"]{3}\n'
+On line 30
+[tag="k1.*"] [tag="k1.*"] [tag="k1.*"]
+'Sloveso + částice s <= 2 tokeny\tpreloaded/cstenten23_mj2\t[tag="k5.*"][]{0,2}[tag="k9.*"]\n'
+On line 31
+[tag="k5.*"] [ ]{0,2} [tag="k9.*"]
+'Sloveso + příslovce + částice\tpreloaded/cstenten23_mj2\t[tag="k5.*"][tag="k6.*"][tag="k9.*"]\n'
+On line 32
+[tag="k5.*"] [tag="k6.*"] [tag="k7.*"]
+'Modál + token + infinitiv\tpreloaded/cstenten23_mj2\t[tag="k6.*tD.*"][][tag="k5.*mF.*"]\n'
+On line 33
+[tag="k5.*"] [ ] [tag="k5.*mF.*"]
+'"chtít" + "to" + infinitiv\tpreloaded/cstenten23_mj2\t[lemma="chtít"][lemma="to"][tag="k5.*mF.*"]\n'
+On line 34
+[lemma="chtít"] [word="to"] [tag="k5mF.*"]
+'"potřebovat" + "to" + infinitiv\tpreloaded/cstenten23_mj2\t[lemma="potřebovat"][lemma="to"][tag="k5.*mF.*"]\n'
+On line 35
+[lemma="potřebovat"] [word="to"] [tag="k5mF.*"]
+'"zkusit" + "to" + infinitiv\tpreloaded/cstenten23_mj2\t[lemma="zkusit"][lemma="to"][tag="k5.*mF.*"]\n'
+On line 36
+[lemma="zkusit"] [word="to"] [lemma=".*t"]
+'"začít" + přechodník\tpreloaded/cstenten23_mj2\t[lemma="začít"][tag="k5.*(mS|mD).*"]\n'
+On line 37
+[lemma="začít"][lemma="přechodník"]
+'"přestat" + přechodník\tpreloaded/cstenten23_mj2\t[lemma="přestat"][tag="k5.*(mS|mD).*"]\n'
+On line 38
+[lemma="přestat"][lemma="přechodník"]
+'"být" + "schopen" + infinitiv\tpreloaded/cstenten23_mj2\t[lemma="být"][lemma="schopen"][tag="k5.*mF.*"]\n'
+On line 39
+[lemma="být"][lemma="schopen"][tag="k5.*mF"]
+'"mohl by" + infinitiv\tpreloaded/cstenten23_mj2\t[word=="mohl"][word=="by"][tag="k5.*mF.*"]\n'
+On line 40
+[word="mohl"][word="by"][tag="k5mF.*"]
+'"raději by" + infinitiv\tpreloaded/cstenten23_mj2\t[word=="raději"][word=="by"][tag="k5.*mF.*"]\n'
+On line 41
+[word="raději"][word="by"][tag="k5mF.*"]
+'"nejlépe" + infinitiv\tpreloaded/cstenten23_mj2\t[word=="nejlépe"][tag="k5.*mF.*"]\n'
+On line 42
+[word="nejlépe"][tag="k5.*mF.*"]
+'k2 + k1 + k5\tpreloaded/cstenten23_mj2\t[tag="k2.*"][tag="k1.*"][tag="k5.*"]\n'
+On line 43
+[tag="k(1|2|5).*"]
+'„pokusit se“ + infinitiv\tpreloaded/cstenten23_mj2\t[lemma="pokusit"][lemma="se"][tag="k5.*mF.*"]\n'
+On line 44
+[lemma="pokusit"][lemma="se"][tag="k5.*mF"]
+'„snažit se“ + infinitiv\tpreloaded/cstenten23_mj2\t[lemma="snažit"][lemma="se"][tag="k5.*mF.*"]\n'
+On line 45
+[lemma="snažit"] [lemma="se"] [tag="k5mF.*"]
+'"být" do 1 tokenu od slovesa\tpreloaded/cstenten23_mj2\t(meet [lemma="být"] [tag="k5.*"] -1 1)\n'
+On line 46
+(meet [lemma="být"] [tag="k5.*"] -2 2)
+'Sloveso do 3 tokenů od "riziko"\tpreloaded/cstenten23_mj2\t(meet [tag="k5.*"] [lemma="riziko"] -3 3)\n'
+On line 47
+(meet [lemma="riziko"] [tag="k5.*"] -3 3)
+'Adjektivum do 2 tokenů od "zdát"\tpreloaded/cstenten23_mj2\t(meet [tag="k2.*"] [lemma="zdát"] -2 2)\n'
+On line 48
+(meet [tag="k2.*"] [lemma="zdát"] -2 2)
+'Podstatné jméno do 5 tokenů od "růst"\tpreloaded/cstenten23_mj2\t(meet [tag="k1.*"] [lemma="růst"] -5 5)\n'
+On line 49
+(meet [tag="k1.*"] [lemma="růst"] -5 5)
+'Sloveso nebo přídavné jméno poblíž "být"\tpreloaded/cstenten23_mj2\t(union (meet [tag="k5.*"] [lemma="být"] -3 3) (meet [tag="k2.*"] [lemma="být"] -3 3))\n'
+On line 50
+(meet [tag="k[25].*" & lemma!="být"] [lemma="být"] -3 3)
+'"tak (přídavné jméno) jako" ve větě\tpreloaded/cstenten23_mj2\t[word="tak"][tag="k2.*"][word="jako"] within <s/>\n'
+On line 51
+[lemma="tak" & tag="k2.*"] [lemma="jako"]
+'„tak <přídavné jméno> že“ do 3 tokenů\tpreloaded/cstenten23_mj2\t[word="tak"][tag="k2.*"][word="že"] within []{6}\n'
+On line 52
+[word="tak"] [tag="k2.*"] [ ]{0,2} [word="že"]
+'"příliš [přídavné jméno] na to" + infinitiv\tpreloaded/cstenten23_mj2\t[word="příliš"][tag="k2.*"][word="na"][word="to"][tag="k5.*mF.*"]\n'
+On line 53
+[lemma="příliš"] [tag="k2.*"] [lemma="na"] [lemma="to"] [tag="k5mF.*"]
+'"dost <podstatné jméno>"\tpreloaded/cstenten23_mj2\t[word="dost"][tag="k1.*"]\n'
+On line 54
+[word="dost"][tag="k1.*"]
+'"velmi <přídavné jméno>"\tpreloaded/cstenten23_mj2\t[word="velmi"][tag="k2.*"]\n'
+On line 55
+[lemma="velmi"] [lempos=".*-j"]
+'"více/méně [přídavné jméno]"\tpreloaded/cstenten23_mj2\t[word="více|méně"][tag="k2.*"]\n'
+On line 56
+([word="více"] [lempos=".*-j"]) | ([word="méně"] [lempos=".*-j"])
+'"více (podstatné jméno) než (podstatné jméno)"\tpreloaded/cstenten23_mj2\t[word="více"][tag="k1.*"][word="než"][tag="k1.*"]\n'
+On line 57
+[word="více"] [tag="k1.*"] [word="než"] [tag="k1.*"]
+'"nejvíce\\nejméně (sloveso)"\tpreloaded/cstenten23_mj2\t[word="nejvíce|nejméně"][tag="k5.*"]\n'
+On line 58
+[lemma="nejvíce" & tag="k5.*"] | [lemma="nejméně" & tag="k5.*"]
+'Frazém "co nejdříve"\tpreloaded/cstenten23_mj2\t[word="co"][word="nejdříve"]\n'
+On line 59
+[word="co"] [word="nejdříve"]
+'Frazém "tak jako tak"\tpreloaded/cstenten23_mj2\t[word="tak"][word="jako"][word="tak"]\n'
+On line 60
+[lemma="tak"][lemma="jako"][lemma="tak"]
+'"<podstatné jméno> na <podstatné jméno>"\tpreloaded/cstenten23_mj2\t[tag="k1.*"][lemma="na"][tag="k1.*"]\n'
+On line 61
+[tag="k1.*"] [lemma="na"] [tag="k1.*"]
+'"<podstatné jméno> versus <podstatné jméno>"\tpreloaded/cstenten23_mj2\t[tag="k1.*"][word=="vs\\\\.|versus|proti"][tag="k1.*"]\n'
+On line 62
+[tag="k1.*"] [word="vs."] [tag="k1.*"]
+'"protože" + cokoliv\tpreloaded/cstenten23_mj2\t[lemma="protože"][]\n'
+On line 63
+[lemma="protože"][lemma="cokoliv"]
+'"ačkoliv" + libovolný token\tpreloaded/cstenten23_mj2\t[lemma="ačkoliv"][]\n'
+On line 64
+[lemma="ačkoliv"] [ ]
+'"zatímco" + cokoliv\tpreloaded/cstenten23_mj2\t[lemma="zatímco"][]\n'
+On line 65
+[word="zatímco"][word="cokoliv"]
+'Části "od té doby co" v korpusu\tpreloaded/cstenten23_mj2\t[word="od"][word="té"][word="doby"][word="co"]\n'
+On line 66
+[word="od"][word="té"][word="doby"][word="co"]
+'Infinitivy po "aby"\tpreloaded/cstenten23_mj2\t[word="aby"][tag="k5.*mF.*"]\n'
+On line 67
+[word="aby"] [tag="k5mF.*"]
+'Infinitivy před "aby"\tpreloaded/cstenten23_mj2\t[tag="k5.*mF.*"][word="aby"]\n'
+On line 68
+[tag="k5mF.*"] [word="aby"]
+'Fráze "tam je / je tam"\tpreloaded/cstenten23_mj2\t([word="tam"][word="je"]|[word="je"][word="tam"])\n'
+On line 69
+([word="tam"][word="je"]) | ([word="je"][word="tam"])
+'"to" + lemma "být" + přídavné jméno\tpreloaded/cstenten23_mj2\t[word="to"][lemma="být"][tag="k2.*"]\n'
+On line 70
+[lemma="být"] [tag="k2.*"]
+'Věta, která je otázka\tpreloaded/cstenten23_mj2\t<s/> containing [word=="?"] </s>\n'
+On line 71
+<s> [ ]{0,} [word="?"] </s>
+'Věta bez čárky\tpreloaded/cstenten23_mj2\t<s/> !containing [word==","]\n'
+On line 72
+<s/> !containing [word==","]
+'Věta s dvojtečkou\tpreloaded/cstenten23_mj2\t<s/> containing [word==":"]\n'
+On line 73
+[word==":"]
+'Věta se středníkem\tpreloaded/cstenten23_mj2\t<s/> containing [word==";"]\n'
+On line 74
+<s/> containing [word=";"]
+'Věta nezačínající velkým písmenem\tpreloaded/cstenten23_mj2\t<s/> containing <s> [word="[[:upper:]].+"]\n'
+On line 75
+<s/> [word!="[A-Z][A-Za-z]*"]
+'Věta začíná příslovcem a čárkou\tpreloaded/cstenten23_mj2\t<s/> containing <s> [tag="k6.*"][word==","]\n'
+On line 76
+<s> [tag="k6.*"] [word=","]
+'Odstavec obsahující rok\tpreloaded/cstenten23_mj2\t<p/> containing [word="\\d{4}"]\n'
+On line 77
+<p/> containing [word="\d{4}"]
+'Odstavec bez číslic\tpreloaded/cstenten23_mj2\t<p/> !containing [word=".*\\d.*"]\n'
+On line 78
+<p/> !containing [word=".*[0-9].*"]
+'Dokument s tématem koníčky\tpreloaded/cstenten23_mj2\t<doc topic=".*hobbies.*" />\n'
+On line 79
+<doc topic="koníčky">
+'Dokument typu zpravodajství\tpreloaded/cstenten23_mj2\t<doc genre=".*news.*" />\n'
+On line 80
+<doc genre="zpravodajství">[word=".*"]
+'"Brno" v dokumentech obsahující "Morava" v názvu\tpreloaded/cstenten23_mj2\t[word="Brno"] within <doc title=".*Morava.*"/>\n'
+On line 81
+<doc title=".*Morava.*"> [word="Brno"]
+'"Fakulta Informatiky" v dokumentech obsahující "Masaryk" v názvu\tpreloaded/cstenten23_mj2\t[word="Fakulta"][word="Informatiky"] within <doc title=".*Masaryk.*"/>\n'
+On line 82
+<doc title=".*Masaryk.*"> [word="Fakulta"][word="Informatiky"]
+'Podst. jména v odstavcích které byli získány v roce 2017\tpreloaded/cstenten23_mj2\t[tag="k1.*"] within <doc crawl_date=".*2017.*"/>\n'
+On line 83
+<doc crawl_year="2017"> [tag="k1.*"]
+'Věty uvnitř dokumentů s tématem "technologie"\tpreloaded/cstenten23_mj2\t<s/> within <doc topic=".*technology.*"/>\n'
+On line 84
+<doc topic="technologie"> <s/>
+'Věty bez velkých písmen\tpreloaded/cstenten23_mj2\t<s/> !containing [word="[[:upper:]]+"]\n'
+On line 85
+<s/> !containing [word="[A-Z][A-Za-z]*"]
+'Uvozovky bez podst. jména (<=8 tok.)\tpreloaded/cstenten23_mj2\t[word="\\"|„|‚|“|’|\'"][word!="\\"|„|‚|“|’|\'" & tag!="k1.*"]{0,8}[word="\\"|„|‚|“|’|\'"] within <s/>\n'
+On line 86
+<s/> containing [word="„|“"] !containing [tag="k1.*"]
+'"klimatická změna" v jedné větě\tpreloaded/cstenten23_mj2\t[lemma="klimatický"][lemma="změna"] within <s/>\n'
+On line 87
+[word="klimatická"][word="změna"] within <s/>
+'"data-driven" vs "data driven"\tpreloaded/cstenten23_mj2\t[word=="data-driven"] | [word="data"][word="driven"] within <s/>\n'
+On line 88
+[word="data-driven"] | [word="data"][word="driven"]
+'"na jedné straně ... na druhé straně"\tpreloaded/cstenten23_mj2\t[word="na"][word="jedné"][word="straně"][]{1,8}[word="na"][word="druhé"][word="straně"]\n'
+On line 89
+[lemma="na"][lemma="jedna"][lemma="strana"] [ ]{0,5} [lemma="na"][lemma="druhá"][lemma="strana"]
+'Opakovaný bigram A B do 6 tokenů\tpreloaded/cstenten23_mj2\t1:[] 2:[] []{0,6} 3:[] 4:[] & 1.word=3.word & 2.word=4.word\n'
+On line 90
+[lemma="A"][lemma="B"] [ ]{0,2} [lemma="A"][lemma="B"]
+'Dvě identická slova vedle sebe\tpreloaded/cstenten23_mj2\t1:[] 2:[] & 1.word = 2.word\n'
+On line 91
+1:[] 2:[] & 1.word = 2.word
+'Dva sousední tokeny se stejným lemmatem\tpreloaded/cstenten23_mj2\t1:[] 2:[] & 1.lemma = 2.lemma\n'
+On line 92
+1:[] 2:[] & 1.lemma = 2.lemma
+'Přídavná. jména se stejným lemmatem spojená spojkou\tpreloaded/cstenten23_mj2\t1:[tag="k2.*"][tag="k8.*"] 2:[tag="k2.*"] & 1.lemma = 2.lemma\n'
+On line 93
+1:[tag="k2.*"] 2:[tag="k8.*"] 3:[tag="k2.*"] & 1.lemma = 3.lemma
+'Podst. jména s různým lemmatem spojená spojkou\tpreloaded/cstenten23_mj2\t1:[tag="k1.*"][tag="k8.*"] 2:[tag="k1.*"] & 1.lemma != 2.lemma\n'
+On line 94
+1:[tag="k1.*"] 2:[tag="k8.*"] 3:[tag="k1.*"] & 1.lemma != 3.lemma
+'Adjektivum bez následného podst. jména\tpreloaded/cstenten23_mj2\t[tag="k2.*"][tag!="k1.*"]\n'
+On line 95
+[tag="k2.*"][tag!="k1.*"]
+'„přítomný“ nikoli sloveso\tpreloaded/cstenten23_mj2\t[word=="přítomný" & !tag="k5.*"]\n'
+On line 96
+[lempos="přítomný-j"]
+'\'objekt\' jako podst. jméno, ne sloveso\tpreloaded/cstenten23_mj2\t[lemma=="objekt" & tag="k1.*"]\n'
+On line 97
+[lempos="objekt-n"]
+'"záznam" jen jako podst. jméno\tpreloaded/cstenten23_mj2\t[lemma="záznam" & tag="k1.*"]\n'
+On line 98
+[lempos="záznam-n"]
+'"číst" jen jako sloveso\tpreloaded/cstenten23_mj2\t[lemma="číst" & tag="k5.*"]\n'
+On line 99
+[lemma="číst" & tag="k5.*"]
+'Varianty pravopisu "e-mail/email"\tpreloaded/cstenten23_mj2\t[word="e-?mail"]\n'
+On line 100
+[word="e-?mail"]
+'Varianty „kooperovat/co-operate“\tpreloaded/cstenten23_mj2\t[lemma="ko-?operovat"]\n'
+On line 101
+[lemma="kooperovat"]
+'Varianty "re-kreace/rekreace"\tpreloaded/cstenten23_mj2\t[word="re-?kreace"]\n'
+On line 102
+[lemma="rekreace"]
+'Varianty \'well-being/wellbeing\'\tpreloaded/cstenten23_mj2\t[word="well-?being"]\n'
+On line 103
+[word="well-being"] | [word="wellbeing"]
+'"zdravotní péče/healthcare"\tpreloaded/cstenten23_mj2\t[word="zdravotní"][word="péče"] | [word="healthcare"]\n'
+On line 104
+[lemma="zdravotní"] [lemma="peče"]
+'Praha bez ohledu na velikost písmen\tpreloaded/cstenten23_mj2\t[lc="praha"]\n'
+On line 105
+[lc="praha"]
+'Česká republika bez ohledu na velikost\tpreloaded/cstenten23_mj2\t[lc="česká"][lc="republika"]\n'
+On line 106
+[lemma="český"][lemma="republika"]
+'Adjektiva končící -ální\tpreloaded/cstenten23_mj2\t[lemma=".*ální" & tag="k2.*"]\n'
+On line 107
+[word=".*ální" & tag="k2.*"]
+'Slovesa končící -ovat\tpreloaded/cstenten23_mj2\t[lemma=".*ovat" & tag="k5.*"]\n'
+On line 108
+[lemma=".*ovat"]
+'Podst. jména končící -ce\tpreloaded/cstenten23_mj2\t[lemma=".*ce" & tag="k1.*"]\n'
+On line 109
+[lemma=".*ce" & tag="k1.*"]
+'Slova začínající mikro-\tpreloaded/cstenten23_mj2\t[word="mikro.*"]\n'
+On line 110
+[lemma="mikro.*"]
+'Slova končící -ologie\tpreloaded/cstenten23_mj2\t[word=".*ologie"]\n'
+On line 111
+[lemma=".*ologie"]
+'Jen malá písmena\tpreloaded/cstenten23_mj2\t[word="[[:lower:]]+"]\n'
+On line 112
+[word="^[a-ž]+$"]
+'Jen velká písmena\tpreloaded/cstenten23_mj2\t[word="[[:upper:]]+"]\n'
+On line 113
+[word="[A-Z]+"]
+'"US" nebo "U.S." regex\tpreloaded/cstenten23_mj2\t[word="US|U\\.S\\."]\n'
+On line 114
+[word="US|U\\.S\\."]
+'Token není tečka\tpreloaded/cstenten23_mj2\t[word!="\\."]\n'
+On line 115
+[word != "."]
+'Lexikograficky >= „m“\tpreloaded/cstenten23_mj2\t[word>="m"]\n'
+On line 116
+[lemma_lc >= "m"]
+'Lexikograficky < „m“\tpreloaded/cstenten23_mj2\t[word<="m"]\n'
+On line 117
+[lemma <="m"]
+'Slovesa v dokumentech téma=věda\tpreloaded/cstenten23_mj2\t[tag="k5.*"] within <doc topic=="science"/>\n'
+On line 118
+<doc topic="věda"> [tag="k5.*"]
+'Věty bez číslic\tpreloaded/cstenten23_mj2\t<s/> !containing [word=".*\\d.*"]\n'
+On line 119
+<s/> !containing [word="[0-9]"]
+'Tezaurus: zelenina po "krájet" do 0–2\tpreloaded/cstenten23_mj2\t[lemma="krájet"][]{0,2} ~"mrkev-n"\n'
+On line 120
+[lemma="krájet"] []{0,2} ~"zelenina-n"
+'Tezaurus: 20 podobných k "město-n"\tpreloaded/cstenten23_mj2\t~20"město-n"\n'
+On line 121
+~20"město-n"
+'"investovat" následováno slovy podobnými "obnovitelný" do vzdálenosti 3\tpreloaded/cstenten23_mj2\t[lemma="investovat"][]{0,3} ~"obnovitelný-j"\n'
+On line 122
+[lemma="investovat"] []{1,3} ~"obnovitelný-j"
+'12 slov podobných slovu „lékař-n“ do vzdálenosti 2 od slovesa kontaktovat\tpreloaded/cstenten23_mj2\t(meet ~12"lékař-n" [lemma="kontaktovat"] -5 5)\n'
+On line 123
+(meet ~12"lékař-n" [lemma="kontaktovat"] -2 2)
+'Slova podobná podst. jménu "emise" ve vzdálenosti +-5 od lemma "snížit"\tpreloaded/cstenten23_mj2\t(meet ~"emise-n" [lemma="snížit"] -5 5)\n'
+On line 124
+(meet [lemma="snížit"] ~"emise-n" -5 5)
+'Podst. jméno do 2 tokenů od adjektiva\tpreloaded/cstenten23_mj2\t(meet [tag="k1.*"] [tag="k2.*"] -2 2)\n'
+On line 125
+(meet [tag="k1"] [tag="k2"] -2 2)
+'Sloveso 1–4 tokeny vpravo od podst. jména\tpreloaded/cstenten23_mj2\t(meet [tag="k5.*"] [tag="k1.*"] 1 4)\n'
+On line 126
+[tag="k1.*"] [ ]{0,3} [tag="k5.*"]
+'Adjektiva 2–5 tokenů vlevo od podst. jmen\tpreloaded/cstenten23_mj2\t(meet [tag="k2.*"] [tag="k1.*"] -5 -2)\n'
+On line 127
+[tag="k2.*"] [ ]{1,4} [tag="k1.*"]
+'podst. jména u "byl/byla" a příd. jména u lemma "být". Obojí se vzdáleností +-2.\tpreloaded/cstenten23_mj2\t(union (meet [tag="k1.*"] [word=="byl|byla"] -2 2) (meet [tag="k2.*"] [lemma="být"] -2 2))\n'
+On line 128
+(union (meet [word="byl|byla"] [tag="k1.*"] -2 2) (meet [lemma="být"] [tag="k2.*"] -2 2))
+'Rok v závorkách\tpreloaded/cstenten23_mj2\t[word=="("][word="\\d{4}"][word==")"]\n'
+On line 129
+[word="("][lemma="rok"][word=")"]
+'Tokeny jen z pomlček\tpreloaded/cstenten23_mj2\t[word="-+"]\n'
+On line 130
+[word=="-"]
+'Čárky uvnitř závorek\tpreloaded/cstenten23_mj2\t[word==","] within ([word=="("][]*[word==")"])\n'
+On line 131
+[lemma="prematur-ovat"]
+'Vlastní jméno + rok\tpreloaded/cstenten23_mj2\t[tag="k1.*" & word="[[:upper:]].*"][word="\\d{4}"]\n'
+On line 132
+[word="[A-Z].*"] [word="[0-9]{4}"]
+'"Prosím" + infinitiv\tpreloaded/cstenten23_mj2\t[word=="[Pp]rosím"][tag="k5.*mF.*"]\n'
+On line 133
+[lc="prosím"] [tag="k5mF.*"]
+'"Mohl bys" + infinitiv\tpreloaded/cstenten23_mj2\t[word=="[Mm]ohl"][word=="bys|by"][tag="k5.*mF.*"]\n'
+On line 134
+[lc="mohl"] [lc="bys"] [tag="k5mF"]
+'"Rád bych" + infinitiv\tpreloaded/cstenten23_mj2\t[word=="[Rr]ád"][word=="bych"][tag="k5.*mF.*"]\n'
+On line 135
+[lemma="rád"][lemma="být"][tag="k5.*mF.*"]
+'"tak aby"\tpreloaded/cstenten23_mj2\t[word=="tak"][word=="aby"]\n'
+On line 136
+[word="tak"][word="aby"]
+'"v případě že"\tpreloaded/cstenten23_mj2\t[word=="v"][word=="případě"][word=="že"]\n'
+On line 137
+[word="v"][word="případě"][word="že"]
+'Slova psaná velkými písmeny\tpreloaded/cstenten23_mj2\t[word="[[:upper:]]+"]\n'
+On line 138
+[word="^[A-Z]+$"]
+'Slova s českou diakritikou\tpreloaded/cstenten23_mj2\t[word=".*[áéíóúůýčďěňřšťž].*"]\n'
+On line 139
+[word=".*[áéíůýčďěřšťžÁÉÍŮÝČĎĚŘŠŤŽ].*"]
+'Číslovky v textu\tpreloaded/cstenten23_mj2\t[tag="k4.*"]\n'
+On line 140
+[tag="k4xC.*"]
+'Interpunkce kromě tečky\tpreloaded/cstenten23_mj2\t[tag="kI.*" & word!="\\."]\n'
+On line 141
+[tag="kI.x[^.]"]
+'Podst. jména 1. pád sg.\tpreloaded/cstenten23_mj2\t[tag="k1.*nS.*c1.*"]\n'
+On line 142
+[tag="k1.*g.*nS.*c1"]
+'Výpustky\tpreloaded/cstenten23_mj2\t[word=="..."]\n'
+On line 143
+[word="Výpustky"]
+'Zkratky\tpreloaded/cstenten23_mj2\t[tag="kA.*"]\n'
+On line 144
+[word="[A-Z]{3,}"]
+'Slova s pomlčkou/spojovníkem\tpreloaded/cstenten23_mj2\t[word=".*[-–].*"]\n'
+On line 145
+[word=".*-.*"]
+'Slova příbuzná k "věřit"\tpreloaded/cstenten23_mj2\t[lemma="věřit"]\n'
+On line 146
+~"věřit-v"
+'Předložky v korpusu\tpreloaded/cstenten23_mj2\t[tag="k7.*"]\n'
+On line 147
+[tag="k7.*"]
+'Příslovce\tpreloaded/cstenten23_mj2\t[tag="k6.*"]\n'
+On line 148
+[tag="k6.*"]
+'Slovo na pozici 1000\tpreloaded/cstenten23_mj2\t[#1000]\n'
+On line 149
+
+
+'Slovo na první pozici\tpreloaded/cstenten23_mj2\t[#0]\n'
+On line 150
+<s>[]
+'Slovo na pozici 7831\tpreloaded/cstenten23_mj2\t[#7831]\n'
+On line 151
+[word="7831"]
+'Dvě sousední se stejným tagem\tpreloaded/cstenten23_mj2\t1:[] 2:[] & 1.tag = 2.tag\n'
+On line 152
+1:[tag=".*"] 2:[tag=".*"] & 1.tag = 2.tag
+'Dva sousední, identické tokeny\tpreloaded/cstenten23_mj2\t1:[] 2:[] & 1.word = 2.word\n'
+On line 153
+1:[] 2:[] & 1.word = 2.word
+'Dvě slova ve větě se stejným lemmatem\tpreloaded/cstenten23_mj2\t(1:[] 2:[] within <s/>) & 1.lemma = 2.lemma\n'
+On line 154
+1:[lemma=".*"] 2:[lemma=".*"] & 1.lemma = 2.lemma within <s/>
+'Dvě slova se stejným lemmatem a žádné není číslovka\tpreloaded/cstenten23_mj2\t(1:[tag!="k4.*"] 2:[tag!="k4.*"] within <s/>) & 1.lemma = 2.lemma\n'
+On line 155
+Traceback (most recent call last):
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/connection.py", line 571, in getresponse
+    httplib_response = super().getresponse()
+  File "/usr/lib64/python3.13/http/client.py", line 1430, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "/usr/lib64/python3.13/http/client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib64/python3.13/http/client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.13/socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+TimeoutError: timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/util/retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+        self, url, f"Read timed out. (read timeout={timeout_value})"
+    ) from err
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='localhost', port=8060): Read timed out. (read timeout=1200)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/run_model.py", line 39, in <module>
+    translation = model.auto_call(params)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/models/Qwen3_30B_A3B_Thinking_2507_IQ4_NL.py", line 596, in auto_call
+    cql = call(params)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/models/Qwen3_30B_A3B_Thinking_2507_IQ4_NL.py", line 573, in call
+    model_response = call_einfra(prompt, api_key, use_grammar=True, corpname=params["corpname"])
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/models/Qwen3_30B_A3B_Thinking_2507_IQ4_NL.py", line 216, in call_einfra
+    resp = requests.post("http://localhost:8060/v1/chat/completions", headers=headers, json=payload, timeout=1200)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/requests/api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/requests/adapters.py", line 690, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPConnectionPool(host='localhost', port=8060): Read timed out. (read timeout=1200)
+'Dvě slova se stejným lemmatem a žádné není číslovka\tpreloaded/cstenten23_mj2\t(1:[tag!="k4.*"] 2:[tag!="k4.*"] within <s/>) & 1.lemma = 2.lemma\n'
+On line 1
+Traceback (most recent call last):
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/connection.py", line 571, in getresponse
+    httplib_response = super().getresponse()
+  File "/usr/lib64/python3.13/http/client.py", line 1430, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "/usr/lib64/python3.13/http/client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib64/python3.13/http/client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.13/socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+TimeoutError: timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/util/retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+        self, url, f"Read timed out. (read timeout={timeout_value})"
+    ) from err
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='localhost', port=8060): Read timed out. (read timeout=1200)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/run_model.py", line 39, in <module>
+    translation = model.auto_call(params)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/models/Qwen3_30B_A3B_Thinking_2507_IQ4_NL.py", line 596, in auto_call
+    cql = call(params)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/models/Qwen3_30B_A3B_Thinking_2507_IQ4_NL.py", line 573, in call
+    model_response = call_einfra(prompt, api_key, use_grammar=True, corpname=params["corpname"])
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/models/Qwen3_30B_A3B_Thinking_2507_IQ4_NL.py", line 216, in call_einfra
+    resp = requests.post("http://localhost:8060/v1/chat/completions", headers=headers, json=payload, timeout=1200)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/requests/api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/requests/adapters.py", line 690, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPConnectionPool(host='localhost', port=8060): Read timed out. (read timeout=1200)
+'Dvě slova se stejným lemmatem a žádné není číslovka\tpreloaded/cstenten23_mj2\t(1:[tag!="k4.*"] 2:[tag!="k4.*"] within <s/>) & 1.lemma = 2.lemma\n'
+On line 1
+Traceback (most recent call last):
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/connection.py", line 571, in getresponse
+    httplib_response = super().getresponse()
+  File "/usr/lib64/python3.13/http/client.py", line 1430, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "/usr/lib64/python3.13/http/client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib64/python3.13/http/client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.13/socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+TimeoutError: timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/util/retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+        self, url, f"Read timed out. (read timeout={timeout_value})"
+    ) from err
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='localhost', port=8060): Read timed out. (read timeout=1200)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/run_model.py", line 39, in <module>
+    translation = model.auto_call(params)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/models/Qwen3_30B_A3B_Thinking_2507_IQ4_NL.py", line 596, in auto_call
+    cql = call(params)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/models/Qwen3_30B_A3B_Thinking_2507_IQ4_NL.py", line 573, in call
+    model_response = call_einfra(prompt, api_key, use_grammar=True, corpname=params["corpname"])
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/models/Qwen3_30B_A3B_Thinking_2507_IQ4_NL.py", line 216, in call_einfra
+    resp = requests.post("http://localhost:8060/v1/chat/completions", headers=headers, json=payload, timeout=1200)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/requests/api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/requests/adapters.py", line 690, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPConnectionPool(host='localhost', port=8060): Read timed out. (read timeout=1200)
+'Dvě slova se stejným lemmatem a žádné není číslovka\tpreloaded/cstenten23_mj2\t(1:[tag!="k4.*"] 2:[tag!="k4.*"] within <s/>) & 1.lemma = 2.lemma\n'
+On line 1
+Traceback (most recent call last):
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/connection.py", line 571, in getresponse
+    httplib_response = super().getresponse()
+  File "/usr/lib64/python3.13/http/client.py", line 1430, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "/usr/lib64/python3.13/http/client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib64/python3.13/http/client.py", line 300, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+                             " response")
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/util/retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/util/util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/connection.py", line 571, in getresponse
+    httplib_response = super().getresponse()
+  File "/usr/lib64/python3.13/http/client.py", line 1430, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "/usr/lib64/python3.13/http/client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib64/python3.13/http/client.py", line 300, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+                             " response")
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/run_model.py", line 39, in <module>
+    translation = model.auto_call(params)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/models/Qwen3_30B_A3B_Thinking_2507_IQ4_NL.py", line 596, in auto_call
+    cql = call(params)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/models/Qwen3_30B_A3B_Thinking_2507_IQ4_NL.py", line 573, in call
+    model_response = call_einfra(prompt, api_key, use_grammar=True, corpname=params["corpname"])
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/models/Qwen3_30B_A3B_Thinking_2507_IQ4_NL.py", line 216, in call_einfra
+    resp = requests.post("http://localhost:8060/v1/chat/completions", headers=headers, json=payload, timeout=1200)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/requests/api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/requests/adapters.py", line 659, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+'Dvě slova se stejným lemmatem a žádné není číslovka\tpreloaded/cstenten23_mj2\t(1:[tag!="k4.*"] 2:[tag!="k4.*"] within <s/>) & 1.lemma = 2.lemma\n'
+On line 1
+Traceback (most recent call last):
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/connection.py", line 571, in getresponse
+    httplib_response = super().getresponse()
+  File "/usr/lib64/python3.13/http/client.py", line 1430, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "/usr/lib64/python3.13/http/client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib64/python3.13/http/client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.13/socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/util/retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/util/util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/connection.py", line 571, in getresponse
+    httplib_response = super().getresponse()
+  File "/usr/lib64/python3.13/http/client.py", line 1430, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "/usr/lib64/python3.13/http/client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib64/python3.13/http/client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.13/socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/run_model.py", line 39, in <module>
+    translation = model.auto_call(params)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/models/Qwen3_30B_A3B_Thinking_2507_IQ4_NL.py", line 596, in auto_call
+    cql = call(params)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/models/Qwen3_30B_A3B_Thinking_2507_IQ4_NL.py", line 573, in call
+    model_response = call_einfra(prompt, api_key, use_grammar=True, corpname=params["corpname"])
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/models/Qwen3_30B_A3B_Thinking_2507_IQ4_NL.py", line 216, in call_einfra
+    resp = requests.post("http://localhost:8060/v1/chat/completions", headers=headers, json=payload, timeout=1200)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/requests/api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/requests/adapters.py", line 659, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+'Dvě slova se stejným lemmatem a žádné není číslovka\tpreloaded/cstenten23_mj2\t(1:[tag!="k4.*"] 2:[tag!="k4.*"] within <s/>) & 1.lemma = 2.lemma\n'
+On line 1
+Traceback (most recent call last):
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/connection.py", line 571, in getresponse
+    httplib_response = super().getresponse()
+  File "/usr/lib64/python3.13/http/client.py", line 1430, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "/usr/lib64/python3.13/http/client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib64/python3.13/http/client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.13/socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/util/retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/util/util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/connection.py", line 571, in getresponse
+    httplib_response = super().getresponse()
+  File "/usr/lib64/python3.13/http/client.py", line 1430, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "/usr/lib64/python3.13/http/client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib64/python3.13/http/client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.13/socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/run_model.py", line 39, in <module>
+    translation = model.auto_call(params)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/models/Qwen3_30B_A3B_Thinking_2507_IQ4_NL.py", line 596, in auto_call
+    cql = call(params)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/models/Qwen3_30B_A3B_Thinking_2507_IQ4_NL.py", line 573, in call
+    model_response = call_einfra(prompt, api_key, use_grammar=True, corpname=params["corpname"])
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/models/Qwen3_30B_A3B_Thinking_2507_IQ4_NL.py", line 216, in call_einfra
+    resp = requests.post("http://localhost:8060/v1/chat/completions", headers=headers, json=payload, timeout=1200)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/requests/api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/requests/adapters.py", line 659, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+'Dvě slova se stejným lemmatem a žádné není číslovka\tpreloaded/cstenten23_mj2\t(1:[tag!="k4.*"] 2:[tag!="k4.*"] within <s/>) & 1.lemma = 2.lemma\n'
+On line 1
+Traceback (most recent call last):
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/connection.py", line 571, in getresponse
+    httplib_response = super().getresponse()
+  File "/usr/lib64/python3.13/http/client.py", line 1430, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "/usr/lib64/python3.13/http/client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib64/python3.13/http/client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.13/socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/util/retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/util/util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/connection.py", line 571, in getresponse
+    httplib_response = super().getresponse()
+  File "/usr/lib64/python3.13/http/client.py", line 1430, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "/usr/lib64/python3.13/http/client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib64/python3.13/http/client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.13/socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/run_model.py", line 39, in <module>
+    translation = model.auto_call(params)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/models/Qwen3_30B_A3B_Thinking_2507_IQ4_NL.py", line 596, in auto_call
+    cql = call(params)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/models/Qwen3_30B_A3B_Thinking_2507_IQ4_NL.py", line 573, in call
+    model_response = call_einfra(prompt, api_key, use_grammar=True, corpname=params["corpname"])
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/models/Qwen3_30B_A3B_Thinking_2507_IQ4_NL.py", line 216, in call_einfra
+    resp = requests.post("http://localhost:8060/v1/chat/completions", headers=headers, json=payload, timeout=1200)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/requests/api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/requests/adapters.py", line 659, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+'Dvě slova se stejným lemmatem a žádné není číslovka\tpreloaded/cstenten23_mj2\t(1:[tag!="k4.*"] 2:[tag!="k4.*"] within <s/>) & 1.lemma = 2.lemma\n'
+On line 1
+[{'role': 'system', 'content': [{'type': 'text', 'text': 'Definition of Corpus Query Language (CQL)\n    The CQL is a query language used in Sketch Engine for searching grammatical and lexical patterns. CQL sets criteria for positions and tokens, such as tag, word, lemma, lempos, etc.\n    Basic syntax is [attribute="value"], for example:\n    To find the lemma teapot, use\n    CQL:\n    ```cql\n    [lemma="teapot"]\n    ```\n    Each token must be inside its own pair of square brackets. To search for the phrase refill the teapot, use\n    CQL:\n    ```cql\n    [lemma="refill"][lemma="the"][lemma="teapot"]\n    ```\n    More examples:\n    find examples of went -> CQL:\n    ```cql\n    [word="went"]\n    ```\n    find examples of all forms of go -> CQL:\n    ```cql\n    [lemma="go"]\n    ```\n    find examples of all words tagged with the tag NP -> CQL:\n    ```cql\n    [tag="NP"]\n    ```\n\n    Regular expressions can be used with values in CQL. A complete set of Regular expressions is supported, and complex criteria can be used, for example:\n    words starting with confus- -> CQL:\n    ```cql\n    [lemma="confus.*"]\n    ```\n    words ending with -ious -> CQL:\n    ```cql\n    [lemma=".*ious"]\n    ```\n    three-letter words starting b- and ending -g -> CQL:\n    ```cql\n    [lemma="b.g"]\n    ```\n    Be aware that when searching for any of the characters [][.*+{}?()|\\\\"$^] literally, they must be escaped using a backslash in any context where you may used regular expressions.\n\n    Square brackets [ ] stand for "any token". Curly brackets { } are used for repetition of the preceding token, for example:\n    find examples of ‘refill’ and ‘kettle’ with one word in between -> CQL:\n    ```cql\n    [lemma="refill"] [ ] [lemma="kettle"]\n    ```\n    examples of ‘have’ and ‘opinion’ with 2 to 4 words in between -> CQL:\n    ```cql\n    [lemma="have"] [ ]{2,4}[lemma="opinion"]\n    ```\n    find examples of "drink" and "water" with exactly two adjectives between them -> CQL:\n    ```cql\n    [lemma="drink"] [tag="J.*"]{2}[lemma="water"]\n    ```\n\n    A token can be made optional by placing a question mark ? after the square bracket. For example:\n    Find examples of ‘drive my car’ or ‘drive my own car’ -> CQL:\n    ```cql\n    [lemma="drive"] [lc="my"] [lc="own"]? [lemma="car"]\n    ```\n    alternative solution without using ? -> CQL:\n    ```cql\n    [lemma="drive"][lc="my"][lc="own"]{0,1} [lemma="car"]\n    ```\n\n    These comparison operators are supported:\n    equal =\n    less than or equal to <=\n    more than or equal to >=\n    not equal !=\n    not less than or equal to !<=\n    not more than or equal to !>=\n    equal (no regex) ==\n    not equal (no regex) !==\n    The alphabetical parts of the value are compared lexicographically (‘in the dictionary order’) and numerical parts numerically. This is useful with structure attributes, where >="AB2010CD" will include values such as "BB0000CD", "AB2011CD" or "AB2010CE". Example:\n    all one-letter words -> CQL:\n    ```cql\n    [word="."]\n    ```\n    all full stops -> CQL:\n    ```cql\n    [word=="."]\n    ```\n\n    One token can have more conditions. They must all appear inside the same pair of square brackets, and Boolean operators must be used between them.\n    & (ampersand) = AND\n    | (pipe) = OR\n    ! (exclamation mark) = NOT\n    For example:\n    Find all forms of the word ‘test’ which is a noun -> CQL:\n    ```cql\n    [ lemma="test" & tag="N.*" ]\n    ```\n    finds word ‘test’ which is NOT a verb -> CQL:\n    ```cql\n    [word="test" & tag!="V.*"]\n    ```\n    finds the word round tagged as a noun or verb -> CQL:\n    ```cql\n    [ word="round" & ( tag="N.*" | tag="V.*" ) ]\n    ```\n    finds word ‘test’ which is NOT a verb -> CQL:\n    ```cql\n    [word="test" & !tag="V.*"]\n    ```\n\n    | (pipe) = OR - means one token or another token, i.e., the token to the right or left of the pipe.\n    This use of the pipe (|) should only be limited to cases with no other solution because it consumes the search time. In most cases, it can be replaced by a pipe used inside the token, which is faster. See examples below.\n    "big dog" or "wolf" -> CQL:\n    ```cql\n    ([lemma="big"][lemma="dog"]) | [lemma="wolf"]\n    ```\n\n    Structures refer to sentences, paragraphs, documents, or any other parts or sections into which a corpus might be divided. Another way of saying this is that certain parts of a corpus can be labelled, e.g., direct speech might be labelled using structures to make it possible to limit the search to only direct speech. Structures may or may not have values. Values are used to categorize instances of the same structure.\n    Structures can be referred to in three ways:\n    The beginning: <s> <p> <doc> etc.\n    The end: </s> </p> </doc> etc.\n    The whole structure: <s/> <p/> <doc/> etc.\n    For example:\n    Find all documents written in informal style that start with the word Rebecca -> CQL:\n    ```cql\n    <doc style="informal">[lemma="Rebecca"]\n    ```\n    find all documents whose ID is 2011 and they start with a noun followed by a verb at a distance of up to 5 words -> CQL:\n    ```cql\n    <doc id="2011"> [tag="N.*"] []{0,5} [tag="V.*"]\n    ```\n    Written documents whose ID is 2011 and they start with a noun followed by a verb at a distance of up to 5 words -> CQL:\n    ```cql\n    <doc id="2011" & type="written"> [tag="N.*"] []{0,5} [tag="V.*"]\n    ```\n    find all verbs written in informal style -> CQL:\n    ```cql\n    [tag="V.*"]  within <doc style="informal" />\n    ```\n\n    The "containing" and "within" CQL operators are used to restrict the search only to a certain structure, e.g., to search inside:\n    Corpus structure, e.g., sentence, paragraph, document, etc.\n    Grammatical or lexical structure, e.g., noun phrase.\n\n    Use within to ensure the search result appears within the structure you want, in this case, within the same sentence, paragraph, document, or any other structure found in the corpus:\n    CQL:\n    ```cql\n    [word="dog"] []{0,5} [word="runs"] within < s/>\n    ```\n    The structure after "within" can be another CQL code defining a grammatical or lexical structure:\n    CQL:\n    ```cql\n    [tag="N.*"] within [tag="VB.*"] []{0,5} [tag="VB.*"]\n    ```\n    Multiple within operators can be nested if necessary:\n    CQL:\n    ```cql\n    [tag="N.*"] within ([tag="VB.*"] []{0,5} [tag="VB.*"] within < s/>)\n    ```\n    Use within to search a parallel corpus using this syntax:\n    within :\n    For example, with the English Europarl open, you can use this CQL to query the German Europarl. It will find all segments where the English corpus contains car and the aligned German segment contains Auto. In most cases, these will be segments where car was translated as Auto:\n    CQL:\n    ```cql\n    [word="car"] within europarl5_de: [word="Auto"]\n    ```\n\n    Use containing to find the whole structure and to display the whole structure as the result (KWIC).\n    This will find all paragraphs containing an acronym, i.e. a word consisting of 3 or more upper-case characters:\n    CQL:\n    ```cql\n    <p/> containing [word="[A-Z]{3,}"]\n    ```\n    This query searches for noun phrases (sequences of up to 5 adjectives followed by a noun) that contain the adjective international:\n    ```cql\n    [tag="J.*"]{1,5} [tag="N.*"] containing [word="international"]\n    ```\n\n    Use ! for negation:\n    !within = not within\n    !containing = not containing\n\n    This CQL will find all nouns that appear outside the <nphr> structure, i.e., outside noun phrases. The CQL will only work in corpora where the <nphr> structure exists:\n    CQL:\n    ```cql\n    [tag="N.*"]   !within   <nphr/>\n    ```\n    This CQL will find all sentences that do not contain any word starting with a capital letter:\n    CQL:\n    ```cql\n    <s/>   !containing   [word="[A-Z][A-Za-z]*"]\n    ```\n\n    Simultaneously searching the left and right context is only possible with meet and union operators. This is useful when a user wants to search for a token that is around or in the area of some other token.\n    Use meet to set the left and right context. This will find all nouns that have the verb to be 3 tokens to the left or 3 tokens to the right:\n    CQL:\n    ```cql\n    (meet [tag = "N.*"] [tag = "VB.*"] -3 3)\n    ```\n    Use the operator union to collect the results of two meet queries and display them in one concordance.\n    This CQL will, find all nouns with the verb to be at a distance of 3 tokens to the left or right, then find all adjectives with the verb to be at a distance of 2 tokens to the left or right, combine the nouns from the first query and adjectives from the second query and display them together in one concordance, the nouns and adjectives will be highlighted in the centre as KWIC:\n    CQL:\n    ```cql\n    (union (meet [tag="N.*"] [tag="VB.*"] -3 3) (meet [tag="A.*"] [tag="VB.*"] -2 2))\n    ```\n    This combines instances of nouns preceded by competent with adjectives followed by competence:\n    CQL:\n    ```cql\n    (union(meet [tag="N.*"] [lemma="competent"] -2 -1)(meet [tag="J.*"] [lemma="competence"]  1 2))\n    ```\n    Note that each meet and union has to be inside its own pair of brackets. Operators meet, and a union cannot be used with operators within and containing.\n\n    CQL also supports word sketch. Word sketches provide collocations for a word. The syntax is as follows:\n    CQL:\n    ```cql\n    [ws(headword, relation, collocation)]\n    ```\n    The relation is the name of the relation. You can often guess the name by using a regular expression like this:\n    CQL:\n    ```cql\n    [ws(headword, ".*subject.*", collocation)]\n    ```\n    For the exact name of the relation, the "%w" must be exchanged for \\"%w\\" as the quotes need to be backslashed in CQL. For example, the Word Sketch relation modifiers of "book" can be written as a CQL query:\n    CQL:\n    ```cql\n    [ws("book-n", "modifiers of \\"%w\\"", ".*")]\n    ```\n    Remember that Word Sketches are generated from lempos, so using a hyphen and the shortened PoS tag is necessary. For example, to generate a concordance with test (as a noun) being the object of conduct (as a verb), use this:\n    CQL:\n    ```cql\n    [ws("test-n",".*object.*","conduct-v")]\n    ```\n    In the resulting concordance, the headword is taken for a KWIC, and the collocations are used as a filter. It is possible to specify the headword by using the regular expression AND inside the square brackets. For example, to search for all relations of lempos "book-n" where the word appears in the plural form, you can use a CQL query:\n    CQL:\n    ```cql\n    [ws("book-n", ".*", ".*") & tag="NNS"]\n    ```\n    The prepositional phrases can be searched by the following syntax:\n    CQL:\n    ```cql\n    [ws("headword", "\\.\\.\\. [^ /]+ \\"%w\\"", ".*") | ws("headword", "\\"%w\\" [^ /]+ \\.\\.\\.", ".*")]\n    ```\n    In case only specific prepositions should be displayed, it is possible to insert them instead of [^ /]. This example will find concordance lines with the headword ‘test’ as a noun and prepositions of, in, or at:\n    CQL:\n    ```cql\n    [ws("test-n", "\\.\\.\\. (of|in|at) \\"%w\\"", ".*") | ws("test-n", "\\"%w\\" (of|in|at) \\.\\.\\.", ".*")]\n    ```\n    The Word Sketch CQL can be combined with other CQL markers. To generate a concordance where the headword test is modified by blood and followed or preceded by the lemma be, use this:\n    CQL:\n    ```cql\n    (meet [ws("test-n",".*modifiers of.*","blood-n")] [lemma="be"] -1 1)\n    ```\n\n    Thesaurus is also supported in CQL. Use the tilde ~ to generate a thesaurus (words with similar context, synonyms, antonyms) for the word and include the top N thesaurus items into the query. For example, to find the verb chop followed by vegetables, use this (or replace carrot with any other vegetable):\n    CQL:\n    ```cql\n    [lemma="chop"] []{0,3} ~"carrot-n"\n    ```\n    To set the number of thesaurus items manually, use:\n    CQL:\n    ```cql\n    ~15"carrot-n"\n    ```\n    CQL:\n    ```cql\n    [lemma="chop"] []{0,3} ~15"carrot-n"\n    ```\n    Thesaurus may be used with meet keyword, for example, to find all metals around the lemma corrosion:\n    CQL:\n    ```cql\n    (meet ~"metal-n" [lemma="corrosion"] -5 5)\n    ```\n\n    It is possible to add aditional constraints called global conditions.\n    You may use \'<number>:\' to specify a tag and then after whole CQL put & and write a global constraint. Only numbers may be used. For example:\n\n    Repetition of the same token:\n    CQL:\n    ```cql\n    1:[] 2:[] & 1.word = 2.word\n    ```\n    Repetition of the same token but different tag:\n    CQL:\n    ```cql\n    1:[] 2:[] & 1.word = 2.word & 1.tag != 2.tag\n    ```\n    Token with frequency higher than 2000\n    CQL:\n    ```cql\n    1:[] & f(1.word)>2000\n    ```\n\nYou are an expert assistant for Sketch Engine\'s Corpus Query Language (CQL).\nYour job is to read the conversation and translate the user\'s *latest* request into a single CQL query.\n\nImportant CQL reminders:\n- A query is a sequence of tokens, each inside square brackets: [ ... ].\n- Use attributes like word, lemma, tag, lc, lempos, structure attributes, etc.\n- Use regular expressions only when necessary.\n- Prefer lemma="..." when the user asks for \'all forms\' of a word.\n- Follow corpus-specific tags, annotations, structures and grammatical relations.\n\nCorpus description for corpus \'preloaded/cstenten23_mj2\':\n### Czech Corpus Summary for Sketch Engine CQL  \n\n#### **General Context**  \n- **Language**: Czech  \n- **Core Structures**:  \n  - `word` (surface form), `lc` (lowercase word), `tag` (POS tag), `lemma`, `lemma_lc` (lowercase lemma), `lempos` (lemma + POS suffix), `lempos_lc` (lowercase lempos), `gender_lemma`, `gender_lemma_lc`.  \n- **Document Metadata**:  \n  - Structures: `doc` (with attributes: `url`, `title`, `wiki_categories`, `urldomain`, `website`, `crawl_date`, `modified_date`, `wiki_translations`, `modified_month`, `tld`, `modified_year`, `topic`, `domain_distance`, `genre`, `src`, `crawl_year`).  \n- **Word Sketch Relations**: Include subject/object dependencies (e.g., `subjects of "%w"`), case-based objects (accusative, dative, etc.), modifiers, and positional patterns (e.g., `words before "%w"`).  \n\n---\n\n#### **CQL Syntax Guidelines**  \n1. **Tag Matching**:  \n   - Use regex patterns with `tag="..."` (e.g., `[tag="k5.*"]` for all verbs).  \n   - **Strict Format**: Tags follow fixed attribute order: `kegncpamdxytzw~`. Attributes must appear in this sequence (e.g., `k2.*gFnSc7.*` is valid; `k2.*nSgFc7.*` is invalid).  \n2. **Lempos Syntax**:  \n   - Combines lemma + POS suffix (e.g., `"přítel-n"` for noun "přítel"). Suffixes:  \n     - Noun: `-n`, Adj: `-j`, Pron: `-d`, Num: `-m`, Verb: `-v`, Adv: `-a`, Prep: `-p`, Conj: `-c`.  \n3. **Structures in CQL**:  \n   - Query words: `[word="Praha"]`, lemmas: `[lemma="praha"]`, tags: `[tag="k1.*"]`.  \n   - Metadata: `[doc.genre="news"]`.  \n\n---\n\n#### **Tagset Details**  \nEach tag is a sequence of attribute-value pairs in **strict order**:  \n```  \nk: Part of Speech  \ne: Negation (eA=affirmative, eN=negative)  \ng: Gender (gM=animate masc, gI=inanimate masc, gN=neuter, gF=feminine, gR=surname)  \nn: Number (nS=singular, nP=plural)  \nc: Case (c1=nominative, c2=genitive, c3=dative, c4=accusative, c5=vocative, c6=locative, c7=instrumental)  \np: Person (p1=1st, p2=2nd, p3=3rd)  \na: Aspect (verbs: aP=perfect, aI=imperfect, aB=biaspectual)  \nm: Verb Form (mF=infinitive, mI=present, mR=imperative, mA=active participle, mN=passive participle)  \nd: Degree (adj/adv: d1=positive, d2=comparative, d3=superlative)  \nx/y/t: POS-Specific Subcategories (see below)  \nz: Unused  \nw: Stylistic Flag (wA=archaism, wB=poeticism, wH=conversational, wZ=obsolete, etc.)  \n~: Unused  \n```  \n\n##### **POS-Specific Attributes**  \n- **Nouns (k1)**: `x` (paradigm, e.g., `xP` for "půl").  \n- **Pronouns (k3)**:  \n  - `x` (type: xP=personal, xO=possessive, xD=demonstrative).  \n  - `y` (type: yF=reflexive, yQ=interrogative, yR=relative).  \n- **Numerals (k4)**:  \n  - `x` (type: xC=cardinal, xO=ordinal).  \n  - `y` (negation/indeterminacy: yN=negative, yI=indeterminate).  \n- **Verbs (k5)**: `m` (form, e.g., `mS`=present transgressive).  \n- **Adverbs (k6)**:  \n  - `t` (semantic: tS=status, tT=time, tL=place, tM=manner).  \n  - `x/y` (demonstrative/interrogative: xD=demonstrative, yQ=interrogative).  \n- **Conjunctions (k8)**: `x` (type: xC=coordinating, xS=subordinating).  \n- **Punctuation (kI)**: `x` (e.g., `x.` for `.?!`, `x"` for quotes).  \n\n##### **Key Quirks**  \n- **Gender Lemma**: `gender_lemma` disambiguates lemma by gender (e.g., "nový-j" for adj. "nový").  \n- **Regex Flexibility**: Wildcards (`.*`) bridge unspecified attributes (e.g., `[tag="k1gN.*"]` for neuter nouns).  \n- **Strict Order**: Attribute sequence is mandatory (e.g., gender `g` must precede number `n`).  \n\n---  \nThis summary enables precise CQL queries by clarifying tag structure, attribute hierarchy, and corpus-specific features.\n\nOutput format requirements (very important):\n1. Respond with EXACTLY one fenced code block.\n2. The fence must be in this format:\n```cql\n[your CQL query here]\n```\n3. Do output any text before the code block. Use this for reasoning.\n4. Do explain the query, comment on it, or paraphrase the user. Before the code block.\n5. Do not ask for clarification. Respond directly.\n'}]}, {'role': 'user', 'content': [{'type': 'text', 'text': 'Dvě slova se stejným lemmatem a žádné není číslovka'}]}]
+{"error":{"message":"Loading model","type":"unavailable_error","code":503}}
+1:[] 2:[] & 1.lemma = 2.lemma & 1.tag != 1.tag & 1.tag != 1.tag
+'Čtyřslovná sekvence: 1.=2. tag, 1.=4. lemma\tpreloaded/cstenten23_mj2\t1:[] 2:[] [] 3:[] & 1.tag = 2.tag & 1.lemma = 3.lemma\n'
+On line 2
+1:[] 2:[] 3:[] 4:[] & 1.tag = 2.tag & 1.lemma = 4.lemma
+'Ve větě sloveso následující po podstatném jménu, které má stejné lemma jako sloveso\tpreloaded/cstenten23_mj2\t(1:[tag="k1.*"]2:[tag="k5.*"] within <s/>) & 1.lemma = 2.lemma\n'
+On line 3
+1:[tag="k1.*"] 2:[tag="k5.*"] & 1.lemma = 2.lemma
+'Dvě přídavná jména + podstatné jméno s f(1)>100000 a f(2)<5000\tpreloaded/cstenten23_mj2\t1:[tag="k2.*"]2:[tag="k2.*"][tag="k1.*"] & f(1.word)>100000 & f(2.word)<5000\n'
+On line 4
+1:[tag="k2.*"] 2:[tag="k2.*"] 3:[tag="k1.*"] & f(1.word)>100000 & f(2.word)<5000
+'Dvě sousední slova se stejným lemmatem, ale různým zápisem\tpreloaded/cstenten23_mj2\t1:[]2:[] & 1.lemma = 2.lemma & 1.word != 2.word\n'
+On line 5
+1:[] 2:[] & 1.lemma = 2.lemma & 1.word != 2.word
+'Dvě sousední slova, jedno má frekvenci > 2e7\tpreloaded/cstenten23_mj2\t1:[]2:[] & (f(1.word)>20000000 | f(2.word)>20000000)\n'
+On line 6
+1:[] 2:[] & (f(1.word) > 20000000 | f(2.word) > 20000000)
+'Slovo "úraz" na doméně ulekare.cz\tpreloaded/cstenten23_mj2\t[word="úraz"] within <doc urldomain=="ulekare.cz"/>\n'
+On line 7
+<doc urldomain="ulekare.cz"> [word="úraz"]
+'\'agrese\' v dokumentech s tématem hry\tpreloaded/cstenten23_mj2\t[lemma="agrese"] within <doc topic="games"/>\n'
+On line 8
+<doc topic="hry">[lemma="agrese"]
+'"agrese" v tématech hry nebo vzdělání\tpreloaded/cstenten23_mj2\t[lemma="agrese"] within <doc topic="education|games"/>\n'
+On line 9
+<doc topic="hry" | topic="vzdělání"> [lemma="agrese"]
+'"reklama" na blozích\tpreloaded/cstenten23_mj2\t[lemma="reklama"] within <doc genre=".*blog.*"/>\n'
+On line 10
+[lemma="reklama"] within <doc genre="blog"/>
+'"Barack Obama" v dokumentech s titulkem obsahujícím "skandál"\tpreloaded/cstenten23_mj2\t[word="Barack"][word="Obama"] within <doc title=".*skandál.*"/>\n'
+On line 11
+<doc title=".*skandál.*"> [word="Barack"] [word="Obama"]
+'Sloveso "hacknout" v dokumentech s žánrem zprávy\tpreloaded/cstenten23_mj2\t[lemma="hacknout" & tag="k5.*"] within <doc genre=".*news.*"/>\n'
+On line 12
+<doc genre="zprávy">[lemma="hacknout"]
+'"zmrzlina" v červnu\tpreloaded/cstenten23_mj2\t[lemma="zmrzlina"] within <doc crawl_date="\\d{4}-06.*"/>\n'
+On line 13
+[word="zmrzlina"][word="v"][word="červnu"]
+'Věty obsahující číslo větší než 100\tpreloaded/cstenten23_mj2\t<s/> containing [word>="101" & word="[0-9]+" & tag="k4.*"]\n'
+On line 14
+<s/> containing [word="1[0-9]{2,}" & word != "100"]
+'Sloveso a předložka\tpreloaded/cstenten23_mj2\t[tag="k5.*"][tag="k7.*"]\n'
+On line 15
+[tag="k5.*"] | [tag="k7.*"]
+'Spojení "tak/velmi <přídavné jméno>, že"\tpreloaded/cstenten23_mj2\t[word="tak|velmi"][tag="k2.*"][word=","][word="že"]\n'
+On line 16
+( [lemma="tak"] | [lemma="velmi"] ) [lempos=".*-j"] [word=","] [lemma="že"]
+'se/si po slovese\tpreloaded/cstenten23_mj2\t[tag="k5.*"][word=="se|si"]\n'
+On line 17
+[tag="k5.*"][word="se"] | [tag="k5.*"][word="si"]
+'"by" po slovese v příčestím minulém\tpreloaded/cstenten23_mj2\t[tag="k5.*mA.*"][word="by"]\n'
+On line 18
+[tag="k5.*mA.*"] [word="by"]
+'Jednoslovné věty\tpreloaded/cstenten23_mj2\t<s> [tag="kI.*"]? [tag!="kI.*"]? [tag="kI.*"]? </s>\n'
+On line 19
+<s> [] </s>
+'Věty začínající spojkou\tpreloaded/cstenten23_mj2\t<s/> containing <s> [tag="k8.*"]\n'
+On line 20
+<s> [tag="k8.*"]
+'Věty bez slovesa\tpreloaded/cstenten23_mj2\t<s/> !containing [tag="k5.*"]\n'
+On line 21
+<s/> !containing [tag="k5.*"]
+'Věty končící výpustkou\tpreloaded/cstenten23_mj2\t<s/> containing [word=="..."] </s>\n'
+On line 22
+<s> [word="..."]
+'Sekvence tří tokenů: přídavné jméno + podstatné jméno + sloveso\tpreloaded/cstenten23_mj2\t[tag="k2.*"][tag="k1.*"][tag="k5.*"]\n'
+On line 23
+[lempos=".*-j"] [lempos=".*-n"] [lempos=".*-v"]
+'Dvě adjektiva za sebou\tpreloaded/cstenten23_mj2\t[tag="k2.*"][tag="k2.*"]\n'
+On line 24
+[tag="k2.*"][tag="k2.*"]
+'Dvě stejná adjektiva za sebou uvnitř jedné věty\tpreloaded/cstenten23_mj2\t(1:[tag="k2.*"] 2:[tag="k2.*"] within <s/>) & 1.word = 2.word\n'
+On line 25
+1:[tag="k6.*"] 2:[tag="k6.*"] & 1.lemma = 2.lemma within <s/>
+'Sloveso následované zájmenem\tpreloaded/cstenten23_mj2\t[tag="k5.*"][tag="k3.*"]\n'
+On line 26
+[tag="k5.*"] [tag="k3.*"]
+'První token věty\tpreloaded/cstenten23_mj2\t<s> []\n'
+On line 27
+<s> [word=".*"]
+'Jednoslovná otázka\tpreloaded/cstenten23_mj2\t<s> [tag!="kI.*"] [word=="?"] </s>\n'
+On line 28
+[tag="k[36].*"] [tag=="kI x?"]
+'Najdi přirovnání začínající „jako“ (např. „rychlý jako blesk“).\tpreloaded/ententen21_tt31\t[tag="J.*"] [lemma="like"] [tag="DT"]? [tag="N.*"] within <s/>\n'
+On line 29
+[word="as"] [tag="N.*"]
+'"neboť" uvnitř věty\tpreloaded/cstenten23_mj2\t[lemma="neboť"] within <s/>\n'
+On line 30
+[lemma="neboť"] within <s/>
+'"který" následovaný čárkou\tpreloaded/cstenten23_mj2\t[lemma="který"][word=","]\n'
+On line 31
+[word="který"][word=","]
+'Word Sketch: modifikátory „škola-n“\tpreloaded/cstenten23_mj2\t[ws("škola-n","modifiers of \\\\\\"%w\\\\\\"",".*")]\n'
+On line 32
+[ws("škola-n", "modifiers of \"%w\"", ".*")]
+'Word Sketch: objekty „schválit-v“\tpreloaded/cstenten23_mj2\t[ws("schválit-v",".*objects of \\\\\\"%w\\\\\\"",".*")]\n'
+On line 33
+[ws("schválit-v", "object of \"%w\"", ".*")]
+'Word Sketch: subjekty „růst-v“\tpreloaded/cstenten23_mj2\t[ws("růst-v",".*subjects of \\\\\\"%w\\\\\\"",".*")]\n'
+On line 34
+[ws("růst-v", "subjects of \"%w\"", ".*")]
+'Word Sketch: „rozhodnutí-n“ jako objekt „učinit-v“\tpreloaded/cstenten23_mj2\t[ws("rozhodnutí-n",".*object.*","učinit-v")]\n'
+On line 35
+[ws("rozhodnutí-n", ".*object.*", "učinit-v")]
+'Word Sketch: „test-n“ modifikovaný „krev-n“\tpreloaded/cstenten23_mj2\t[ws("test-n",".*modifiers of \\\\\\"%w\\\\\\"","krev-n")]\n'
+On line 36
+[ws("test-n", "modifiers of \"%w\"", "krev-n")]
+'Word Sketch: relace „klima-n“ obsahující „změna“\tpreloaded/cstenten23_mj2\t[ws("klima-n",".*",".*změna.*")]\n'
+On line 37
+[ws("klima-n", ".*změna.*", ".*")]
+'Word Sketch: předložkové vzory (o/v/na)\tpreloaded/cstenten23_mj2\t[ws("test-n","\\\\.\\\\.\\\\. (o|v|na) \\\\\\"%w\\\\\\"",".*") | ws("test-n","\\\\\\"%w\\\\\\" (o|v|na) \\\\.\\\\.\\\\.",".*")]\n'
+On line 38
+[ws("test-n", "\.\.\. (o|v|na) \"%w\"", ".*") | ws("test-n", "\"%w\" (o|v|na) \.\.\.", ".*")]
+'Word Sketch: slovesa s %w jako subjektem\tpreloaded/cstenten23_mj2\t[ws(".*","verbs with \\\\\\"%w\\\\\\" as subject",".*-v")]\n'
+On line 39
+[ws(".*-v", "subjects of \"%w\"", ".*")]
+'Word Sketch u „vládní“ v okolí 1 tokenu\tpreloaded/cstenten23_mj2\t[word=="vládní"][]{0,1}[ws("politika-n",".*",".*")]\n'
+On line 40
+[ws("vládnout-v", ".*", ".*")]
+'Tezaurus: kovy kolem \'koroze\' (+-4)\tpreloaded/cstenten23_mj2\t(meet ~"železo-n" [lemma="koroze"] -4 4)\n'
+On line 41
+(meet [lemma="koroze"] ~"koroze-n" -4 4)
+'„auto“ v češtině, anglicky „car“ v paralelním segmentu\tpreloaded/europarl7_cs\t[word="auto"] within europarl7_en: [word="car"]\n'
+On line 42
+[word="auto"] within europarl7_en: [word="car"]
+'„dům“ v češtině, německy „Haus“ v paralelním segmentu\tpreloaded/europarl7_cs\t[word="dům"] within europarl7_de_1: [word="Haus"]\n'
+On line 43
+[lemma="dům"] within europarl7_de: [word="Haus"]
+'Jsou slova "awfully", "horribly" a "terribly" často předcházející slovu "beautiful"?\tpreloaded/ententen21_tt31\t[word="awfully|horribly|terribly"][word="beautiful"]\n'
+On line 44
+([word="awfully"][word="beautiful"]) | ([word="horribly"][word="beautiful"]) | ([word="terribly"][word="beautiful"])
+'Nalezni všechna slova ohraničená kulatými závorkami.\tpreloaded/ententen21_tt31\t[word=="("][word!==")"]+[word==")"]\n'
+On line 45
+[word="("] [word= ".+?"] {1,} [word=")"]
+'Nalezni všechna slova ohraničená závorkami.\tpreloaded/ententen21_tt31\t[word="\\(|\\[|\\{"][word!="\\)|\\]|\\}"]+[word="\\)|\\]|\\}"]\n'
+On line 46
+[word="["][word="[^]]*"][word="]"]
+'Prosím všechna slova, která jsou v závorkách.\tpreloaded/ententen21_tt31\t[word="\\(|\\[|\\{"][word!="\\)|\\]|\\}"]+[word="\\)|\\]|\\}"]\n'
+On line 47
+[tag="("] [word=".*"] [tag=")"]
+'Všechna slova já v okolí +-4 slova být.\tpreloaded/ententen21_tt31\t(meet [word="I"] [lemma="be"] -4 4)\n'
+On line 48
+(meet [word="I"] [lemma="be"] -4 4)
+'Najdi všechny příklady přítomného prostého času.\tpreloaded/ententen21_tt31\t[tag="VBZ|VBP|VV"] within [tag!="V.*"][tag="VBZ|VBP|VV"][tag!="V.*"]\n'
+On line 49
+[tag="VVP" | tag="VBP" | tag="VBZ"]
+'Najdi všechny přklady minulého prostého času.\tpreloaded/ententen21_tt31\t[tag="VBD|VHD|VVD"] within [tag!="V.*"][tag="VBD|VHD|VVD"][lemma="not"]?[tag!="V.*"]\n'
+On line 50
+[tag="VBD" | tag="VVD"]
+'Najdi všechny příklady budoucího prostého času.\tpreloaded/ententen21_tt31\t[word="will" & tag="MD"][lemma="not"]?[tag!="V.*"]{0,2}[tag="VB|VH|VV"]\n'
+On line 51
+[tag="MD"][tag="VB"]
+'Najdi všechny příklady přítomného průběhového času.\tpreloaded/ententen21_tt31\t[tag="VBP|VBZ"][lemma="not"]?[tag!="V.*"]{0,2}[tag="VVG"]\n'
+On line 52
+[tag="VBP" | tag="VBZ"] [tag="VBG"]
+'Najdi všechny příklady minulého průběhového času.\tpreloaded/ententen21_tt31\t[tag="VBD"][lemma="not"]?[tag!="V.*"]{0,2}[tag="VVG|VHG|VBG"]\n'
+On line 53
+[tag="VBD"] [tag="VBG"]
+'Najdi všechny příklady budoucího průběhového času.\tpreloaded/ententen21_tt31\t[lemma="will"][lemma="not"]?[word="be"][tag="VVG|VBG|VHG"]\n'
+On line 54
+[tag="MD"][tag="VB"][tag="VBG"]
+'Najdi všechny příklady předpřítomného prostého času.\tpreloaded/ententen21_tt31\t[tag="VH|VHZ"][lemma="not"]?[tag!="V.*"]{0,2}[tag="VVN|VBN|VHN"] within [tag!="V.*"][tag="VH|VHZ"][lemma="not"]?[tag!="V.*"]{0,2}[tag="VVN|VBN|VHN"][tag!="V.*"]\n'
+On line 55
+[tag="VHP" | tag="VHZ"] [tag="VVN"]
+'Najdi všechny příklady předminulého prostého času.\tpreloaded/ententen21_tt31\t[tag="VHD"][lemma="not"]?[tag="VBN"][tag="VVN"]\n'
+On line 56
+[tag="VBD" | tag="VHD" | tag="VVD"]
+'Najdi všechny příklady předbudoucího prostého času.\tpreloaded/ententen21_tt31\t[word="will" & tag="MD"][lemma="not"]?[word="have"][tag="VBN|VHN|VVN"]\n'
+On line 57
+[tag="VHD"] [tag="VVN"]
+'Najdi všechny příklady předpřítomného průběhového času.\tpreloaded/ententen21_tt31\t[tag="VH|VHZ|VHP"][lemma="not"]?[tag="VBN"][tag="VVG"]\n'
+On line 58
+[tag="VHD"][tag="VBN"][tag="VBG"]
+'Najdi všechny příklady předminulého průběhového času.\tpreloaded/ententen21_tt31\t[tag="VHD"][lemma="not"]?[tag="VBN"][tag="VVG"]\n'
+On line 59
+[tag="VHD"] [tag="VBN"] [tag="VBG"]
+'Najdi všechny příklady předbudoucího průběhového času.\tpreloaded/ententen21_tt31\t[word="will" & tag="MD"][lemma="not"]?[tag="VH|VHP"][tag="VBN"][tag="VVG"]\n'
+On line 60
+[tag="VHD"] [tag="VBN"] [tag="VVG"]
+'Věty, kde mluvčí je Andrej Babiš.\tpreloaded/parlatalk_cz\t< s/> within <speaker name=".*Andrej Babiš.*"/>\n'
+On line 61
+<speaker name="Andrej Babiš">
+'Najdi větu s právě tolika slovy, kolik je odpovědí na otázku života, vesmíru a vůbec.\tpreloaded/ententen21_tt31\t<s> [ ]{42} </s> within <s/>\n'
+On line 62
+[ ]{42} within <s/>
+'Potřebuji všechna frázová slovesa.\tpreloaded/ententen21_tt31\t[tag="V.*"][tag="DT|N.*|J.*"]+[tag="RP"][tag!="IN"]\n'
+On line 63
+[tag="V.*"][tag="RP"]
+'I need examples of prepositional verbs.\tpreloaded/ententen21_tt31\t[tag="V.*"][tag="IN"]\n'
+On line 64
+[tag="V.*"] [tag="IN"]
+'How do I find adverbial phrases?\tpreloaded/ententen21_tt31\t[tag="IN"][tag="DT"]?[tag="J.*"]*[tag="N.*"]\n'
+On line 65
+[tag="R.*"]
+'Potřebuji najít příslovečná určení. Nejen však příslovce.\tpreloaded/cstenten23_mj2\t([tag="k6.*"] | [tag="k7.*"] [tag="k1.*|k2.*|k3.*"]+) within <s/>\n'
+On line 66
+[tag="k6.*"]
+'Potřebuji nalézt všechny věty, které jsou napsané v pasivu.\tpreloaded/ententen21_tt31\t[tag="VB.*"][tag="VVN"]\n'
+On line 67
+<s> [tag="V[BDPZ]"] [tag="VBN"] </s>
+'I need to find an agent in a passive sentence.\tpreloaded/ententen21_tt31\t[tag="VB.*"][tag="VBN|VHN|VVN"][lemma!="by" & tag!="V.*"]*[lemma="by"][tag="DT"]? [tag="J.*"]*[tag="N.*"] within <s/>\n'
+On line 68
+[tag="VBN"] [word="by" & tag="IN"] [tag="N.*"]
+'Najdi pasivum se slovesem "get".\tpreloaded/ententen21_tt31\t[lemma="get"][tag="VVN"]\n'
+On line 69
+[lemma="get"] [tag="VVN"]
+'I need to find all adjectives in an attributive position.\tpreloaded/ententen21_tt31\t[tag="J.*"][tag="N.*"]\n'
+On line 70
+[tag="J.*"][tag="N.*"]
+'Všechny dva po sobě jdoucí tokeny se stejným tagem.\tpreloaded/ententen21_tt31\t1:[] 2:[] & 1.tag = 2.tag\n'
+On line 71
+1:[] 2:[] & 1.tag = 2.tag
+'Chci najít sekvenci přídavné jméno, následované podstatným jménem, kde přídavné jméno má frekvenci menší než 5000.\tpreloaded/ententen21_tt31\t1:[tag="J.*"][tag="N.*"] & f(1.word)<5000\n'
+On line 72
+[tag="J.*" & ( (tag="JJ" | tag="JJR" | tag="JJS") & (lempos="*-*" | lemma != "the" ) ) & (lempos="*-*" & (lemma != "the")) ] [tag="N.*"]
+'Chci nalézt sekvenci dvou po sobě jdoucích slov, která jsou stejná.\tpreloaded/ententen21_tt31\t1:[] 2:[] & 1.word = 2.word\n'
+On line 73
+1:[] 2:[] & 1.word = 2.word
+'Potřebuji nalézt dvě slova ve větě, která mají stejé lemma.\tpreloaded/ententen21_tt31\t(1:[] 2:[] within <s/>) & 1.lemma = 2.lemma\n'
+On line 74
+1:[lemma=".*"] 2:[lemma=".*"] & 1.lemma = 2.lemma within <s/>
+'Potřebuji nalézt dvě slova ve větě, která mají stejé lemma, a současně ani jedno z těchto slov není číslovkou.\tpreloaded/ententen21_tt31\t(1:[tag!="CD"] 2:[tag!="CD"] within <s/>) & 1.lemma = 2.lemma\n'
+On line 75
+
+
+'Potřebuji nalézt sekvenci čtyř slov, ve které první a druhé slovo mají stejný tag a první a poslední mají stejné lemma.\tpreloaded/ententen21_tt31\t1:[] 2:[] [] 3:[] & 1.tag = 2.tag & 1.lemma = 3.lemma\n'
+On line 76
+1:[] 2:[] 3:[] 4:[] & 1.tag = 2.tag & 1.lemma = 4.lemma
+'Chtěl bych nalézt případy, kdy ve věte sloveso následované po podstatném jméně má stejné lemma, jako předcházející podstatné jméno.\tpreloaded/ententen21_tt31\t(1:[tag="N.*"]2:[tag="V.*"] within <s/>) & 1.lemma = 2.lemma\n'
+On line 77
+1:[tag="N.*"] 2:[tag="V.*"] & 1.lemma = 2.lemma
+'Zajímalo by mě, zda existují dvě po sobě jdoucí přídavná jména, následovaná podstatným jménem, kdy frekvence prvního přídavného jména je vyšší něž 100000 a frekvence druhého je menší než 5000.\tpreloaded/ententen21_tt31\t1:[tag="J.*"]2:[tag="J.*"][tag="N.*"] & f(1.word) > 100000 & f(2.word) < 5000\n'
+On line 78
+1:[tag="J.*"] 2:[tag="J.*"] 3:[tag="N.*"] & f(1.lemma) > 100000 & f(2.lemma) < 5000
+'Existují dvě po sobě jdoucí slova, která mají stejné lemma, ale jejich záspis, nezávisle na velikosti písmen, se liší?\tpreloaded/ententen21_tt31\t1:[]2:[] & 1.lemma = 2.lemma & 1.lc != 2.lc\n'
+On line 79
+1:[] 2:[] & 1.lemma = 2.lemma & 1.lc != 2.lc
+'Dají se najít dvě po sobě jdoucí slova, kde první nebo druhé má frekvenci vyšší než 2000000000?\tpreloaded/ententen21_tt31\t1:[]2:[] & f(1.word) > 2000000000 | f(2.word) > 2000000000\n'
+On line 80
+1:[] 2:[] & (f(1.word) > 2000000000 | f(2.word) > 2000000000)
+'Chci slovo raketa z domény nasa.gov.\tpreloaded/ententen21_tt31\t[word="rocket"] within <doc urldomain="nasa\\.gov" />\n'
+On line 81
+<doc urldomain="nasa.gov">[lemma="rocket"]
+'Zajímali by mě všechna slova univerzita v doménách končících na .edu .\tpreloaded/ententen21_tt31\t[lemma="university"] within <doc tld="edu"/>\n'
+On line 82
+<doc urldomain="\\.edu$"> [lemma="university"]
+'Výskyty slova agrese v dokumentech s tématem hry.\tpreloaded/ententen21_tt31\t[lemma="aggression"] within <doc topic="games"/>\n'
+On line 83
+<doc topic="games"> [word="agrese"]
+'Výskyty slova agrese v dokumentech s tématem hry nebo vzdělání.\tpreloaded/ententen21_tt31\t[lemma="aggression"] within <doc topic="games|education"/>\n'
+On line 84
+<doc topic="hry"> [lemma="agrese"] | <doc topic="vzdělání"> [lemma="agrese"]
+'Zajímaly by mě výskyty reklam na blogech.\tpreloaded/ententen21_tt31\t[lemma="advertisement|ad"] within <doc genre="blog"/>\n'
+On line 85
+<doc genre="blog"> [word="ad[s]?"]
+'Zajímají mě výskyty fráze "Barack Obama" ve všech dokumentech, kde titulek obsahuje slovo "skandál".\tpreloaded/ententen21_tt31\t[word="Barack"][word="Obama"] within <doc title=".*scandal.*" />\n'
+On line 86
+<doc title="skandál"> [word="Barack"] [word="Obama"]
+'Potřebuji výskyty slova COVID po roce 2019.\tpreloaded/trends_en\t[word="COVID"] within <doc year="20[2-9]." />\n'
+On line 87
+[word="COVID"][pos="NNP"][tag="NNP"] & [tag!="NNP" & tag="NNP" & lemma="covid"]
+'Zajímají mě všechny novinové články, ve kterých se vyskytuje sloveso "hack".\tpreloaded/trends_en\t[lemma="hack" & tag="V.*"] within <doc genre="news"/>\n'
+On line 88
+<doc genre="news">[lemma="hack"]
+'Výskyty slova leprikon v dokumentech pocházejících z Irska.\tpreloaded/trends_en\t[lemma="leprechaun"] within <doc country="Ireland" />\n'
+On line 89
+<doc country="Ireland">[word="leprikon"]
+'Zajímali by mě výskyty slova zmrzlina v dokumentech, které byly publikovány v červnu.\tpreloaded/trends_en\t[word="ice"][word="cream"] within <doc month=".+-06"/>\n'
+On line 90
+<doc month="June"> [lemma="ice"][lemma="cream"]
+'Najdi věty v přímé řeči (začínající uvozovkou).\tpreloaded/ententen21_tt31\t<s> [word="\\""]\n'
+On line 91
+<s> [word="\""]
+'Najdi věty, které obsahují číslo větší než 100.\tpreloaded/ententen21_tt31\t<s/> containing [tag="CD" & word>="101"]\n'
+On line 92
+[ tag="CD" & word="1[0-9]{2}" | word="2[0-9]{2}" | word="3[0-9]{2}" | word="4[0-9]{2}" | word="5[0-9]{2}" | word="6[0-9]{2}" | word="7[0-9]{2}" | word="8[0-9]{2}" | word="9[0-9]{2}" | word="[1-9]\d{3,}" ] within <s/>
+'Zajímají mě pouze všechna slovesa z první třídy pravidelných sloves v infinitivu.\tpreloaded/frtenten22_fl4\t[tag="VMN.*" & lemma=".*er"]\n'
+On line 93
+[lemma=".*er" & tag="V.*"]
+'Chtěl bych všechna slovesa z druhé a třetí třídy pravidelných sloves.\tpreloaded/frtenten22_fl4\t[tag="V.*" & lemma=".*ir|.*re"]\n'
+On line 94
+[lemma=".*ir"] | [lemma=".*re"]
+'Chtěl bych nalézt všechna slovesa v přítomném čase.\tpreloaded/frtenten22_fl4\t[tag="V..P.*"]\n'
+On line 95
+[tag="V..P.*"]
+'Chtěl bych nalézt všechna slovesa, která jsou součástí vět v přítomném čase.\tpreloaded/frtenten22_fl4\t[tag="V..P.*"]\n'
+On line 96
+[tag="V..P.*"]
+'Zajímali by mě příklady imperfektum.\tpreloaded/frtenten22_fl4\t[tag="VM.I.*"]\n'
+On line 97
+[tag="V.*.I.*"]
+'Chtěl bych slovesa v minulém čase jednoduchém.\tpreloaded/frtenten22_fl4\t[tag="VMIS.*"]\n'
+On line 98
+[tag="V..S..."]
+'Jak naleznu slovesa v budoucím čase jednoduchém?\tpreloaded/frtenten22_fl4\t[tag="VMIF.*"]\n'
+On line 99
+[tag="V.M.I.F.*"]
+'Jak naleznu Subjonctif?\tpreloaded/frtenten22_fl4\t[tag="VMSP.*"]\n'
+On line 100
+[tag="V.*S.*"]
+'Potřebuji všechna slovesa v minulém čase složeném.\tpreloaded/frtenten22_fl4\t[tag="V[SA]IP.*"][tag="V.P.*"]\n'
+On line 101
+[tag="V.*.P.S.*"]
+'Potřebuji všechna slovesa v minulém čase nedokonavém\tpreloaded/frtenten22_fl4\t[tag="V.MS.*"]\n'
+On line 102
+[tag="V.*I.*"]
+'Jak naleznu podmiňovací způsob minulý?\tpreloaded/frtenten22_fl4\t[tag="V..C.*"]\n'
+On line 103
+[tag="V.S.S.*"]
+'Dají se nalézt slovesa v trpném rodě?\tpreloaded/frtenten22_fl4\t[lemma="être"] [tag="V.P.*"]\n'
+On line 104
+[tag="V.P.S.*"]
+'Slova uzavřená uvozovkami.\tpreloaded/ententen21_tt31\t[word="\\""] [word!="\\""]+ [word="\\""] within <s/>\n'
+On line 105
+[tag="\" or \""]
+'Všechny závorky a jejich obsah.\tpreloaded/ententen21_tt31\t[word="\\[|\\(|\\{"] [word!="\\]|\\)|\\}"]+ [word="\\]|\\)|\\}"]\n'
+On line 106
+[tag="("] | [tag=")"]
+'Slova v závorkách.\tpreloaded/ententen21_tt31\t[word="\\[|\\(|\\{"] [word!="\\]|\\)|\\}"]+ [word="\\]|\\)|\\}"]\n'
+On line 107
+[tag="("] | [tag=")"]
+'Najdi otázky – věty zakončené otazníkem.\tpreloaded/ententen21_tt31\t<s/> containing [word="\\?" & tag="SENT"]\n'
+On line 108
+<s> [tag="SENT" & word="?"] </s>
+'Najdi všechny výskyty slova „ale“ mezi dvěma větami.\tpreloaded/ententen21_tt31\t[lc="but"] within [word=","][lc="but"]\n'
+On line 109
+[word="ale"] </s>
+'Jak najdu první slovo ve větě?\tpreloaded/ententen21_tt31\t<s> []\n'
+On line 110
+<s> [word="*"]
+'Vyhledej pouze jednoslovné věty.\tpreloaded/ententen21_tt31\t<s> [] [tag="SENT"]? </s>\n'
+On line 111
+<s/> [word=".*"] {1}
+'Sekvence tří slov: přídavné jméno + podstatné jméno + sloveso.\tpreloaded/ententen21_tt31\t[tag="J.*"][tag="N.*"][tag="V.*"]\n'
+On line 112
+[tag="J.*"] [tag="N.*"] [tag="V.*"]
+'Sekvence dvou přídavných jmen za sebou.\tpreloaded/ententen21_tt31\t[tag="J.*"][tag="J.*"]\n'
+On line 113
+[tag="JJ.*"] [tag="JJ.*"]
+'Sloveso následované zájmenem.\tpreloaded/ententen21_tt31\t[tag="V.*"] [tag="P.*"]\n'
+On line 114
+[tag="V.*"] [tag="PP"]
+'Přídavné jméno následované podstatným jménem (např. „velký dům“).\tpreloaded/ententen21_tt31\t[tag="J.*"][tag="N.*"]\n'
+On line 115
+[tag="J.*"] [tag="N.*"]
+'Najdi věty začínající spojkou.\tpreloaded/ententen21_tt31\t<s> [tag="CC|IN"]\n'
+On line 116
+<s> [tag="CC"]
+'Najdi věty bez slovesného přísudku.\tpreloaded/ententen21_tt31\t<s/> !containing [tag="V.*"]\n'
+On line 117
+<s/> !containing [tag="V.*"]
+'Věty s několikanásobným podmětem.\tpreloaded/ententen21_tt31\t<s/> containing <s> [tag!="V.*|CC|,"]* [tag="N.*"] [tag!="V.*|CC|,"]* [tag="CC"] [tag!="V.*|CC|,"]* [tag="N.*"] [tag!="V.*|CC|,"]* [tag="V.*"]\n'
+On line 118
+<s> [tag="N.*|PP"] [tag="CC"] [tag="N.*|PP"] </s>
+'Najdi věty, které končí výpustkou.\tpreloaded/ententen21_tt31\t<s/> containing [word=="..."][tag="SENT"]?</s>\n'
+On line 119
+<s> [word="..."] </s>
+'Najdi výskyty více vykřičníků nebo otazníků za sebou (např. „?!“, „!!!“).\tpreloaded/ententen21_tt31\t[word=="?" | word=="!"]{2,} | [word="[!?]{2,}"]\n'
+On line 120
+[word="!" | word="?"]{2,}
+'I need all sentences that consist of three tokens.\tpreloaded/ententen21_tt31\t<s> [][][] </s>\n'
+On line 121
+<s> [ ] [ ] [ ]
+'Věty obsahující sloveso „muset“ a podstatné jméno v akuzativu.\tpreloaded/cstenten23_mj2\t<s/> containing ([lemma="muset" & tag="k1.*"][]*[tag="k1.*c4.*"]) | ([tag="k1.*c4.*"][]*[lemma="muset" & tag="k1.*"])\n'
+On line 122
+([lemma="muset"] [tag="k1.*c4.*"] within <s/>) | ([tag="k1.*c4.*"] [lemma="muset"] within <s/>)
+'Věty obsahující sloveso „muset“ a po něm podstatné jméno v akuzativu.\tpreloaded/cstenten23_mj2\t[lemma="muset" & tag="k5.*"] [tag="k1.*c4.*"]\n'
+On line 123
+[lemma="muset"] [tag="k1.*c4"]
+'Najdi vzory: "podstatné jméno|přídavné jméno" nebo "přídavné jméno|podstatné jméno".\tpreloaded/cstenten23_mj2\t([tag="k1.*"] [tag="k2.*"]) | ([tag="k2.*"] [tag="k1.*"])\n'
+On line 124
+([tag="k1.*"][tag="k2.*"]) | ([tag="k2.*"][tag="k1.*"])
+'Slova napsaná VELKÝMI PÍSMENY.\tpreloaded/ententen21_tt31\t[word="[A-Z]+"]\n'
+On line 125
+[word="^[A-Z]+$"]
+'Potřebuji nalézt všechna podstatná jména.\tpreloaded/cstenten23_mj2\t[tag="k1.*"]\n'
+On line 126
+[tag="k1.*"]
+'Potřebuji nalézt všechna podstatná jména.\tpreloaded/frtenten22_fl4\t[tag="N.*"]\n'
+On line 127
+[tag="N.*"]
+'Potřebuji nalézt všechna podstatná jména.\tpreloaded/ententen21_tt31\t[tag="N.*"]\n'
+On line 128
+[tag="N.*"]
+'Najdi všechna přídavná jména.\tpreloaded/cstenten23_mj2\t[tag="k2.*"]\n'
+On line 129
+[tag="k2.*"]
+'Najdi všechna přídavná jména.\tpreloaded/frtenten22_fl4\t[tag="A.*"]\n'
+On line 130
+[tag="A.*"]
+'Najdi všechna přídavná jména.\tpreloaded/ententen21_tt31\t[tag="J.*"]\n'
+On line 131
+[tag="J.*"]
+'Jak naleznu všechna podstatná jména začínající "pře" a končící na "ní"?\tpreloaded/cstenten23_mj2\t[word="pře.*ní" & tag="k1.*"]\n'
+On line 132
+[lemma="pře.*ní" & tag="k1.*"]
+'Jak naleznu zájména?\tpreloaded/cstenten23_mj2\t[tag="k3.*"]\n'
+On line 133
+[tag="k3.*"]
+'Jak naleznu zájména?\tpreloaded/frtenten22_fl4\t[tag="P.*"]\n'
+On line 134
+[tag="P.*"]
+'Jak naleznu zájména?\tpreloaded/ententen21_tt31\t[tag="PP.*"]\n'
+On line 135
+[tag="PP"] | [tag="PPZ"]
+'Všechny tvary slova vitamíny.\tpreloaded/cstenten23_mj2\t[lemma="vitamín"]\n'
+On line 136
+[lemma="vitamín"]
+'Jméno Petr v pátém pádě.\tpreloaded/cstenten23_mj2\t[lemma="Petr" & tag="k1.*c5.*"]\n'
+On line 137
+[lemma="petr"] [tag="k1.*c5"]
+'Znaky \'.\', \',\', \'!\' a \'?\'.\tpreloaded/cstenten23_mj2\t[word=="." | word=="," | word=="!" | word=="?"]\n'
+On line 138
+[word="[.,!?]"]
+'Jakým CQL naleznu všechny konce vět?\tpreloaded/ententen21_tt31\t</s>\n'
+On line 139
+[tag="SENT"]
+'Slovo "potravina".\tpreloaded/cstenten23_mj2\t[word="potravina"]\n'
+On line 140
+[lemma="potravina"]
+'Lemma "oko".\tpreloaded/cstenten23_mj2\t[lemma="oko"]\n'
+On line 141
+[lemma="oko"]
+'Najdi všechna slovesa v minulém čase.\tpreloaded/cstenten23_mj2\t[tag="k5.*mA.*"]\n'
+On line 142
+[tag="k5aI.*"]
+'Vyhledej všechna podstatná jména v množném čísle.\tpreloaded/cstenten23_mj2\t[tag="k1.*nP.*"]\n'
+On line 143
+[tag="k1..nP.*"]
+'Najdi všechna slova v ženském rodě.\tpreloaded/cstenten23_mj2\t[tag=".*gF.*"]\n'
+On line 144
+[gender_lemma="gF"]
+'Všechna slovesa v rozkazovacím způsobu.\tpreloaded/cstenten23_mj2\t[tag="k5.*mR.*"]\n'
+On line 145
+[tag="k5.*mR"]
+'Všechna přídavná jména ve třetím stupni.\tpreloaded/cstenten23_mj2\t[tag="k2.*d3.*"]\n'
+On line 146
+[tag="k2.*d3.*"]
+'Vyhledej všechna zájmena v 3. pádě.\tpreloaded/cstenten23_mj2\t[tag="k3.*c3.*"]\n'
+On line 147
+[tag="k3.*c3"]
+'Najdi všechny výskyty lemmatu „jíst“.\tpreloaded/cstenten23_mj2\t[lemma="jíst"]\n'
+On line 148
+[lemma="jíst"]
+'Lemma "být" v minulém čase.\tpreloaded/cstenten23_mj2\t[lemma="být" & tag=".*mA.*"]\n'
+On line 149
+[lemma="být" & tag="k5.*aI.*"]
+'Vyhledej všechny tvary lemmatu "krásný".\tpreloaded/cstenten23_mj2\t[lemma="krásný"]\n'
+On line 150
+[lemma="krásný"]
+'Slovo "kočka" ve všech pádech a číslech.\tpreloaded/cstenten23_mj2\t[lemma="kočka"]\n'
+On line 151
+[lemma="kočka"]
+'Najdi všechna slova začínající na "ne" a končící na "ný".\tpreloaded/cstenten23_mj2\t[word="ne.*ný"]\n'
+On line 152
+[word="ne.*ný"]
+'Všechna slova, která mají uprostřed „stav“.\tpreloaded/cstenten23_mj2\t[word=".*stav.*"]\n'
+On line 153
+[word=".*stav.*"]
+'Všechna slova s předponou "pro-" a příponou \'-ní\'.\tpreloaded/cstenten23_mj2\t[lemma="pro.*ní"]\n'
+On line 154
+[lemma="pro.*ní"]
+'Podstatná jména, která končí na „ka“.\tpreloaded/cstenten23_mj2\t[tag="k1.*" & word=".*ka"]\n'
+On line 155
+[tag="k1.*" & lemma=".*ka"]
+'Najdi výskyty číslovek v textu.\tpreloaded/cstenten23_mj2\t[tag="k4.*"]\n'
+On line 156
+[tag="k4.*"]
+'Najdi výskyty číslovek v textu.\tpreloaded/frtenten22_fl4\t[tag="Z.*"]\n'
+On line 157
+[tag="Z.*"]
+'Najdi výskyty číslovek v textu.\tpreloaded/ententen21_tt31\t[tag="CD"]\n'
+On line 158
+[tag="CD"]
+'Všechny výskyty dvojtečky.\tpreloaded/cstenten23_mj2\t[word==":"]\n'
+On line 159
+[word==":"]
+'Všechna interpunkční znaménka kromě tečky.\tpreloaded/cstenten23_mj2\t[tag="kI.*" & word!=="."]\n'
+On line 160
+[word="[^.]"]
+'Najdi všechna podstatná jména v 1. pádě jednotného čísla.\tpreloaded/cstenten23_mj2\t[tag="k1.*nS.*c1.*"]\n'
+On line 161
+[tag="k1.*nS.*c1"]
+'Najdi všechny výpustky.\tpreloaded/cstenten23_mj2\t[word="\\.{3}"]\n'
+On line 162
+[lemma="výpustka"]
+'Najdi všechny výskyty zkratek (např. „např.“, „tj.“, „atd.“).\tpreloaded/cstenten23_mj2\t[tag="kA.*"]\n'
+On line 163
+[word=".*\\."]
+'Najdi všechny výskyty zkratek.\tpreloaded/cstenten23_mj2\t[tag="kA.*"]\n'
+On line 164
+[word=".*\\.\\."]
+'Najdi všechna slova obsahující pomlčku nebo spojovník.\tpreloaded/cstenten23_mj2\t[word=".*[-–].*"]\n'
+On line 165
+[word=".*-.*"]
+'Najdi všechna slova, která mají stejný základ jako „věřit“.\tpreloaded/cstenten23_mj2\t[lemma="věřit"]\n'
+On line 166
+[lemma="věřit"]
+'Potřebuji všechny předložky v korpusu.\tpreloaded/cstenten23_mj2\t[tag="k7.*"]\n'
+On line 167
+[tag="kp.*"]
+'Potřebuji nalézt příslovce.\tpreloaded/ententen21_tt31\t[tag="RB.*"]\n'
+On line 168
+[tag="R.*"]
+'Potřebuji nalézt příslovce.\tpreloaded/frtenten22_fl4\t[tag="R.*"]\n'
+On line 169
+[tag="R.*"]
+'Potřebuji nalézt příslovce.\tpreloaded/cstenten23_mj2\t[tag="k6.*"]\n'
+On line 170
+[tag="k6.*"]
+'Chci slovo, které se v korpusu nachází na pozici 1000.\tpreloaded/ententen21_tt31\t[#1000]\n'
+On line 171
+[word="*"] & [pos="1000"]
+'Potřebuji slovko, které se v korpusu nachází na první pozici.\tpreloaded/ententen21_tt31\t[#1]\n'
+On line 172
+<doc> [word=".*"]
+'Jak naleznu slovo na pozici 7831?\tpreloaded/ententen21_tt31\t[#7831]\n'
+On line 173
+[word="7831"]
+'Slovo "COVID" po roce 2019\tpreloaded/trends_en\t[word="COVID"] within <doc year="20[2-9].*"/>\n'
+On line 174
+<doc year >="2020"> [word="COVID"]
+'Potřebuji všechy výskyty různých květin vyskytující se v okolí velikosti +-5 od slova roste.\tpreloaded/ententen21_tt31\t(meet ~"dandelion-n" [lemma="grow"] -5 5)\n'
+On line 175
+( [tag="N.*"] [ ]{0,5} [word="grows"] ) | ( [word="grows"] [ ]{0,5} [tag="N.*"] )
+'Potřebuji všechy výskyty slova "grow" vyskytující se v okolí velikosti +-5 od různých květin.\tpreloaded/ententen21_tt31\t(meet [lemma="grow"] ~"dandelion-n" -5 5)\n'
+On line 176
+(meet [lemma="grow"] [tag="N.*"] -5 5)
+'Najdi všechny případy, kdy je v přímé řeči oslovení.\tpreloaded/ententen21_tt31\t[word="\\""][word!="\\""]+[word="\\""] containing [word="\\""][tag="NP|NPS"][word=","][]?[tag="PP"]\n'
+On line 177
+Traceback (most recent call last):
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/connection.py", line 571, in getresponse
+    httplib_response = super().getresponse()
+  File "/usr/lib64/python3.13/http/client.py", line 1430, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "/usr/lib64/python3.13/http/client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib64/python3.13/http/client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.13/socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+TimeoutError: timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/util/retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/urllib3/connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+        self, url, f"Read timed out. (read timeout={timeout_value})"
+    ) from err
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='localhost', port=8060): Read timed out. (read timeout=1200)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/run_model.py", line 39, in <module>
+    translation = model.auto_call(params)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/models/Qwen3_30B_A3B_Thinking_2507_IQ4_NL.py", line 596, in auto_call
+    cql = call(params)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/models/Qwen3_30B_A3B_Thinking_2507_IQ4_NL.py", line 573, in call
+    model_response = call_einfra(prompt, api_key, use_grammar=True, corpname=params["corpname"])
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/models/Qwen3_30B_A3B_Thinking_2507_IQ4_NL.py", line 216, in call_einfra
+    resp = requests.post("http://localhost:8060/v1/chat/completions", headers=headers, json=payload, timeout=1200)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/requests/api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/Qwen3-30B-A3B-Thinking-2507-IQ4_NL_grammar/venv/lib64/python3.13/site-packages/requests/adapters.py", line 690, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPConnectionPool(host='localhost', port=8060): Read timed out. (read timeout=1200)
+'Najdi všechny případy, kdy je v přímé řeči oslovení.\tpreloaded/ententen21_tt31\t[word="\\""][word!="\\""]+[word="\\""] containing [word="\\""][tag="NP|NPS"][word=","][]?[tag="PP"]\n'
+On line 1
+<s> [tag="NP"] [word=","]
+'Najdi všechny případy přímé řeči, kterou někdo pronáší.\tpreloaded/ententen21_tt31\t[word="\\""][word!="\\""]+[word="\\""] within ([tag="NP|NPS|PP"][lemma="say"][word=":"]?[word="\\""][word!="\\""]+[word="\\""]) | ([word="\\""][word!="\\""]+[word="\\""][lemma="say"][tag="NP|NPS|PP"]) | ([word="\\""][word!="\\""]+[word="\\""][tag="NP|NPS|PP"][lemma="say"])\n'
+On line 2
+<doc/> containing [tag="SENT" & word="\""]
+'Najdi všechny věty, které jsou prosbou.\tpreloaded/ententen21_tt31\t<s/> containing ([lemma="please"] | [lemma="could"] | [lemma="would"] | [lemma="can"] | [lemma="will"] within <s/>)\n'
+On line 3
+<s> [word="request"]
+'Potřebuji všechy výskyty slova koroze vyskytující se okolo kovů.\tpreloaded/ententen21_tt31\t(meet [lemma="corrosion"] ~"metal-n" -5 5)\n'
+On line 4
+(meet [lemma="corrosion"] [lemma="metal"] -3 3)
+'Potřebuji všechy výskyty slova koroze vyskytující se okolo různých kovů. Použí thesaurus.\tpreloaded/ententen21_tt31\t(meet [lemma="corrosion"] ~"metal-n" -5 5)\n'
+On line 5
+(meet [lemma="corrosion"] ~"metal-n" -5 5)
+'Potřebuji všechy výskyty různých kovů vyskytující se okolo slova koroze.\tpreloaded/ententen21_tt31\t(meet ~"metal-n" [lemma="corrosion"] -5 5)\n'
+On line 6
+(meet ~"metal-n" [lemma="corrosion"] -5 5)
+'Potřebuji všechy výskyty slova koroze vyskytující se okolo různých květin.\tpreloaded/ententen21_tt31\t(meet [lemma="corrosion"] ~"daisy-n" -5 5)\n'
+On line 7
+[lemma="corrosion"] []{0,3} ~"flower-n"
+'Potřebuji všechy výskyty slova roste vyskytující se v okolí velikosti +-5 od různých květin.\tpreloaded/ententen21_tt31\t(meet [lemma="grow"] ~"rose-n" -5 5)\n'
+On line 8
+(meet [lemma="grow"] [lemma="flower"] -5 5)

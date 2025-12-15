@@ -1,0 +1,196 @@
+Tous les mots.	preloaded/ententen21_tt31	[]	[tag!="SENT" & tag!="SYM" & tag!="\"" & tag!="," & tag!=":" & tag!="$" & tag!="#" & tag!="(" & tag!=")" & !tag=""]
+Trouver n'importe quel token	preloaded/frtenten22_fl4	[]	[]
+Tous les noms communs	preloaded/frtenten22_fl4	[tag="NC.*"]	[tag="N\\.C.*"]
+Tous les noms propres	preloaded/frtenten22_fl4	[tag="NP.*"]	[tag="NP.*"]
+Noms féminins singuliers	preloaded/frtenten22_fl4	[tag="N.FS.*"]	[pos="noun" & tag!=".*M.*"]
+Noms masculins pluriels	preloaded/frtenten22_fl4	[tag="N.MP.*"]	[lemma="livre" & tag="N.*MP.*"]
+Adjectifs qualificatifs	preloaded/frtenten22_fl4	[tag="AQ.*"]	[tag="AQ....."]
+Adjectifs ordinaux	preloaded/frtenten22_fl4	[tag="AO.*"]	[lemma="premier" & tag="AO.F.*"]
+Déterminants articles	preloaded/frtenten22_fl4	[tag="DA.*"]	[tag="DA.*"] [tag="N.*"] within <s/>
+Pronoms personnels	preloaded/frtenten22_fl4	[tag="PP.*"]	[tag="PP.*"] [tag="V.*"]
+Pronoms possessifs	preloaded/frtenten22_fl4	[tag="PX.*"]	[tag="P.X.*.F.P"]
+Adverbes généraux	preloaded/frtenten22_fl4	[tag="RG"]	[lemma="rapide" & tag="RG.*"]
+Adverbes négatifs	preloaded/frtenten22_fl4	[tag="RN"]	[tag="R.N"]
+Prépositions	preloaded/frtenten22_fl4	[tag="SP.*"]	[lemma="à"][lemma="le"]
+Conjonctions de coordination	preloaded/frtenten22_fl4	[tag="CC.*"]	[lemma="et" & tag="CC"]   [word="mais"]
+Conjonctions de subordination	preloaded/frtenten22_fl4	[tag="CS.*"]	[lempos=".*-c" & tag="CS.*"]
+Interjections	preloaded/frtenten22_fl4	[tag="I.*"]	[tag=="I"]
+Nombres	preloaded/frtenten22_fl4	[tag="Z.*"]	[lempos=".*-m"]
+Ponctuation point	preloaded/frtenten22_fl4	[tag="Fp"]	[tag="Fp"] | [tag="Fat"] | [tag="Fit"]
+Ponctuation virgule	preloaded/frtenten22_fl4	[tag="Fc"]	[tag="Fc"] within (<s/> containing [tag="Fit"])
+Ponctuation point d'interrogation	preloaded/frtenten22_fl4	[tag="Fit"]	[tag="Fit"]
+Verbes a l'infinitif	preloaded/frtenten22_fl4	[tag="V.N.*"]	<doc />
+Verbes au participe	preloaded/frtenten22_fl4	[tag="V.P.*"]	[tag="V..P"]
+Verbes au gérondif	preloaded/frtenten22_fl4	[tag="V.G.*"]	[tag="V..G.*"] within <s/>
+Verbes à l'indicatif	preloaded/frtenten22_fl4	[tag="V.I.*"]	[lemma="parler" & tag="^V.[I].*"]
+Verbes à l'indicatif et au present	preloaded/frtenten22_fl4	[tag="V.IP.*"]	[tag="V.*"]
+Verbes au subjonctif	preloaded/frtenten22_fl4	[tag="V.S.*"]	[lemma="avoir" & tag="V\..S.*"]
+Verbes à l'impératif	preloaded/frtenten22_fl4	[tag="V.M.*"]	<s/> containing [tag="V\..M.*"]
+Verbes au présent	preloaded/frtenten22_fl4	[tag="V..P.*"]	[tag="V.I.P.*"]
+Verbes au futur	preloaded/frtenten22_fl4	[tag="V..F.*"]	[tag="V.IF.*"]
+Verbes au conditionnel	preloaded/frtenten22_fl4	[tag="V..C.*"]	[lemma="être" & tag="V\..*C.*"]
+Mots avec seulement des majuscules	preloaded/frtenten22_fl4	[word="[A-ZÀ-ÖØ-Ý]+"]	[word=="[A-ZÉÀÂÈÔÛÎÏÆŒÇ]"]
+Mots avec seulement des minuscules	preloaded/frtenten22_fl4	[word="[a-zà-öø-ý]+"]	[word="[a-zàâäéèêëîïôöùûüÿçœæ]+" & tag!="F.*"]
+Acronymes de 2+ lettres	preloaded/frtenten22_fl4	[word="[A-Z]{2,}"]	[word="([A-Z]\\.){2,}"] | [word="^[A-Z]{2,}$"]
+Nombres à quatre chiffres	preloaded/frtenten22_fl4	[word="\d{4}"]	[word="[0-9]{4}" & tag="Z..*"]
+Nombres avec séparateurs de milliers	preloaded/frtenten22_fl4	[word="\d{1,3}(,\d{3})+"]	[tag="Z.*" & word="[0-9]+[\s'][0-9]{3}([\s'][0-9]{3})*"]
+Pourcentages	preloaded/frtenten22_fl4	[word="\d+([, ]?\d+|\.\d+)?%"]	([tag="Zp"] | [word="%"] | [lemma="pourcentage"]) within <s/>
+Hashtags	preloaded/frtenten22_fl4	[word="#\w+"]	<doc genre="social_media"> [word="#.+"]
+Mentions starting with an arobase	preloaded/frtenten22_fl4	[word="@\w+"]	<doc genre="social_media"> [word="[@].*"]
+Couleurs hex	preloaded/frtenten22_fl4	[word="^#([0-9A-Fa-f]{3}|[0-9A-Fa-f]{6})$"]	[word=="#[0-9a-fA-F]{6}"]
+Lemmes commençant par télé-	preloaded/frtenten22_fl4	[lemma="télé.*"]	[lemma="télé-.*" & !tag="V.*"]
+Lemmes finissant par -ment	preloaded/frtenten22_fl4	[lemma=".*ment"]	[lemma_lc=".*[-_]?ment$"]
+Lemma être	preloaded/frtenten22_fl4	[lemma="être"]	[lemma="être" & tag="V.*"]
+Lemma avoir	preloaded/frtenten22_fl4	[lemma="avoir"]	[lemma="avoir" & tag="V.*"] [tag="R.*"]{0,2} [lemma="à" & tag="S.*"]
+Lemma faire	preloaded/frtenten22_fl4	[lemma="faire"]	[ws("faire-v", ".*", ".*")]
+Toutes les formes du lemme aller	preloaded/frtenten22_fl4	[lemma="aller"]	[lemma="aller" & tag="V.*" & !tag="N.*"]
+Adjectif suivi d'un nom	preloaded/frtenten22_fl4	[tag="A.*"][tag="N.*"]	[tag="A.*" & !tag="P.*" & !tag="V.*"] [tag="N.*"]
+Nom suivi d'un adjectif	preloaded/frtenten22_fl4	[tag="N.*"][tag="A.*"]	[tag="N.*"] [tag="A.*"]
+Déterminant + nom	preloaded/frtenten22_fl4	[tag="D.*"][tag="N.*"]	[tag="D....FS"][tag="N..FS"]
+Déterminant + adjectif + nom	preloaded/frtenten22_fl4	[tag="D.*"][tag="A.*"][tag="N.*"]	perl[tag="D.*"] [tag="A.*"] [tag="N.*"] : [lemmapos]/"D.*"-"A.*"-"N.*" within s
+Préposition + déterminant + nom	preloaded/frtenten22_fl4	[tag="SP.*"][tag="D.*"][tag="N.*"]	[lemma="à" | lemma="dans"] [tag="D.*S"] [tag="N.*S"]
+Verbe + pronom clitique	preloaded/frtenten22_fl4	[tag="V.*"][tag="P.*"]	[tag="V.*"] [tag="PP.!.*&!case='N'"]
+Négation avec ne et pas	preloaded/frtenten22_fl4	[lemma="ne" & tag="RN"][lemma!="pas" | tag!="RN"]{0,3}[lemma="pas" & tag="RN"] within <s/>	[lemma="ne" & tag="R.*"] [ ]{0,2} [lemma="pas" & tag="R.*"] !containing [lemma="plus|jamais|guère"] within <s/>
+Coordination nominale	preloaded/frtenten22_fl4	[tag="N.*"][word="et"][tag="N.*"]	([tag="N.*"] [tag="C.*"] [tag="N.*"]) within <s/>
+Séquence de trois noms	preloaded/frtenten22_fl4	[tag="N.*"]{3}	<p/> containing [tag="N.*"]{3}
+Adverbe suivi d'un adjectif	preloaded/frtenten22_fl4	[tag="R.*"][tag="A.*"]	[tag="R.*"] []{0,2} [tag="A.*"]
+Deux adjectifs consécutifs	preloaded/frtenten22_fl4	[tag="A.*"][tag="A.*"]	[tag="A.*" & gender_guess="fem"] [tag="A.*" & gender_guess="fem"]
+Phrases finissant par un point d'interrogation	preloaded/frtenten22_fl4	[word=="?"] </s>	[tag="Fit"] !within [tag=".*URL.*"]
+Phrases finissant par un point d'exclamation	preloaded/frtenten22_fl4	[word=="!"] </s>	<s> []* [tag="Fat" & lc="!"] </s>
+Phrases d'un seul mot	preloaded/frtenten22_fl4	<s> [] [tag="F[^z].*"] </s>	<s/> containing []{1}
+Première position de la phrase	preloaded/frtenten22_fl4	<s> []	<s> [lemma="être" & tag="V\..*"]
+Phrases sans verbe	preloaded/frtenten22_fl4	<s/> !containing [tag="V.*"]	<s/> containing [lemma="silence"] & <s/> !containing [tag="V.*"]
+Phrases contenant un nombre	preloaded/frtenten22_fl4	<s/> containing [tag="Z.*"]	<s/> containing ([tag="Z.*"] | [tag="W.*"])
+Documents du domaine gouv.fr	preloaded/frtenten22_fl4	<doc urldomain=".*\.gouv\.fr" />	<doc urldomain="gouv\\.fr"> [ ] | <doc urldomain=".*\\.gouv\\.fr"> [ ]
+Documents en .fr	preloaded/frtenten22_fl4	<doc tld="fr" />	<doc tld="fr"/>
+Titres contenant rapport	preloaded/frtenten22_fl4	<doc title=".*rapport.*" />	<doc title=".*rapport.*">
+Articles de presse	preloaded/frtenten22_fl4	<doc genre="news" />	<p heading="article_de_presse"/>
+Documents publiés en 2020	preloaded/frtenten22_fl4	<doc crawl_year="2020" />	<doc crawl_year="2020"> [lemma="pandémie"]
+Paragraphes contenant un nombre	preloaded/frtenten22_fl4	<p/> containing [tag="Z.*"]	<p/> containing [tag="Zd"]
+Paragraphes sans nom propre	preloaded/frtenten22_fl4	<p/> !containing [tag="NP.*"]	<p/> !containing [tag="NP.*"]
+Phrases contenant des guillemets	preloaded/frtenten22_fl4	<s/> containing [tag="Fra|Frc|Fe"]	<s> [tag="Fra"] []* [tag="Frc"] </s>
+Nom à +-3 tokens d'un verbe	preloaded/frtenten22_fl4	(meet [tag="N.*"] [tag="V.*"] -3 3)	([tag="V.*"][]{0,3}[tag="N.*"]) | ([tag="N.*"][]{0,3}[tag="V.*"])
+Union de noms près de "être" ou adjectifs près de "être"	preloaded/frtenten22_fl4	(union (meet [tag="N.*"] [lemma="être"] -2 2) (meet [tag="A.*"] [lemma="être"] -2 2))	(union   (meet [tag="N.*"] [lemma="être" & tag="V.S.*"] -5 5)   (meet [tag="A.*"] [lemma="être" & tag="V.S.*"] -5 5))
+Noms près de "être" ou adjectifs près de "être"	preloaded/frtenten22_fl4	(union (meet [tag="N.*"] [lemma="être"] -2 2) (meet [tag="A.*"] [lemma="être"] -2 2))	[lemma="être"] ([tag="R.*" & word!="plus" & word!="très"])? [tag="A.*"]
+Répétition immédiate du même mot	preloaded/frtenten22_fl4	1:[] 2:[] & 1.word = 2.word	([word="(\\w+)"] [word="\\1"]) within <s/>
+Répétition immédiate du même lemma	preloaded/frtenten22_fl4	1:[] 2:[] & 1.lemma = 2.lemma	[lemma="([a-zA-ZÀ-ÿ]+)" & tag="V.*"] [lemma="\1" & tag="V.*"]
+Deux tokens consécutifs avec même lemme	preloaded/frtenten22_fl4	1:[] 2:[] & 1.lemma = 2.lemma	[lemma_lc!="_" & tag="V..*"] [lemma_lc="\\0" & tag="V..*"]
+Deux tokens adjacents avec même tag	preloaded/frtenten22_fl4	1:[] 2:[] & 1.tag = 2.tag	([tag="V.*"] [tag="V.*"]) | ([tag="N.*"] [tag="N.*"]) | ([tag="A.*"] [tag="A.*"])
+Deux adjectifs coordonnés avec même lemme	preloaded/frtenten22_fl4	1:[tag="A.*"] [tag="CC.*"] 2:[tag="A.*"] & 1.lemma = 2.lemma	plaintextPattern: Adjectif → [0-2 jetons quelconques] → Conjonction → [0-2 jetons quelconques] → Adjectif avec même lemmeExemples détectés :1. "belle et belle"        (lemme_lc:belle)2. "fou, mais folle"       (lemme_lc:fou, virgule incluse)3. "doux ou DOUCES"        (casse normalisée)4. "vieux cependant vieil" (avec adverbe intermédiaire)
+Séquences de points de suspension	preloaded/frtenten22_fl4	[tag="Fs"]	<s/> containing [word="\.\.\."]
+Guillemets français ouvrants	preloaded/frtenten22_fl4	[word="«"]	<s/> containing [word=".*"] within ([tag="Fra"] []{1,30} [tag="Frc"])
+Guillemets français fermants	preloaded/frtenten22_fl4	[word="»"]	[lemma="dire"] [ ]{0,5} [ word="»" ]
+Parenthèses ouvrante et fermante	preloaded/frtenten22_fl4	[word="\(|\)"]	<doc>[tag=="Fpa"] []{1,20} [tag=="Fpt"]
+Text au parenthèses ouvrante et fermante	preloaded/frtenten22_fl4	[word=="("] []{0,5} [word==")"]	([tag="Fpa"]? []){0,50} [tag="Fpt"]?
+Adjectifs féminins pluriels	preloaded/frtenten22_fl4	[tag="A..FP.*"]	[tag="A...F\\.P.*"]
+Déterminants masculins singuliers	preloaded/frtenten22_fl4	[tag="D..MS.*"]	[word="le" & tag="DA0MS0"]
+Pronoms relatifs pluriels	preloaded/frtenten22_fl4	[tag="PR..P.*"]	<doc genre="academic|literary"> containing [tag="PR..P.*"]
+Pronoms personnels 3e personne	preloaded/frtenten22_fl4	[tag="PP3.*"]	[lemma="il" | lemma="elle" | lemma="ils" | lemma="elles" | lemma="on" | lemma="le" | lemma="la" | lemma="lui" | lemma="les" | lemma="leur"]
+Verbes principaux indicatif présent 3sg	preloaded/frtenten22_fl4	[tag="VMIP3S.*"]	[tag="VMIP3S\\..*"]
+Verbes principaux indicatif présent 3pl	preloaded/frtenten22_fl4	[tag="VMIP3P.*"]	[tag="VMIP3P.*" & !tag="VA.*"]
+Auxiliaires au passé	preloaded/frtenten22_fl4	[tag="VA.S.*"]	<doc genre=".*"/>
+Semi-auxiliaires à l'infinitif	preloaded/frtenten22_fl4	[tag="VSN.*"]	[lempos_lc=".*-v" & tag="V.S.N.*"]
+Négation avec « ne » et « jamais »	preloaded/frtenten22_fl4	[lemma="ne" & tag="RN"] []{0,3} [lemma="jamais"]	[lemma="ne"] [tag="V.*"] ([word!="rien"][lemma="jamais"] | [lemma="jamais"])
+Négation « ne » et « plus »	preloaded/frtenten22_fl4	[lemma="ne" & tag="RN"] []{0,3} [word="plus"]	[lemma="ne"] []{0,4} [lemma="plus"] within <s/>
+Négation « ne » et « rian »	preloaded/frtenten22_fl4	[lemma="ne" & tag="RN"] []{0,3} [word="rian"]	[tag="RN"] [tag="V.*"]{0,2} [lemma="rien"] within <s/>
+Phrase commençant par guillemet	preloaded/frtenten22_fl4	<s> [tag="Fe|Fr."]	<s> [tag="Fe"]
+Phrase contenant des parenthèses	preloaded/frtenten22_fl4	<s/> containing [word="\(|\)"]	<s/> containing ([tag="Fpa"] []{0,} [tag="Fpt"])
+Objets du verbe "tester"	preloaded/frtenten22_fl4	[ws("tester-v", "objects of \"%w\"", ".*")]	[ws("tester-v", "objects of \"%w\"", ".*")]
+Modifieurs du nom "livre"	preloaded/frtenten22_fl4	[ws("livre-n", "modifiers of \"%w\"", ".*")]	[lempos_lc=".*"] [lempos_lc="livre-n"]
+Sujets du verbe "augmenter"	preloaded/frtenten22_fl4	[ws("augmenter-v", "subjects of \"%w\"", ".*")]	[ws("augmenter-v", "subjects of \"%w\"", ".*") & tag="N.FP.*"]
+"politique-n" comme objet de "réformer-v"	preloaded/frtenten22_fl4	[ws("réformer-v", ".*object.*", "politique-n")]	[ws("réformer-v", "objects of \"%w\"", "politique.*-n")]
+10 mots similaires au mot "médecin-n" après "voir"	preloaded/frtenten22_fl4	[lemma="voir"] []{0,3} ~10"médecin-n"	[lemma="voir"] []{0,3} [~10"médecin-n" & tag="N.*"]
+15 mots similaires au mot "énergie-n" près de "renouvelable"	preloaded/frtenten22_fl4	[lemma="renouvelable"] []{0,3} ~15"énergie-n"	(meet ~15"énergie-n" [lemma="renouvelable"] -5 5)
+Métaux à +-5 de mots similaires au mot « corrosion ».	preloaded/frtenten22_fl4	(meet ~"métal-n" [lemma="corrosion"] -5 5)	(meet [lemma="acier"]~"corrosion-n"-5 5)|(meet [lemma="fer"]~"corrosion-n"-5 5)|(meet [lemma="cuivre"]~"corrosion-n"-5 5)|(meet [lemma="aluminium"]~"corrosion-n"-5 5)|(meet [lemma="bronze"]~"corrosion-n"-5 5)
+Nombre suivi du symbole %	preloaded/frtenten22_fl4	[tag="Z.*"][word="%"]	[tag="Z.*"][tag="Ft"]
+Un nombre suivi du symbole % sans espace	preloaded/frtenten22_fl4	[tag="Z.*"][word="%"] !containing <g/>	[tag="Z.*"][word="%"]
+Un nombre suivi du symbole % avec espace	preloaded/frtenten22_fl4	[tag="Z.*"][word="%"] containing <g/>	[tag="Z.*"][word="%" & tag="Ft"]
+Nom ou pronom avant verbe à 1–3 tokens	preloaded/frtenten22_fl4	(meet [tag="N.*|P.*"] [tag="V.*"] 1 3)	( [tag="N.*"] | [tag="P.*"] ) [ ]{1,3} [tag="V.*"] within <s/>
+Adjectif précédé d'un adverbe	preloaded/frtenten22_fl4	[tag="R.*"][tag="A.*"]	[tag="RG"] [tag="A.*"]
+Nom précédé de deux adjectifs	preloaded/frtenten22_fl4	[tag="A.*"]{2}[tag="N.*"]	[tag="J.*"]{2} [tag="N.*"]
+Le pronom "qui" pour remplacer le sujet d'une phrase	preloaded/frtenten22_fl4	[tag="N.*"][word="qui"]	<s/> containing [lemma="qui" & tag="P\.R.*\.N"]
+Paragraphes contenant un point-virgule	preloaded/frtenten22_fl4	<p/> containing [tag="Fx"]	<p/> containing [word=";"]
+Phrases ne contenant pas de virgule	preloaded/frtenten22_fl4	<s/> !containing [tag="Fc"]	<s/> !containing [tag="Fc"]
+Titres ne contenant pas de majuscules	preloaded/frtenten22_fl4	[] within <doc title!=".*[A-ZÀ-ÖØ-Ý].*" />	<doc title=".*[a-zàâäçéèêëîïôœùûüÿ].*" & !title=".*[A-ZÀÂÄÇÉÈÊËÎÏÔŒÙÛÜ].*" />
+Documents .edu	preloaded/frtenten22_fl4	<doc tld="edu" />	<doc urldomain="edu" />
+Documents dont l'URL contient /blog/	preloaded/frtenten22_fl4	<doc url=".*\/blog\/.*" />	<doc url="https?://[^/]+/blog/.*" />
+Bigramme répété à distance <6 in one sentence	preloaded/frtenten22_fl4	1:[] 2:[] []{0,5} 3:[] 4:[] & 1.word=3.word & 2.word=4.word within <s/>	Positions: [1=ref1] [2=ref2] [3][4][..] [n=ref1] [n+1=ref2]  Max distance = 5 tokens (position 1 → n where n ≤ 5)
+Guillemets sans nom à l'intérieur. La phrase est <=8.	preloaded/frtenten22_fl4	([tag="Fe|Fra"] [tag!="Fe|Frc"]{1,8} [tag="Fe|Frc"] !containing [tag="N.*"]) within <s/>	<s/>    :: tokens() <= 8    containing    (        [word="«"]         [tag!="N.*"]{0,6}         [word="»"]    )
+Verbe à +-2 du nom « risque »	preloaded/frtenten22_fl4	(meet [tag="V.*"] [lemma="risque"] -2 2)	[lemma="risque" & tag="N.*"] within ([tag="V.*"] []? []?|[ ]{2})
+Adjectif à +-2 du verbe « sembler »	preloaded/frtenten22_fl4	(meet [tag="A.*"] [lemma="sembler"] -2 2)	(meet [tag="A.*"] [lemma="sembler"] -2 2)
+Nom dans une phrase qui contient un verbe au futur	preloaded/frtenten22_fl4	[tag="N.*"] within (<s/> containing [tag="V..F.*"])	[tag="V.*F.*"] []{0,3} [tag="N.*"] within <s/>
+Nom dans une phrase qui ne contient pas un verbe au futur	preloaded/frtenten22_fl4	[tag="N.*"] within (<s/> !containing [tag="V..F.*"])	[tag="N.*"] within <s/> !containing [tag="V...F.*"]
+Documents au sujet "science"	preloaded/frtenten22_fl4	<doc topic="science" />	([lemma="physique"] within <doc topic="science"/>)
+Mots avec accent aigu	preloaded/frtenten22_fl4	[word=".*[é].*"]	[lc=".*é.*" & tag="N.*"]
+Mots avec cédille	preloaded/frtenten22_fl4	[word=".*[ç].*"]	[word=".*ç.*"]
+Mots avec tréma	preloaded/frtenten22_fl4	[word=".*[ëïü].*"]	[word=".*[äëïöüÄËÏÖÜ].*" & tag="N.*"]
+Déterminants pluriels	preloaded/frtenten22_fl4	[tag="D...P.*"]	[tag="D.D.*P.*"]
+Déterminants singuliers	preloaded/frtenten22_fl4	[tag="D...S.*"]	[lemma_lc="la" & tag="DA.."]
+Pronoms à l'accusatif ou datif	preloaded/frtenten22_fl4	[tag="P....A.*|P....D.*"]	[tag="P\..FSA.*"]
+Au moins deux points d'exclamation	preloaded/frtenten22_fl4	[tag="Fa.*"]{2,}	<s/> containing ([tag="Fat"] | [word="!"]){2,}
+Au moins deux points d'interrogation	preloaded/frtenten22_fl4	[tag="Fi.*"]{2,}	<s/> containing [tag="Fit"] containing [tag="Fit"]
+Phrases commençant par "Le"	preloaded/frtenten22_fl4	<s> [word="Le"]	<s> [word="Le" & tag="D.*"] [tag="N.*"]
+Token à la position 100	preloaded/frtenten22_fl4	[#100]	<s> []{99} []
+Token à la position 1	preloaded/frtenten22_fl4	[#1]	[word="。"] [word= ".+"]
+Articles définis ou indéfinis	preloaded/frtenten22_fl4	[tag="D[AI].*"]	[ ( tag="DA.*" | tag="DI.*" ) ]
+Deux adjectifs suivis d'un nom. La fréquence du premier adjectif est supérieure à 100k.	preloaded/frtenten22_fl4	1:[tag="A.*"] [tag="A.*"] [tag="N.*"] & f(1.lemma) > 100000	[lc="grand|bon|premier"][tag="A.*"][tag="N.*"]
+Répétition du lemme sur deux tokens	preloaded/frtenten22_fl4	1:[] 2:[] & 1.lemma = 2.lemma	[lemma="parler"][][lemma="parler"]
+Nombres supérieurs à 100	preloaded/frtenten22_fl4	[tag="Z.*" & word>="101"]	[tag="Z.*" & word="[1-9][0-9]{2,}"]
+Heures au format HH:MM	preloaded/frtenten22_fl4	([word="[1-2]?[0-9]:[0-5][0-9]"]|[word="[1-2]?[0-9]"][word=":"][word="[0-5][0-9]"])	[tag="W"] | ( [word="[0-9]{2}"] [word==":"] [word="[0-9]{2}"] )
+Adresses e-mail	preloaded/frtenten22_fl4	[word=".+@.+\..*"]	<p/> containing (   [ lc="adresse" ] [ lc="e-mail" ] )
+Préposition + nom propre	preloaded/frtenten22_fl4	[tag="SP.*"][tag="NP.*"]	[tag="S.P"] [tag="N.P.FS"]
+Verbe + "se"	preloaded/frtenten22_fl4	[tag="V.*"][lemma="se"]	[lemma="se" & tag="P.*"] [tag="V.*"]
+Det + nombre + nom	preloaded/frtenten22_fl4	[tag="D.*"][tag="Z.*"][tag="N.*"]	[tag="D.*"] [tag="Z.*"] [tag="A.*"]? [tag="N.*"]
+Objets pronominaux de "parler-v"	preloaded/frtenten22_fl4	[ws("parler-v",".*pronominal objects of.*",".*")]	[ws("parler-v", "pronominal objects of \"%w\"", ".*") & word="(le|la|lui|leur)"]
+marché-n modifié par financier	preloaded/frtenten22_fl4	[ws("marché-n",".*modifiers of.*","financier-j")]	(meet [lemma="marché" & tag="N.*"] [lemma="financier" & tag="A..MS.*"] 0 2)
+« école-n » sujet de « ouvrir-v »	preloaded/frtenten22_fl4	[ws("ouvrir-v",".*subjects of.*","école-n")]	[ws("ouvrir-v", ".*subject.*", "école-n")]
+Thesaurus "ville-n" avant "banlieue"	preloaded/frtenten22_fl4	~"ville-n" [lemma="banlieue"] within <s/>	[lemma=".*" & lempos="ville-n_.*"] []{0,4} [lemma="banlieue"]
+Thesaurus 20 « voiture-n »	preloaded/frtenten22_fl4	~20"voiture-n"	[~20"voiture-n"]
+Mots similaires "argent-n" après "investir"	preloaded/frtenten22_fl4	[lemma="investir"] []{0,2} ~"argent-n" within <s/>	[lemma="investir"] [ws(".*", "objects of.*", .*)]? [lempos in ~"argent-n"]
+« boire » et « eau » avec deux adjectifs entre	preloaded/frtenten22_fl4	[lemma="boire"] [tag="A.*"]{2} [lemma="eau"] within <s/>	[lemma="boire"] []{0,2} [tag="A.*"] [ ]{0,2} [tag="A.*"] []{0,2} [lemma="eau"]
+« parce que » dans la même phrase	preloaded/frtenten22_fl4	[word="parce"][word="que"] within <s/>	[lemma="parce" & tag="C.S"] [lemma="que" & tag="C.S"] within <s/>
+Documents gathered en janvier	preloaded/frtenten22_fl4	<doc crawl_date="....-01-.*" />	<doc crawl_year="2025" & crawl_date="2025-01-.*"/>
+Phrases commençant par "Il y a"	preloaded/frtenten22_fl4	<s> [word="Il"] [word="y"] [word="a"]	<s> [lemma="il"][lemma="y"][lemma="avoir"]
+Questions commençant par « Pourquoi »	preloaded/frtenten22_fl4	<s> [word="Pourquoi"]	<s> [word="Pourquoi"][tag="V.*"]{1,10} [word="\\?"]
+Mots avec un trait d'union	preloaded/frtenten22_fl4	[word=".*-.*"]	[word="[A-Za-z]*-.*|.*-[A-Za-z]*"]
+Composés avec au moins 3 traits d'union	preloaded/frtenten22_fl4	[word=".+(-.+){2,}"]	[word="[^-]+-([^-]+-){2,}[^-]+" & tag="N.*"]
+« Internet » insensible à la casse	preloaded/frtenten22_fl4	[lc="internet"]	[word="Internet" & tag="N.*"]
+Passif avec « être » + participe	preloaded/frtenten22_fl4	[lemma="être"] []{0,2} [tag="V.P.*"] within <s/>	[lemma="être" & tag="V.*"] [tag="V.[MC]..P.*"] within <s/>
+Verbe « parler » suivi de « de »	preloaded/frtenten22_fl4	[lemma="parler" & tag="V.*"] []{0,2} [lemma="de" & tag="SP"]	[lempos="parler-v"] []{0,2} [lemma="de" & tag="SP"]
+Verbe + pronom objet « le/la/les/l' »	preloaded/frtenten22_fl4	[tag="V.*"] [tag="DA.*"]	[tag="V.*"] [word="le"|word="la"|word="les"|word="l'" & tag="PP3.*A.*"]
+Séquence pronom réfléchi + verbe	preloaded/frtenten22_fl4	[tag="PP.*"] [tag="V.*"]	[tag="V.*"]
+Phrase contenant "si" et "alors" »	preloaded/frtenten22_fl4	(<s/> containing [word="si"]) containing [word="alors"]	[lemma="alors" & tag="RG"] [ ]{0,3} [lemma="si" & tag="CS.*"] within <s/>
+Questions avec « est-ce que »	preloaded/frtenten22_fl4	[word="est-ce"] [word="que"] | [word="est"] [word="ce"] [word="que"]	<s/> [ ]{0,2} [word="(?i)est" & tag="VA.*"] [word="(?i)ce" & tag="P.*"] [word="(?i)que" & (tag="CS" | tag="PR0CN")]
+Phrases contenant au moins deux verbes	preloaded/frtenten22_fl4	<s/> containing ([tag="V.*"] []* [tag="V.*"])	<s/> containing [tag="VMP.*" | tag="V..*"]{2,}
+Subordonnée introduite par "que"	preloaded/frtenten22_fl4	[word="que"] within <s/>	[word="que" & tag="CS"] [tag="P.*"]? [tag="R.*"]? [tag="V.*"]
+« à » suivi d'un infinitif	preloaded/frtenten22_fl4	[word="à|a"] []{0,2} [tag="V.N.*"]	[word="à"] []{0,3} [tag="V..N.*"] within <s/>
+Nombres ordinaux	preloaded/frtenten22_fl4	[word="\d+(er|e)"]	[tag="AO.*"]
+Montants en euros	preloaded/frtenten22_fl4	[word="\d+(,\d+)?"][word="€"]	<doc containing="[tag='Zm']" /> & <doc containing="[lemma='euro']" />
+Titres ne contenant pas aucune une majuscule	preloaded/frtenten22_fl4	<doc title!=".*[A-ZÀ-ÖØ-Ý].*" />	<doc>{[lemma="*"] & [word=".*"]} !containing [word="[[:upper:]].*" & tag!="F.*"]
+Paragraphes qui commencent par un trait d’union	preloaded/frtenten22_fl4	<p> [word="-|–|—"]	<p> [word="-"] [lemma="bonjour"]
+Parenthèses sans nom à l'intérieur	preloaded/frtenten22_fl4	([word=="("] [word!="\)"]+ [word==")"] !containing [tag="N.*"]) within <s/>	[tag="Fpa"] []{0,500} [tag="Fpt"] !containing [tag="N\\.P.*"]
+Comparatif aves "plus" et "que"	preloaded/frtenten22_fl4	[word="plus"] []{0,5} [word="que"] within <s/>	[lemma="plus"][lemma="intelligent"][lc="que"]
+Intensif "si ... que"	preloaded/frtenten22_fl4	[word="si"] []{0,5} [word="que"] within <s/>	[lemma_lc="si" & tag="R.*"] [!lemma_lc="pas"]{0,3} ([tag="A.*"] | [tag="R.*"]) [lemma_lc="que"] within <s/>
+Coordination "ni ... ni"	preloaded/frtenten22_fl4	[word="ni"] []{0,3} [word="ni"] within <s/>	[lemma="ni" & tag="CC"] [ ]{1,25} [lemma="ni" & tag="CC"] within <s/>
+Coordination "soit ... soit"	preloaded/frtenten22_fl4	[word="soit"] []{0,3} [word="soit"] within <s/>	([word="soit" & tag="CC"] []{1,5} [word="soit" & tag="CC"]) within <s/>
+Coordination "ou ... ou"	preloaded/frtenten22_fl4	[word="ou"] []{0,3} [word="ou"] within <s/>	[lemma="ou"][lemma="bien"]? []{0,2}[lemma="ou"][lemma="bien"]? within <s/>
+Mot avec apostrophe	preloaded/frtenten22_fl4	[word=".*'.*"]	[word ~ ".*'.*"] [word != "'"]
+Un mot avec une apostrophe qui comporte plus de deux lettres	preloaded/frtenten22_fl4	[word=".*'.*" & word=".{2,}"]	[word=".*['’].{3,}|.{3,}['’].*"]
+« que » suivi d'un verbe au subjonctif	preloaded/frtenten22_fl4	[word="que"] []{0,2} [tag="V..S.*"]	([word="que"][tag="V..S.*"]) within <s/>
+« si » suivi d'un verbe à l'imparfait	preloaded/frtenten22_fl4	[word="si"] []{0,2} [tag="V..I.*"]	[word="si" & tag="CS"] [ ]{0,2} [tag="V.*I.I.*"]
+Verbe "devoir" à toutes formes	preloaded/frtenten22_fl4	[lemma="devoir"]	[lemma="devoir" & tag="V.*"]
+Verbe "pouvoir"	preloaded/frtenten22_fl4	[lemma="pouvoir"]	[lemma="pouvoir" & tag="VM.*C\.2P"]
+Adverbes en -ment	preloaded/frtenten22_fl4	[tag="R.*" & lemma=".*ment"]	[tag="R.G" & word=".*m[ea]nt"]
+Noms en -tion	preloaded/frtenten22_fl4	[tag="N.*" & lemma=".*tion"]	[tag="N.*" & lemma=".*(tion|sion|xion)"]
+Adjectifs féminins en -euse	preloaded/frtenten22_fl4	[tag="A..F.*" & lemma=".*euse"]	[word=".*euses?"]
+Phrases contenant un deux-points	preloaded/frtenten22_fl4	<s/> containing [tag="Fd"]	<s/> containing [tag="Fd"]
+Phrases commençant par une majuscule	preloaded/frtenten22_fl4	<s> [word="[A-ZÀ-ÖØ-Ý].*"]	<doc>   ([tag="F.*"]{0,2})  [word="[[:upper:]][^ ]*"]   []*   </s>
+Mots lexicographiquement >= m	preloaded/frtenten22_fl4	[word>="m"]	[lemma_lc>="m"]
+Mots lexicographiquement < m	preloaded/frtenten22_fl4	[word<"m"]	[lemma_lc~"^[a-l].*" & tag!="V.*"]
+Noms propres de personne	preloaded/frtenten22_fl4	[tag="NP..S.*"]	[tag="N.P.[^N]\..S.*"]
+Noms propres de lieu	preloaded/frtenten22_fl4	[tag="NP..G.*"]	[tag="N\.PG.*"] !within [lemma="festival"]
+Noms propres d'organisation	preloaded/frtenten22_fl4	[tag="NP..O.*"]	[tag="NP.*O.*"]
+Adjectifs superlatifs	preloaded/frtenten22_fl4	[tag="A.S.*"]	[tag="A\..S.*"]
+Adjectifs évaluatifs	preloaded/frtenten22_fl4	[tag="A.V.*"]	[tag="A.QV.*"]
+Participes passés masculins singuliers	preloaded/frtenten22_fl4	[tag="V.PS.SM.*"]	[lempos=".*-v" & tag="V..P...S.M"]
+Français « voiture » aligné avec anglais « car »	preloaded/frtenten22_fl4	[word="voiture"] within europarl_en: [word="car"]	[lemma="voiture"] :en [lemma="car"]

@@ -1,0 +1,1 @@
+Working on: models/google-t5_t5-base/model_train_data_1_2000.pt | 256/16840 | AVG Bleu: 0.531742080062216 | Time: 9 | ETA: 601 sec | 

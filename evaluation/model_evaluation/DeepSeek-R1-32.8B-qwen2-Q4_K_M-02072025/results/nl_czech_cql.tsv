@@ -1,0 +1,362 @@
+Najdi lemmata končící na -nost	preloaded/cstenten23_mj2	[lemma=".*nost"]	[lemma=".*nost"]
+Najdi přesně středník	preloaded/cstenten23_mj2	[word==";"]	[word=";"]
+Pětipísmenná malá slova	preloaded/cstenten23_mj2	[word="[[:lower:]]{5}"]	[lc="....."]
+Slova začínající na pře-	preloaded/cstenten23_mj2	[lc="pře.*"]	[lemma="^pře.*"]
+Slova končící na -ový nebo -ová	preloaded/cstenten23_mj2	[word=".*ov[ýá]"]	[word="ov[ýá]$"]
+Lemmata začínající mikro- a končící -skop	preloaded/cstenten23_mj2	[lemma="mikro.*skop"]	[lemma="^mikro-.*skop$"]
+Slovo začínající s velkým písmenem uvnitř věty, ne však na začátku	preloaded/cstenten23_mj2	[][word="[[:upper:]].+"] within <s/>	[word="^[A-Z].*"] !within <s>
+Tokeny s pomlčkou	preloaded/cstenten23_mj2	[word=".*-.*"]	[word=".*\-.*"]
+Tokeny složené jen z číslic	preloaded/cstenten23_mj2	[word="\d+"]	[word="\\d+"]
+Tokeny složené jen z interpunkce s více jak jedním znakem	preloaded/cstenten23_mj2	[word="[[:punct:]]{2,}"]	[word="^\\p{P}{2,}$"]
+Vlastní jména	preloaded/cstenten23_mj2	[tag="k1.*" & word="[[:upper:]].*"]	[tag="k9.*"]
+Zájmena tázací/relativní	preloaded/cstenten23_mj2	[tag="k3.*" & word="kdo|co|který|jenž"]	[tag="k3y[QR]"]
+Příslovce zakončená na -ě	preloaded/cstenten23_mj2	[word=".*ě" & tag="k6.*"]	[tag="k6.*"][word=".*ě$"]
+Přídavná jména v 1. stupni	preloaded/cstenten23_mj2	[tag="k2.*d1.*"]	[tag="k2.*d1.*"]
+Přídavná jména v 2. stupni	preloaded/cstenten23_mj2	[tag="k2.*d2.*"]	[tag="k2d2.*"]
+Přídavná jména v 3. stupni	preloaded/cstenten23_mj2	[tag="k2.*d3.*"]	[tag="k2.*d3.*"]
+Spojka "a"	preloaded/cstenten23_mj2	[word=="a" & tag="k8.*"]	[word="a"]
+Slova ten, tento, tamhleten	preloaded/cstenten23_mj2	[word="ten|tento|tamhleten"]	[lemma="ten"][lemma="tento"][lemma="tamhleten"]
+Pluralia v -i	preloaded/cstenten23_mj2	[word=".*i" & tag="k1.*nP.*"]	[tag="k1.*nP.*"][lemma=".*i"]
+Podstatná jména v 6. pádě	preloaded/cstenten23_mj2	[tag="k1.*c6.*"]	[tag="k1.*c6.*"]
+Podstatná jména v 7. pádě	preloaded/cstenten23_mj2	[tag="k1.*c7.*"]	[tag="k1.*c7.*"]
+Tokeny s apostrofem	preloaded/cstenten23_mj2	[word=".*'.*"]	[word=".*'.*"]
+Měnové symboly Kč/€/$	preloaded/cstenten23_mj2	[word="Kč|€|\$"]	[word="Kč"] | [word="€"] | [word="$"]
+Domény končící na .cz	preloaded/cstenten23_mj2	[word=".*\.cz"]	<doc urldomain=".*\.cz$"/>
+Hex barvy	preloaded/cstenten23_mj2	[word="#([0-9A-Fa-f]{3}|[0-9A-Fa-f]{6})"]	[word="barvy" | word="#[A-Fa-f0-9]+"]
+Uživatelská jména začínající @	preloaded/cstenten23_mj2	[word="@\w+"]	[word="^@.+"]
+Hashtagy	preloaded/cstenten23_mj2	[word="#\w+"]	[word="hashtagy"]
+URL končící .pdf	preloaded/cstenten23_mj2	[word="https?://.+\.pdf"]	<doc url=".*\.pdf$"/>
+Symbol © nebo ® jako c nebo r v závorkách	preloaded/cstenten23_mj2	[word=="("][word="[cCrR]"][word==")"]	[word="\([c r]\)"]
+Římské číslice I–X	preloaded/cstenten23_mj2	[word="I|II|III|IV|V|VI|VII|VIII|IX|X"]	[word="I"]|[word="II"]|[word="III"]|[word="IV"]|[word="V"]|[word="VI"]|[word="VII"]|[word="VIII"]|[word="IX"]|[word="X"]
+Čísla s desetinnou tečkou	preloaded/cstenten23_mj2	[word="\d+\.\d+"]	[word="\d+\.\d+"]
+Procenta s číslem	preloaded/cstenten23_mj2	[word="\d+(\.\d+)?%"]	[word="\d+"] [lemma="procent"] | [lemma="procent"] [word="%"] | [word="\d+"] [word="%"] | [lemma="procent"] [word="%"] | [word="%"] [word="\d+"] | [word="\d+"] [lemma="procent"] [word="%"]
+Název měsíce následovaný rokem	preloaded/cstenten23_mj2	[word="Leden|Únor|Březen|Duben|Květen|Červen|Červenec|Srpen|Září|Říjen|Listopad|Prosinec"][word="\d{4}"]	[lemma=".*měsíce"][tag="k4c1.*"]
+Den v týdnu následovaný čárkou	preloaded/cstenten23_mj2	[word="Pondělí|Úterý|Středa|Čtvrtek|Pátek|Sobota|Neděle"][word==","]	[lemma="pondělí|úterý|středy|čtvrtek|pátek|sobota|neděle"][tag="kI"][word=", "]
+Čas ve formátu HH:MM nebo HH.MM.	preloaded/cstenten23_mj2	[word="[012]?[0-9][:\.][0-5][0-9]"]	[word~"\d{2}:\d{2}|\d{2}\.\d{2}"]
+Věta začínající uvozovkou	preloaded/cstenten23_mj2	<s> [word="\"|„|‚|“|’|'"]	<s>[word="\""]
+Věta končící vykřičníkem	preloaded/cstenten23_mj2	[word=="!"] </s>	<s/> containing [tag="kIx!"]
+Chci všechny výskyty otevřené závorky	preloaded/cstenten23_mj2	[word=="("]	[word="\("]
+Výskyty zavírací závorky	preloaded/cstenten23_mj2	[word==")"]	[word=")"]
+Obsah v závorkách do 20 tokenů	preloaded/cstenten23_mj2	[word=="("][]{0,20}[word==")"] within <s/>	[tag="kI.x("] [ ]{0,20} [tag="kI.x)"]
+Úsek v uvozovkách do 12 tokenů	preloaded/cstenten23_mj2	[word="\"|„|‚|“|’|'"][word!="\"|„|‚|“|’|'"]{0,12}[word="\"|„|‚|“|’|'"] within <s/>	[ ]{0,12}[tag="kI.*x\""] within <s/>
+"Pan/Paní" před jménem	preloaded/cstenten23_mj2	[word="Pan|Paní"][tag="k1.*" & word="[[:upper:]].*"]	[word="Pan"] [ ]? [lemma="jméno"] | [word="Paní"] [ ]? [lemma="jméno"]
+Zájmeno + být	preloaded/cstenten23_mj2	[tag="k3.*"][lemma="být"]	[tag="k5aI.*"] [lemma="být"]
+Podst. jméno s jedním předcházejícím adj.	preloaded/cstenten23_mj2	[tag="k2.*"][tag="k1.*"]	[lemma=".*"][tag="k4"] [lemma=".*"][tag="k1"]
+Podst. jméno se dvěma adjektivy před	preloaded/cstenten23_mj2	[tag="k2.*"]{2}[tag="k1.*"]	[tag="k2g.*"] [tag="k2g.*"] [tag="k1g.*"]
+Podst. jméno s 0-3 adjektivy před	preloaded/cstenten23_mj2	[tag="k2.*"]{0,3}[tag="k1.*"]	[lempos=".*-n"] [lempos=".*-j"]{0,3}
+Příslovce těsně před adjektivem	preloaded/cstenten23_mj2	[tag="k6.*"][tag="k2.*"]	[tag="k6.*"][tag="k1j.*"]
+Adjektivum těsně před slovesem	preloaded/cstenten23_mj2	[tag="k2.*"][tag="k5.*"]	[tag="k2.*"][tag="k5.*"]
+Sloveso těsně před podst. jménem	preloaded/cstenten23_mj2	[tag="k5.*"][tag="k1.*"]	[lempos="sloveso-a"][tag="k1.*"]
+Zájméno + adjektivum + podstatné jméno	preloaded/cstenten23_mj2	[tag="k3.*"][tag="k2.*"][tag="k1.*"]	[tag="k3.*"] [tag="k2j.*"] [tag="k1.*"]
+Dvě vlastní jména za sebou	preloaded/cstenten23_mj2	[tag="k1.*" & word="[[:upper:]].*"]{2}	[tag="k1gP.*"][tag="k1gP.*"]
+Tři vlastní jména za sebou	preloaded/cstenten23_mj2	[tag="k1.*" & word="[[:upper:]].*"]{3}	[ tag="k1gR.*" ][ tag="k1gR.*" ][ tag="k1gR.*" ]
+Tři po sobě jdoucí podst. jména	preloaded/cstenten23_mj2	[tag="k1.*"]{3}	[tag="k1.*"][tag="k1.*"][tag="k1.*"]
+Sloveso + částice s <= 2 tokeny	preloaded/cstenten23_mj2	[tag="k5.*"][]{0,2}[tag="k9.*"]	[tag="k5.*"] [ ]{0,2} [lemma="s" & tag="k8x."]
+Sloveso + příslovce + částice	preloaded/cstenten23_mj2	[tag="k5.*"][tag="k6.*"][tag="k9.*"]	[lemma="sloveso"][tag="k8.*"][tag="k6.*"]
+Modál + token + infinitiv	preloaded/cstenten23_mj2	[tag="k6.*tD.*"][][tag="k5.*mF.*"]	[lemma="moci"] [ ] [lemma=".*t$"]
+"chtít" + "to" + infinitiv	preloaded/cstenten23_mj2	[lemma="chtít"][lemma="to"][tag="k5.*mF.*"]	[lemma="chtít"][lemma="to-d"][tag="k5mS.*"]
+"potřebovat" + "to" + infinitiv	preloaded/cstenten23_mj2	[lemma="potřebovat"][lemma="to"][tag="k5.*mF.*"]	(meet [lemma="potřebovat"] [lc="to"] [word=".*t"] -2 2)
+"zkusit" + "to" + infinitiv	preloaded/cstenten23_mj2	[lemma="zkusit"][lemma="to"][tag="k5.*mF.*"]	[lemma="zkusit"] [lemma="to"] [tag="k5.*mS"]
+"začít" + přechodník	preloaded/cstenten23_mj2	[lemma="začít"][tag="k5.*(mS|mD).*"]	[lemma="začít"][lemma=".*"][tag="k1.*c4"]
+"přestat" + přechodník	preloaded/cstenten23_mj2	[lemma="přestat"][tag="k5.*(mS|mD).*"]	[lemma="přestat"] within <s/> [lemma="přechodník"]
+"být" + "schopen" + infinitiv	preloaded/cstenten23_mj2	[lemma="být"][lemma="schopen"][tag="k5.*mF.*"]	[lemma="být"] [] [lemma="schopen"] [] [lemma=".*t$"] [tag="k5.*mF"]
+"mohl by" + infinitiv	preloaded/cstenten23_mj2	[word=="mohl"][word=="by"][tag="k5.*mF.*"]	[lemma="mohl"][lemma="by"][ ]{0,}[tag="k5mS"]
+"raději by" + infinitiv	preloaded/cstenten23_mj2	[word=="raději"][word=="by"][tag="k5.*mF.*"]	[lemma="raději"] [lemma="by"] [lemma=".*t"$]
+"nejlépe" + infinitiv	preloaded/cstenten23_mj2	[word=="nejlépe"][tag="k5.*mF.*"]	[word="nejlépe"][tag="k5.*mS.*"]
+k2 + k1 + k5	preloaded/cstenten23_mj2	[tag="k2.*"][tag="k1.*"][tag="k5.*"]	[tag="k1.*|k2.*|k5.*"]
+„pokusit se“ + infinitiv	preloaded/cstenten23_mj2	[lemma="pokusit"][lemma="se"][tag="k5.*mF.*"]	[lemma="pokusit"][lempos=".*-v"][tag="k5.*mF.*"]
+„snažit se“ + infinitiv	preloaded/cstenten23_mj2	[lemma="snažit"][lemma="se"][tag="k5.*mF.*"]	[lemma="snažit_se"][tag="k5mS.*"]
+"být" do 1 tokenu od slovesa	preloaded/cstenten23_mj2	(meet [lemma="být"] [tag="k5.*"] -1 1)	(meet [lemma="být"] [tag="k5.*"] -1 1)
+Sloveso do 3 tokenů od "riziko"	preloaded/cstenten23_mj2	(meet [tag="k5.*"] [lemma="riziko"] -3 3)	(meet [lemma="riziko"] [ ] -3 3)
+Adjektivum do 2 tokenů od "zdát"	preloaded/cstenten23_mj2	(meet [tag="k2.*"] [lemma="zdát"] -2 2)	(meet [tag="k2.*"] [lemma="zdát"] -2 2)
+Podstatné jméno do 5 tokenů od "růst"	preloaded/cstenten23_mj2	(meet [tag="k1.*"] [lemma="růst"] -5 5)	(meet [tag="k1.*"] [lemma="růst"] -5 5)
+Sloveso nebo přídavné jméno poblíž "být"	preloaded/cstenten23_mj2	(union (meet [tag="k5.*"] [lemma="být"] -3 3) (meet [tag="k2.*"] [lemma="být"] -3 3))	(meet [lemma="být-v"] [lemma=".*-j"] -5 5) | (meet [lemma="být-v"] [lemma=".*-v"] -5 5)
+"tak (přídavné jméno) jako" ve větě	preloaded/cstenten23_mj2	[word="tak"][tag="k2.*"][word="jako"] within <s/>	[lemma="tak"][lemma=".*"]
+„tak <přídavné jméno> že“ do 3 tokenů	preloaded/cstenten23_mj2	[word="tak"][tag="k2.*"][word="že"] within []{6}	[lemma="tak"] [ ]{0,3} [tag="j.*"] [lemma="že"]
+"příliš [přídavné jméno] na to" + infinitiv	preloaded/cstenten23_mj2	[word="příliš"][tag="k2.*"][word="na"][word="to"][tag="k5.*mF.*"]	[word="příliš"] [tag="k2.*"] [lemma="na"] [lemma="to"] [tag="k5mS"]
+"dost <podstatné jméno>"	preloaded/cstenten23_mj2	[word="dost"][tag="k1.*"]	[lemma="dost"][tag="k1.*"]
+"velmi <přídavné jméno>"	preloaded/cstenten23_mj2	[word="velmi"][tag="k2.*"]	[lemma="velmi"][tag="k2.*"]
+"více/méně [přídavné jméno]"	preloaded/cstenten23_mj2	[word="více|méně"][tag="k2.*"]	[lempos="více-a" | lempos="méně-a"] [lempos=".*-j"]
+"více (podstatné jméno) než (podstatné jméno)"	preloaded/cstenten23_mj2	[word="více"][tag="k1.*"][word="než"][tag="k1.*"]	[lempos="více-n"][lempos="než-n"]
+"nejvíce\nejméně (sloveso)"	preloaded/cstenten23_mj2	[word="nejvíce|nejméně"][tag="k5.*"]	[lemma="nejvíce" | lemma="nejméně" & tag="k5.*"]
+Frazém "co nejdříve"	preloaded/cstenten23_mj2	[word="co"][word="nejdříve"]	[lemma="co"][lemma="nejdříve"]
+Frazém "tak jako tak"	preloaded/cstenten23_mj2	[word="tak"][word="jako"][word="tak"]	[word="tak"][word="jako"][word="tak"]
+"<podstatné jméno> na <podstatné jméno>"	preloaded/cstenten23_mj2	[tag="k1.*"][lemma="na"][tag="k1.*"]	[tag="k1.*"] [word="na"] [tag="k1.*"]
+"<podstatné jméno> versus <podstatné jméno>"	preloaded/cstenten23_mj2	[tag="k1.*"][word=="vs\\.|versus|proti"][tag="k1.*"]	[tag="k1g.*"] [tag="k1g.*"]
+"protože" + cokoliv	preloaded/cstenten23_mj2	[lemma="protože"][]	[lemma="protože"] [ ]
+"ačkoliv" + libovolný token	preloaded/cstenten23_mj2	[lemma="ačkoliv"][]	[word="ačkoliv"][ ]
+"zatímco" + cokoliv	preloaded/cstenten23_mj2	[lemma="zatímco"][]	[lemma="zatímco"][ ]
+Části "od té doby co" v korpusu	preloaded/cstenten23_mj2	[word="od"][word="té"][word="doby"][word="co"]	[word="od"][word="té"][word="doby"][word="co"]
+Infinitivy po "aby"	preloaded/cstenten23_mj2	[word="aby"][tag="k5.*mF.*"]	[lemma="aby"] [ ]{0,1} [lemma=".*t$"]
+Infinitivy před "aby"	preloaded/cstenten23_mj2	[tag="k5.*mF.*"][word="aby"]	[tag="k5.*mS.*"] [word="aby"]
+Fráze "tam je / je tam"	preloaded/cstenten23_mj2	([word="tam"][word="je"]|[word="je"][word="tam"])	([lemma="tam"][tag="k10.*"][lemma="být"][tag="k5.*"]) | ([lemma="být"][tag="k5.*"][lemma="tam"][tag="k10.*"])
+"to" + lemma "být" + přídavné jméno	preloaded/cstenten23_mj2	[word="to"][lemma="být"][tag="k2.*"]	[word="to"][lemma="být"][tag="k2.*"]
+Věta, která je otázka	preloaded/cstenten23_mj2	<s/> containing [word=="?"] </s>	[tag="kI.*x?"] within <s/>
+Věta bez čárky	preloaded/cstenten23_mj2	<s/> !containing [word==","]	<s/> !containing [tag="kI.x,.*"]
+Věta s dvojtečkou	preloaded/cstenten23_mj2	<s/> containing [word==":"]	<s> []* [tag="kI.x:"] []* </s>
+Věta se středníkem	preloaded/cstenten23_mj2	<s/> containing [word==";"]	<s/> containing [tag="kIx;"]
+Věta nezačínající velkým písmenem	preloaded/cstenten23_mj2	<s/> containing <s> [word="[[:upper:]].+"]	<s>[word="/^[a-z]/"]
+Věta začíná příslovcem a čárkou	preloaded/cstenten23_mj2	<s/> containing <s> [tag="k6.*"][word==","]	[sentence-start][tag="k6.*"] [tag="kI.*"][word=", "]
+Odstavec obsahující rok	preloaded/cstenten23_mj2	<p/> containing [word="\d{4}"]	<s/> containing [word="\d{4}"]
+Odstavec bez číslic	preloaded/cstenten23_mj2	<p/> !containing [word=".*\d.*"]	<s/> containing [tag!="k4.*"]
+Dokument s tématem koníčky	preloaded/cstenten23_mj2	<doc topic=".*hobbies.*" />	<doc topic="koníčky">
+Dokument typu zpravodajství	preloaded/cstenten23_mj2	<doc genre=".*news.*" />	<doc genre="zpravodajství"/>
+"Brno" v dokumentech obsahující "Morava" v názvu	preloaded/cstenten23_mj2	[word="Brno"] within <doc title=".*Morava.*"/>	[doc.title=".*Morava.*"] [word="Brno"]
+"Fakulta Informatiky" v dokumentech obsahující "Masaryk" v názvu	preloaded/cstenten23_mj2	[word="Fakulta"][word="Informatiky"] within <doc title=".*Masaryk.*"/>	<doc title=".*Masaryk.*">[word="Fakulta"][word="Informatiky"]
+Podst. jména v odstavcích které byli získány v roce 2017	preloaded/cstenten23_mj2	[tag="k1.*"] within <doc crawl_date=".*2017.*"/>	<doc modified_year="2017"> [lemma=".*-p"] within <s/>
+Věty uvnitř dokumentů s tématem "technologie"	preloaded/cstenten23_mj2	<s/> within <doc topic=".*technology.*"/>	<s/> within <doc genre="technologie"/>
+Věty bez velkých písmen	preloaded/cstenten23_mj2	<s/> !containing [word="[[:upper:]]+"]	<s/> !containing [word="^[A-Z].*"]
+Uvozovky bez podst. jména (<=8 tok.)	preloaded/cstenten23_mj2	[word="\"|„|‚|“|’|'"][word!="\"|„|‚|“|’|'" & tag!="k1.*"]{0,8}[word="\"|„|‚|“|’|'"] within <s/>	[lemma="říci"] [word="„"] [!tag="k1.*"]{0,8} [word="“"]
+"klimatická změna" v jedné větě	preloaded/cstenten23_mj2	[lemma="klimatický"][lemma="změna"] within <s/>	[lemma="klimatický"][lemma="změna"] within <s/>
+"data-driven" vs "data driven"	preloaded/cstenten23_mj2	[word=="data-driven"] | [word="data"][word="driven"] within <s/>	[lemma="data-driven"] | [lemma="data"][lemma="driven"]
+"na jedné straně ... na druhé straně"	preloaded/cstenten23_mj2	[word="na"][word="jedné"][word="straně"][]{1,8}[word="na"][word="druhé"][word="straně"]	[lemma="na"][lemma="jedné"][lemma="straně"] [ ]{0,} [lemma="na"][lemma="druhé"][lemma="straně"]
+Opakovaný bigram A B do 6 tokenů	preloaded/cstenten23_mj2	1:[] 2:[] []{0,6} 3:[] 4:[] & 1.word=3.word & 2.word=4.word	[lemma="A"] [lemma="B"] [ ]{0,6} [lemma="A"] [lemma="B"]
+Dvě identická slova vedle sebe	preloaded/cstenten23_mj2	1:[] 2:[] & 1.word = 2.word	1:[] 2:[] & 1.word = 2.word
+Dva sousední tokeny se stejným lemmatem	preloaded/cstenten23_mj2	1:[] 2:[] & 1.lemma = 2.lemma	1:[] 2:[] & 1.lemma = 2.lemma
+Přídavná. jména se stejným lemmatem spojená spojkou	preloaded/cstenten23_mj2	1:[tag="k2.*"][tag="k8.*"] 2:[tag="k2.*"] & 1.lemma = 2.lemma	1:[tag="k2.*"] 2:[tag="k8.*"] 3:[tag="k2.*"] & 1.lemma = 3.lemma
+Podst. jména s různým lemmatem spojená spojkou	preloaded/cstenten23_mj2	1:[tag="k1.*"][tag="k8.*"] 2:[tag="k1.*"] & 1.lemma != 2.lemma	1:[lemma=".*"] 2:[tag="k8xS|k8xC"] 3:[lemma=".*"] & 1.lemma != 3.lemma
+Adjektivum bez následného podst. jména	preloaded/cstenten23_mj2	[tag="k2.*"][tag!="k1.*"]	[tag="k2.*"] [tag!="k1.*"] within <s/>
+„přítomný“ nikoli sloveso	preloaded/cstenten23_mj2	[word=="přítomný" & !tag="k5.*"]	[lemma="přítomný" & lempos!="přítomný-v"]
+'objekt' jako podst. jméno, ne sloveso	preloaded/cstenten23_mj2	[lemma=="objekt" & tag="k1.*"]	[lemma="objekt" & tag="k1.*"]
+"záznam" jen jako podst. jméno	preloaded/cstenten23_mj2	[lemma="záznam" & tag="k1.*"]	[lemma="záznam" & tag="k1.*"]
+"číst" jen jako sloveso	preloaded/cstenten23_mj2	[lemma="číst" & tag="k5.*"]	[lemma="číst" & tag="k5.*"]
+Varianty pravopisu "e-mail/email"	preloaded/cstenten23_mj2	[word="e-?mail"]	[lemma="e-mail" | "email" & tag="k1.*"]
+Varianty „kooperovat/co-operate“	preloaded/cstenten23_mj2	[lemma="ko-?operovat"]	([lempos="kooperovat-v"] | [lempos="co-operate-v"] | [word="kooper.*"] | [word="cooper.*"])
+Varianty "re-kreace/rekreace"	preloaded/cstenten23_mj2	[word="re-?kreace"]	[lemma="re(-?)kreace.*"]
+Varianty 'well-being/wellbeing'	preloaded/cstenten23_mj2	[word="well-?being"]	[lemma="well-being"] | [lemma="wellbeing"]
+"zdravotní péče/healthcare"	preloaded/cstenten23_mj2	[word="zdravotní"][word="péče"] | [word="healthcare"]	([lemma="zdravotní-j"][lemma="péče-n"]) | [lemma="healthcare-n"]
+Praha bez ohledu na velikost písmen	preloaded/cstenten23_mj2	[lc="praha"]	[lc="praha"]
+Česká republika bez ohledu na velikost	preloaded/cstenten23_mj2	[lc="česká"][lc="republika"]	[lemma="česká-republika"][tag="k1.*n[S,P]"]
+Adjektiva končící -ální	preloaded/cstenten23_mj2	[lemma=".*ální" & tag="k2.*"]	[lemma=".*ální" & tag="k2.*"]
+Slovesa končící -ovat	preloaded/cstenten23_mj2	[lemma=".*ovat" & tag="k5.*"]	[lemma=".*ovat$"]
+Podst. jména končící -ce	preloaded/cstenten23_mj2	[lemma=".*ce" & tag="k1.*"]	[lemma=".*ce"]
+Slova začínající mikro-	preloaded/cstenten23_mj2	[word="mikro.*"]	[word="mikro.*"]
+Slova končící -ologie	preloaded/cstenten23_mj2	[word=".*ologie"]	[word=".*ologie\$"]
+Jen malá písmena	preloaded/cstenten23_mj2	[word="[[:lower:]]+"]	[word="[a-z]+"]
+Jen velká písmena	preloaded/cstenten23_mj2	[word="[[:upper:]]+"]	[word="[A-Z].+"]
+"US" nebo "U.S." regex	preloaded/cstenten23_mj2	[word="US|U\.S\."]	[word="US|U.S."]
+Token není tečka	preloaded/cstenten23_mj2	[word!="\."]	[lemma="token"] !within <s/> containing [word=="\."]
+Lexikograficky >= „m“	preloaded/cstenten23_mj2	[word>="m"]	[word >= "m"]
+Lexikograficky < „m“	preloaded/cstenten23_mj2	[word<"m"]	[word="m$"]
+Slovesa v dokumentech téma=věda	preloaded/cstenten23_mj2	[tag="k5.*"] within <doc topic=="science"/>	[doc.topic="věda"][tag="k5.*"]
+Věty bez číslic	preloaded/cstenten23_mj2	<s/> !containing [word=".*\d.*"]	<s/> !containing [lemma="j.*"]
+Tezaurus: zelenina po "krájet" do 0–2	preloaded/cstenten23_mj2	[lemma="krájet"][]{0,2} ~"mrkev-n"	[lemma="krájet"] []{0,2} ~zelenina-n
+Tezaurus: 20 podobných k "město-n"	preloaded/cstenten23_mj2	~20"město-n"	~20"město-n"
+"investovat" následováno slovy podobnými "obnovitelný" do vzdálenosti 3	preloaded/cstenten23_mj2	[lemma="investovat"][]{0,3} ~"obnovitelný-j"	[lemma="investovat"] []{1,3} [lempos="obnovitelný-j"]
+12 slov podobných slovu „lékař-n“ do vzdálenosti 2 od slovesa kontaktovat	preloaded/cstenten23_mj2	(meet ~12"lékař-n" [lemma="kontaktovat"] -5 5)	(meet ~"lékař-n" [lemma="kontaktovat"] -2 2)
+Slova podobná podst. jménu "emise" ve vzdálenosti +-5 od lemma "snížit"	preloaded/cstenten23_mj2	(meet ~"emise-n" [lemma="snížit"] -5 5)	(meet [lemma="snížit"] ~"emise-n" -5 5)
+Podst. jméno do 2 tokenů od adjektiva	preloaded/cstenten23_mj2	(meet [tag="k1.*"] [tag="k2.*"] -2 2)	[lempos=".*-j"] [lempos=".*-n"]{0,2}
+Sloveso 1–4 tokeny vpravo od podst. jména	preloaded/cstenten23_mj2	(meet [tag="k5.*"] [tag="k1.*"] 1 4)	[tag="k1.*"] [ ]{1,4} [tag="k5.*"]
+Adjektiva 2–5 tokenů vlevo od podst. jmen	preloaded/cstenten23_mj2	(meet [tag="k2.*"] [tag="k1.*"] -5 -2)	(meet [lempos="j.*"] [lempos="n.*"] -5 -2)
+podst. jména u "byl/byla" a příd. jména u lemma "být". Obojí se vzdáleností +-2.	preloaded/cstenten23_mj2	(union (meet [tag="k1.*"] [word=="byl|byla"] -2 2) (meet [tag="k2.*"] [lemma="být"] -2 2))	(meet [lemma="byl" | lemma="byla"] [tag="k1.*"] -2 2) | (meet [lemma="být"] [tag="k2.*"] -2 2)
+Rok v závorkách	preloaded/cstenten23_mj2	[word=="("][word="\d{4}"][word==")"]	[word="\\(rok\\)"]
+Tokeny jen z pomlček	preloaded/cstenten23_mj2	[word="-+"]	[word=",,"]
+Čárky uvnitř závorek	preloaded/cstenten23_mj2	[word==","] within ([word=="("][]*[word==")"])	[word="("] [word=","] [word=")"]
+Vlastní jméno + rok	preloaded/cstenten23_mj2	[tag="k1.*" & word="[[:upper:]].*"][word="\d{4}"]	[lemma=".*ova?$"] [lemma="\d+.*"]
+"Prosím" + infinitiv	preloaded/cstenten23_mj2	[word=="[Pp]rosím"][tag="k5.*mF.*"]	[lemma="prosím"][tag="k5.*mF.*"]
+"Mohl bys" + infinitiv	preloaded/cstenten23_mj2	[word=="[Mm]ohl"][word=="bys|by"][tag="k5.*mF.*"]	[lemma="mohl"] [lemma="by"] [lemma="bys"] [tag="k5.*mF.*"]
+"Rád bych" + infinitiv	preloaded/cstenten23_mj2	[word=="[Rr]ád"][word=="bych"][tag="k5.*mF.*"]	[lemma="rád"][lemma="být"] [ ][lemma=".*"][tag="k5mS.*"]
+"tak aby"	preloaded/cstenten23_mj2	[word=="tak"][word=="aby"]	[lemma="tak"][lemma="aby"]
+"v případě že"	preloaded/cstenten23_mj2	[word=="v"][word=="případě"][word=="že"]	[lempos="v-p"][lempos="případ-n"][lempos="že-c"]
+Slova psaná velkými písmeny	preloaded/cstenten23_mj2	[word="[[:upper:]]+"]	[word="^[A-Z]+$"]
+Slova s českou diakritikou	preloaded/cstenten23_mj2	[word=".*[áéíóúůýčďěňřšťž].*"]	[lemma="[áéěíóöőúůýčďšžÁÉĚÍÓÖŐÚŮÝČĎŠŽ].*"]
+Číslovky v textu	preloaded/cstenten23_mj2	[tag="k4.*"]	[tag="k4.*"]
+Interpunkce kromě tečky	preloaded/cstenten23_mj2	[tag="kI.*" & word!="\."]	[tag="kI(?!x.)"]
+Podst. jména 1. pád sg.	preloaded/cstenten23_mj2	[tag="k1.*nS.*c1.*"]	[tag="k1.*nS.*c1.*"]
+Výpustky	preloaded/cstenten23_mj2	[word=="..."]	[lemma="výpustky"]
+Zkratky	preloaded/cstenten23_mj2	[tag="kA.*"]	[lemma=".+\\."] | [lemma=".*-zkr."] | [tag="k1.*xZ.*"]
+Slova s pomlčkou/spojovníkem	preloaded/cstenten23_mj2	[word=".*[-–].*"]	[lempos=".*-.*"]
+Slova příbuzná k "věřit"	preloaded/cstenten23_mj2	[lemma="věřit"]	[lemma="věřit"] | [lemma="věření"] | [lemma="věřivý"] | [lemma="věřive"]
+Předložky v korpusu	preloaded/cstenten23_mj2	[tag="k7.*"]	[tag="k7.*"]
+Příslovce	preloaded/cstenten23_mj2	[tag="k6.*"]	[tag="k6.*"]
+Slovo na pozici 1000	preloaded/cstenten23_mj2	[#1000]	[position:1000]
+Slovo na první pozici	preloaded/cstenten23_mj2	[#0]	<s>[lemma=""]
+Slovo na pozici 7831	preloaded/cstenten23_mj2	[#7831]	[7831]
+Dvě sousední se stejným tagem	preloaded/cstenten23_mj2	1:[] 2:[] & 1.tag = 2.tag	1:[] 2:[] & 1.tag=2.tag
+Dva sousední, identické tokeny	preloaded/cstenten23_mj2	1:[] 2:[] & 1.word = 2.word	1:[word=".*"] 2:[word=".*"] & 1.word = 2.word
+Dvě slova ve větě se stejným lemmatem	preloaded/cstenten23_mj2	(1:[] 2:[] within <s/>) & 1.lemma = 2.lemma	(meet [lemma="l"] [lemma="l"] -0 0) within <s/>
+Dvě slova se stejným lemmatem a žádné není číslovka	preloaded/cstenten23_mj2	(1:[tag!="k4.*"] 2:[tag!="k4.*"] within <s/>) & 1.lemma = 2.lemma	[lemma=".*"][lemma~":"] & tag!="k4.*" & tag!="k4.*"
+Čtyřslovná sekvence: 1.=2. tag, 1.=4. lemma	preloaded/cstenten23_mj2	1:[] 2:[] [] 3:[] & 1.tag = 2.tag & 1.lemma = 3.lemma	1:[] 2:[] 3:[] 4:[] & 1.tag=2.tag & 1.lemma=4.lemma
+Ve větě sloveso následující po podstatném jménu, které má stejné lemma jako sloveso	preloaded/cstenten23_mj2	(1:[tag="k1.*"]2:[tag="k5.*"] within <s/>) & 1.lemma = 2.lemma	[lemma=".*"][tag="k1.*"] [lemma="\1"][tag="k5.*"]
+Dvě přídavná jména + podstatné jméno s f(1)>100000 a f(2)<5000	preloaded/cstenten23_mj2	1:[tag="k2.*"]2:[tag="k2.*"][tag="k1.*"] & f(1.word)>100000 & f(2.word)<5000	1:[lemma="..."] 2:[lemma="..."] 3:[lemma="..."] & f(1)>100000 & f(2)<5000
+Dvě sousední slova se stejným lemmatem, ale různým zápisem	preloaded/cstenten23_mj2	1:[]2:[] & 1.lemma = 2.lemma & 1.word != 2.word	[lemma="word"][lemma="word" & !word="word"]
+Dvě sousední slova, jedno má frekvenci > 2e7	preloaded/cstenten23_mj2	1:[]2:[] & (f(1.word)>20000000 | f(2.word)>20000000)	1:[] 2:[] & (1.word | 2.word) & (f(1.word) > 20000000 | f(2.word) > 20000000)
+Slovo "úraz" na doméně ulekare.cz	preloaded/cstenten23_mj2	[word="úraz"] within <doc urldomain=="ulekare.cz"/>	[lemma="úraz"] within <doc urldomain="ulekare.cz"/>
+'agrese' v dokumentech s tématem hry	preloaded/cstenten23_mj2	[lemma="agrese"] within <doc topic="games"/>	[doc.topic="hry"][lemma="agrese"]
+"agrese" v tématech hry nebo vzdělání	preloaded/cstenten23_mj2	[lemma="agrese"] within <doc topic="education|games"/>	[doc.topic="hry" | doc.topic="vzdělání"] [lemma="agrese" | word="agrese"]
+"reklama" na blozích	preloaded/cstenten23_mj2	[lemma="reklama"] within <doc genre=".*blog.*"/>	[lemma="reklama"] within <doc genre="blog"/>
+"Barack Obama" v dokumentech s titulkem obsahujícím "skandál"	preloaded/cstenten23_mj2	[word="Barack"][word="Obama"] within <doc title=".*skandál.*"/>	[doc.title=".*skandál.*"] [word="Barack Obama"]
+Sloveso "hacknout" v dokumentech s žánrem zprávy	preloaded/cstenten23_mj2	[lemma="hacknout" & tag="k5.*"] within <doc genre=".*news.*"/>	<doc genre="zprávy"> [lemma="hacknout"]
+"zmrzlina" v červnu	preloaded/cstenten23_mj2	[lemma="zmrzlina"] within <doc month=".+-06"/>	<doc modified_month="6">[word="zmrzlina"]
+Věty obsahující číslo větší než 100	preloaded/cstenten23_mj2	<s/> containing [word>="101" & word="[0-9]+" & tag="k4.*"]	<s/> containing [lemma="[1-9][0-9]{3,}"]
+Sloveso a předložka	preloaded/cstenten23_mj2	[tag="k5.*"][tag="k7.*"]	[tag="k5.*"][tag="k7.*"]
+Spojení "tak/velmi <přídavné jméno>, že"	preloaded/cstenten23_mj2	[word="tak|velmi"][tag="k2.*"][word=","][word="že"]	[lempos="tak-a|velmi-a"] [lemma=".*"] [lempos="j.*"] [lempos="že-c"] within <s/>
+se/si po slovese	preloaded/cstenten23_mj2	[tag="k5.*"][word=="se|si"]	[tag="k5.*"][lemma="se|si"]
+"by" po slovese v příčestím minulém	preloaded/cstenten23_mj2	[tag="k5.*mA.*"][word="by"]	[lemma="by"][tag="k5.*mN.*"]
+Jednoslovné věty	preloaded/cstenten23_mj2	<s> [tag="kI.*"]? [tag!="kI.*"]? [tag="kI.*"]? </s>	<s> [ ] </s>
+Věty začínající spojkou	preloaded/cstenten23_mj2	<s/> containing <s> [tag="k8.*"]	<s> [tag="k8.*"] [word].*
+Věty bez slovesa	preloaded/cstenten23_mj2	<s/> !containing [tag="k5.*"]	<s/> !containing [tag="k5.*"]
+Věty končící výpustkou	preloaded/cstenten23_mj2	<s/> containing [word=="..."] </s>	[tag="kI.*x\""] within </s/>
+Sekvence tří tokenů: přídavné jméno + podstatné jméno + sloveso	preloaded/cstenten23_mj2	[tag="k2.*"][tag="k1.*"][tag="k5.*"]	[tag="k2.*|k4.*"][tag="k1.*"][tag="k5.*"]
+Dvě adjektiva za sebou	preloaded/cstenten23_mj2	[tag="k2.*"][tag="k2.*"]	[tag="k2.*"][tag="k2.*"]
+Dvě stejná adjektiva za sebou uvnitř jedné věty	preloaded/cstenten23_mj2	(1:[tag="k2.*"] 2:[tag="k2.*"] within <s/>) & 1.word = 2.word	1:[lempos=".*-j"] 2:[lempos=".*-j"] & 1.lemma = 2.lemma within <s/>
+Sloveso následované zájmenem	preloaded/cstenten23_mj2	[tag="k5.*"][tag="k3.*"]	[tag="k5.*"][tag="k3.*"]
+První token věty	preloaded/cstenten23_mj2	<s> []	<s>[]
+Jednoslovná otázka	preloaded/cstenten23_mj2	<s> [tag!="kI.*"] [word=="?"] </s>	[s]/<s> [tag="k7"] [/s>
+Najdi přirovnání začínající „jako“ (např. „rychlý jako blesk“).	preloaded/ententen21_tt31	[tag="J.*"] [lemma="like"] [tag="DT"]? [tag="N.*"] within <s/>	[lemma="jako"] [tag="N.*|J.*"] [lemma="jako"] [tag="N.*"] within <s/>
+"neboť" uvnitř věty	preloaded/cstenten23_mj2	[lemma="neboť"] within <s/>	[lemma="neboť"] within <s/>
+"který" následovaný čárkou	preloaded/cstenten23_mj2	[lemma="který"][word=","]	[lemma="který-j"][tag="kI.*x."]
+Word Sketch: modifikátory „škola-n“	preloaded/cstenten23_mj2	[ws("škola-n","modifiers of \\\"%w\\\"",".*")]	[ws("škola-n", "modifiers of \"%w\"", ".*")]
+Word Sketch: objekty „schválit-v“	preloaded/cstenten23_mj2	[ws("schválit-v",".*objects of \\\"%w\\\"",".*")]	[ws("schválit-v", "accusative objects of \"%w\"", ".*")]
+Word Sketch: subjekty „růst-v“	preloaded/cstenten23_mj2	[ws("růst-v",".*subjects of \\\"%w\\\"",".*")]	[ws("růst-v", "subjects of \"%w\"", ".*")]
+Word Sketch: „rozhodnutí-n“ jako objekt „učinit-v“	preloaded/cstenten23_mj2	[ws("rozhodnutí-n",".*object.*","učinit-v")]	[ws("rozhodnutí-n", "objekty", "učinit-v")]
+Word Sketch: „test-n“ modifikovaný „krev-n“	preloaded/cstenten23_mj2	[ws("test-n",".*modifiers of \\\"%w\\\"","krev-n")]	[ws("test-n", "modifiers of \"%w\"", "krev-n")]
+Word Sketch: relace „klima-n“ obsahující „změna“	preloaded/cstenten23_mj2	[ws("klima-n",".*",".*změna.*")]	[ws("klima-n", ".*změna.*", ".*")]
+Word Sketch: předložkové vzory (o/v/na)	preloaded/cstenten23_mj2	[ws("test-n","\\.\\.\\. (o|v|na) \\\"%w\\\"",".*") | ws("test-n","\\\"%w\\\" (o|v|na) \\.\\.\\.",".*")]	[ws("headword", "o \"%w\"|v \"%w\"|na \"%w\"", ".*")]
+Word Sketch: slovesa s %w jako subjektem	preloaded/cstenten23_mj2	[ws(".*","verbs with \\\"%w\\\" as subject",".*-v")]	[ws(headword, ".*subjekt.*", collocation)]
+Word Sketch u „vládní“ v okolí 1 tokenu	preloaded/cstenten23_mj2	[word=="vládní"][]{0,1}[ws("politika-n",".*",".*")]	[ws("vládní-j", "words (before|after) \"%w\"", ".*")]
+Tezaurus: kovy kolem 'koroze' (+-4)	preloaded/cstenten23_mj2	(meet ~"železo-n" [lemma="koroze"] -4 4)	(meet ~"koroze-n" [ ] -4 4)
+„auto“ v češtině, anglicky „car“ v paralelním segmentu	preloaded/europarl7_cs	[word="auto"] within europarl7_en: [word="car"]	[lemma="auto"] within europarl5_en: [lemma="car"]
+„dům“ v češtině, německy „Haus“ v paralelním segmentu	preloaded/europarl7_cs	[word="dům"] within europarl7_de_1: [word="Haus"]	[lemma="dům"] within europarl7_de: [lemma="Haus"]
+Jsou slova "awfully", "horribly" a "terribly" často předcházející slovu "beautiful"?	preloaded/ententen21_tt31	[word="awfully|horribly|terribly"][word="beautiful"]	[lemma="awfully|horribly|terribly"] [lemma="beautiful"]
+Nalezni všechna slova ohraničená kulatými závorkami.	preloaded/ententen21_tt31	[word=="("][word!==")"]+[word==")"]	[word="\(.*?\)"]
+Nalezni všechna slova ohraničená závorkami.	preloaded/ententen21_tt31	[word="\(|\[|\{"][word!="\)|\]|\}"]+[word="\)|\]|\}"]	[word="("][word="word"][word=")"]
+Prosím všechna slova, která jsou v závorkách.	preloaded/ententen21_tt31	[word="\(|\[|\{"][word!="\)|\]|\}"]+[word="\)|\]|\}"]	[word="^\(.*\)$"]
+Všechna slova já v okolí +-4 slova být.	preloaded/ententen21_tt31	(meet [word="I"] [lemma="be"] -4 4)	(meet [word="I"] [ ] -4 4)
+Najdi všechny příklady přítomného prostého času.	preloaded/ententen21_tt31	[tag="VBZ|VBP|VV"] within [tag!="V.*"][tag="VBZ|VBP|VV"][tag!="V.*"]	[tag="VBP|VBZ"]
+Najdi všechny přklady minulého prostého času.	preloaded/ententen21_tt31	[tag="VBD|VHD|VVD"] within [tag!="V.*"][tag="VBD|VHD|VVD"][lemma="not"]?[tag!="V.*"]	[tag="V[BD]D"]
+Najdi všechny příklady budoucího prostého času.	preloaded/ententen21_tt31	[word="will" & tag="MD"][lemma="not"]?[tag!="V.*"]{0,2}[tag="VB|VH|VV"]	[tag="MD"][tag="VV"]
+Najdi všechny příklady přítomného průběhového času.	preloaded/ententen21_tt31	[tag="VBP|VBZ"][lemma="not"]?[tag!="V.*"]{0,2}[tag="VVG"]	[tag="VBZ|VBP"] [tag="VVG"]
+Najdi všechny příklady minulého průběhového času.	preloaded/ententen21_tt31	[tag="VBD"][lemma="not"]?[tag!="V.*"]{0,2}[tag="VVG|VHG|VBG"]	[tag="VBD"][tag="VVG"]
+Najdi všechny příklady budoucího průběhového času.	preloaded/ententen21_tt31	[lemma="will"][lemma="not"]?[word="be"][tag="VVG|VBG|VHG"]	<s> [] [lemma="will"] [tag="MD"] [lemma="be"] [tag="VBP"] [lemma=".*ing"] </s>
+Najdi všechny příklady předpřítomného prostého času.	preloaded/ententen21_tt31	[tag="VH|VHZ"][lemma="not"]?[tag!="V.*"]{0,2}[tag="VVN|VBN|VHN"] within [tag!="V.*"][tag="VH|VHZ"][lemma="not"]?[tag!="V.*"]{0,2}[tag="VVN|VBN|VHN"][tag!="V.*"]	[tag="VHP|VHZ"][tag="VVN"]
+Najdi všechny příklady předminulého prostého času.	preloaded/ententen21_tt31	[tag="VHD"][lemma="not"]?[tag="VBN"][tag="VVN"]	[lemma="have" & tag="VHD"]
+Najdi všechny příklady předbudoucího prostého času.	preloaded/ententen21_tt31	[word="will" & tag="MD"][lemma="not"]?[word="have"][tag="VBN|VHN|VVN"]	[tag="VV" | tag="VHZ" | tag="VHP"]
+Najdi všechny příklady předpřítomného průběhového času.	preloaded/ententen21_tt31	[tag="VH|VHZ|VHP"][lemma="not"]?[tag="VBN"][tag="VVG"]	[tag="VBP"][tag="VBG"] | [tag="VBZ"][tag="VBG"]
+Najdi všechny příklady předminulého průběhového času.	preloaded/ententen21_tt31	[tag="VHD"][lemma="not"]?[tag="VBN"][tag="VVG"]	[tag="VHN"] [ ]{0,5} [tag="VVN"]
+Najdi všechny příklady předbudoucího průběhového času.	preloaded/ententen21_tt31	[word="will" & tag="MD"][lemma="not"]?[tag="VH|VHP"][tag="VBN"][tag="VVG"]	[lemma="will"][lemma="be"][tag="VBG"]
+Věty, kde mluvčí je Andrej Babiš.	preloaded/parlatalk_cz	< s/> within <speaker name=".*Andrej Babiš.*"/>	<s/> containing <speaker name="Andrej Babiš"/>
+Najdi větu s právě tolika slovy, kolik je odpovědí na otázku života, vesmíru a vůbec.	preloaded/ententen21_tt31	<s> [ ]{42} </s> within <s/>	<s/> containing [word=".*"]{42}
+Potřebuji všechna frázová slovesa.	preloaded/ententen21_tt31	[tag="V.*"][tag="DT|N.*|J.*"]+[tag="RP"][tag!="IN"]	[tag="V.*"][tag="IN"]
+I need examples of prepositional verbs.	preloaded/ententen21_tt31	[tag="V.*"][tag="IN"]	[lemma="v.*"][tag="IN"]
+How do I find adverbial phrases?	preloaded/ententen21_tt31	[tag="IN"][tag="DT"]?[tag="J.*"]*[tag="N.*"]	[tag="RB.*"] [tag="JJ.*|RB.*"]{0,3}
+Potřebuji najít příslovečná určení. Nejen však příslovce.	preloaded/cstenten23_mj2	([tag="k6.*"] | [tag="k7.*"] [tag="k1.*|k2.*|k3.*"]+) within <s/>	[tag="k6.*"] | [tag="k7.*"] | [tag="k8.*"] | [lemma="(dnes|zde|tam|občas)"]
+Potřebuji nalézt všechny věty, které jsou napsané v pasivu.	preloaded/ententen21_tt31	[tag="VB.*"][tag="VVN"]	<s/> [tag="VVN"] [word="by"]? {0,1} [tag="VBN"] </s>
+I need to find an agent in a passive sentence.	preloaded/ententen21_tt31	[tag="VB.*"][tag="VBN|VHN|VVN"][lemma!="by" & tag!="V.*"]*[lemma="by"][tag="DT"]? [tag="J.*"]*[tag="N.*"] within <s/>	[lemma="by"] [tag="N.*"]
+Najdi pasivum se slovesem "get".	preloaded/ententen21_tt31	[lemma="get"][tag="VVN"]	[lemma="get"] [ ]{0,} [tag="VVN"]
+I need to find all adjectives in an attributive position.	preloaded/ententen21_tt31	[tag="J.*"][tag="N.*"]	[tag="JJ"][tag="N.*"]
+Všechny dva po sobě jdoucí tokeny se stejným tagem.	preloaded/ententen21_tt31	1:[] 2:[] & 1.tag = 2.tag	1:[] 2:[] & 1.tag = 2.tag
+Chci najít sekvenci přídavné jméno, následované podstatným jménem, kde přídavné jméno má frekvenci menší než 5000.	preloaded/ententen21_tt31	1:[tag="J.*"][tag="N.*"] & f(1.word)<5000	1:[tag="JJ.*"] 2:[tag="NN.*"] & f(1.word) < 5000
+Chci nalézt sekvenci dvou po sobě jdoucích slov, která jsou stejná.	preloaded/ententen21_tt31	1:[] 2:[] & 1.word = 2.word	1:[word=".*"] 2:[word=".*"] & 1.word=2.word
+Potřebuji nalézt dvě slova ve větě, která mají stejé lemma.	preloaded/ententen21_tt31	(1:[] 2:[] within <s/>) & 1.lemma = 2.lemma	[lemma="(\w+)"] [lemma="\g<1>"]
+Potřebuji nalézt dvě slova ve větě, která mají stejé lemma, a současně ani jedno z těchto slov není číslovkou.	preloaded/ententen21_tt31	(1:[tag!="CD"] 2:[tag!="CD"] within <s/>) & 1.lemma = 2.lemma	<s> 1:[lemma=".*"] 2:[lemma=1.lemma] </s> & 1.tag != "CD" & 1.tag != "CDZ" & 2.tag != "CD" & 2.tag != "CDZ"
+Potřebuji nalézt sekvenci čtyř slov, ve které první a druhé slovo mají stejný tag a první a poslední mají stejné lemma.	preloaded/ententen21_tt31	1:[] 2:[] [] 3:[] & 1.tag = 2.tag & 1.lemma = 3.lemma	1:[lemma=".*"] 2:[lemma=".*"] 3:[lemma=".*"] 4:[lemma=".*"] & 1.tag=2.tag & 1.lemma=4.lemma
+Chtěl bych nalézt případy, kdy ve věte sloveso následované po podstatném jméně má stejné lemma, jako předcházející podstatné jméno.	preloaded/ententen21_tt31	(1:[tag="N.*"]2:[tag="V.*"] within <s/>) & 1.lemma = 2.lemma	1:[lemma=".*"] 2:[lemma=".*"] & 1.lemma = 2.lemma
+Zajímalo by mě, zda existují dvě po sobě jdoucí přídavná jména, následovaná podstatným jménem, kdy frekvence prvního přídavného jména je vyšší něž 100000 a frekvence druhého je menší než 5000.	preloaded/ententen21_tt31	1:[tag="J.*"]2:[tag="J.*"][tag="N.*"] & f(1.word) > 100000 & f(2.word) < 5000	1:[tag="JJ"] & f(1.lemma) > 100000 2:[tag="JJ"] & f(2.lemma) < 5000 3:[tag="NN*"]
+Existují dvě po sobě jdoucí slova, která mají stejné lemma, ale jejich záspis, nezávisle na velikosti písmen, se liší?	preloaded/ententen21_tt31	1:[]2:[] & 1.lemma = 2.lemma & 1.lc != 2.lc	1:[lc=".*"] 2:[lc=".*"] & 1.lc = 2.lc & 1.word != 2.word
+Dají se najít dvě po sobě jdoucí slova, kde první nebo druhé má frekvenci vyšší než 2000000000?	preloaded/ententen21_tt31	1:[]2:[] & f(1.word) > 2000000000 | f(2.word) > 2000000000	1:[] 2:[] & (f(1.word)>2000000000 | f(2.word)>2000000000)
+Chci slovo raketa z domény nasa.gov.	preloaded/ententen21_tt31	[word="rocket"] within <doc urldomain="nasa\.gov" />	{ [word="raketa"] } & { [doc.urldomain="nasa.gov"] }
+Zajímali by mě všechna slova univerzita v doménách končících na .edu .	preloaded/ententen21_tt31	[lemma="university"] within <doc tld="edu"/>	<doc urldomain=".*\.edu">[lemma="university"]
+Výskyty slova agrese v dokumentech s tématem hry.	preloaded/ententen21_tt31	[lemma="aggression"] within <doc topic="games"/>	<doc topic="game">[lempos="agrese-v"]
+Výskyty slova agrese v dokumentech s tématem hry nebo vzdělání.	preloaded/ententen21_tt31	[lemma="aggression"] within <doc topic="games|education"/>	<doc genre="game|education"> [lemma="agrese"]
+Zajímaly by mě výskyty reklam na blogech.	preloaded/ententen21_tt31	[lemma="advertisement|ad"] within <doc genre="blog"/>	<doc genre="blog"/> containing [lemma="ad|advertisement|banner|sponsor|promo"]
+Zajímají mě výskyty fráze "Barack Obama" ve všech dokumentech, kde titulek obsahuje slovo "skandál".	preloaded/ententen21_tt31	[word="Barack"][word="Obama"] within <doc title=".*scandal.*" />	[lemma="Barack"][lemma="Obama"] within [doc.title=".*skandal.*"]
+Potřebuji výskyty slova COVID po roce 2019.	preloaded/trends_en	[word="COVID"] within <doc year="20[2-9]." />	[word="COVID"] within [doc.date>="2020"]
+Potřebuji výskyty slova podzemí ve městě Brně.	preloaded/trends_en	[lemma="underground"] within <doc city="Brno"/>	[doc.city="Brno"] []* [lemma="underground"] []*
+Zajímají mě všechny novinové články, ve kterých se vyskytuje sloveso "hack".	preloaded/trends_en	[lemma="hack" & tag="V.*"] within <doc genre="news"/>	[lemma="hack" & tag="VB.*"]
+Výskyty slova leprikon v dokumentech pocházejících z Irska.	preloaded/trends_en	[lemma="leprechaun"] within <doc country="Ireland" />	[doc.country="Ireland"] [word="leprikon"]
+Zajímali by mě výskyty slova zmrzlina v dokumentech, které byly publikovány v červnu.	preloaded/trends_en	[word="ice"][word="cream"] within <doc month=".+-06"/>	[lemma="zmrzlina"] within <doc month="June"/>
+Najdi věty v přímé řeči (začínající uvozovkou).	preloaded/ententen21_tt31	<s> [word="\""]	<s> [word="\""]
+Najdi věty, které obsahují číslo větší než 100.	preloaded/ententen21_tt31	<s/> containing [tag="CD" & word>="101"]	<s/> within [lemma="hundred"] | [lemma="[1-9][0-9]{2,}"] | [lemma="10[1-9]"]
+Zajímají mě pouze všechna slovesa z první třídy pravidelných sloves v infinitivu.	preloaded/frtenten22_fl4	[tag="VMN.*" & lemma=".*er"]	[lemma=".*er" & tag="V.*N.*"]
+Chtěl bych všechna slovesa z druhé a třetí třídy pravidelných sloves.	preloaded/frtenten22_fl4	[tag="V.*" & lemma=".*ir|.*re"]	[lemma="er$|re$"]
+Chtěl bych nalézt všechna slovesa v přítomném čase.	preloaded/frtenten22_fl4	[tag="V..P.*"]	[tag="V.*.*P.*"]
+Chtěl bych nalézt všechna slovesa, která jsou součástí vět v přítomném čase.	preloaded/frtenten22_fl4	[tag="V..P.*"]	[tag="V.MIP.*"]
+Zajímali by mě příklady imperfektum.	preloaded/frtenten22_fl4	[tag="VM.I.*"]	[tag="V.*I.*"]
+Chtěl bych slovesa v minulém čase jednoduchém.	preloaded/frtenten22_fl4	[tag="VMIS.*"]	[tag="V.*S.*"]
+Jak naleznu slovesa v budoucím čase jednoduchém?	preloaded/frtenten22_fl4	[tag="VMIF.*"]	[tag="V.M.P.F.*"]
+Jak naleznu Subjonctif?	preloaded/frtenten22_fl4	[tag="VMSP.*"]	[tag="V.*S.*"]
+Potřebuji všechna slovesa v minulém čase složeném.	preloaded/frtenten22_fl4	[tag="V[SA]IP.*"][tag="V.P.*"]	[lempos=".*-p"]
+Potřebuji všechna slovesa v minulém čase nedokonavém	preloaded/frtenten22_fl4	[tag="V.MS.*"]	[tag="V.*I.P.*"] & [lempos=".*-v"]
+Jak naleznu podmiňovací způsob minulý?	preloaded/frtenten22_fl4	[tag="V..C.*"]	[tag="V.M.C.*"]
+Dají se nalézt slovesa v trpném rodě?	preloaded/frtenten22_fl4	[lemma="être"] [tag="V.P.*"]	[tag="V.*P.*"]
+Slova uzavřená uvozovkami.	preloaded/ententen21_tt31	[word="\""] [word!="\""]+ [word="\""] within <s/>	[tag="\" or \""] [tag=".*"] [tag="\" or \""]
+Všechny závorky a jejich obsah.	preloaded/ententen21_tt31	[word="\[|\(|\{"] [word!="\]|\)|\}"]+ [word="\]|\)|\}"]	[word="("] [ ]* [word=")"]
+Slova v závorkách.	preloaded/ententen21_tt31	[word="\[|\(|\{"] [word!="\]|\)|\}"]+ [word="\]|\)|\}"]	[tag="(] [word=""] [tag=")"]
+Najdi otázky – věty zakončené otazníkem.	preloaded/ententen21_tt31	<s/> containing [word="\?" & tag="SENT"]	<s> [...] [sent="?"] </s>
+Najdi všechny výskyty slova „ale“ mezi dvěma větami.	preloaded/ententen21_tt31	[lc="but"] within [word=","][lc="but"]	</s> [word="ale"] <s>
+Jak najdu první slovo ve větě?	preloaded/ententen21_tt31	<s> []	<s> [ ]
+Vyhledej pouze jednoslovné věty.	preloaded/ententen21_tt31	<s> [] [tag="SENT"]? </s>	<s> [] [tag="SENT"] </s>
+Sekvence tří slov: přídavné jméno + podstatné jméno + sloveso.	preloaded/ententen21_tt31	[tag="J.*"][tag="N.*"][tag="V.*"]	<s> [tag="JJ"] [tag="NN"] [tag="VV"] </s>
+Sekvence dvou přídavných jmen za sebou.	preloaded/ententen21_tt31	[tag="J.*"][tag="J.*"]	[tag="JJ.*"][tag="JJ.*"]
+Sloveso následované zájmenem.	preloaded/ententen21_tt31	[tag="V.*"] [tag="P.*"]	[lemma=".*"] [tag="PP|WP|PPZ|NP|NPS|NPZ|NPSZ"]
+Přídavné jméno následované podstatným jménem (např. „velký dům“).	preloaded/ententen21_tt31	[tag="J.*"][tag="N.*"]	[tag="JJ"][tag="N.*"]
+Najdi věty začínající spojkou.	preloaded/ententen21_tt31	<s> [tag="CC|IN"]	[tag="CC"] within <s>
+Najdi věty bez slovesného přísudku.	preloaded/ententen21_tt31	<s/> !containing [tag="V.*"]	<s/> !containing [tag="VB.*" | tag="VV.*" | tag="VHD.*"]
+Věty s několikanásobným podmětem.	preloaded/ententen21_tt31	<s/> containing <s> [tag!="V.*|CC|,"]* [tag="N.*"] [tag!="V.*|CC|,"]* [tag="CC"] [tag!="V.*|CC|,"]* [tag="N.*"] [tag!="V.*|CC|,"]* [tag="V.*"]	<s> [tag="NN"]{2,} </s> | <s> [tag="NNS"]{2,} </s>
+Najdi věty, které končí výpustkou.	preloaded/ententen21_tt31	<s/> containing [word=="..."][tag="SENT"]?</s>	<s> [tag=" or "] </s>
+Najdi výskyty více vykřičníků nebo otazníků za sebou (např. „?!“, „!!!“).	preloaded/ententen21_tt31	[word=="?" | word=="!"]{2,} | [word="[!?]{2,}"]	[word="[?!]+"]
+I need all sentences that consist of three tokens.	preloaded/ententen21_tt31	<s> [][][] </s>	<s> [ ] [ ] [ ] </s>
+Věty obsahující sloveso „muset“ a podstatné jméno v akuzativu.	preloaded/cstenten23_mj2	<s/> containing ([lemma="muset" & tag="k1.*"][]*[tag="k1.*c4.*"]) | ([tag="k1.*c4.*"][]*[lemma="muset" & tag="k1.*"])	([lemma="muset"] [tag="k1.*c4"]) within <s/>
+Věty obsahující sloveso „muset“ a po něm podstatné jméno v akuzativu.	preloaded/cstenten23_mj2	[lemma="muset" & tag="k5.*"] [tag="k1.*c4.*"]	[lemma="muset"] [tag="k5mS.*"] [tag="k1c4.*"] within <s/>
+Najdi vzory: "podstatné jméno|přídavné jméno" nebo "přídavné jméno|podstatné jméno".	preloaded/cstenten23_mj2	([tag="k1.*"] [tag="k2.*"]) | ([tag="k2.*"] [tag="k1.*"])	([tag="k1g.*n.*"][tag="k2g.*n.*"]) | ([tag="k2g.*n.*"][tag="k1g.*n.*"])
+Slova napsaná VELKÝMI PÍSMENY.	preloaded/ententen21_tt31	[word="[A-Z]+"]	[word="[A-Z]+"]
+Potřebuji nalézt všechna podstatná jména.	preloaded/cstenten23_mj2	[tag="k1.*"]	[tag="k1.*"]
+Potřebuji nalézt všechna podstatná jména.	preloaded/frtenten22_fl4	[tag="N.*"]	[tag="N.*.*.*.*.*.*"]
+Potřebuji nalézt všechna podstatná jména.	preloaded/ententen21_tt31	[tag="N.*"]	[tag="NN"] [tag="NNS"] [tag="NP"] [tag="NPS"] [tag="NPZ"] [tag="NPSZ"] [tag="NNSZ"] [tag="NNZ"]
+Najdi všechna přídavná jména.	preloaded/cstenten23_mj2	[tag="k2.*"]	[tag="k2.*"]
+Najdi všechna přídavná jména.	preloaded/frtenten22_fl4	[tag="A.*"]	[tag="A.*"]
+Najdi všechna přídavná jména.	preloaded/ententen21_tt31	[tag="J.*"]	[tag="JJ.*"]
+Jak naleznu všechna podstatná jména začínající "pře" a končící na "ní"?	preloaded/cstenten23_mj2	[word="pře.*ní" & tag="k1.*"]	[lemma="pře.*ní" & tag="k1.*"]
+Jak naleznu zájména?	preloaded/cstenten23_mj2	[tag="k3.*"]	[tag="k3yR.*"]
+Jak naleznu zájména?	preloaded/frtenten22_fl4	[tag="P.*"]	[tag="A.P.*"]
+Jak naleznu zájména?	preloaded/ententen21_tt31	[tag="PP.*"]	[tag="PP.*"]
+Všechny tvary slova vitamíny.	preloaded/cstenten23_mj2	[lemma="vitamín"]	[lemma="vitamíny"]
+Jméno Petr v pátém pádě.	preloaded/cstenten23_mj2	[lemma="Petr" & tag="k1.*c5.*"]	[lemma="petr" & tag=".*c4.*"]
+Znaky '.', ',', '!' a '?'.	preloaded/cstenten23_mj2	[word=="." | word=="," | word=="!" | word=="?"]	[tag="kI.x." | tag="kI.x," | tag="kI.x!" | tag="kI.x?"]
+Jakým CQL naleznu všechny konce vět?	preloaded/ententen21_tt31	</s>	[tag="SENT"]
+Slovo "potravina".	preloaded/cstenten23_mj2	[word="potravina"]	[word="potravina"]
+Lemma "oko".	preloaded/cstenten23_mj2	[lemma="oko"]	[lemma="oko"]
+Najdi všechna slovesa v minulém čase.	preloaded/cstenten23_mj2	[tag="k5.*mA.*"]	[tag="k5.*a[I|P]"]
+Vyhledej všechna podstatná jména v množném čísle.	preloaded/cstenten23_mj2	[tag="k1.*nP.*"]	[tag="k1.*nP.*"]
+Najdi všechna slova v ženském rodě.	preloaded/cstenten23_mj2	[tag=".*gF.*"]	[tag=".*gF.*"]
+Všechna slovesa v rozkazovacím způsobu.	preloaded/cstenten23_mj2	[tag="k5.*mR.*"]	[tag="k5.*mR.*"]
+Všechna přídavná jména ve třetím stupni.	preloaded/cstenten23_mj2	[tag="k2.*d3.*"]	[tag="k4.*d3.*"]
+Vyhledej všechna zájmena v 3. pádě.	preloaded/cstenten23_mj2	[tag="k3.*c3.*"]	[tag="k3.*c3.*"]
+Najdi všechny výskyty lemmatu „jíst“.	preloaded/cstenten23_mj2	[lemma="jíst"]	[lemma="jíst"]
+Lemma "být" v minulém čase.	preloaded/cstenten23_mj2	[lemma="být" & tag=".*mA.*"]	[lemma="být" & tag="k5mS"]
+Vyhledej všechny tvary lemmatu "krásný".	preloaded/cstenten23_mj2	[lemma="krásný"]	[lemma="krásný"]
+Slovo "kočka" ve všech pádech a číslech.	preloaded/cstenten23_mj2	[lemma="kočka"]	[lemma="kočka"]
+Najdi všechna slova začínající na "ne" a končící na "ný".	preloaded/cstenten23_mj2	[word="ne.*ný"]	[word="ne.*ný"]
+Všechna slova, která mají uprostřed „stav“.	preloaded/cstenten23_mj2	[word=".*stav.*"]	[lemma=".*stav.*"]
+Všechna slova s předponou "pro-" a příponou '-ní'.	preloaded/cstenten23_mj2	[lemma="pro.*ní"]	[lemma="pro.*ní" & tag="k2.*"]
+Podstatná jména, která končí na „ka“.	preloaded/cstenten23_mj2	[tag="k1.*" & word=".*ka"]	[lemma=".*ka$" & tag="k1.*"]
+Najdi výskyty číslovek v textu.	preloaded/cstenten23_mj2	[tag="k4.*"]	[tag="k4.*"]
+Najdi výskyty číslovek v textu.	preloaded/frtenten22_fl4	[tag="Z.*"]	[tag="Z.*"]
+Najdi výskyty číslovek v textu.	preloaded/ententen21_tt31	[tag="CD"]	[tag="CD"]
+Všechny výskyty dvojtečky.	preloaded/cstenten23_mj2	[word==":"]	[tag="kI.x:"]
+Všechna interpunkční znaménka kromě tečky.	preloaded/cstenten23_mj2	[tag="kI.*" & word!=="."]	[tag="kI.*x[^.]"]
+Najdi všechna podstatná jména v 1. pádě jednotného čísla.	preloaded/cstenten23_mj2	[tag="k1.*nS.*c1.*"]	[tag="k1.*g.*nS.*c1.*"]
+Najdi všechny výpustky.	preloaded/cstenten23_mj2	[word="\.{3}"]	[lemma="výpustky"]
+Najdi všechny výskyty zkratek (např. „např.“, „tj.“, „atd.“).	preloaded/cstenten23_mj2	[tag="kA.*"]	[word="např."] | [word="tj."] | [word="atd."] | [word=".*\."]
+Najdi všechny výskyty zkratek.	preloaded/cstenten23_mj2	[tag="kA.*"]	[word=".*\."]
+Najdi všechna slova obsahující pomlčku nebo spojovník.	preloaded/cstenten23_mj2	[word=".*[-–].*"]	[word=".*[~-].*"]
+Najdi všechna slova, která mají stejný základ jako „věřit“.	preloaded/cstenten23_mj2	[lemma="věřit"]	[lemma="věř.*"]
+Potřebuji všechny předložky v korpusu.	preloaded/cstenten23_mj2	[tag="k7.*"]	[tag="k8"]
+Potřebuji nalézt příslovce.	preloaded/ententen21_tt31	[tag="RB.*"]	[tag="RB"] | [tag="RBR"] | [tag="RBS"]
+Potřebuji nalézt příslovce.	preloaded/frtenten22_fl4	[tag="R.*"]	[tag="R.*"]
+Potřebuji nalézt příslovce.	preloaded/cstenten23_mj2	[tag="k6.*"]	[tag="k6.*"]
+Chci slovo, které se v korpusu nachází na pozici 1000.	preloaded/ententen21_tt31	[#1000]	1000:[] within <corpus/>
+Potřebuji slovko, které se v korpusu nachází na první pozici.	preloaded/ententen21_tt31	[#1]	<s>[lemma="word"]</s>
+Jak naleznu slovo na pozici 7831?	preloaded/ententen21_tt31	[#7831]	7831:[] within <s/>
+Slovo "COVID" po roce 2019	preloaded/ententen21_tt31	[word="COVID"] within <doc year="20[2-9].*"/>	[lemma="COVID"] & [doc.modified_year>2019]
+Potřebuji všechy výskyty různých květin vyskytující se v okolí velikosti +-5 od slova roste.	preloaded/ententen21_tt31	(meet ~"dandelion-n" [lemma="grow"] -5 5)	(meet [lemma="rose"] [lemma="growth"] -5 5) | (meet [lemma="tulip"] [lemma="growth"] -5 5) | (meet [lemma="lily"] [lemma="growth"] -5 5) | (meet [lemma="orchid"] [lemma="growth"] -5 5) | (meet [lemma="iris"] [lemma="growth"] -5 5) | (meet [lemma="carnation"] [lemma="growth"] -5 5) | (meet [lemma="violet"] [lemma="growth"] -5 5) | (meet [lemma="petunia"] [lemma="growth"] -5 5) | (meet [lemma="sunflower"] [lemma="growth"] -5 5) | (meet [lemma="daisy"] [lemma="growth"] -5 5)
+Potřebuji všechy výskyty slova "grow" vyskytující se v okolí velikosti +-5 od různých květin.	preloaded/ententen21_tt31	(meet [lemma="grow"] ~"dandelion-n" -5 5)	(meet [lemma="grow"] [lemma="flower|rose|tulip|lily|orchid|iris|sunflower|daisy"] -5 5)
+Najdi všechny případy, kdy je v přímé řeči oslovení.	preloaded/ententen21_tt31	[word="\""][word!="\""]+[word="\""] containing [word="\""][tag="NP|NPS"][word=","][]?[tag="PP"]	<s dir="direct"> [lemma="you.*"]
+Najdi všechny případy přímé řeči, kterou někdo pronáší.	preloaded/ententen21_tt31	[word="\""][word!="\""]+[word="\""] within (([tag="NP|NPS|PP"][lemma="say"][word=":"]?[word="\""][word!="\""]+[word="\""]) | ([word="\""][word!="\""]+[word="\""][lemma="say"][tag="NP|NPS|PP"]) | ([word="\""][word!="\""]+[word="\""][tag="NP|NPS|PP"][lemma="say"]))	[ ] within <dspeech/>
+Najdi všechny věty, které jsou prosbou.	preloaded/ententen21_tt31	<s/> containing ([lemma="please"] | [lemma="could"] | [lemma="would"] | [lemma="can"] | [lemma="will"] within <s/>)	<s> [tag="MD"][tag="VV"].* </s>
+Potřebuji všechy výskyty slova koroze vyskytující se okolo kovů.	preloaded/ententen21_tt31	(meet [lemma="corrosion"] ~"metal-n" -5 5)	(meet [lemma="corrosion"] (~"metal-n") -5 5)
+Potřebuji všechy výskyty slova koroze vyskytující se okolo různých kovů. Použí thesaurus.	preloaded/ententen21_tt31	(meet [lemma="corrosion"] ~"metal-n" -5 5)	(meet ~"corrosion-n" [lemma="metal"] -5 5)
+Potřebuji všechy výskyty různých kovů vyskytující se okolo slova koroze.	preloaded/ententen21_tt31	(meet ~"metal-n" [lemma="corrosion"] -5 5)	(meet [lemma="(aluminium|copper|steel|zinc|iron|nickel|titanium|magnesium)s?"] [lemma="corrosion"] -5 5)
+Potřebuji všechy výskyty slova koroze vyskytující se okolo různých květin.	preloaded/ententen21_tt31	(meet [lemma="corrosion"] ~"daisy-n" -5 5)	(meet [lempos="corrosion-n"] [lemma="i^(rose|flower|tulip|lily|bloom)$"] -5 5)
+Potřebuji všechy výskyty slova roste vyskytující se v okolí velikosti +-5 od různých květin.	preloaded/ententen21_tt31	(meet [lemma="grow"] ~"rose-n" -5 5)	(meet [lemma="rostě"] ([lemma="růže"] | [lemma="tulipán"] | [lemma="jasmín"] | [lemma=" narcis"] | [lemma=" violeta"] | [lemma=" margarita"] | [lemma=" šafrán"]) -5 5)

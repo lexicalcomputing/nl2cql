@@ -1,0 +1,3 @@
+Working on: models/google-t5_t5-base/model_train_data_20_final.pt | 256/4280 | AVG Bleu: 0.7969703080481602 | Time: 10 | ETA: 177 sec | 
+Working on: models/google-t5_t5-base/model_train_data_20_final.pt | 512/4280 | AVG Bleu: 0.7922450696132192 | Time: 21 | ETA: 199 sec | 
+Working on: models/google-t5_t5-base/model_train_data_20_final.pt | 768/4280 | AVG Bleu: 0.8000603111746449 | Time: 38 | ETA: 258 sec | 

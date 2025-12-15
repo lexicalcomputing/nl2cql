@@ -1,0 +1,374 @@
+CQL: []
+CQL: [lemma="mots"]
+/home/xmikusek/diploma-thesis/evaluation/model_evaluation/DeepSeek-R1-32.8B-qwen2-Q4_K_M-02072025/venv/lib64/python3.13/site-packages/nltk/translate/bleu_score.py:577: UserWarning: 
+The hypothesis contains 0 counts of 2-gram overlaps.
+Therefore the BLEU score evaluates to 0, independently of
+how many N-gram overlaps of lower order it contains.
+Consider using lower n-gram order or use SmoothingFunction()
+  warnings.warn(_msg)
+/home/xmikusek/diploma-thesis/evaluation/model_evaluation/DeepSeek-R1-32.8B-qwen2-Q4_K_M-02072025/venv/lib64/python3.13/site-packages/nltk/translate/bleu_score.py:577: UserWarning: 
+The hypothesis contains 0 counts of 3-gram overlaps.
+Therefore the BLEU score evaluates to 0, independently of
+how many N-gram overlaps of lower order it contains.
+Consider using lower n-gram order or use SmoothingFunction()
+  warnings.warn(_msg)
+/home/xmikusek/diploma-thesis/evaluation/model_evaluation/DeepSeek-R1-32.8B-qwen2-Q4_K_M-02072025/venv/lib64/python3.13/site-packages/nltk/translate/bleu_score.py:577: UserWarning: 
+The hypothesis contains 0 counts of 4-gram overlaps.
+Therefore the BLEU score evaluates to 0, independently of
+how many N-gram overlaps of lower order it contains.
+Consider using lower n-gram order or use SmoothingFunction()
+  warnings.warn(_msg)
+CQL: []
+CQL: [ ]
+CQL: [tag="NC.*"]
+CQL: [tag="N.C.*"]
+CQL: [tag="NP.*"]
+CQL: [tag="N.P.*"]
+CQL: [tag="N.FS.*"]
+CQL: [tag="N.*F.S.*"]
+CQL: [tag="N.MP.*"]
+CQL: [tag="N.CM.P.*"]
+CQL: [tag="AQ.*"]
+CQL: [tag="A.Q.*"]
+CQL: [tag="AO.*"]
+CQL: [tag="A.O.*"]
+CQL: [tag="DA.*"]
+CQL: [tag="D.A.*"] & [lemma_lc="article.*"]
+CQL: [tag="PP.*"]
+CQL: [tag="P.P.*"]
+CQL: [tag="PX.*"]
+CQL: [tag="P.X.*"]
+CQL: [tag="RG"]
+CQL: [tag="R.G.*"]
+CQL: [tag="RN"]
+CQL: [tag="R.N.*"]
+CQL: [tag="SP.*"]
+CQL: [tag="S.P.*"]
+CQL: [tag="CC.*"]
+CQL: [tag="C.C.*"]
+CQL: [tag="CS.*"]
+CQL: [tag="C.S.*"]
+CQL: [tag="Z.*"]
+CQL: [tag="N.*"]
+CQL: [tag="Fit"]
+CQL: [tag="Fi"]
+CQL: [tag="V.P.*"]
+CQL: [tag="V.*P.*"]
+CQL: [tag="V.G.*"]
+CQL: [tag="V.*G.*"]
+CQL: [tag="V.IP.*"]
+CQL: [tag="V.M.I.P.*"]
+CQL: [tag="V.S.*"]
+CQL: [tag="V.*S.*"]
+CQL: [tag="V.M.*"]
+CQL: [tag="V..M.*"]
+CQL: [tag="V..P.*"]
+CQL: [tag="V.*P.*"]
+CQL: [tag="V..C.*"]
+CQL: [tag="V.*C.*"]
+CQL: [word="[A-ZÀ-ÖØ-Ý]+"]
+CQL: [word="^[A-Z]+$"]
+CQL: [word="[a-zà-öø-ý]+"]
+CQL: [word=lc]
+CQL: [word="\d{4}"]
+CQL: [tag="Z.d4.\d{4}"]
+CQL: [word="\d{1,3}(,\d{3})+"]
+CQL: [word="\d+ \d+"] & [tag="N.*"]
+CQL: [word="\d+([, ]?\d+|\.\d+)?%"]
+CQL: [word=".*%"] | [lc="pour cent"] | [lc="pourcent"]
+CQL: [word="#\w+"]
+CQL: [tag="Ith"]
+CQL: [word="@\w+"]
+CQL: [word="@.*"]
+CQL: [word="^#([0-9A-Fa-f]{3}|[0-9A-Fa-f]{6})$"]
+CQL: [lemma="couleurs"] [word="\#[A-Fa-f0-9]{6}"]
+CQL: [lemma=".*ment"]
+CQL: [lemma=".*ment$"]
+CQL: [lemma="aller"]
+CQL: [lemma="aller.*"]
+CQL: [tag="A.*"][tag="N.*"]
+CQL: [tag="A.*"] [tag="N.*"]
+CQL: [tag="SP.*"][tag="D.*"][tag="N.*"]
+CQL: [tag="S.P.*"][tag="D.*.*"][tag="N.*.*.*"]
+CQL: [tag="V.*"][tag="P.*"]
+CQL: [tag="V.*"][tag="P.X.*"]
+CQL: [lemma="ne" & tag="RN"][lemma!="pas" | tag!="RN"]{0,3}[lemma="pas" & tag="RN"] within <s/>
+CQL: [lemma="ne"] [tag="V.*|Adv.*|PP.*"]{0,1} [tag="V.*|Adv.*|PP.*"] [lemma="pas"] [tag="V.*|Adv.*|PP.*"]{0,1}
+CQL: [tag="N.*"][word="et"][tag="N.*"]
+CQL: [tag="N.*"] [tag="C.*"] [tag="N.*"]
+CQL: [tag="N.*"]{3}
+CQL: [tag="N.*"] [tag="N.*"] [tag="N.*"]
+CQL: [word=="?"] </s>
+CQL: <s/> containing [tag="Fq"]
+CQL: [word=="!"] </s>
+CQL: [tag="Fat"] </s>
+CQL: <s> [] [tag="F[^z].*"] </s>
+CQL: [word]
+CQL: <s> []
+CQL: [lemma="refill"] within <s/>
+CQL: <s/> !containing [tag="V.*"]
+CQL: [tag="^[^V]"]{.*}
+CQL: <s/> containing [tag="Z.*"]
+CQL: [tag="Z.*"]
+CQL: <doc urldomain=".*\.gouv\.fr" />
+CQL: <doc url=".*gouv\.fr.*">
+CQL: <doc tld="fr" />
+CQL: <doc lang="fr">
+{'error': 'AttrNotFound (lang) near position 11', 'api_version': '5.84.9', 'manatee_version': '2.36.7-SkE-2.237.2', 'request': {'concordance_query': [{'queryselector': 'cqlrow', 'cql': '<doc lang="fr">', 'default_attr': 'word'}], 'default_attr': 'word', 'viewmode': 'sen', 'attr_allpos': 'all', 'kwicleftctx': '0', 'structs': 's,g', 'fromp': '1', 'json': '{"concordance_query": [{"queryselector": "cqlrow", "cql": "<doc lang=\\"fr\\">", "default_attr": "word"}]}', 'attrs': 'pos', 'pagesize': '1000', 'kwicrightctx': '0', 'corpname': 'preloaded/frtenten22_fl4', 'cup_hl': 'q'}}
+CQL: <doc title=".*rapport.*" />
+CQL: <p heading=".*">[lemma="rapport"]</p>
+CQL: <doc genre="news" />
+CQL: <doc genre="presse"> </doc> *
+CQL: <doc crawl_year="2020" />
+CQL: <doc date="2020-.*"/>
+{'error': 'AttrNotFound (date) near position 11', 'api_version': '5.84.9', 'manatee_version': '2.36.7-SkE-2.237.2', 'request': {'concordance_query': [{'queryselector': 'cqlrow', 'cql': '<doc date="2020-.*"/>', 'default_attr': 'word'}], 'structs': 's,g', 'attr_allpos': 'all', 'fromp': '1', 'pagesize': '1000', 'viewmode': 'sen', 'default_attr': 'word', 'corpname': 'preloaded/frtenten22_fl4', 'cup_hl': 'q', 'json': '{"concordance_query": [{"queryselector": "cqlrow", "cql": "<doc date=\\"2020-.*\\"/>", "default_attr": "word"}]}', 'kwicleftctx': '0', 'kwicrightctx': '0', 'attrs': 'pos'}}
+CQL: <p/> !containing [tag="NP.*"]
+CQL: <p/> !containing [tag="N.P.*"]
+CQL: <s/> containing [tag="Fra|Frc|Fe"]
+CQL: [tag="Fg"] | [tag="Ff"]
+CQL: (meet [tag="N.*"] [tag="V.*"] -3 3)
+CQL: (meet [tag="V.*"] [tag="N.*"] -3 3)
+CQL: (union (meet [tag="N.*"] [lemma="être"] -2 2) (meet [tag="A.*"] [lemma="être"] -2 2))
+CQL: (meet [lemma="être"] ([tag="A.*"] [tag="N.*"]) -2 2) | (meet [lemma="être"] [tag="A.*"] -2 2)
+CQL: (union (meet [tag="N.*"] [lemma="être"] -2 2) (meet [tag="A.*"] [lemma="être"] -2 2))
+CQL: (meet ([tag="N.*"] | [tag="A.*"]) [lemma="être"] -5 5)
+CQL: 1:[] 2:[] & 1.lemma = 2.lemma
+CQL: 1:[lemma="x"] 2:[lemma="x"]
+CQL: 1:[] 2:[] & 1.lemma = 2.lemma
+CQL: 1:[lemma=".*"] 2:[lemma=".*"] & 1.lemma = 2.lemma
+CQL: 1:[tag="A.*"] [tag="CC.*"] 2:[tag="A.*"] & 1.lemma = 2.lemma
+CQL: [tag="A.*"] [tag="C.*"] [tag="A.*"] & 1.lemma = 3.lemma
+CQL: [tag="Fs"]
+CQL: [tag="Fat"] [tag="Fat"]{+}
+CQL: [word="»"]
+CQL: [word="[»›]"]
+CQL: [word="\(|\)"]
+CQL: [tag="Sop"] | [tag="Scl"]
+CQL: [word=="("] []{0,5} [word==")"]
+CQL: [lemma="au"][word="\("][word="\)"]
+CQL: [tag="A..FP.*"]
+CQL: [tag="A.*F.*P.*"]
+CQL: [tag="D..MS.*"]
+CQL: [tag="D..M.S.*"]
+CQL: [tag="PR..P.*"]
+CQL: [tag="P.R....P.*"]
+CQL: [tag="PP3.*"]
+CQL: [tag="P.*3.*"]
+CQL: [tag="VMIP3S.*"]
+CQL: [tag="V.M.P.3.*"]
+CQL: [tag="VMIP3P.*"]
+CQL: [lemma="..."] [tag="V.M.I.P.3.P.*"]
+CQL: [tag="VA.S.*"]
+CQL: [lemma="être|avoir"] & [tag="V.A.*S.*"]
+CQL: [tag="VSN.*"]
+CQL: [tag="V.S.N.*"]
+CQL: [lemma="ne" & tag="RN"] []{0,3} [lemma="jamais"]
+CQL: [lempos="ne-p"] [lempos="jamais-r"]
+CQL: [lemma="ne" & tag="RN"] []{0,3} [word="plus"]
+CQL: [lemma="ne"] [ ]{1,} [lemma="plus"]
+CQL: [lemma="ne" & tag="RN"] []{0,3} [word="rian"]
+CQL: [word="ne"] | [word="rien"]
+CQL: <s> [tag="Fe|Fr."]
+CQL: <p> [word="«"]
+CQL: <s/> containing [word="\(|\)"]
+CQL: [tag="Fa" | tag="Fc"] within <s/>
+CQL: [ws("tester-v", "objects of \"%w\"", ".*")]
+CQL: [ws("tester-v", "object of \"%w\"", ".*")]
+CQL: [ws("livre-n", "modifiers of \"%w\"", ".*")]
+CQL: (meet [tag="A.QS.M.S.*"] [lemma="livre"] -3 3) | (meet [lemma="livre"] [tag="A.QS.M.S.*"] -3 3)
+CQL: [ws("augmenter-v", "subjects of \"%w\"", ".*")]
+CQL: [ws("augmenter-v", "sujets de \"%w\"", ".*")]
+CQL: [ws("réformer-v", ".*object.*", "politique-n")]
+CQL: [ws("réformer-v", "objet de \"%w\"", "politique-n")]
+CQL: [lemma="voir"] []{0,3} ~10"médecin-n"
+CQL: [lemma="voir"] ~"médecin-n"
+CQL: [lemma="renouvelable"] []{0,3} ~15"énergie-n"
+CQL: (meet ~15"énergie-n" [lemma="renouvelable"] -5 5)
+CQL: [tag="Z.*"][word="%"]
+CQL: [word="Nombre"][word="%"]
+CQL: [tag="Z.*"][word="%"] !containing <g/>
+CQL: [tag="Z.*"][tag="Fp"]  # Remarque: vérifiez le tag exact du symbole % dans le corpus
+CQL: [tag="Z.*"][word="%"] containing <g/>
+CQL: [tag="Z.*"][tag=" "][tag="Fc"]
+CQL: (meet [tag="N.*|P.*"] [tag="V.*"] 1 3)
+CQL: [tag="N.*|P.*"] [ ]{1,3} [tag="V.*"]
+CQL: [tag="A.*"]{2}[tag="N.*"]
+CQL: [tag="A.*"] [tag="A.*"] [tag="N.*"]
+CQL: [tag="N.*"][word="qui"]
+CQL: (meet [lemma="qui"] [tag="V.*"] -3 3)
+CQL: <p/> containing [tag="Fx"]
+CQL: <p/> containing [tag="Fc"]
+CQL: <s/> !containing [tag="Fc"]
+CQL: [tag!="Fc"]
+CQL: [] within <doc title!=".*[A-ZÀ-ÖØ-Ý].*" />
+CQL: <doc/> !containing [word="^[a-z']+$"]
+CQL: <doc tld="edu" />
+CQL: <doc url="[A-Za-z]*\.edu$">
+CQL: <doc url=".*\/blog\/.*" />
+CQL: <doc url=".*\/blog\/.*">
+CQL: 1:[] 2:[] []{0,5} 3:[] 4:[] & 1.word=3.word & 2.word=4.word within <s/>
+CQL: <s/>1:[] 2:[] []{0,5} 3:[] 4:[] & 1.word=3.word & 2.word=4.word & 4 < 1+6
+CQL: ([tag="Fe|Fra"] [tag!="Fe|Frc"]{1,8} [tag="Fe|Frc"] !containing [tag="N.*"]) within <s/>
+CQL: <s> [lemma="guillemets"] [lemma="sans"] [lemma="nom"] [lemma="à"] [lemma="intérieur"] </s> & len(0.*) <=8
+CQL: [tag="N.*"] within (<s/> containing [tag="V..F.*"])
+CQL: [tag="N.*"] within <s/> containing [tag="V.*F.*"]
+CQL: [tag="N.*"] within (<s/> !containing [tag="V..F.*"])
+CQL: <s/> containing [tag="N.*"] !containing [tag="V.*F.*"]
+CQL: <doc topic="science" />
+CQL: <doc/> containing [lempos="science-n"]
+CQL: [word=".*[é].*"]
+CQL: [word="\[éèêë\]"]
+CQL: [word=".*[ç].*"]
+CQL: [word=".*ç.*"]
+CQL: [word=".*[ëïü].*"]
+CQL: [word=".*[ïû].*"]
+CQL: [tag="D...P.*"]
+CQL: [tag="D.*.*.*.*P.*"]
+CQL: [tag="D...S.*"]
+CQL: [tag="D.*.*.*.S"]
+CQL: [tag="P....A.*|P....D.*"]
+CQL: [tag="P.*A.*"]|[tag="P.*D.*"]
+CQL: [tag="Fa.*"]{2,}
+CQL: [tag="Fat"]{2,}
+CQL: [tag="Fi.*"]{2,}
+CQL: [tag=".*"] [tag=".*"]
+CQL: <s> [word="Le"]
+CQL: <s>[word="Le"]
+CQL: [#100]
+CQL: 100:[]
+{'error': 'Failed to compute concordance', 'api_version': '5.84.9', 'manatee_version': '2.36.7-SkE-2.237.2', 'request': {'concordance_query': [{'queryselector': 'cqlrow', 'cql': '100:[]', 'default_attr': 'word'}], 'json': '{"concordance_query": [{"queryselector": "cqlrow", "cql": "100:[]", "default_attr": "word"}]}', 'structs': 's,g', 'default_attr': 'word', 'cup_hl': 'q', 'kwicleftctx': '0', 'viewmode': 'sen', 'corpname': 'preloaded/frtenten22_fl4', 'attrs': 'pos', 'attr_allpos': 'all', 'pagesize': '1000', 'kwicrightctx': '0', 'fromp': '1'}}
+CQL: [#1]
+CQL: [pos="1"]
+CQL: [tag="D[AI].*"]
+CQL: [tag="D.A.D.*"] | [tag="D.A.I.*"]
+CQL: 1:[tag="A.*"] [tag="A.*"] [tag="N.*"] & f(1.lemma) > 100000
+CQL: 1:[lempos_lc="adjective-j"] 2:[lempos_lc="adjective-j"] 3:[lempos_lc="noun-n"] & f(1.lemma) > 100000
+CQL: [tag="Z.*" & word>="101"]
+CQL: [tag="Z.*"][word="10[1-9]|[1-9]\d{3,}"]
+CQL: ([word="[1-2]?[0-9]:[0-5][0-9]"]|[word="[1-2]?[0-9]"][word=":"][word="[0-5][0-9]"])
+CQL: [lemma_lc=".*\\d{2}:\\d{2}.*"]
+CQL: [word=".+@.+\..*"]
+CQL: [lemma="adresse"][lemma="e-mail"]
+CQL: [tag="SP.*"][tag="NP.*"]
+CQL: [tag="S.*"][tag="N.P.*"]
+CQL: [tag="V.*"][lemma="se"]
+CQL: [tag="V.*"][word="se"]
+CQL: [tag="D.*"][tag="Z.*"][tag="N.*"]
+CQL: [tag="D.*"][tag="N.*"][tag="N.*"]
+CQL: [ws("parler-v",".*pronominal objects of.*",".*")]
+CQL: [ws("parler-v", "objects of \"%w\"", ".*")]
+CQL: [ws("marché-n",".*modifiers of.*","financier-j")]
+CQL: [ws("marché-n", "modifiers of \"%w\"", ".*financier-j.*")]
+CQL: [ws("ouvrir-v",".*subjects of.*","école-n")]
+CQL: [ws("école-n", ".*subject.*", "ouvrir-v")]
+CQL: ~"ville-n" [lemma="banlieue"] within <s/>
+CQL: ~"ville-n" [lemma="banlieue"]
+CQL: [lemma="investir"] []{0,2} ~"argent-n" within <s/>
+CQL: [ws("investir-v", ".*object.*", "argent-n")]
+CQL: [lemma="boire"] [tag="A.*"]{2} [lemma="eau"] within <s/>
+CQL: [lemma="boire" & tag="V.*"][tag="A.*"][tag="A.*"][lemma="eau" & tag="N.*"]
+CQL: [word="parce"][word="que"] within <s/>
+CQL: [lemma="parce"] [lemma="que"] within <s/>
+CQL: <doc crawl_date="....-01-.*" />
+CQL: <doc crawl_date="janvier" />
+CQL: <s> [word="Il"] [word="y"] [word="a"]
+CQL: [word="Il"][word="y"][word="a"]
+CQL: <s> [word="Pourquoi"]
+CQL: <s>[lemma="pourquoi"][tag="Vm.*"]
+CQL: [word=".+(-.+){2,}"]
+CQL: [word="-{3,}"]
+CQL: [lc="internet"]
+CQL: [lemma_lc="internet"]
+CQL: [lemma="être"] []{0,2} [tag="V.P.*"] within <s/>
+CQL: [lemma="être" & tag="V.AS.*"] [tag="V.*P.*"]
+CQL: [lemma="parler" & tag="V.*"] []{0,2} [lemma="de" & tag="SP"]
+CQL: [lemma="parler"][word="de"]
+CQL: [tag="V.*"] [tag="DA.*"]
+CQL: [lemma=".*"][lemma="(le|la|les|l')"]
+CQL: [tag="PP.*"] [tag="V.*"]
+CQL: [tag="P.R.*.*.*.*.*"][tag="V.*.*.*.*.*.*"]
+CQL: (<s/> containing [word="si"]) containing [word="alors"]
+CQL: [lemma="si"] containing [lemma="alors"] within <s/>
+CQL: [word="est-ce"] [word="que"] | [word="est"] [word="ce"] [word="que"]
+CQL: [lemma="est"] [ ] [lemma="ce"] [ ] [lemma="que"] within <s punctuation="?"/>
+{'error': 'AttrNotFound (punctuation) near position 72', 'api_version': '5.84.9', 'manatee_version': '2.36.7-SkE-2.237.2', 'request': {'concordance_query': [{'queryselector': 'cqlrow', 'cql': '[lemma="est"] [ ] [lemma="ce"] [ ] [lemma="que"] within <s punctuation="?"/>', 'default_attr': 'word'}], 'json': '{"concordance_query": [{"queryselector": "cqlrow", "cql": "[lemma=\\"est\\"] [ ] [lemma=\\"ce\\"] [ ] [lemma=\\"que\\"] within <s punctuation=\\"?\\"/>", "default_attr": "word"}]}', 'viewmode': 'sen', 'kwicrightctx': '0', 'structs': 's,g', 'fromp': '1', 'pagesize': '1000', 'attrs': 'pos', 'corpname': 'preloaded/frtenten22_fl4', 'cup_hl': 'q', 'kwicleftctx': '0', 'attr_allpos': 'all', 'default_attr': 'word'}}
+CQL: <s/> containing ([tag="V.*"] []* [tag="V.*"])
+CQL: [tag="V.*"]{2,}
+CQL: [word="que"] within <s/>
+CQL: [word="que"][tag="C.S.*"]
+CQL: [word="à|a"] []{0,2} [tag="V.N.*"]
+CQL: [lemma="à"][lemma=".*v"]
+CQL: [word="\d+(er|e)"]
+CQL: [lemma=".*"] & [tag="A.O.*.*.*.*"]
+CQL: [word="\d+(,\d+)?"][word="€"]
+CQL: [lemma="montant"][lemma="en"][lemma="euro"]
+CQL: <doc title!=".*[A-ZÀ-ÖØ-Ý].*" />
+CQL: <title> containing [word="[a-z]+"]
+{'error': 'AttrNotFound (title) near position 7', 'api_version': '5.84.9', 'manatee_version': '2.36.7-SkE-2.237.2', 'request': {'concordance_query': [{'queryselector': 'cqlrow', 'cql': '<title> containing [word="[a-z]+"]', 'default_attr': 'word'}], 'fromp': '1', 'structs': 's,g', 'kwicleftctx': '0', 'kwicrightctx': '0', 'viewmode': 'sen', 'default_attr': 'word', 'attr_allpos': 'all', 'attrs': 'pos', 'corpname': 'preloaded/frtenten22_fl4', 'pagesize': '1000', 'json': '{"concordance_query": [{"queryselector": "cqlrow", "cql": "<title> containing [word=\\"[a-z]+\\"]", "default_attr": "word"}]}', 'cup_hl': 'q'}}
+CQL: <p> [word="-|–|—"]
+CQL: <p>[lemma="–"]
+CQL: ([word=="("] [word!="\)"]+ [word==")"] !containing [tag="N.*"]) within <s/>
+CQL: [tag="Fp"] [ ]{1,} [tag="Fc"] & !ne="PER"
+CQL: [word="plus"] []{0,5} [word="que"] within <s/>
+CQL: [lemma="plus"][tag="A.*"][lemma="que"]
+CQL: [word="si"] []{0,5} [word="que"] within <s/>
+CQL: [word="si"][word=".*"][word="que"][word=".*"]
+CQL: [word="ni"] []{0,3} [word="ni"] within <s/>
+CQL: [word="ni" & tag="C.C.*"] [ ]{1,} [word="ni" & tag="C.C.*"]
+CQL: [word="soit"] []{0,3} [word="soit"] within <s/>
+CQL: [lemma="soit"] [tag="C.C.*"]
+CQL: [word="ou"] []{0,3} [word="ou"] within <s/>
+CQL: [word="ou"] [ ]* [word="ou"]
+CQL: [word=".*'.*"]
+CQL: [word=".*’.*"]
+CQL: [word=".*'.*" & word=".{2,}"]
+CQL: [word="^'.{2,}$"]
+CQL: [word="que"] []{0,2} [tag="V..S.*"]
+CQL: [lemma="que"][tag="V.*S.*"]
+CQL: [word="si"] []{0,2} [tag="V..I.*"]
+CQL: [tag="C.S"][tag="V.IM.*"]
+CQL: [lemma="devoir"]
+CQL: [lemma="devoir" | lempos="devoir-v"]
+CQL: [tag="R.*" & lemma=".*ment"]
+CQL: [lemma=".*ment" & tag="R.*"]
+CQL: [tag="N.*" & lemma=".*tion"]
+CQL: [lemma=".*tion$" & tag="N.*"]
+CQL: [tag="A..F.*" & lemma=".*euse"]
+CQL: [tag="A.*"] & [lemma=".*euse$"] & [tag="*.*.*.F.*"]
+CQL: <s> [word="[A-ZÀ-ÖØ-Ý].*"]
+CQL: [word="^[A-Z].*"]
+CQL: [word>="m"]
+CQL: [word="m.*"]
+CQL: [tag="NP..S.*"]
+CQL: [tag="N.P.*.*.*"]
+CQL: [tag="NP..G.*"]
+CQL: [tag="N.P.*"]
+CQL: [tag="NP..O.*"]
+CQL: [tag="N.P.O.*"]
+CQL: [tag="A.S.*"]
+CQL: [tag="A..S.*"]
+CQL: [tag="A.V.*"]
+CQL: [tag="A..V.*"]
+CQL: [tag="V.PS.SM.*"]
+CQL: [tag="V..P..M.S"]
+CQL: 1:[lempos_lc=".*-n"] & f(1.lempos_lc) > 1000
+CQL: [lempos=".*n"] & f(lemma)>1000
+CQL: 1:[tag="CD"] 2:[tag="CD"] & 2.word = 1.word
+CQL: 1:[tag="CD"] 2:[tag="CD"] & 1.word=2.word
+CQL: (1:[] 2:[] within <s/>) & 1.word = 2.word & 1.tag != 2.tag
+CQL: <s> 1:[tag="TAG1"] 2:[tag="TAG2"] </s> & 1.word = 2.word & 1.tag != 2.tag
+CQL: 1:[] 2:[] within <s/> & 1.word = 2.word
+CQL: <s> [word="w1"] [word="w1"] & 1.word=2.word </s>
+CQL: 1:[tag="N.*"] [word="by"] 2:[tag="N.*"] & 1.lemma_lc = 2.lemma_lc
+CQL: 1:[lemma=".*"] [lemma="by"] 1:[lemma=".*"] & 1.lemma = 2.lemma
+CQL: [lemma_lc="climate"] []{0,1} [lemma_lc="change"] within <s/>
+CQL: [lemma="climate"] []{0,1} [lemma="change"]
+CQL: <s> [tag="WRB"]
+CQL: (meet [tag="WRB"] [tag="VB.*"] -1 1)
+CQL: [lc="not"] [lc="only"] []* [lc="but"] [lc="also"] within <s/>
+CQL: <s> [lc="not"] [lc="only"] [ ]{2,} [lc="but"] [lc="also"] </s>
+CQL: [lc="no" & tag="DT"] [tag="N.*"]
+CQL: [lemma="no"][tag="NN.*"]
+CQL: <s/> !containing [tag="NP.*"]
+CQL: <s/> !containing [tag="NP" | tag="NPS"]
+{'n_grams_1': 0.8461238081057176, 'n_grams_2': 0.6684214522594613, 'n_grams_3': 0.5328825989182423, 'n_grams_4': 0.44062034616220364, 'n_grams_5': 0.34401343057840367, 'n_grams_6': 0.29134471027986636, 'bleu': 0.5025309314700642, 'precision': 0.3245450268607709, 'recall': 0.3248137254901962, 'f1': 0.32467219528364805, 'maximal intersection over union': 0.33022777578925266, 'maximal intersection over union +-1': 0.33710625280368645, 'maximal intersection over union +-2': 0.3420050981308396, 'sentence_precision': 0.37330662785560625, 'sentence_recall': 0.36694326260627746, 'FROM_SIZE': 204}

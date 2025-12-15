@@ -1,0 +1,6 @@
+torch
+transformers
+accelerate
+sentencepiece
+rouge_score
+numpy

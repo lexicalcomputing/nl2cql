@@ -1,0 +1,13 @@
+.PHONY: jupyter venv login
+
+venv: .venv
+.venv: 
+	python3 -m venv .venv
+	. .venv/bin/activate; pip install -r requirements.txt
+
+login:
+	. .venv/bin/activate; HF_HOME=$(shell pwd)/.cache/ huggingface-cli login 
+
+jupyter: .venv
+	. .venv/bin/activate; HF_HOME=$(shell pwd)/.cache/ CUDA_VISIBLE_DEVICES=0 jupyter lab --port 8890
+

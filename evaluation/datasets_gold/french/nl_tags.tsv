@@ -1,0 +1,204 @@
+Tous les mots.	preloaded/ententen21_tt31	[]	single token,multilang
+Trouver n'importe quel token	preloaded/frtenten22_fl4	[]	single token
+Tous les noms communs	preloaded/frtenten22_fl4	[tag="NC.*"]	single token
+Tous les noms propres	preloaded/frtenten22_fl4	[tag="NP.*"]	single token
+Noms féminins singuliers	preloaded/frtenten22_fl4	[tag="N.FS.*"]	single token
+Noms masculins pluriels	preloaded/frtenten22_fl4	[tag="N.MP.*"]	single token
+Adjectifs qualificatifs	preloaded/frtenten22_fl4	[tag="AQ.*"]	single token
+Adjectifs ordinaux	preloaded/frtenten22_fl4	[tag="AO.*"]	single token
+Déterminants articles	preloaded/frtenten22_fl4	[tag="DA.*"]	single token
+Pronoms personnels	preloaded/frtenten22_fl4	[tag="PP.*"]	single token
+Pronoms possessifs	preloaded/frtenten22_fl4	[tag="PX.*"]	single token
+Adverbes généraux	preloaded/frtenten22_fl4	[tag="RG"]	single token
+Adverbes négatifs	preloaded/frtenten22_fl4	[tag="RN"]	single token
+Prépositions	preloaded/frtenten22_fl4	[tag="SP.*"]	single token
+Conjonctions de coordination	preloaded/frtenten22_fl4	[tag="CC.*"]	single token
+Conjonctions de subordination	preloaded/frtenten22_fl4	[tag="CS.*"]	single token
+Interjections	preloaded/frtenten22_fl4	[tag="I.*"]	single token
+Nombres	preloaded/frtenten22_fl4	[tag="Z.*"]	single token
+Ponctuation point	preloaded/frtenten22_fl4	[tag="Fp"]	single token
+Ponctuation virgule	preloaded/frtenten22_fl4	[tag="Fc"]	single token
+Ponctuation point d'interrogation	preloaded/frtenten22_fl4	[tag="Fit"]	single token
+Verbes a l'infinitif	preloaded/frtenten22_fl4	[tag="V.N.*"]	single token
+Verbes au participe	preloaded/frtenten22_fl4	[tag="V.P.*"]	single token
+Verbes au gérondif	preloaded/frtenten22_fl4	[tag="V.G.*"]	single token
+Verbes à l'indicatif	preloaded/frtenten22_fl4	[tag="V.I.*"]	single token
+Verbes à l'indicatif et au present	preloaded/frtenten22_fl4	[tag="V.IP.*"]	single token
+Verbes au subjonctif	preloaded/frtenten22_fl4	[tag="V.S.*"]	single token
+Verbes à l'impératif	preloaded/frtenten22_fl4	[tag="V.M.*"]	single token
+Verbes au présent	preloaded/frtenten22_fl4	[tag="V..P.*"]	single token
+Verbes au futur	preloaded/frtenten22_fl4	[tag="V..F.*"]	single token
+Verbes au conditionnel	preloaded/frtenten22_fl4	[tag="V..C.*"]	single token
+Mots avec seulement des majuscules	preloaded/frtenten22_fl4	[word="[A-ZÀ-ÖØ-Ý]+"]	multi token
+Mots avec seulement des minuscules	preloaded/frtenten22_fl4	[word="[a-zà-öø-ý]+"]	multi token
+Acronymes de 2+ lettres	preloaded/frtenten22_fl4	[word="[A-Z]{2,}"]	multi token
+Nombres à quatre chiffres	preloaded/frtenten22_fl4	[word="\d{4}"]	single token
+Nombres avec séparateurs de milliers	preloaded/frtenten22_fl4	[word="\d{1,3}(,\d{3})+"]	single token
+Pourcentages	preloaded/frtenten22_fl4	[word="\d+([, ]?\d+|\.\d+)?%"]	multi token
+Hashtags	preloaded/frtenten22_fl4	[word="#\w+"]	single token
+Mentions starting with an arobase	preloaded/frtenten22_fl4	[word="@\w+"]	single token
+Couleurs hex	preloaded/frtenten22_fl4	[word="^#([0-9A-Fa-f]{3}|[0-9A-Fa-f]{6})$"]	multi token
+Lemmes commençant par télé-	preloaded/frtenten22_fl4	[lemma="télé.*"]	single token
+Lemmes finissant par -ment	preloaded/frtenten22_fl4	[lemma=".*ment"]	single token
+Lemma être	preloaded/frtenten22_fl4	[lemma="être"]	single token
+Lemma avoir	preloaded/frtenten22_fl4	[lemma="avoir"]	single token
+Lemma faire	preloaded/frtenten22_fl4	[lemma="faire"]	single token
+Toutes les formes du lemme aller	preloaded/frtenten22_fl4	[lemma="aller"]	single token
+Adjectif suivi d'un nom	preloaded/frtenten22_fl4	[tag="A.*"][tag="N.*"]	multi token
+Nom suivi d'un adjectif	preloaded/frtenten22_fl4	[tag="N.*"][tag="A.*"]	multi token
+Déterminant + nom	preloaded/frtenten22_fl4	[tag="D.*"][tag="N.*"]	multi token
+Déterminant + adjectif + nom	preloaded/frtenten22_fl4	[tag="D.*"][tag="A.*"][tag="N.*"]	multi token
+Préposition + déterminant + nom	preloaded/frtenten22_fl4	[tag="SP.*"][tag="D.*"][tag="N.*"]	multi token
+Verbe + pronom clitique	preloaded/frtenten22_fl4	[tag="V.*"][tag="P.*"]	multi token
+Négation avec ne et pas	preloaded/frtenten22_fl4	[lemma="ne" & tag="RN"][lemma!="pas" | tag!="RN"]{0,3}[lemma="pas" & tag="RN"] within <s/>	multi token,structure
+Coordination nominale	preloaded/frtenten22_fl4	[tag="N.*"][word="et"][tag="N.*"]	multi token
+Séquence de trois noms	preloaded/frtenten22_fl4	[tag="N.*"]{3}	single token
+Adverbe suivi d'un adjectif	preloaded/frtenten22_fl4	[tag="R.*"][tag="A.*"]	multi token
+Deux adjectifs consécutifs	preloaded/frtenten22_fl4	[tag="A.*"][tag="A.*"]	multi token
+Phrases finissant par un point d'interrogation	preloaded/frtenten22_fl4	[word=="?"] </s>	single token,structure
+Phrases finissant par un point d'exclamation	preloaded/frtenten22_fl4	[word=="!"] </s>	single token,structure
+Phrases d'un seul mot	preloaded/frtenten22_fl4	<s> [] [tag="F[^z].*"] </s>	multi token,structure
+Première position de la phrase	preloaded/frtenten22_fl4	<s> []	single token,structure
+Phrases sans verbe	preloaded/frtenten22_fl4	<s/> !containing [tag="V.*"]	single token,structure
+Phrases contenant un nombre	preloaded/frtenten22_fl4	<s/> containing [tag="Z.*"]	single token,structure
+Documents du domaine gouv.fr	preloaded/frtenten22_fl4	<doc urldomain=".*\.gouv\.fr" />	multi token,structure
+Documents en .fr	preloaded/frtenten22_fl4	<doc tld="fr" />	multi token,structure
+Titres contenant rapport	preloaded/frtenten22_fl4	<doc title=".*rapport.*" />	multi token,structure
+Articles de presse	preloaded/frtenten22_fl4	<doc genre="news" />	multi token,structure
+Documents publiés en 2020	preloaded/frtenten22_fl4	<doc crawl_year="2020" />	multi token,structure
+Paragraphes contenant un nombre	preloaded/frtenten22_fl4	<p/> containing [tag="Z.*"]	single token,structure
+Paragraphes sans nom propre	preloaded/frtenten22_fl4	<p/> !containing [tag="NP.*"]	single token,structure
+Phrases contenant des guillemets	preloaded/frtenten22_fl4	<s/> containing [tag="Fra|Frc|Fe"]	single token,structure
+Nom à +-3 tokens d'un verbe	preloaded/frtenten22_fl4	(meet [tag="N.*"] [tag="V.*"] -3 3)	multi token,meet
+Union de noms près de "être" ou adjectifs près de "être"	preloaded/frtenten22_fl4	(union (meet [tag="N.*"] [lemma="être"] -2 2) (meet [tag="A.*"] [lemma="être"] -2 2))	multi token,meet
+Noms près de "être" ou adjectifs près de "être"	preloaded/frtenten22_fl4	(union (meet [tag="N.*"] [lemma="être"] -2 2) (meet [tag="A.*"] [lemma="être"] -2 2))	multi token,meet
+Répétition immédiate du même mot	preloaded/frtenten22_fl4	1:[] 2:[] & 1.word = 2.word	multi token,global conditions
+Répétition immédiate du même lemma	preloaded/frtenten22_fl4	1:[] 2:[] & 1.lemma = 2.lemma	multi token,global conditions
+Deux tokens consécutifs avec même lemme	preloaded/frtenten22_fl4	1:[] 2:[] & 1.lemma = 2.lemma	multi token,global conditions
+Deux tokens adjacents avec même tag	preloaded/frtenten22_fl4	1:[] 2:[] & 1.tag = 2.tag	multi token,global conditions
+Deux adjectifs coordonnés avec même lemme	preloaded/frtenten22_fl4	1:[tag="A.*"] [tag="CC.*"] 2:[tag="A.*"] & 1.lemma = 2.lemma	multi token,global conditions
+Séquences de points de suspension	preloaded/frtenten22_fl4	[tag="Fs"]	single token
+Guillemets français ouvrants	preloaded/frtenten22_fl4	[word="«"]	single token
+Guillemets français fermants	preloaded/frtenten22_fl4	[word="»"]	single token
+Parenthèses ouvrante et fermante	preloaded/frtenten22_fl4	[word="\(|\)"]	single token
+Text au parenthèses ouvrante et fermante	preloaded/frtenten22_fl4	[word=="("] []{0,5} [word==")"]	multi token
+Adjectifs féminins pluriels	preloaded/frtenten22_fl4	[tag="A..FP.*"]	single token
+Déterminants masculins singuliers	preloaded/frtenten22_fl4	[tag="D..MS.*"]	single token
+Pronoms relatifs pluriels	preloaded/frtenten22_fl4	[tag="PR..P.*"]	single token
+Pronoms personnels 3e personne	preloaded/frtenten22_fl4	[tag="PP3.*"]	single token
+Verbes principaux indicatif présent 3sg	preloaded/frtenten22_fl4	[tag="VMIP3S.*"]	single token
+Verbes principaux indicatif présent 3pl	preloaded/frtenten22_fl4	[tag="VMIP3P.*"]	single token
+Auxiliaires au passé	preloaded/frtenten22_fl4	[tag="VA.S.*"]	single token
+Semi-auxiliaires à l'infinitif	preloaded/frtenten22_fl4	[tag="VSN.*"]	single token
+Négation avec « ne » et « jamais »	preloaded/frtenten22_fl4	[lemma="ne" & tag="RN"] []{0,3} [lemma="jamais"]	multi token
+Négation « ne » et « plus »	preloaded/frtenten22_fl4	[lemma="ne" & tag="RN"] []{0,3} [word="plus"]	multi token
+Négation « ne » et « rian »	preloaded/frtenten22_fl4	[lemma="ne" & tag="RN"] []{0,3} [word="rian"]	multi token
+Phrase commençant par guillemet	preloaded/frtenten22_fl4	<s> [tag="Fe|Fr."]	single token,structure
+Phrase contenant des parenthèses	preloaded/frtenten22_fl4	<s/> containing [word="\(|\)"]	single token,structure
+Objets du verbe "tester"	preloaded/frtenten22_fl4	[ws("tester-v", "objects of \"%w\"", ".*")]	single token
+Modifieurs du nom "livre"	preloaded/frtenten22_fl4	[ws("livre-n", "modifiers of \"%w\"", ".*")]	single token
+Sujets du verbe "augmenter"	preloaded/frtenten22_fl4	[ws("augmenter-v", "subjects of \"%w\"", ".*")]	single token
+"politique-n" comme objet de "réformer-v"	preloaded/frtenten22_fl4	[ws("réformer-v", ".*object.*", "politique-n")]	single token
+10 mots similaires au mot "médecin-n" après "voir"	preloaded/frtenten22_fl4	[lemma="voir"] []{0,3} ~10"médecin-n"	multi token,thesaurus
+15 mots similaires au mot "énergie-n" près de "renouvelable"	preloaded/frtenten22_fl4	[lemma="renouvelable"] []{0,3} ~15"énergie-n"	multi token,thesaurus
+Métaux à +-5 de mots similaires au mot « corrosion ».	preloaded/frtenten22_fl4	(meet ~"métal-n" [lemma="corrosion"] -5 5)	multi token,thesaurus,meet
+Nombre suivi du symbole %	preloaded/frtenten22_fl4	[tag="Z.*"][word="%"]	multi token
+Un nombre suivi du symbole % sans espace	preloaded/frtenten22_fl4	[tag="Z.*"][word="%"] !containing <g/>	multi token,structure
+Un nombre suivi du symbole % avec espace	preloaded/frtenten22_fl4	[tag="Z.*"][word="%"] containing <g/>	multi token,structure
+Nom ou pronom avant verbe à 1–3 tokens	preloaded/frtenten22_fl4	(meet [tag="N.*|P.*"] [tag="V.*"] 1 3)	multi token,meet
+Adjectif précédé d'un adverbe	preloaded/frtenten22_fl4	[tag="R.*"][tag="A.*"]	multi token
+Nom précédé de deux adjectifs	preloaded/frtenten22_fl4	[tag="A.*"]{2}[tag="N.*"]	multi token
+Le pronom "qui" pour remplacer le sujet d'une phrase	preloaded/frtenten22_fl4	[tag="N.*"][word="qui"]	multi token
+Paragraphes contenant un point-virgule	preloaded/frtenten22_fl4	<p/> containing [tag="Fx"]	single token,structure
+Phrases ne contenant pas de virgule	preloaded/frtenten22_fl4	<s/> !containing [tag="Fc"]	single token,structure
+Titres ne contenant pas de majuscules	preloaded/frtenten22_fl4	[] within <doc title!=".*[A-ZÀ-ÖØ-Ý].*" />	multi token,structure
+Documents .edu	preloaded/frtenten22_fl4	<doc tld="edu" />	multi token,structure
+Documents dont l'URL contient /blog/	preloaded/frtenten22_fl4	<doc url=".*\/blog\/.*" />	multi token,structure
+Bigramme répété à distance <6 in one sentence	preloaded/frtenten22_fl4	1:[] 2:[] []{0,5} 3:[] 4:[] & 1.word=3.word & 2.word=4.word within <s/>	multi token,structure,global conditions
+Guillemets sans nom à l'intérieur. La phrase est <=8.	preloaded/frtenten22_fl4	([tag="Fe|Fra"] [tag!="Fe|Frc"]{1,8} [tag="Fe|Frc"] !containing [tag="N.*"]) within <s/>	multi token,structure
+Verbe à +-2 du nom « risque »	preloaded/frtenten22_fl4	(meet [tag="V.*"] [lemma="risque"] -2 2)	multi token,meet
+Adjectif à +-2 du verbe « sembler »	preloaded/frtenten22_fl4	(meet [tag="A.*"] [lemma="sembler"] -2 2)	multi token,meet
+Nom dans une phrase qui contient un verbe au futur	preloaded/frtenten22_fl4	[tag="N.*"] within (<s/> containing [tag="V..F.*"])	multi token,structure
+Nom dans une phrase qui ne contient pas un verbe au futur	preloaded/frtenten22_fl4	[tag="N.*"] within (<s/> !containing [tag="V..F.*"])	multi token,structure
+Documents au sujet "science"	preloaded/frtenten22_fl4	<doc topic="science" />	multi token,structure
+Mots avec accent aigu	preloaded/frtenten22_fl4	[word=".*[é].*"]	multi token
+Mots avec cédille	preloaded/frtenten22_fl4	[word=".*[ç].*"]	multi token
+Mots avec tréma	preloaded/frtenten22_fl4	[word=".*[ëïü].*"]	multi token
+Déterminants pluriels	preloaded/frtenten22_fl4	[tag="D...P.*"]	single token
+Déterminants singuliers	preloaded/frtenten22_fl4	[tag="D...S.*"]	single token
+Pronoms à l'accusatif ou datif	preloaded/frtenten22_fl4	[tag="P....A.*|P....D.*"]	single token
+Au moins deux points d'exclamation	preloaded/frtenten22_fl4	[tag="Fa.*"]{2,}	single token
+Au moins deux points d'interrogation	preloaded/frtenten22_fl4	[tag="Fi.*"]{2,}	single token
+Phrases commençant par "Le"	preloaded/frtenten22_fl4	<s> [word="Le"]	single token,structure
+Token à la position 100	preloaded/frtenten22_fl4	[#100]	single token
+Token à la position 1	preloaded/frtenten22_fl4	[#1]	single token
+Articles définis ou indéfinis	preloaded/frtenten22_fl4	[tag="D[AI].*"]	multi token
+Deux adjectifs suivis d'un nom. La fréquence du premier adjectif est supérieure à 100k.	preloaded/frtenten22_fl4	1:[tag="A.*"] [tag="A.*"] [tag="N.*"] & f(1.lemma) > 100000	multi token,global conditions
+Répétition du lemme sur deux tokens	preloaded/frtenten22_fl4	1:[] 2:[] & 1.lemma = 2.lemma	multi token,global conditions
+Nombres supérieurs à 100	preloaded/frtenten22_fl4	[tag="Z.*" & word>="101"]	single token
+Heures au format HH:MM	preloaded/frtenten22_fl4	([word="[1-2]?[0-9]:[0-5][0-9]"]|[word="[1-2]?[0-9]"][word=":"][word="[0-5][0-9]"])	multi token
+Adresses e-mail	preloaded/frtenten22_fl4	[word=".+@.+\..*"]	single token
+Préposition + nom propre	preloaded/frtenten22_fl4	[tag="SP.*"][tag="NP.*"]	multi token
+Verbe + "se"	preloaded/frtenten22_fl4	[tag="V.*"][lemma="se"]	multi token
+Det + nombre + nom	preloaded/frtenten22_fl4	[tag="D.*"][tag="Z.*"][tag="N.*"]	multi token
+Objets pronominaux de "parler-v"	preloaded/frtenten22_fl4	[ws("parler-v",".*pronominal objects of.*",".*")]	single token
+marché-n modifié par financier	preloaded/frtenten22_fl4	[ws("marché-n",".*modifiers of.*","financier-j")]	single token
+« école-n » sujet de « ouvrir-v »	preloaded/frtenten22_fl4	[ws("ouvrir-v",".*subjects of.*","école-n")]	single token
+Thesaurus "ville-n" avant "banlieue"	preloaded/frtenten22_fl4	~"ville-n" [lemma="banlieue"] within <s/>	multi token,structure,thesaurus
+Thesaurus 20 « voiture-n »	preloaded/frtenten22_fl4	~20"voiture-n"	multi token,thesaurus
+Mots similaires "argent-n" après "investir"	preloaded/frtenten22_fl4	[lemma="investir"] []{0,2} ~"argent-n" within <s/>	multi token,structure,thesaurus
+« boire » et « eau » avec deux adjectifs entre	preloaded/frtenten22_fl4	[lemma="boire"] [tag="A.*"]{2} [lemma="eau"] within <s/>	multi token,structure
+« parce que » dans la même phrase	preloaded/frtenten22_fl4	[word="parce"][word="que"] within <s/>	multi token,structure
+Documents gathered en janvier	preloaded/frtenten22_fl4	<doc crawl_date="....-01-.*" />	multi token,structure
+Phrases commençant par "Il y a"	preloaded/frtenten22_fl4	<s> [word="Il"] [word="y"] [word="a"]	multi token,structure
+Questions commençant par « Pourquoi »	preloaded/frtenten22_fl4	<s> [word="Pourquoi"]	single token,structure
+Mots avec un trait d'union	preloaded/frtenten22_fl4	[word=".*-.*"]	single token
+Composés avec au moins 3 traits d'union	preloaded/frtenten22_fl4	[word=".+(-.+){2,}"]	single token
+« Internet » insensible à la casse	preloaded/frtenten22_fl4	[lc="internet"]	single token
+Passif avec « être » + participe	preloaded/frtenten22_fl4	[lemma="être"] []{0,2} [tag="V.P.*"] within <s/>	multi token,structure
+Verbe « parler » suivi de « de »	preloaded/frtenten22_fl4	[lemma="parler" & tag="V.*"] []{0,2} [lemma="de" & tag="SP"]	multi token
+Verbe + pronom objet « le/la/les/l' »	preloaded/frtenten22_fl4	[tag="V.*"] [tag="DA.*"]	multi token
+Séquence pronom réfléchi + verbe	preloaded/frtenten22_fl4	[tag="PP.*"] [tag="V.*"]	multi token
+Phrase contenant "si" et "alors" »	preloaded/frtenten22_fl4	(<s/> containing [word="si"]) containing [word="alors"]	multi token,structure
+Questions avec « est-ce que »	preloaded/frtenten22_fl4	[word="est-ce"] [word="que"] | [word="est"] [word="ce"] [word="que"]	multi token
+Phrases contenant au moins deux verbes	preloaded/frtenten22_fl4	<s/> containing ([tag="V.*"] []* [tag="V.*"])	multi token,structure
+Subordonnée introduite par "que"	preloaded/frtenten22_fl4	[word="que"] within <s/>	single token,structure
+« à » suivi d'un infinitif	preloaded/frtenten22_fl4	[word="à|a"] []{0,2} [tag="V.N.*"]	multi token
+Nombres ordinaux	preloaded/frtenten22_fl4	[word="\d+(er|e)"]	single token
+Montants en euros	preloaded/frtenten22_fl4	[word="\d+(,\d+)?"][word="€"]	multi token
+Titres ne contenant pas aucune une majuscule	preloaded/frtenten22_fl4	<doc title!=".*[A-ZÀ-ÖØ-Ý].*" />	single token,structure
+Paragraphes qui commencent par un trait d’union	preloaded/frtenten22_fl4	<p> [word="-|–|—"]	single token,structure
+Parenthèses sans nom à l'intérieur	preloaded/frtenten22_fl4	([word=="("] [word!="\)"]+ [word==")"] !containing [tag="N.*"]) within <s/>	multi token,structure
+Comparatif aves "plus" et "que"	preloaded/frtenten22_fl4	[word="plus"] []{0,5} [word="que"] within <s/>	multi token,structure
+Intensif "si ... que"	preloaded/frtenten22_fl4	[word="si"] []{0,5} [word="que"] within <s/>	multi token,structure
+Coordination "ni ... ni"	preloaded/frtenten22_fl4	[word="ni"] []{0,3} [word="ni"] within <s/>	multi token,structure
+Coordination "soit ... soit"	preloaded/frtenten22_fl4	[word="soit"] []{0,3} [word="soit"] within <s/>	multi token,structure
+Coordination "ou ... ou"	preloaded/frtenten22_fl4	[word="ou"] []{0,3} [word="ou"] within <s/>	multi token,structure
+Mot avec apostrophe	preloaded/frtenten22_fl4	[word=".*'.*"]	single token
+Un mot avec une apostrophe qui comporte plus de deux lettres	preloaded/frtenten22_fl4	[word=".*'.*" & word=".{2,}"]	single token
+« que » suivi d'un verbe au subjonctif	preloaded/frtenten22_fl4	[word="que"] []{0,2} [tag="V.S.*"]	multi token
+« si » suivi d'un verbe à l'imparfait	preloaded/frtenten22_fl4	[word="si"] []{0,2} [tag="V..I.*"]	multi token
+Verbe "devoir" à toutes formes	preloaded/frtenten22_fl4	[lemma="devoir"]	single token
+Verbe "pouvoir"	preloaded/frtenten22_fl4	[lemma="pouvoir"]	single token
+Adverbes en -ment	preloaded/frtenten22_fl4	[tag="R.*" & lemma=".*ment"]	single token
+Noms en -tion	preloaded/frtenten22_fl4	[tag="N.*" & lemma=".*tion"]	single token
+Adjectifs féminins en -euse	preloaded/frtenten22_fl4	[tag="A..F.*" & word=".*euse"]	single token
+Phrases contenant un deux-points	preloaded/frtenten22_fl4	<s/> containing [tag="Fd"]	single token,structure
+Phrases commençant par une majuscule	preloaded/frtenten22_fl4	<s> [word="[A-ZÀ-ÖØ-Ý].*"]	multi token,structure
+Mots lexicographiquement >= m	preloaded/frtenten22_fl4	[word>="m"]	single token
+Noms propres de personne	preloaded/frtenten22_fl4	[tag="NP..S.*"]	single token
+Noms propres de lieu	preloaded/frtenten22_fl4	[tag="NP..G.*"]	single token
+Noms propres d'organisation	preloaded/frtenten22_fl4	[tag="NP..O.*"]	single token
+Adjectifs superlatifs	preloaded/frtenten22_fl4	[tag="A.S.*"]	single token
+Adjectifs évaluatifs	preloaded/frtenten22_fl4	[tag="A.V.*"]	single token
+Participes passés masculins singuliers	preloaded/frtenten22_fl4	[tag="V.PS.SM.*"]	single token
+Tous les lempos terminés par -n dont la fréquence globale dépasse 1000.	preloaded/ententen21_tt31	1:[lempos_lc=".*-n"] & f(1.lempos_lc) > 1000	single token,global conditions,multilang
+Une paire de nombres où le second nombre est identique au premier.	preloaded/ententen21_tt31	1:[tag="CD"] 2:[tag="CD"] & 2.word = 1.word	multi token,global conditions,multilang
+Même mot répété aux même sentence, mais avec deux tagging différentes	preloaded/ententen21_tt31	(1:[] 2:[] within <s/>) & 1.word = 2.word & 1.tag != 2.tag	multi token,structure,global conditions,multilang
+Mot répété immédiatement dans la même phrase.	preloaded/ententen21_tt31	1:[] 2:[] within <s/> & 1.word = 2.word	multi token,structure,global conditions,multilang
+Expressions de type day by day, step by step - même nom de part et d’autre de "by"	preloaded/ententen21_tt31	1:[tag="N.*"] [word="by"] 2:[tag="N.*"] & 1.lemma_lc = 2.lemma_lc	multi token,global conditions,multilang
+Phrases contenant l’expression climate change: le mot-clé climate suivi de change à 0 ou 1 mot de distance.	preloaded/ententen21_tt31	[lemma_lc="climate"] []{0,1} [lemma_lc="change"] within <s/>	multi token,structure,multilang
+Phrases interrogatives commençant par un mot en wh- adverbial. Utilise tag.	preloaded/ententen21_tt31	<s> [tag="WRB"]	single token,structure,multilang
+Constructions du type 'not only ... but also ...' dans la même phrase.	preloaded/ententen21_tt31	[lc="not"] [lc="only"] []* [lc="but"] [lc="also"] within <s/>	multi token,structure,multilang
+Négation de type "no" + NOUN (ex. no evidence, no problem, no answers).	preloaded/ententen21_tt31	[lc="no" & tag="DT"] [tag="N.*"]	multi token,multilang
+Phrases qui ne contiennent aucun nom propre	preloaded/ententen21_tt31	<s/> !containing [tag="NP.*"]	single token,structure,multilang

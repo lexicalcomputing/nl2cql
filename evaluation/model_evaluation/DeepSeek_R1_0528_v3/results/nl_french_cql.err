@@ -1,0 +1,739 @@
+'Tous les mots.\tpreloaded/ententen21_tt31\t[]\n'
+On line 1
+[word]
+[word=".*"]
+"Trouver n'importe quel token\tpreloaded/frtenten22_fl4\t[]\n"
+On line 2
+[]
+'Tous les noms communs\tpreloaded/frtenten22_fl4\t[tag="NC.*"]\n'
+On line 3
+[tag="N\\.?C.*"]
+'Tous les noms propres\tpreloaded/frtenten22_fl4\t[tag="NP.*"]\n'
+On line 4
+[tag="NP.*"]
+'Noms féminins singuliers\tpreloaded/frtenten22_fl4\t[tag="N.FS.*"]\n'
+On line 5
+[ ( tag="N\\..*\\.F\\.S" ) | ( pos="noun" & gender_guess="f" & number_guess="s" ) ]
+'Noms masculins pluriels\tpreloaded/frtenten22_fl4\t[tag="N.MP.*"]\n'
+On line 6
+[pos="noun" & gender_guess="m" & number_guess="p"]
+'Adjectifs qualificatifs\tpreloaded/frtenten22_fl4\t[tag="AQ.*"]\n'
+On line 7
+[tag="A\.Q.*"]
+'Adjectifs ordinaux\tpreloaded/frtenten22_fl4\t[tag="AO.*"]\n'
+On line 8
+[pos="adjective" & (lemma_lc="premier" | lemma_lc="second" | lemma_lc~".*ième")]
+[lempos_lc~"(premier|second|.*ième)-j"]
+[lempos_lc="premier-j"] | [lempos_lc="second-j"] | [lemma_lc~".*ième" & pos="adjective"]
+[lempos_lc="premier-j"] | [lempos_lc="second-j"] | [lemma_lc~".*ième" & tag="A.*"]
+'Déterminants articles\tpreloaded/frtenten22_fl4\t[tag="DA.*"]\n'
+On line 9
+[tag="D.A.*"]
+'Pronoms personnels\tpreloaded/frtenten22_fl4\t[tag="PP.*"]\n'
+On line 10
+[tag="PP.*"]
+'Pronoms possessifs\tpreloaded/frtenten22_fl4\t[tag="PX.*"]\n'
+On line 11
+[tag="P.S.*"]
+'Adverbes généraux\tpreloaded/frtenten22_fl4\t[tag="RG"]\n'
+On line 12
+[tag="R.*"]
+'Adverbes négatifs\tpreloaded/frtenten22_fl4\t[tag="RN"]\n'
+On line 13
+[tag="RN.*" & pos="adverb"]
+'Prépositions\tpreloaded/frtenten22_fl4\t[tag="SP.*"]\n'
+On line 14
+[tag="S"]
+'Conjonctions de coordination\tpreloaded/frtenten22_fl4\t[tag="CC.*"]\n'
+On line 15
+[tag="CC"]
+'Conjonctions de subordination\tpreloaded/frtenten22_fl4\t[tag="CS.*"]\n'
+On line 16
+[tag="CS"]
+'Interjections\tpreloaded/frtenten22_fl4\t[tag="I.*"]\n'
+On line 17
+[tag="I"]
+'Nombres\tpreloaded/frtenten22_fl4\t[tag="Z.*"]\n'
+On line 18
+[tag="Z.*"]
+'Ponctuation point\tpreloaded/frtenten22_fl4\t[tag="Fp"]\n'
+On line 19
+[tag="Fp"]
+'Ponctuation virgule\tpreloaded/frtenten22_fl4\t[tag="Fc"]\n'
+On line 20
+[tag="Fc"]
+'Ponctuation point d\'interrogation\tpreloaded/frtenten22_fl4\t[tag="Fit"]\n'
+On line 21
+[tag="Fit"]
+'Verbes a l\'infinitif\tpreloaded/frtenten22_fl4\t[tag="V.N.*"]\n'
+On line 22
+[tag="V\..N\..*"]
+'Verbes au participe\tpreloaded/frtenten22_fl4\t[tag="V.P.*"]\n'
+On line 23
+[tag="VP.*"]
+'Verbes au gérondif\tpreloaded/frtenten22_fl4\t[tag="V.G.*"]\n'
+On line 24
+[lc="en" & tag="SPS00"] [tag="VMP.*"]
+'Verbes à l\'indicatif\tpreloaded/frtenten22_fl4\t[tag="V.I.*"]\n'
+On line 25
+[tag="V\\.I.*"]
+'Verbes à l\'indicatif et au present\tpreloaded/frtenten22_fl4\t[tag="V.IP.*"]\n'
+On line 26
+[tag="V.I.P.*"]
+'Verbes au subjonctif\tpreloaded/frtenten22_fl4\t[tag="V.S.*"]\n'
+On line 27
+[tag="V\\.S.*"]
+'Verbes à l\'impératif\tpreloaded/frtenten22_fl4\t[tag="V.M.*"]\n'
+On line 28
+[tag="V.M.*"]
+'Verbes au présent\tpreloaded/frtenten22_fl4\t[tag="V..P.*"]\n'
+On line 29
+[tag~"^V\.[ISM]\.P"]
+[tag="V.I.P*" | tag="V.S.P*" | tag="V.M.P*"]
+'Verbes au futur\tpreloaded/frtenten22_fl4\t[tag="V..F.*"]\n'
+On line 30
+[tag matches "V\\.[^.]*\\.F(\\..*)?"]
+[tag="V.*.F*"]
+'Verbes au conditionnel\tpreloaded/frtenten22_fl4\t[tag="V..C.*"]\n'
+On line 31
+[tag="VC.*"]
+'Mots avec seulement des majuscules\tpreloaded/frtenten22_fl4\t[word="[A-ZÀ-ÖØ-Ý]+"]\n'
+On line 32
+[word="^\\p{Lu}+$"]
+'Mots avec seulement des minuscules\tpreloaded/frtenten22_fl4\t[word="[a-zà-öø-ý]+"]\n'
+On line 33
+[word = lc]
+[word = ".*" & word != ".*[A-ZÀÂÄÇÉÈÊËÎÏÔÖÙÛÜŒ].*"]
+'Acronymes de 2+ lettres\tpreloaded/frtenten22_fl4\t[word="[A-Z]{2,}"]\n'
+On line 34
+[word="\\p{Lu}{2,}"]
+'Nombres à quatre chiffres\tpreloaded/frtenten22_fl4\t[word="\\d{4}"]\n'
+On line 35
+[tag="Z" & word="[0-9]{4}"]
+'Nombres avec séparateurs de milliers\tpreloaded/frtenten22_fl4\t[word="\\d{1,3}(,\\d{3})+"]\n'
+On line 36
+(  [tag="Z" & word~"^[0-9]{1,3}([.,][0-9]{3})+$"])|(  [tag="Z" & word~"^[0-9]{1,3}$"]   ( [word~"^[.,]$"] [tag="Z" & word~"^[0-9]{3}$"] ){1,})
+[tag="Z" & word~"^[0-9]{1,3}$"] ( ( [word="."] | [word=","] ) [tag="Z" & word~"^[0-9]{3}$"] ){1,}
+[tag="Z" & word~"[0-9]{1,3}"] ( ( [word="."] | [word=","] ) [tag="Z" & word~"[0-9]{3}"] ){1,}
+[tag="Z"] ( ( [word="."] | [word=","] ) [tag="Z"] ){1,}
+'Pourcentages\tpreloaded/frtenten22_fl4\t[word="\\d+([, ]?\\d+|\\.\\d+)?%"]\n'
+On line 37
+[lempos="pourcentage-n"]
+'Hashtags\tpreloaded/frtenten22_fl4\t[word="#\\w+"]\n'
+On line 38
+[lc="#.+"]
+'Mentions starting with an arobase\tpreloaded/frtenten22_fl4\t[word="@\\w+"]\n'
+On line 39
+[word="^@.*"]
+'Couleurs hex\tpreloaded/frtenten22_fl4\t[word="^#([0-9A-Fa-f]{3}|[0-9A-Fa-f]{6})$"]\n'
+On line 40
+[word=~"(?i)^#([0-9a-f]{3,4}|[0-9a-f]{6}|[0-9a-f]{8})$"]
+[lc ~ "^#([0-9a-f]{3,4}|[0-9a-f]{6}|[0-9a-f]{8})$"]
+[lc = "#([0-9a-f]{3,4}|[0-9a-f]{6}|[0-9a-f]{8})"]
+'Lemmes commençant par télé-\tpreloaded/frtenten22_fl4\t[lemma="télé.*"]\n'
+On line 41
+[lemma_lc="télé-.*"]
+'Lemmes finissant par -ment\tpreloaded/frtenten22_fl4\t[lemma=".*ment"]\n'
+On line 42
+[lemma_lc=".*ment$"]
+'Lemma être\tpreloaded/frtenten22_fl4\t[lemma="être"]\n'
+On line 43
+[lemma="être"]
+'Lemma avoir\tpreloaded/frtenten22_fl4\t[lemma="avoir"]\n'
+On line 44
+[lemma_lc="avoir"]
+'Lemma faire\tpreloaded/frtenten22_fl4\t[lemma="faire"]\n'
+On line 45
+[lemma_lc="faire"]
+'Toutes les formes du lemme aller\tpreloaded/frtenten22_fl4\t[lemma="aller"]\n'
+On line 46
+[lemma_lc="aller"]
+'Adjectif suivi d\'un nom\tpreloaded/frtenten22_fl4\t[tag="A.*"][tag="N.*"]\n'
+On line 47
+[tag="A.*"] [tag="N.*"]
+'Nom suivi d\'un adjectif\tpreloaded/frtenten22_fl4\t[tag="N.*"][tag="A.*"]\n'
+On line 48
+[tag="N.*"] [tag="A.*"]
+'Déterminant + nom\tpreloaded/frtenten22_fl4\t[tag="D.*"][tag="N.*"]\n'
+On line 49
+[tag="D.*"] [tag="N.*"]
+'Déterminant + adjectif + nom\tpreloaded/frtenten22_fl4\t[tag="D.*"][tag="A.*"][tag="N.*"]\n'
+On line 50
+[tag="D.*"] [tag="A.*"] [tag="N.*"]
+'Préposition + déterminant + nom\tpreloaded/frtenten22_fl4\t[tag="SP.*"][tag="D.*"][tag="N.*"]\n'
+On line 51
+[tag="S.*"] [tag="D.*"] [tag="N.*"]
+'Verbe + pronom clitique\tpreloaded/frtenten22_fl4\t[tag="V.*"][tag="P.*"]\n'
+On line 52
+[tag="VM.*"] [tag="Fh"] [tag="P.P.[AD].*"]
+'Négation avec ne et pas\tpreloaded/frtenten22_fl4\t[lemma="ne" & tag="RN"][lemma!="pas" | tag!="RN"]{0,3}[lemma="pas" & tag="RN"] within <s/>\n'
+On line 53
+[lc=~"ne|n'"] []{0,3} [tag="V.*"] [lc="pas"]
+[lc ~ "ne|n'"] []{0,3} [tag="V.*"] [lc="pas"]
+[lc~"ne|n'"] []{0,3} [tag="V.*"] [lc="pas"]
+[lc~"ne|n\\'"] []{0,3} [tag="V.*"] [lc="pas"]
+'Coordination nominale\tpreloaded/frtenten22_fl4\t[tag="N.*"][word="et"][tag="N.*"]\n'
+On line 54
+[pos="noun"] ([]* [lc in {"et","ou","ni"} & pos="conjunction"] []* [pos="noun"])+
+[pos="noun"] ([]* [(lc="et" | lc="ou" | lc="ni") & pos="conjunction"] []* [pos="noun"])+
+'Séquence de trois noms\tpreloaded/frtenten22_fl4\t[tag="N.*"]{3}\n'
+On line 55
+[pos="noun"] [pos="noun"] [pos="noun"]
+'Adverbe suivi d\'un adjectif\tpreloaded/frtenten22_fl4\t[tag="R.*"][tag="A.*"]\n'
+On line 56
+[pos="adverb"] [pos="adjective"]
+'Deux adjectifs consécutifs\tpreloaded/frtenten22_fl4\t[tag="A.*"][tag="A.*"]\n'
+On line 57
+[pos="adjective"] [pos="adjective"]
+'Phrases finissant par un point d\'interrogation\tpreloaded/frtenten22_fl4\t[word=="?"] </s>\n'
+On line 58
+within <s/> []* [word="?"] ([word in {"\"", "'", "»", ")"}])? >>
+[word="?"] ([word in {"\"", "'", "»", ")"}])? >> within <s/>
+[word="?"] ( [word="\""] | [word="'"] | [word="»"] | [word=")"] )? >> within <s/>
+[word="?"] ( [word="\""] | [word="'"] | [word="»"] | [word=")"] )? >> s
+'Phrases finissant par un point d\'exclamation\tpreloaded/frtenten22_fl4\t[word=="!"] </s>\n'
+On line 59
+<s> []* [word="!"] </s>
+'Phrases d\'un seul mot\tpreloaded/frtenten22_fl4\t<s> [] [tag="F[^z].*"] </s>\n'
+On line 60
+<s> [lempos=".*"] [tag="F.*"]* </s>
+'Première position de la phrase\tpreloaded/frtenten22_fl4\t<s> []\n'
+On line 61
+[within <s/> :1]
+[] within <s/> :1
+[]:1 within <s/>
+[struct="s" & struct_index=1]
+'Phrases sans verbe\tpreloaded/frtenten22_fl4\t<s/> !containing [tag="V.*"]\n'
+On line 62
+within <s> ([pos != "verb"] [pos != "verb"]+)
+([pos != "verb"] [pos != "verb"]+) within <s>
+'Phrases contenant un nombre\tpreloaded/frtenten22_fl4\t<s/> containing [tag="Z.*"]\n'
+On line 63
+<s> containing [tag="Z.*"]
+'Documents du domaine gouv.fr\tpreloaded/frtenten22_fl4\t<doc urldomain=".*\\.gouv\\.fr" />\n'
+On line 64
+[] within <doc urldomain="gouv\.fr"/>
+'Documents en .fr\tpreloaded/frtenten22_fl4\t<doc tld="fr" />\n'
+On line 65
+<doc tld="fr"/>
+'Titres contenant rapport\tpreloaded/frtenten22_fl4\t<doc title=".*rapport.*" />\n'
+On line 66
+[lemma_lc="rapport"] within <p heading/>
+[lemma_lc="rapport"] within <p heading=".*"/>
+'Articles de presse\tpreloaded/frtenten22_fl4\t<doc genre="news" />\n'
+On line 67
+[doc.genre=".*[pP]resse.*"]
+[doc:genre=".*[pP]resse.*"]
+[] within <doc genre=".*[pP]resse.*"/>
+'Documents publiés en 2020\tpreloaded/frtenten22_fl4\t<doc crawl_year="2020" />\n'
+On line 68
+<doc crawl_year="2020"/>
+'Paragraphes contenant un nombre\tpreloaded/frtenten22_fl4\t<p/> containing [tag="Z.*"]\n'
+On line 69
+<p> [pos="numeral"] </p>
+'Paragraphes sans nom propre\tpreloaded/frtenten22_fl4\t<p/> !containing [tag="NP.*"]\n'
+On line 70
+<p> [ not [tag="NP.*"] ]* </p>
+<p> [ tag != "NP.*" ]* </p>
+'Phrases contenant des guillemets\tpreloaded/frtenten22_fl4\t<s/> containing [tag="Fra|Frc|Fe"]\n'
+On line 71
+within <s> [word="[«»“”]"]
+<s> []* [word="[«»“”]"] []* </s>
+'Nom à +-3 tokens d\'un verbe\tpreloaded/frtenten22_fl4\t(meet [tag="N.*"] [tag="V.*"] -3 3)\n'
+On line 72
+within <s> (  [tag="N.*"] []{0,3} [tag="V.*"]   |   [tag="V.*"] []{0,3} [tag="N.*"]) </s>
+<s> ( [tag="N.*"] []{0,2} [tag="V.*"] | [tag="V.*"] []{0,2} [tag="N.*"] ) </s>
+'Union de noms près de "être" ou adjectifs près de "être"\tpreloaded/frtenten22_fl4\t(union (meet [tag="N.*"] [lemma="être"] -2 2) (meet [tag="A.*"] [lemma="être"] -2 2))\n'
+On line 73
+within <s>(  ( [ pos="noun" ] ( [] ){0,5} [ lemma="être" ] ) :: match=1  |  ( [ lemma="être" ] ( [] ){0,5} [ pos="noun" ] ) :: match=last  |  ( [ lemma="être" ] ( [] ){0,5} [ pos="adjective" ] ) :: match=last)
+within <s> {  ( [ pos="noun" ] ( [] ){0,5} [ lemma="être" ] ) :: match=1  |  ( [ lemma="être" ] ( [] ){0,5} [ pos="noun" ] ) :: match=last  |  ( [ lemma="être" ] ( [] ){0,5} [ pos="adjective" ] ) :: match=last}
+within <s> {  ( [ pos="noun" ] ( [] ){0,5} [ lemma="être" ] ) :: match=1  |  ( [ lemma="être" ] ( [] ){0,5} [ pos="noun" ] ) :: match=last  |  ( [ lemma="être" ] ( [] ){0,5} [ pos="adjective" ] ) :: match=last}
+(  [ pos="noun" ] []{0,5} [ lemma="être" ]  |  [ lemma="être" ] []{0,5} [ pos="noun" ]  |  [ lemma="être" ] []{0,5} [ pos="adjective" ])
+'Noms près de "être" ou adjectifs près de "être"\tpreloaded/frtenten22_fl4\t(union (meet [tag="N.*"] [lemma="être"] -2 2) (meet [tag="A.*"] [lemma="être"] -2 2))\n'
+On line 74
+( [lemma="être"] []{0,3} ( [tag="N.*"] | [tag="A.*"] ) ) | ( ( [tag="N.*"] | [tag="A.*"] ) []{0,3} [lemma="être"] )
+'Répétition immédiate du même mot\tpreloaded/frtenten22_fl4\t1:[] 2:[] & 1.word = 2.word\n'
+On line 75
+A:[tag!~"F.*" & lc=".*"] [tag!~"F.*" & lc=A.lc]
+[tag!~"F.*"] as A [tag!~"F.*" & lc=A.lc]
+[tag!~"F.*"] A: [tag!~"F.*" & lc=A.lc]
+A: [tag!~"F.*"] [tag!~"F.*" & lc=A.lc]
+'Répétition immédiate du même lemma\tpreloaded/frtenten22_fl4\t1:[] 2:[] & 1.lemma = 2.lemma\n'
+On line 76
+[lemma_lc="?l" & ?l != "" & ! tag="F.*"] [lemma_lc="?l" & ! tag="F.*"]
+[lemma_lc="?l" & lemma_lc != "" & ! tag="F.*"] [lemma_lc="?l" & ! tag="F.*"]
+'Deux tokens consécutifs avec même lemme\tpreloaded/frtenten22_fl4\t1:[] 2:[] & 1.lemma = 2.lemma\n'
+On line 77
+[lemma_lc=:x] [lemma_lc=:x]
+[lemma_lc=x] [lemma_lc=x]
+[lemma_lc=:x] [lemma_lc=x]
+[lemma_lc=".*" %x] [lemma_lc="%x"]
+'Deux tokens adjacents avec même tag\tpreloaded/frtenten22_fl4\t1:[] 2:[] & 1.tag = 2.tag\n'
+On line 78
+[tag=$t] [tag=$t]
+[tag=:t] [tag=t]
+[tag=:t] [tag=:t]
+[tag]::t [tag=t]
+'Deux adjectifs coordonnés avec même lemme\tpreloaded/frtenten22_fl4\t1:[tag="A.*"] [tag="CC.*"] 2:[tag="A.*"] & 1.lemma = 2.lemma\n'
+On line 79
+[pos="adjective" & lemma_lc=:lem] ( [word=","] )? [tag="CC.*"] [pos="adjective" & lemma_lc=:lem]
+[pos="adjective" & lempos_lc=:lp] [word=","]{0,1} [tag="CC.*"] [pos="adjective" & lempos_lc=:lp]
+[pos="adjective" %c] [word=","]{0,1} [tag="CC.*"] [pos="adjective" & lemma_lc=%c.lemma_lc]
+[pos="adjective"][word=","|"."|";"]{0,2}[tag="CC.*"][word=","|"."|";"]{0,2}[pos="adjective" & lemma_lc= [lemma_lc]]
+'Séquences de points de suspension\tpreloaded/frtenten22_fl4\t[tag="Fs"]\n'
+On line 80
+[tag="Fs"]+
+'Guillemets français ouvrants\tpreloaded/frtenten22_fl4\t[word="«"]\n'
+On line 81
+[word="«"]
+'Guillemets français fermants\tpreloaded/frtenten22_fl4\t[word="»"]\n'
+On line 82
+[word="»"]
+'Parenthèses ouvrante et fermante\tpreloaded/frtenten22_fl4\t[word="\\(|\\)"]\n'
+On line 83
+[tag="Fpa" | tag="Fpt"]
+'Text au parenthèses ouvrante et fermante\tpreloaded/frtenten22_fl4\t[word=="("] []{0,5} [word==")"]\n'
+On line 84
+[word="("] []{1,100} [word=")"]
+'Adjectifs féminins pluriels\tpreloaded/frtenten22_fl4\t[tag="A..FP.*"]\n'
+On line 85
+[pos="adjective" & gender_guess="f" & number_guess="p"]
+'Déterminants masculins singuliers\tpreloaded/frtenten22_fl4\t[tag="D..MS.*"]\n'
+On line 86
+[tag="D\\..\\.M\\.S.*"]
+'Pronoms relatifs pluriels\tpreloaded/frtenten22_fl4\t[tag="PR..P.*"]\n'
+On line 87
+[tag="PR.*" & number_guess="p"]
+'Pronoms personnels 3e personne\tpreloaded/frtenten22_fl4\t[tag="PP3.*"]\n'
+On line 88
+[tag="PP.*" & lemma_lc~"^(il|elle|on|ils|elles|le|la|les|lui|leur|se)$"]
+[tag="PP.*" & (lemma_lc="il" | lemma_lc="elle" | lemma_lc="on" | lemma_lc="ils" | lemma_lc="elles" | lemma_lc="le" | lemma_lc="la" | lemma_lc="les" | lemma_lc="lui" | lemma_lc="leur" | lemma_lc="se")]
+'Verbes principaux indicatif présent 3sg\tpreloaded/frtenten22_fl4\t[tag="VMIP3S.*"]\n'
+On line 89
+[tag="V.I.P.3.S.*"]
+'Verbes principaux indicatif présent 3pl\tpreloaded/frtenten22_fl4\t[tag="VMIP3P.*"]\n'
+On line 90
+[tag="V.I.P.3.P.*"]
+'Auxiliaires au passé\tpreloaded/frtenten22_fl4\t[tag="VA.S.*"]\n'
+On line 91
+within <s/> { [lempos="avoir-v" | lempos="être-v"] } []{0,4} [tag="V.P.*"]
+within <s> { [lempos="avoir-v" | lempos="être-v"] []{0,4} [tag="V.P.*"] }
+[lempos="avoir-v" | lempos="être-v"] []{0,4} [tag="V.P.*"] within <s>
+'Semi-auxiliaires à l\'infinitif\tpreloaded/frtenten22_fl4\t[tag="VSN.*"]\n'
+On line 92
+[lemma_lc in ("aller", "devoir", "pouvoir", "venir", "vouloir", "falloir", "sembler", "paraître") & tag="VN.*"]
+[lemma_lc =~ "(aller|devoir|pouvoir|venir|vouloir|falloir|sembler|paraître)" & tag="VN.*"]
+[lemma_lc ~ "(aller|devoir|pouvoir|venir|vouloir|falloir|sembler|paraître)" & tag="VN"]
+[lemma_lc ~ "(aller|devoir|pouvoir|venir|vouloir|falloir|sembler|paraître)", tag="VN"]
+'Négation avec « ne » et « jamais »\tpreloaded/frtenten22_fl4\t[lemma="ne" & tag="RN"] []{0,3} [lemma="jamais"]\n'
+On line 93
+within <s> [ [lemma="ne"] []{0,10} [lemma="jamais"] ]
+[ [lemma="ne"] []{0,10} [lemma="jamais"] ] within <s>
+[ lemma="ne" ] []{0,10} [ lemma="jamais" ] within <s>
+'Négation « ne » et « plus »\tpreloaded/frtenten22_fl4\t[lemma="ne" & tag="RN"] []{0,3} [word="plus"]\n'
+On line 94
+within <s/> [lemma="ne"] []{0,10} [lemma="plus"]
+[lemma="ne"] []{0,10} [lemma="plus"] within <s/>
+'Négation « ne » et « rian »\tpreloaded/frtenten22_fl4\t[lemma="ne" & tag="RN"] []{0,3} [word="rian"]\n'
+On line 95
+[lemma="ne"] [0,5] [lemma="rien"]
+[lemma="ne"] [0:5] [lemma="rien"]
+[lemma="ne"] []{0,5} [lemma="rien"]
+'Phrase commençant par guillemet\tpreloaded/frtenten22_fl4\t<s> [tag="Fe|Fr."]\n'
+On line 96
+[word="«"] > [s]
+[word="«"] within <s/> :1
+<s> [word="«"]
+'Phrase contenant des parenthèses\tpreloaded/frtenten22_fl4\t<s/> containing [word="\\(|\\)"]\n'
+On line 97
+<s> []* ( [word="("] []* [word=")"] | [word=")"] []* [word="("] ) []* </s>
+'Objets du verbe "tester"\tpreloaded/frtenten22_fl4\t[ws("tester-v", "objects of \\"%w\\"", ".*")]\n'
+On line 98
+[lemma="tester" & tag="V.*"] ( [tag="D.*" | tag="A.*" | tag="Z.*"] ){0,3} [tag="N.*"]
+'Modifieurs du nom "livre"\tpreloaded/frtenten22_fl4\t[ws("livre-n", "modifiers of \\"%w\\"", ".*")]\n'
+On line 99
+([tag="D.*" | tag="A.*"] ){0,3} [lemma="livre" & tag="N.*"] ( [tag="A.*"] ){0,2}
+'Sujets du verbe "augmenter"\tpreloaded/frtenten22_fl4\t[ws("augmenter-v", "subjects of \\"%w\\"", ".*")]\n'
+On line 100
+([tag="N.*"]|[tag="P.*"]) [lemma="augmenter"]
+'"politique-n" comme objet de "réformer-v"\tpreloaded/frtenten22_fl4\t[ws("réformer-v", ".*object.*", "politique-n")]\n'
+On line 101
+[lempos="réformer-v"] ->[obj] [lempos="politique-n"]
+[lempos_lc="réformer-v"] >[obj] [lempos_lc="politique-n"]
+[lempos_lc="réformer-v"] >deprel="obj" [lempos_lc="politique-n"]
+[lempos_lc="réformer-v"] [deprel="obj"] [lempos_lc="politique-n"]
+'10 mots similaires au mot "médecin-n" après "voir"\tpreloaded/frtenten22_fl4\t[lemma="voir"] []{0,3} ~10"médecin-n"\n'
+On line 102
+[lemma="voir" & tag="V.*"] []{0,2} [tag="N.*"]
+'15 mots similaires au mot "énergie-n" près de "renouvelable"\tpreloaded/frtenten22_fl4\t[lemma="renouvelable"] []{0,3} ~15"énergie-n"\n'
+On line 103
+[lemma="renouvelable"] [](5,5) [tag="N.*"]
+[lemma="renouvelable"] :[5,5] [tag="N.*"]
+( [tag="N.*"] []{0,5} [lemma="renouvelable"] ) | ( [lemma="renouvelable"] []{0,5} [tag="N.*"] )
+'Métaux à +-5 de mots similaires au mot « corrosion ».\tpreloaded/frtenten22_fl4\t(meet ~"métal-n" [lemma="corrosion"] -5 5)\n'
+On line 104
+[lemma="corrosion"] %w [lc="métaux"] :5
+[lemma="corrosion"] [lc="métaux"] within 5 tokens
+(  [lemma="corrosion"] []{0,5} [lc="métaux"]) | (  [lc="métaux"] []{0,5} [lemma="corrosion"])
+'Nombre suivi du symbole %\tpreloaded/frtenten22_fl4\t[tag="Z.*"][word="%"]\n'
+On line 105
+[lempos="nombre-n"] [word="%"]
+'Un nombre suivi du symbole % sans espace\tpreloaded/frtenten22_fl4\t[tag="Z.*"][word="%"] !containing <g/>\n'
+On line 106
+[tag="Z" & word=".*%"]
+'Un nombre suivi du symbole % avec espace\tpreloaded/frtenten22_fl4\t[tag="Z.*"][word="%"] containing <g/>\n'
+On line 107
+[tag="Z"] [word="%"]
+'Nom ou pronom avant verbe à 1–3 tokens\tpreloaded/frtenten22_fl4\t(meet [tag="N.*|P.*"] [tag="V.*"] 1 3)\n'
+On line 108
+within <s/> ([pos="noun" | pos="pronoun"] []{1,3} [pos="verb"])
+([pos="noun" | pos="pronoun"] []{1,3} [pos="verb"]) within <s/>
+'Adjectif précédé d\'un adverbe\tpreloaded/frtenten22_fl4\t[tag="R.*"][tag="A.*"]\n'
+On line 109
+[lempos_lc=".*-r"] [lempos_lc=".*-j"]
+'Nom précédé de deux adjectifs\tpreloaded/frtenten22_fl4\t[tag="A.*"]{2}[tag="N.*"]\n'
+On line 110
+[pos="A"] [tag="Fc"]? [pos="A"] [pos="N"]
+'Le pronom "qui" pour remplacer le sujet d\'une phrase\tpreloaded/frtenten22_fl4\t[tag="N.*"][word="qui"]\n'
+On line 111
+[lc="qui" & tag="PR.*"] [tag="V.*"]
+'Paragraphes contenant un point-virgule\tpreloaded/frtenten22_fl4\t<p/> containing [tag="Fx"]\n'
+On line 112
+within <p> []* [word=";"] []* </p>
+<p> []* [word=";"] []* </p>
+'Phrases ne contenant pas de virgule\tpreloaded/frtenten22_fl4\t<s/> !containing [tag="Fc"]\n'
+On line 113
+<s> []* without [tag="Fc"] </s>
+<s> [tag!="Fc"]* </s>
+'Titres ne contenant pas de majuscules\tpreloaded/frtenten22_fl4\t[] within <doc title!=".*[A-ZÀ-ÖØ-Ý].*" />\n'
+On line 114
+within <p heading> { [lc = word]* }
+<p heading> : [lc = word]+
+<p heading> without [lc != word]
+<p heading=".*"> without [lc != word]
+'Documents .edu\tpreloaded/frtenten22_fl4\t<doc tld="edu" />\n'
+On line 115
+[] within <doc tld="edu"/>
+'Documents dont l\'URL contient /blog/\tpreloaded/frtenten22_fl4\t<doc url=".*\\/blog\\/.*" />\n'
+On line 116
+<doc url=".*/blog/.*" />
+'Bigramme répété à distance <6 in one sentence\tpreloaded/frtenten22_fl4\t1:[] 2:[] []{0,5} 3:[] 4:[] & 1.word=3.word & 2.word=4.word within <s/>\n'
+On line 117
+within <s>  [lc=w1] [lc=w2]  []{0,5}  [lc=w1] [lc=w2]</s>
+<s>  [lc=w1] [lc=w2]  []{0,5}  [lc=w1] [lc=w2]</s>
+<s>  [lc=:w1] [lc=:w2]  []{0,5}  [lc=:w1] [lc=:w2]</s>
+<s>  [lc=a] [lc=b]  []{0,5}  [lc=a] [lc=b]</s>
+'Guillemets sans nom à l\'intérieur. La phrase est <=8.\tpreloaded/frtenten22_fl4\t([tag="Fe|Fra"] [tag!="Fe|Frc"]{1,8} [tag="Fe|Frc"] !containing [tag="N.*"]) within <s/>\n'
+On line 118
+[word="«"] ( [tag!="N\\.P.*"] )* [word="»"] within <s> [](0,8) </s>
+[word="«"] ( [tag!="N\\.P.*"] )* [word="»"] within <s> [0:8] </s>
+<s [0,8]>[word="«"] ( [tag!="N\\.P.*"] )* [word="»"]</s>
+<s token_count="0,8">  [word="«"]   ( [tag!="N\\.P.*"] )*   [word="»"]</s>
+'Verbe à +-2 du nom « risque »\tpreloaded/frtenten22_fl4\t(meet [tag="V.*"] [lemma="risque"] -2 2)\n'
+On line 119
+( [tag="V.*"] []{0,1} [lemma="risque" & tag="N.*"] ) | ( [lemma="risque" & tag="N.*"] []{0,1} [tag="V.*"] )
+'Adjectif à +-2 du verbe « sembler »\tpreloaded/frtenten22_fl4\t(meet [tag="A.*"] [lemma="sembler"] -2 2)\n'
+On line 120
+(  [tag="A.*"] []{0,1} [lemma="sembler" & tag="V.*"]) | (  [lemma="sembler" & tag="V.*"] []{0,1} [tag="A.*"])
+'Nom dans une phrase qui contient un verbe au futur\tpreloaded/frtenten22_fl4\t[tag="N.*"] within (<s/> containing [tag="V..F.*"])\n'
+On line 121
+[lempos=".*-n"] within <s containing [tag="V.*.F.*"] />
+[lempos=".*-n"] within <s containing [tag="V.*.F.*"]>
+<s>[tag="V.*.F.*"]</s>:*[lempos=".*-n"]
+<s>[tag="V.*.F.*"]</s>[][lempos=".*-n"]
+'Nom dans une phrase qui ne contient pas un verbe au futur\tpreloaded/frtenten22_fl4\t[tag="N.*"] within (<s/> !containing [tag="V..F.*"])\n'
+On line 122
+[tag="N.*"] within <s/>without<s/> :> [tag="V.I.F.*"]
+[tag="N.*"] within <s/> without <s/> containing [tag="V.I.F.*"]
+[tag="N.*"] within <s not containing [tag="V.I.F.*"]>
+[tag="N.*"] within <s ! [tag="V.I.F.*"]>
+'Documents au sujet "science"\tpreloaded/frtenten22_fl4\t<doc topic="science" />\n'
+On line 123
+<doc topic="(?i)science"/> [word]
+[word] within <doc topic matches "science"/>
+[word within <doc topic matches "science"/>]
+<doc topic matches "science">   [word]</doc>
+'Mots avec accent aigu\tpreloaded/frtenten22_fl4\t[word=".*[é].*"]\n'
+On line 124
+[lc contains "é" & tag !~ "F.*"]
+[lc ~ ".*é.*" & tag !~ "F.*"]
+[lc ~ ".*é.*", tag !~ "F.*"]
+[lc = ".*é.*", tag != "F.*"]
+'Mots avec cédille\tpreloaded/frtenten22_fl4\t[word=".*[ç].*"]\n'
+On line 125
+[lc=".*ç.*"]
+'Mots avec tréma\tpreloaded/frtenten22_fl4\t[word=".*[ëïü].*"]\n'
+On line 126
+[lc=".*[ëïüöÿ].*"]
+'Déterminants pluriels\tpreloaded/frtenten22_fl4\t[tag="D...P.*"]\n'
+On line 127
+[tag="D\\.[^.]*\\.[^.]*\\.P.*"]
+'Déterminants singuliers\tpreloaded/frtenten22_fl4\t[tag="D...S.*"]\n'
+On line 128
+[tag="D..S.*"]
+'Pronoms à l\'accusatif ou datif\tpreloaded/frtenten22_fl4\t[tag="P....A.*|P....D.*"]\n'
+On line 129
+[tag="P\.P\.A.*"]
+'Au moins deux points d\'exclamation\tpreloaded/frtenten22_fl4\t[tag="Fa.*"]{2,}\n'
+On line 130
+within <s/> [word="!"] []* [word="!"]
+<s> [word="!"] []* [word="!"] </s>
+'Au moins deux points d\'interrogation\tpreloaded/frtenten22_fl4\t[tag="Fi.*"]{2,}\n'
+On line 131
+<s> []* [word="\?"] []* [word="\?"] []* </s>
+'Phrases commençant par "Le"\tpreloaded/frtenten22_fl4\t<s> [word="Le"]\n'
+On line 132
+<s/> [word="Le"]
+'Token à la position 100\tpreloaded/frtenten22_fl4\t[#100]\n'
+On line 133
+[match="100"]
+[id="100"]
+[word]
+[word=".*"]
+'Token à la position 1\tpreloaded/frtenten22_fl4\t[#1]\n'
+On line 134
+within <s> [] :1
+[] :1 within <s>
+[]:1 within <s>
+<s> []{1}
+'Articles définis ou indéfinis\tpreloaded/frtenten22_fl4\t[tag="D[AI].*"]\n'
+On line 135
+[tag="D[AI].*"]
+'Deux adjectifs suivis d\'un nom. La fréquence du premier adjectif est supérieure à 100k.\tpreloaded/frtenten22_fl4\t1:[tag="A.*"] [tag="A.*"] [tag="N.*"] & f(1.lemma) > 100000\n'
+On line 136
+[tag="A.*"] ( [tag="Fc"] | [word="et" & tag="C.*"] )? [tag="A.*"] [tag="N.*"]
+'Répétition du lemme sur deux tokens\tpreloaded/frtenten22_fl4\t1:[] 2:[] & 1.lemma = 2.lemma\n'
+On line 137
+[lemma_lc=:lemma_lc] as $a [lemma_lc=:$a.lemma_lc]
+[lemma_lc] as $a [lemma_lc=$a.lemma_lc]
+[] as $a [lemma_lc=$a.lemma_lc]
+[lemma_lc] as $a [lemma_lc=$a.lemma_lc]
+'Nombres supérieurs à 100\tpreloaded/frtenten22_fl4\t[tag="Z.*" & word>="101"]\n'
+On line 138
+[tag="Z"] & (   ( [word~"[1-9][0-9]{2,}"] & [word!="100"] )   | [lemma_lc in ("mille", "million", "milliard", "billion")] )
+[tag="Z" & ( (word~"[1-9][0-9]{2,}" & word!="100") | lemma_lc in ("mille","million","milliard","billion") )]
+[tag="Z" & word~"[1-9][0-9]{2,}" & word!="100" | tag="Z" & lemma_lc in ("mille","million","milliard","billion")]
+[tag="Z" & word~"[1-9][0-9]{2,}" & word!="100"] | [tag="Z" & lemma_lc in ("mille","million","milliard","billion")]
+'Heures au format HH:MM\tpreloaded/frtenten22_fl4\t([word="[1-2]?[0-9]:[0-5][0-9]"]|[word="[1-2]?[0-9]"][word=":"][word="[0-5][0-9]"])\n'
+On line 139
+[word="[0-9]{2}"] [word=":"] [word="[0-9]{2}"]
+'Adresses e-mail\tpreloaded/frtenten22_fl4\t[word=".+@.+\\..*"]\n'
+On line 140
+[lemma="adresse"] [lc="e-mail"|lc="email"]
+'Préposition + nom propre\tpreloaded/frtenten22_fl4\t[tag="SP.*"][tag="NP.*"]\n'
+On line 141
+[tag="S"] [tag="NP.*"]
+'Verbe + "se"\tpreloaded/frtenten22_fl4\t[tag="V.*"][lemma="se"]\n'
+On line 142
+[tag="V.*"] [word="se"]
+'Det + nombre + nom\tpreloaded/frtenten22_fl4\t[tag="D.*"][tag="Z.*"][tag="N.*"]\n'
+On line 143
+[pos="D"] [lemma="nombre" & pos="N"] [pos="N"]
+'Objets pronominaux de "parler-v"\tpreloaded/frtenten22_fl4\t[ws("parler-v",".*pronominal objects of.*",".*")]\n'
+On line 144
+[tag="P.*" & lemma="me"|"te"|"lui"|"nous"|"vous"|"leur"] [0,6] [lempos="parler-v"]
+[pos="pronoun" & (lemma="me" | lemma="te" | lemma="lui" | lemma="nous" | lemma="vous" | lemma="leur")] [0,6] [lempos="parler-v"]
+[pos="pronoun" & (lemma_lc="me" | lemma_lc="te" | lemma_lc="lui" | lemma_lc="nous" | lemma_lc="vous" | lemma_lc="leur") ] [0,6] [lempos="parler-v"]
+[pos="pronoun" & lemma_lc~"me|te|lui|nous|vous|leur"][0,6] [lempos="parler-v"]
+'marché-n modifié par financier\tpreloaded/frtenten22_fl4\t[ws("marché-n",".*modifiers of.*","financier-j")]\n'
+On line 145
+[lempos="marché-n"] [lemma="modifier" & tag="V.PP.*"] [lemma="par"] [lemma="financier"]
+'« école-n » sujet de « ouvrir-v »\tpreloaded/frtenten22_fl4\t[ws("ouvrir-v",".*subjects of.*","école-n")]\n'
+On line 146
+within <s> [lemma="école" & tag="N.*"] []{0,5} [lemma="ouvrir" & tag="V.*"]
+([lemma="école" & tag="N.*"] []{0,5} [lemma="ouvrir" & tag="V.*"]) within <s>
+'Thesaurus "ville-n" avant "banlieue"\tpreloaded/frtenten22_fl4\t~"ville-n" [lemma="banlieue"] within <s/>\n'
+On line 147
+[lempos_lc=".*-n"] > [lemma_lc="banlieue"] within [1,3]
+[lempos_lc=".*-n"] [0,2] [lemma_lc="banlieue"]
+[lempos_lc=".*-n"] []{0,2} [lemma_lc="banlieue"]
+'Thesaurus 20 « voiture-n »\tpreloaded/frtenten22_fl4\t~20"voiture-n"\n'
+On line 148
+[lempos_lc="voiture-n"]
+'Mots similaires "argent-n" après "investir"\tpreloaded/frtenten22_fl4\t[lemma="investir"] []{0,2} ~"argent-n" within <s/>\n'
+On line 149
+[lempos="investir-v"] []{0,4} [pos="noun"]
+'« boire » et « eau » avec deux adjectifs entre\tpreloaded/frtenten22_fl4\t[lemma="boire"] [tag="A.*"]{2} [lemma="eau"] within <s/>\n'
+On line 150
+[lemma="boire" & tag="V.*"] [tag!="A.*"]{0,5} [tag="A.*"] [tag!="A.*"]{0,5} [tag="A.*"] [tag!="A.*"]{0,5} [lemma="eau" & tag="N.*"]
+'« parce que » dans la même phrase\tpreloaded/frtenten22_fl4\t[word="parce"][word="que"] within <s/>\n'
+On line 151
+within <s> { [lemma="parce"] [lemma="que"] }
+[lemma="parce"] [lemma="que"] within s
+<s> [lemma="parce"] [lemma="que"] </s>
+'Documents gathered en janvier\tpreloaded/frtenten22_fl4\t<doc crawl_date="....-01-.*" />\n'
+On line 152
+[] within <doc crawl_date=".*([jJ][aA][nN][vV][iI][eE][rR]|(^|[-/])01[-/]).*"/>
+'Phrases commençant par "Il y a"\tpreloaded/frtenten22_fl4\t<s> [word="Il"] [word="y"] [word="a"]\n'
+On line 153
+[lc="il"] [lc="y"] [lemma="avoir" & lc="a"]
+'Questions commençant par « Pourquoi »\tpreloaded/frtenten22_fl4\t<s> [word="Pourquoi"]\n'
+On line 154
+<s> [word="Pourquoi"] :1
+<s> 0> [word="Pourquoi"]
+[word="Pourquoi"] within <s> % 1
+<s> :1 [word="Pourquoi"]
+'Mots avec un trait d\'union\tpreloaded/frtenten22_fl4\t[word=".*-.*"]\n'
+On line 155
+[lc=".+-.+"]
+'Composés avec au moins 3 traits d\'union\tpreloaded/frtenten22_fl4\t[word=".+(-.+){2,}"]\n'
+On line 156
+[word ~ ".*-.*-.*-.*"]
+[word~".*-.*-.*-.*"]
+[word=".*-.*-.*-.*"]
+'« Internet » insensible à la casse\tpreloaded/frtenten22_fl4\t[lc="internet"]\n'
+On line 157
+[lc="internet"]
+'Passif avec « être » + participe\tpreloaded/frtenten22_fl4\t[lemma="être"] []{0,2} [tag="V.P.*"] within <s/>\n'
+On line 158
+[lemma="être" & tag="V.*"] []{0,3} [tag="V.P.*"]
+'Verbe « parler » suivi de « de »\tpreloaded/frtenten22_fl4\t[lemma="parler" & tag="V.*"] []{0,2} [lemma="de" & tag="SP"]\n'
+On line 159
+[lempos="parler-v"] [lemma="de" & tag="S"]
+'Verbe + pronom objet « le/la/les/l\' »\tpreloaded/frtenten22_fl4\t[tag="V.*"] [tag="DA.*"]\n'
+On line 160
+[lc in {"le","la","les","l'"} & tag="P.*"] ( [tag="P.*"] | [tag="RN"] ){0,2} [tag="V.*"]
+[ lc~"^(le|la|les|l')$" & tag="P.*" ] ( [tag="P.*"] | [tag="RN"] ){0,2} [tag="V.*"]
+[ (lc="le" | lc="la" | lc="les" | lc="l'") & tag="P.*" ] ( [tag="P.*"] | [tag="RN"] ){0,2} [tag="V.*"]
+'Séquence pronom réfléchi + verbe\tpreloaded/frtenten22_fl4\t[tag="PP.*"] [tag="V.*"]\n'
+On line 161
+[lemma="me"|lemma="te"|lemma="se"|lemma="nous"|lemma="vous"] ( [lemma="ne"] )? [tag="V.*"]
+'Phrase contenant "si" et "alors" »\tpreloaded/frtenten22_fl4\t(<s/> containing [word="si"]) containing [word="alors"]\n'
+On line 162
+[lemma="si"] []{0,10} [lemma="alors"] within <s/>
+'Questions avec « est-ce que »\tpreloaded/frtenten22_fl4\t[word="est-ce"] [word="que"] | [word="est"] [word="ce"] [word="que"]\n'
+On line 163
+within <s>  (    [lc="est"] [word="-ce"]     |     [word="est-" | word="Est-"] [lc="ce"]  )  [lc="que" | lc="qu'"]  []*  [word="?"] :>></s>
+<s>  []*  (    [lc="est"] [word="-ce"]     |     [word="est-" | word="Est-"] [lc="ce"]  )  [lc="que" | lc="qu'"]  []*  [word="?"]</s>
+'Phrases contenant au moins deux verbes\tpreloaded/frtenten22_fl4\t<s/> containing ([tag="V.*"] []* [tag="V.*"])\n'
+On line 164
+within <s> [tag="V.*"] [](0,200) [tag="V.*"]
+([tag="V.*"] [](0,300) [tag="V.*"]) within <s>
+([tag="V.*"] [0:300] [tag="V.*"]) within <s>
+[tag="V.*"] [0,300] [tag="V.*"] within <s>
+'Subordonnée introduite par "que"\tpreloaded/frtenten22_fl4\t[word="que"] within <s/>\n'
+On line 165
+[word="que" & (tag="CS" | tag="PR.*")]
+'« à » suivi d\'un infinitif\tpreloaded/frtenten22_fl4\t[word="à|a"] []{0,2} [tag="V.N.*"]\n'
+On line 166
+[lemma="à"] [tag="VN.*"]
+'Nombres ordinaux\tpreloaded/frtenten22_fl4\t[word="\\d+(er|e)"]\n'
+On line 167
+[tag="A.*" & (lemma_lc~".*ième" | lemma_lc="premier" | lemma_lc="second")]
+[tag~"A.*" & (lemma_lc~".*ième" | lemma_lc="premier" | lemma_lc="second")]
+[lempos_lc~".*ième-j"] | [lempos_lc="premier-j"] | [lempos_lc="second-j"]
+[tag~"A.*" & lemma_lc~".*ième"] | [lemma_lc="premier"] | [lemma_lc="second"]
+'Montants en euros\tpreloaded/frtenten22_fl4\t[word="\\d+(,\\d+)?"][word="€"]\n'
+On line 168
+[tag="Z.*"] ( [tag="Fc"] [tag="Z.*"] )? [ lemma="euro" | word="€" ]
+'Titres ne contenant pas aucune une majuscule\tpreloaded/frtenten22_fl4\t<doc title!=".*[A-ZÀ-ÖØ-Ý].*" />\n'
+On line 169
+<p heading/>  without [word != lc]
+<p heading> [word = lc]* </p>
+<p heading=".*"> [word = lc]* </p>
+<p heading/> without [word != lc] within p
+'Paragraphes qui commencent par un trait d’union\tpreloaded/frtenten22_fl4\t<p> [word="-|–|—"]\n'
+On line 170
+<p> [0: word="[-–—]"]
+<p> [0:word="[-–—]"]
+<p> [0, word="[-–—]"]
+<p> [position="1" & word="[-–—]"]
+'Parenthèses sans nom à l\'intérieur\tpreloaded/frtenten22_fl4\t([word=="("] [word!="\\)"]+ [word==")"] !containing [tag="N.*"]) within <s/>\n'
+On line 171
+A: [word="("]B: [word=")"]without [tag ~ "NP.*"] in (A >> .. << B)
+A: [word="("]B: [word=")"]without [tag ~ "NP.*"] in (A >> .. << B)
+[word="("] []* [word=")"]without [tag ~ "NP.*"] in (1 >> .. << 3)
+[word="("] []* [word=")"]without [tag ~ "NP.*"] in (1 >> .. << 3)
+'Comparatif aves "plus" et "que"\tpreloaded/frtenten22_fl4\t[word="plus"] []{0,5} [word="que"] within <s/>\n'
+On line 172
+[lemma="plus" & tag="RG"][tag="A.*"|tag="R.*"][lemma="que" & tag="CS"]
+'Intensif "si ... que"\tpreloaded/frtenten22_fl4\t[word="si"] []{0,5} [word="que"] within <s/>\n'
+On line 173
+[lemma="si" & tag="RG"][tag="A.*"|tag="R.*"]{1,4}([tag="F.*"])?[lemma="que" & tag="CS"]
+'Coordination "ni ... ni"\tpreloaded/frtenten22_fl4\t[word="ni"] []{0,3} [word="ni"] within <s/>\n'
+On line 174
+within <s/> [lc="ni"] []{0,15} [lc="ni"]
+[lc="ni"] []* [lc="ni"] within <s/>
+'Coordination "soit ... soit"\tpreloaded/frtenten22_fl4\t[word="soit"] []{0,3} [word="soit"] within <s/>\n'
+On line 175
+within <s> [lemma_lc="soit" & tag="CC.*"] []{0,20} [lemma_lc="soit" & tag="CC.*"]
+<s> [lemma_lc="soit" & tag="CC.*"] []{0,20} [lemma_lc="soit" & tag="CC.*"] </s>
+'Coordination "ou ... ou"\tpreloaded/frtenten22_fl4\t[word="ou"] []{0,3} [word="ou"] within <s/>\n'
+On line 176
+within <s> [lemma="ou" & tag="CC"] [](1,10) [lemma="ou" & tag="CC"] </s>
+<s> [lemma="ou" & tag="CC"] [](1,10) [lemma="ou" & tag="CC"] </s>
+<s> [lemma="ou" & tag="CC"] []{1:10} [lemma="ou" & tag="CC"] </s>
+<s> [lemma="ou" & tag="CC"] []{1,10} [lemma="ou" & tag="CC"] </s>
+'Mot avec apostrophe\tpreloaded/frtenten22_fl4\t[word=".*\'.*"]\n'
+On line 177
+[lc~".*'.*"]
+[word~"(?i).*'.*"]
+[word="*'*"]
+'Un mot avec une apostrophe qui comporte plus de deux lettres\tpreloaded/frtenten22_fl4\t[word=".*\'.*" & word=".{2,}"]\n'
+On line 178
+[tag!~"F.*" & word~".{4,}" & word~".*'.*"]
+[tag !~ "F.*" & word ~ ".{4,}" & word ~ ".*'.*"]
+[word~".{4,}" & word~".*'.*"]
+[word ~ "...".* & word ~ ".*'.*"]
+'« que » suivi d\'un verbe au subjonctif\tpreloaded/frtenten22_fl4\t[word="que"] []{0,2} [tag="V..S.*"]\n'
+On line 179
+[lc="que"] [](0,4) [tag="V.S.*"]
+[lc="que"] [0:4] [tag="V.S.*"]
+[lc="que"] [0,4] [tag="V.S.*"]
+[lc="que"] 0,4 [tag="V.S.*"]
+'« si » suivi d\'un verbe à l\'imparfait\tpreloaded/frtenten22_fl4\t[word="si"] []{0,2} [tag="V..I.*"]\n'
+On line 180
+[ lc="si" ] []{0,3} [ tag="V.I.I.*" ]
+'Verbe "devoir" à toutes formes\tpreloaded/frtenten22_fl4\t[lemma="devoir"]\n'
+On line 181
+[lempos="devoir-v"]
+'Verbe "pouvoir"\tpreloaded/frtenten22_fl4\t[lemma="pouvoir"]\n'
+On line 182
+[lempos="pouvoir-v"]
+'Adverbes en -ment\tpreloaded/frtenten22_fl4\t[tag="R.*" & lemma=".*ment"]\n'
+On line 183
+[lempos_lc=".*ment-r"]
+'Noms en -tion\tpreloaded/frtenten22_fl4\t[tag="N.*" & lemma=".*tion"]\n'
+On line 184
+[lempos_lc=".*tion-n$"]
+'Adjectifs féminins en -euse\tpreloaded/frtenten22_fl4\t[tag="A..F.*" & lemma=".*euse"]\n'
+On line 185
+[lc=".*euse" & tag="A.*" & gender_guess="f"]
+'Phrases contenant un deux-points\tpreloaded/frtenten22_fl4\t<s/> containing [tag="Fd"]\n'
+On line 186
+within <s> [tag="Fd"]
+<s> contains [tag="Fd"]
+<s> []* [tag="Fd"] []* </s>
+'Phrases commençant par une majuscule\tpreloaded/frtenten22_fl4\t<s> [word="[A-ZÀ-ÖØ-Ý].*"]\n'
+On line 187
+<s/> [tag!~"F.*" & word="\p{Lu}.*"]
+<s/> [not tag ~ "F.*" & word="\p{Lu}.*"]
+<s/> [not (tag =~ "F.*") & word="\p{Lu}.*"]
+<s/> [tag="F.*"]* [tag!="F.*" & word="\p{Lu}.*"]
+'Mots lexicographiquement >= m\tpreloaded/frtenten22_fl4\t[word>="m"]\n'
+On line 188
+[lc >= "m"]
+'Mots lexicographiquement < m\tpreloaded/frtenten22_fl4\t[word<"m"]\n'
+On line 189
+[lc < "m"]
+[lc<"m"]
+[lc=~"^[a-l]"]
+[lc ~ "^[a-l]"]
+'Noms propres de personne\tpreloaded/frtenten22_fl4\t[tag="NP..S.*"]\n'
+On line 190
+[tag="NP1.*"]
+'Noms propres de lieu\tpreloaded/frtenten22_fl4\t[tag="NP..G.*"]\n'
+On line 191
+[tag="NP.*"]
+'Noms propres d\'organisation\tpreloaded/frtenten22_fl4\t[tag="NP..O.*"]\n'
+On line 192
+[tag="NP\.O\..*"]
+'Adjectifs superlatifs\tpreloaded/frtenten22_fl4\t[tag="A.S.*"]\n'
+On line 193
+[lemma="le" & tag="DA.*"] [lc="plus"|lc="moins"] [tag="A.*"]
+'Adjectifs évaluatifs\tpreloaded/frtenten22_fl4\t[tag="A.V.*"]\n'
+On line 194
+[tag="AQ.*"]
+'Participes passés masculins singuliers\tpreloaded/frtenten22_fl4\t[tag="V.PS.SM.*"]\n'
+On line 195
+[tag="VMP.*MS"]

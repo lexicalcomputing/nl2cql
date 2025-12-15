@@ -1,0 +1,650 @@
+CQL: [lemma=".*nost"]
+CQL: [lemma_lc=".*nost$"]
+CQL: [word="[[:lower:]]{5}"]
+CQL: [lc="[a-záčďéěíňóřšťúůýž]{5}" & tag!="kI.*"]
+CQL: [word=".*ov[ýá]"]
+CQL: [lc=".*ov[ýá]$"]
+CQL: [lemma="mikro.*skop"]
+CQL: [lemma_lc="mikro.*skop"]
+CQL: [][word="[[:upper:]].+"] within <s/>
+CQL: (meet [word="[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*"] [] -1000 -1) within <s/>
+CQL: [word=".*-.*"]
+CQL: [word=".*[-–—].*"]
+CQL: [word="\d+"]
+CQL: [word="[0-9]+"]
+CQL: [word="[[:punct:]]{2,}"]
+CQL: [tag="kI.*" & word=".{2,}"]
+CQL: [tag="k1.*" & word="[[:upper:]].*"]
+CQL: [tag="k1.*" & word="[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*"]
+CQL: [tag="k3.*" & word="kdo|co|který|jenž"]
+CQL: [tag="k3.*y[QR].*"]
+CQL: [word=".*ě" & tag="k6.*"]
+CQL: [tag="k6.*" & lc=".*ě$"]
+CQL: [tag="k2.*d2.*"]
+CQL: [tag="k2.{14}d2.*"]
+CQL: [tag="k2.*d3.*"]
+CQL: [tag="k2.*d3"]
+CQL: [word=="a" & tag="k8.*"]
+CQL: [lempos="a-c"]
+/home/xmikusek/diploma-thesis/evaluation/model_evaluation/DeepSeek_R1_0528_v7/venv/lib64/python3.13/site-packages/nltk/translate/bleu_score.py:577: UserWarning: 
+The hypothesis contains 0 counts of 3-gram overlaps.
+Therefore the BLEU score evaluates to 0, independently of
+how many N-gram overlaps of lower order it contains.
+Consider using lower n-gram order or use SmoothingFunction()
+  warnings.warn(_msg)
+/home/xmikusek/diploma-thesis/evaluation/model_evaluation/DeepSeek_R1_0528_v7/venv/lib64/python3.13/site-packages/nltk/translate/bleu_score.py:577: UserWarning: 
+The hypothesis contains 0 counts of 4-gram overlaps.
+Therefore the BLEU score evaluates to 0, independently of
+how many N-gram overlaps of lower order it contains.
+Consider using lower n-gram order or use SmoothingFunction()
+  warnings.warn(_msg)
+CQL: [word="ten|tento|tamhleten"]
+CQL: [lemma_lc="ten" | lemma_lc="tento" | lemma_lc="tamhleten"]
+CQL: [word=".*i" & tag="k1.*nP.*"]
+CQL: [tag="k1.*nP.*" & lc=".*i"]
+CQL: [tag="k1.*c7.*"]
+CQL: [tag="k1...7.*"]
+CQL: [word=".*'.*"]
+CQL: [lc=".*'.*"]
+CQL: [word="Kč|€|\$"]
+CQL: [lc="kč" | lc="€" | lc="$"]
+CQL: [word=".*\.cz"]
+CQL: [ ] within <doc urldomain=".*\\.cz"/>
+CQL: [word="#([0-9A-Fa-f]{3}|[0-9A-Fa-f]{6})"]
+CQL: [word="#[0-9a-fA-F]{6}"][lc="barvy"]
+CQL: [word="@\w+"]
+CQL: [word="^@[a-zA-Z0-9_]+"]
+CQL: [word="#\w+"]
+CQL: [word="#[A-Za-z0-9]+"]
+CQL: [word="https?://.+\.pdf"]
+CQL: <doc url=".*\\.pdf$"/>
+CQL: [word=="("][word="[cCrR]"][word==")"]
+CQL: ( [lc="\\\\([cr]\\\\)"] ) | ( [lc=="("] [lc="[cr]"] [lc==")"] )
+CQL: [word="I|II|III|IV|V|VI|VII|VIII|IX|X"]
+CQL: [word="I{1,3}|IV|VI{0,3}|IX|X"]
+CQL: [word="\d+\.\d+"]
+CQL: [tag="k4.*" & word="[0-9]+\\.[0-9]+"]
+CQL: [word="\d+(\.\d+)?%"]
+CQL: (meet [lc="procenta"] [tag="k4.*" | word="[0-9][0-9,\\.]*"] -3 3)
+CQL: [word="Leden|Únor|Březen|Duben|Květen|Červen|Červenec|Srpen|Září|Říjen|Listopad|Prosinec"][word="\d{4}"]
+CQL: [lemma_lc="(leden|únor|březen|duben|květen|červen|červenec|srpen|září|říjen|listopad|prosinec)" & tag="k1.*"] [tag="kI.*"]? [word="[0-9]{4}"]
+CQL: [word="Pondělí|Úterý|Středa|Čtvrtek|Pátek|Sobota|Neděle"][word==","]
+CQL: [lemma_lc="(pondělí|úterý|středa|čtvrtek|pátek|sobota|neděle)" & tag="k1.*"] [word=","]
+CQL: [word="[012]?[0-9][:\.][0-5][0-9]"]
+CQL: [word="[0-9]{2}[:\\.][0-9]{2}"]
+CQL: <s> [word="\"|„|‚|“|’|'"]
+CQL: <s/> containing ( <s> [word="[\"„“]"] )
+CQL: [word=="!"] </s>
+CQL: <s> []* [word="!"] </s>
+CQL: [word=="("]
+CQL: [word="("]
+CQL: [word==")"]
+CQL: [word=")"]
+CQL: [word=="("][]{0,20}[word==")"] within <s/>
+CQL: [word="("] []{1,20} [word=")"]
+CQL: [word="\"|„|‚|“|’|'"][word!="\"|„|‚|“|’|'"]{0,12}[word="\"|„|‚|“|’|'"] within <s/>
+CQL: ( [word="[„“\"]"] [ ]{0,10} [word="[”\"“]"] )
+CQL: [word="Pan|Paní"][tag="k1.*" & word="[[:upper:]].*"]
+CQL: ([lemma="pan" & tag="k1.*c1"] | [lemma="paní" & tag="k1.*c1"]) [tag="k1.*c1" & word="[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*"]
+CQL: [tag="k3.*"][lemma="být"]
+CQL: [tag="k3.*"] [lemma="být"]
+CQL: [tag="k2.*"][tag="k1.*"]
+CQL: [tag="k2.*"] [tag="k1.*"]
+CQL: [tag="k2.*"]{2}[tag="k1.*"]
+CQL: [tag="k2.*"]{2} [tag="k1.*"]
+CQL: [tag="k2.*"]{0,3}[tag="k1.*"]
+CQL: [tag="k2.*"]{0,3} [tag="k1.*"]
+CQL: [tag="k6.*"][tag="k2.*"]
+CQL: [tag="k6.*"] [tag="k2.*"]
+CQL: [tag="k2.*"][tag="k5.*"]
+CQL: [tag="k2.*"] [tag="k5.*"]
+CQL: [tag="k5.*"][tag="k1.*"]
+CQL: [tag="k5.*"] [tag="k1.*"]
+CQL: [tag="k3.*"][tag="k2.*"][tag="k1.*"]
+CQL: [tag="k3.*"] [tag="k2.*"] [tag="k1.*"]
+CQL: [tag="k1.*" & word="[[:upper:]].*"]{2}
+CQL: [tag=".*wG.*"] [tag=".*wG.*"]
+CQL: [tag="k1.*" & word="[[:upper:]].*"]{3}
+CQL: [tag="k1.*" & word="[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*"] [tag="k1.*" & word="[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*"] [tag="k1.*" & word="[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*"]
+CQL: [tag="k1.*"]{3}
+CQL: [tag="k1.*"] [tag="k1.*"] [tag="k1.*"]
+CQL: [tag="k5.*"][]{0,2}[tag="k9.*"]
+CQL: ([tag="k5.*"] []{0,2} [tag="k9.*"]) | ([tag="k9.*"] []{0,2} [tag="k5.*"])
+CQL: [tag="k5.*"][tag="k6.*"][tag="k9.*"]
+CQL: [tag="k5.*"] [tag="k6.*"] [tag="k9.*"]
+CQL: [tag="k6.*tD.*"][][tag="k5.*mF.*"]
+CQL: [lemma="moci" | lemma="muset" | lemma="smět" | lemma="chtít" | lemma="mít"] [ ] [tag="k5.*mF.*"]
+CQL: [lemma="chtít"][lemma="to"][tag="k5.*mF.*"]
+CQL: [lemma="chtít"] [lc="to"] [tag="k5.*mF.*"]
+CQL: [lemma="potřebovat"][lemma="to"][tag="k5.*mF.*"]
+CQL: [lemma="potřebovat"] [word="to"] [tag="k5.*mF.*"]
+CQL: [lemma="zkusit"][lemma="to"][tag="k5.*mF.*"]
+CQL: [lemma="zkusit"] [lemma="to"] [tag="k5.*mF.*"]
+CQL: [lemma="začít"][tag="k5.*(mS|mD).*"]
+CQL: [lemma="začít" & tag="k5.*m[ST].*"]
+CQL: [lemma="přestat"][tag="k5.*(mS|mD).*"]
+CQL: [lemma="přestat" & tag="k5.*m[ST]"]
+CQL: [lemma="být"][lemma="schopen"][tag="k5.*mF.*"]
+CQL: [lemma="být"] [lemma="schopen"] [ ]{0,2} [tag="k5.*mF"]
+CQL: [word=="mohl"][word=="by"][tag="k5.*mF.*"]
+CQL: [lemma="moci" & tag="k5.*mS.*"] [lemma="by"] [ ]{0,2} [tag="k5.*mF.*"]
+CQL: [word=="raději"][word=="by"][tag="k5.*mF.*"]
+CQL: [lemma="raději"] [lc="by"] [ ]{0,2} [tag="k5.*mF"]
+CQL: [word=="nejlépe"][tag="k5.*mF.*"]
+CQL: [lc="nejlépe"] [ ]{0,3} [tag="k5.*mF"]
+CQL: [tag="k2.*"][tag="k1.*"][tag="k5.*"]
+CQL: [tag="k2.*"] [tag="k1.*"] [tag="k5.*"]
+CQL: [lemma="pokusit"][lemma="se"][tag="k5.*mF.*"]
+CQL: [lemma="pokusit"] [ ]{0,1} [lemma="se"] [ ]{0,3} [tag="k5.*mF"]
+CQL: [lemma="snažit"][lemma="se"][tag="k5.*mF.*"]
+CQL: [lemma="snažit"] [lemma="se"] []{0,3} [tag="k5.*mF.*"]
+CQL: (meet [tag="k2.*"] [lemma="zdát"] -2 2)
+CQL: (meet [tag="k2.*"] [lemma="zdát"] -3 3)
+CQL: (union (meet [tag="k5.*"] [lemma="být"] -3 3) (meet [tag="k2.*"] [lemma="být"] -3 3))
+CQL: (meet [tag="k5.*" | tag="k2.*"] [lemma="být"] -5 5)
+CQL: [word="tak"][tag="k2.*"][word="jako"] within <s/>
+CQL: [lemma_lc="tak"] [tag="k2.*"] [lemma_lc="jako"] within <s/>
+CQL: [word="tak"][tag="k2.*"][word="že"] within []{6}
+CQL: [lc="tak"] [tag="k2.*"] [ ]{0,3} [lc="že"]
+CQL: [word="příliš"][tag="k2.*"][word="na"][word="to"][tag="k5.*mF.*"]
+CQL: ([lemma="příliš"] [tag="k2.*"] [lemma="na"] [lc="to"] []{0,3} [tag="k5.*mF"]) within <s/>
+CQL: [word="dost"][tag="k1.*"]
+CQL: [lc="dost" & tag="k1.*"]
+CQL: [word="velmi"][tag="k2.*"]
+CQL: [lemma="velmi"] [tag="k2.*"]
+CQL: [word="více|méně"][tag="k2.*"]
+CQL: [lc="více" | lc="méně"] [tag="k2.*"]
+CQL: [word="více"][tag="k1.*"][word="než"][tag="k1.*"]
+CQL: [lc="více"] [ ]{0,3} [tag="k1.*"] [lc="než"] [ ]{0,3} [tag="k1.*"]
+CQL: [word="nejvíce|nejméně"][tag="k5.*"]
+CQL: (meet [tag="k5.*"] [lemma_lc="nejvíce" | lemma_lc="nejméně"] -5 5)
+CQL: [word="co"][word="nejdříve"]
+CQL: [lc="co"] [lc="nejdříve"]
+CQL: [word="tak"][word="jako"][word="tak"]
+CQL: [lc="tak"] [lc="jako"] [lc="tak"]
+CQL: [tag="k1.*"][lemma="na"][tag="k1.*"]
+CQL: [tag="k1.*"] [lemma="na"] [tag="k1.*"]
+CQL: [tag="k1.*"][word=="vs\\.|versus|proti"][tag="k1.*"]
+CQL: [tag="k1.*"] [lc="versus"] [tag="k1.*"]
+CQL: [lemma="protože"][]
+CQL: [word="protože"] []{1,} within <s/>
+CQL: [lemma="ačkoliv"][]
+CQL: [word="ačkoliv"] [ ]
+CQL: [lemma="zatímco"][]
+CQL: [word="zatímco"] [ ]
+CQL: [word="od"][word="té"][word="doby"][word="co"]
+CQL: [lc="od"] [lc="té" & tag="k3gFnSc7"] [lc="doby" & tag="k1gFnSc2"] [tag="kI"]? [lc="co"]
+CQL: [word="aby"][tag="k5.*mF.*"]
+CQL: [lemma="aby"] []{0,5} [tag="k5.*mF.*"]
+CQL: [tag="k5.*mF.*"][word="aby"]
+CQL: [tag="k5.*mF.*"] [lemma="aby"] within <s/>
+CQL: ([word="tam"][word="je"]|[word="je"][word="tam"])
+CQL: ( [lc="tam"] [lc="je"] ) | ( [lc="je"] [lc="tam"] )
+CQL: [word="to"][lemma="být"][tag="k2.*"]
+CQL: [lc="to"] [lemma="být"] [tag="k2.*"]
+CQL: <s/> containing [word=="?"] </s>
+CQL: <s/> containing [word="?"]
+CQL: <s/> !containing [word==","]
+CQL: <s/> !containing [word=","]
+CQL: <s/> containing [word==":"]
+CQL: <s/> containing [word=":"]
+CQL: <s/> containing [word==";"]
+CQL: <s/> containing [word=";"]
+CQL: <s/> containing <s> [word="[[:upper:]].+"]
+CQL: <s> ( [word!=".*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*"] )* [word="[a-záčďéěíňóřšťúůýž].*"]
+CQL: <s/> containing <s> [tag="k6.*"][word==","]
+CQL: <s> [tag="k6.*"] [word=","]
+CQL: <p/> containing [word="\d{4}"]
+CQL: <p/> containing [word="[0-9]{4}"]
+CQL: <p/> !containing [word=".*\d.*"]
+CQL: <p/> !containing [word=".*[0-9].*"]
+CQL: <doc topic=".*hobbies.*" />
+CQL: <doc topic="koníčky">
+CQL: <doc genre=".*news.*" />
+CQL: <doc genre="news"/>
+CQL: [word="Brno"] within <doc title=".*Morava.*"/>
+CQL: [lemma="Brno"] within <doc title=".*(?i)morava.*" />
+CQL: [word="Fakulta"][word="Informatiky"] within <doc title=".*Masaryk.*"/>
+CQL: [lc="fakulta"] [lc="informatiky"] within <doc title=".*Masaryk.*"/>
+CQL: [tag="k1.*"] within <doc crawl_date=".*2017.*"/>
+CQL: [tag="k1.*"] within ( <p/> within <doc crawl_year="2017"/> )
+CQL: <s/> within <doc topic=".*technology.*"/>
+CQL: <s/> within <doc topic="technologie"/>
+CQL: <s/> !containing [word="[[:upper:]]+"]
+CQL: <s/> !containing [word="[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*"]
+CQL: [word="\"|„|‚|“|’|'"][word!="\"|„|‚|“|’|'" & tag!="k1.*"]{0,8}[word="\"|„|‚|“|’|'"] within <s/>
+CQL: [word="„" | word="“"] [tag!="k1.*"]{0,8}
+CQL: [lemma="klimatický"][lemma="změna"] within <s/>
+CQL: [lc="klimatická"] [lc="změna"] within <s/>
+CQL: [word=="data-driven"] | [word="data"][word="driven"] within <s/>
+CQL: ( [lc="data-driven"] ) | ( [lc="data"] [lc="driven"] )
+CQL: [word="na"][word="jedné"][word="straně"][]{1,8}[word="na"][word="druhé"][word="straně"]
+CQL: [lc="na"] [lc="jedné"] [lc="straně"] [ ]{0,30} [lc="na"] [lc="druhé"] [lc="straně"]
+CQL: 1:[] 2:[] []{0,6} 3:[] 4:[] & 1.word=3.word & 2.word=4.word
+CQL: 1:[] 2:[] []{0,6} 3:[] 4:[] & 1.lc = 3.lc & 2.lc = 4.lc
+CQL: 1:[] 2:[] & 1.word = 2.word
+CQL: [lc="(.*)"] [lc="\1"]
+/home/xmikusek/diploma-thesis/evaluation/model_evaluation/DeepSeek_R1_0528_v7/venv/lib64/python3.13/site-packages/nltk/translate/bleu_score.py:577: UserWarning: 
+The hypothesis contains 0 counts of 2-gram overlaps.
+Therefore the BLEU score evaluates to 0, independently of
+how many N-gram overlaps of lower order it contains.
+Consider using lower n-gram order or use SmoothingFunction()
+  warnings.warn(_msg)
+CQL: 1:[] 2:[] & 1.lemma = 2.lemma
+CQL: [lemma="(\\w+)"][lemma="\\1"]
+CQL: 1:[tag="k2.*"][tag="k8.*"] 2:[tag="k2.*"] & 1.lemma = 2.lemma
+CQL: [tag="k2.*" & lemma=".*"] [tag="k8.*"] [tag="k2.*" & lemma="%0"]
+CQL: 1:[tag="k1.*"][tag="k8.*"] 2:[tag="k1.*"] & 1.lemma != 2.lemma
+CQL: 1:[tag="k1.*"] 2:[tag="k8.*"] 3:[tag="k1.*"] & 1.lempos != 3.lempos
+CQL: [tag="k2.*"][tag!="k1.*"]
+CQL: 1:[tag="k2.*"] 2:[]? & ( !(2) | 2.tag !~ "k1.*" )
+CQL: [word=="přítomný" & !tag="k5.*"]
+CQL: [lemma="přítomný" & tag!="k5.*"]
+CQL: [lemma=="objekt" & tag="k1.*"]
+CQL: [lemma_lc="objekt" & tag="k1.*" & !tag="k5.*"]
+CQL: [lemma="číst" & tag="k5.*"]
+CQL: [lempos="číst-v"]
+CQL: [word="e-?mail"]
+CQL: [lc="e-?mail.*"]
+CQL: [lemma="ko-?operovat"]
+CQL: [lemma_lc="(ko|co)-?operovat" & tag="k5.*"]
+CQL: [word="re-?kreace"]
+CQL: [lc="re-?kreac.*" & tag="k1.*"]
+CQL: [word="well-?being"]
+CQL: [lc="well-?being"]
+CQL: [word="zdravotní"][word="péče"] | [word="healthcare"]
+CQL: [lemma_lc="zdravotní"] [lemma_lc="péče"]
+CQL: [lc="česká"][lc="republika"]
+CQL: [lc="česká"] [lc="republika"] [lc="bez"] [lc="ohledu"] [lc="na"] [lc="velikost"]
+CQL: [lemma=".*ální" & tag="k2.*"]
+CQL: [tag="k2.*" & lemma_lc=".*ální"]
+CQL: [lemma=".*ovat" & tag="k5.*"]
+CQL: [tag="k5.*" & lemma_lc=".*ovat$"]
+CQL: [lemma=".*ce" & tag="k1.*"]
+CQL: [tag="k1.*" & lemma_lc=".*ce"]
+CQL: [word="mikro.*"]
+CQL: [lc="mikro-.*"]
+CQL: [word=".*ologie"]
+CQL: [lc=".*ologie"]
+CQL: [word="[[:lower:]]+"]
+CQL: [word="^[a-záčďéěíňóřšťúůýž]+$"]
+CQL: [word="[[:upper:]]+"]
+CQL: [word="[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ]+"]
+CQL: [word="US|U\.S\."]
+CQL: [word=="US" | word=="U.S."]
+CQL: [word!="\."]
+CQL: [word !== "\."]
+CQL: [word>="m"]
+CQL: [lemma_lc>="m"]
+CQL: [word<"m"]
+CQL: [lemma_lc="lexikograficky"] [word="m"]
+CQL: [tag="k5.*"] within <doc topic=="science"/>
+CQL: [tag="k5.*"] within <doc topic="věda"/>
+CQL: <s/> !containing [word=".*\d.*"]
+CQL: <s/> !containing [word=".*[0-9].*"]
+CQL: [lemma="krájet"][]{0,2} ~"mrkev-n"
+CQL: [lemma="krájet"] [ ]{0,2} [~10 lempos_lc="zelenina-n"]
+CQL: ~20"město-n"
+CQL: [~20"město-n"]
+CQL: [lemma="investovat"][]{0,3} ~"obnovitelný-j"
+CQL: [lemma="investovat"] []{0,3} [lemma="obnov.*"]
+CQL: (meet ~12"lékař-n" [lemma="kontaktovat"] -5 5)
+CQL: (meet [~12"lékař-n"] [lemma="kontaktovat" & tag="k5.*"] -2 2)
+CQL: (meet ~"emise-n" [lemma="snížit"] -5 5)
+CQL: (meet [ ~"emise-n" ] [ lemma="snížit" ] -5 5)
+CQL: (meet [tag="k5.*"] [tag="k1.*"] 1 4)
+CQL: [tag="k1.*"] []{1,4} [tag="k5.*"]
+CQL: (union (meet [tag="k1.*"] [word=="byl|byla"] -2 2) (meet [tag="k2.*"] [lemma="být"] -2 2))
+CQL: (union   (meet [tag="k1.*"] [word="byl" | word="byla"] -2 2)   (meet [tag="k2.*"] [lemma="být"] -2 2))
+CQL: [word=="("][word="\d{4}"][word==")"]
+CQL: [word="("] []{0,100} [lemma="rok"] []{0,100} [word=")"] within <s/>
+CQL: [word="-+"]
+CQL: [word="^[-–—]+$"]
+CQL: [word==","] within ([word=="("][]*[word==")"])
+CQL: (  ([word="("] []{0,100} [word=","] []{0,100} [word=")"]) |  ([word="["] []{0,100} [word=","] []{0,100} [word="]"]) |  ([word="{"] []{0,100} [word=","] []{0,100} [word="}"])) within <s/>
+CQL: [tag="k1.*" & word="[[:upper:]].*"][word="\d{4}"]
+CQL: [tag="k1.*" & word="[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*"] [tag="k4xC.*" & word="[12][0-9]{3}"]
+CQL: [word=="[Pp]rosím"][tag="k5.*mF.*"]
+CQL: [lc="prosím"] []{0,3} [tag="k5.*mF"] within <s/>
+CQL: [word=="[Mm]ohl"][word=="bys|by"][tag="k5.*mF.*"]
+CQL: [lc="mohl"] [lc="bys"] [tag="k5.{6}F.*"]
+CQL: [word=="[Rr]ád"][word=="bych"][tag="k5.*mF.*"]
+CQL: [lemma="rád" & tag="k6.*"] [lc="bych"] []{0,2} [tag="k5.*mF.*"]
+CQL: [word=="tak"][word=="aby"]
+CQL: [lc="tak"] [lc="aby"]
+CQL: [word=="v"][word=="případě"][word=="že"]
+CQL: [lc="v"] [lc="případě"] [word=","]? [lc="že"]
+CQL: [word="[[:upper:]]+"]
+CQL: [word="\\p{Lu}+"]
+CQL: [word=".*[áéíóúůýčďěňřšťž].*"]
+CQL: [lc=".*[áčďéěíňóřšťúůýž].*"]
+CQL: [tag="kI.*" & word!="\."]
+CQL: [tag="kI.*" & word!="."]
+CQL: [tag="k1.*nS.*c1.*"]
+CQL: [tag="k1.*nSc1.*"]
+CQL: [word=="..."]
+CQL: [lempos="výpustka-n"]
+CQL: [tag="kA.*"]
+CQL: [word="([A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ]{2,}|([A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽa-záčďéěíňóřšťúůýž]\\.)+|[a-záčďéěíňóřšťúůýž]{1,}\\.)"]
+CQL: [word=".*[-–].*"]
+CQL: [word=".*-.*"]
+CQL: [lemma="věřit"]
+CQL: [lemma_lc=".*v[iíěř][řr].*"]
+CQL: [#1000]
+CQL: []
+CQL: [#0]
+CQL: <s> [ ]
+CQL: [#7831]
+CQL: <doc id="123"> []{2} [lemma="test"]
+{'error': 'AttrNotFound (id) near position 9', 'api_version': '5.84.8', 'manatee_version': '2.36.7-SkE-2.237.1', 'request': {'concordance_query': [{'queryselector': 'cqlrow', 'cql': '<doc id="123"> []{2} [lemma="test"]', 'default_attr': 'word'}], 'structs': 's,g', 'pagesize': '1000', 'kwicrightctx': '0', 'json': '{"concordance_query": [{"queryselector": "cqlrow", "cql": "<doc id=\\"123\\"> []{2} [lemma=\\"test\\"]", "default_attr": "word"}]}', 'attrs': 'pos', 'viewmode': 'sen', 'cup_hl': 'q', 'attr_allpos': 'all', 'corpname': 'preloaded/cstenten23_mj2', 'kwicleftctx': '0', 'default_attr': 'word', 'fromp': '1'}}
+CQL: 1:[] 2:[] & 1.tag = 2.tag
+CQL: [tag=".*"] [tag=$0.tag]
+CQL: 1:[] 2:[] & 1.word = 2.word
+CQL: [word="(\\w+)"][word="\\1"]
+CQL: (1:[] 2:[] within <s/>) & 1.lemma = 2.lemma
+CQL: (meet [lemma=".*"] [lemma=".*"] -40 40) & 1.lemma = 2.lemma
+CQL: (1:[tag!="k4.*"] 2:[tag!="k4.*"] within <s/>) & 1.lemma = 2.lemma
+CQL: 1:[tag!="k4.*"] 2:[tag!="k4.*"] & 1.lemma = 2.lemma & 1 != 2 within <s/>
+CQL: 1:[] 2:[] [] 3:[] & 1.tag = 2.tag & 1.lemma = 3.lemma
+CQL: ([tag=".*"]{2}) [ ] [lemma=".*"] within <s/> & 1.lemma = 4.lemma
+CQL: (1:[tag="k1.*"]2:[tag="k5.*"] within <s/>) & 1.lemma = 2.lemma
+CQL: (1:[tag="k1.*"] [ ]{0,5} 2:[tag="k5.*" & lemma_lc = 1.lemma_lc]) within <s/>
+CQL: 1:[tag="k2.*"]2:[tag="k2.*"][tag="k1.*"] & f(1.word)>100000 & f(2.word)<5000
+CQL: 1:[tag="k2.*"] 2:[tag="k2.*"] 3:[tag="k1.*"] & f(1.word) > 100000 & f(2.word) < 5000
+CQL: 1:[]2:[] & 1.lemma = 2.lemma & 1.word != 2.word
+CQL: 0:[ tag!="kI.*" ] 1:[ tag!="kI.*" ] & 0.lemma = 1.lemma & 0.word != 1.word
+CQL: 1:[]2:[] & (f(1.word)>20000000 | f(2.word)>20000000)
+CQL: 1:[] 2:[] & (f(1.lc) > 20000000 | f(2.lc) > 20000000)
+CQL: [word="úraz"] within <doc urldomain=="ulekare.cz"/>
+CQL: <doc urldomain="ulekare.cz"> [lc="úraz"]
+CQL: [lemma="agrese"] within <doc topic="games"/>
+CQL: [lemma="agrese"] within <doc topic="hry"/>
+CQL: [lemma="agrese"] within <doc topic="education|games"/>
+CQL: [lemma="agrese"] within <doc topic="hry|vzdělání"/>
+CQL: [lemma="reklama"] within <doc genre=".*blog.*"/>
+CQL: <doc genre="blog"> [lemma="reklama"]
+CQL: [word="Barack"][word="Obama"] within <doc title=".*skandál.*"/>
+CQL: <doc title=".*[sS][kK][aA][nN][dD][áÁ][lL].*"> [lc="barack"] [lc="obama"]
+CQL: [lemma="hacknout" & tag="k5.*"] within <doc genre=".*news.*"/>
+CQL: <doc genre="zprávy"> [lemma="hacknout" & tag="k5.*"]
+CQL: [lemma="zmrzlina"] within <doc month=".+-06"/>
+CQL: [lemma="zmrzlina"] within <doc modified_month="06"/>
+CQL: <s/> containing [word>="101" & word="[0-9]+" & tag="k4.*"]
+CQL: <s/> containing (  [word="[1-9][0-9]{2,}"] |   [tag="k4" & word>="101"])
+CQL: [tag="k5.*"][tag="k7.*"]
+CQL: [tag="k5.*"] [tag="k7.*"]
+CQL: [word="tak|velmi"][tag="k2.*"][word=","][word="že"]
+CQL: [ lc="tak" | lc="velmi" ] [ tag="k2.*" ] [ lc="že" ]
+CQL: [tag="k5.*"][word=="se|si"]
+CQL: [tag="k5.*"] [lc="se" | lc="si"]
+CQL: [tag="k5.*mA.*"][word="by"]
+CQL: [tag="k5.*m[AN].*"] [lemma="by" & tag="k9"]
+CQL: <s> [tag="kI.*"]? [tag!="kI.*"]? [tag="kI.*"]? </s>
+CQL: <s> ( [tag="kI.*"] )* [tag!="kI.*"] ( [tag="kI.*"] )* </s>
+CQL: <s/> containing <s> [tag="k8.*"]
+CQL: <s> [tag="kI.*"]{0,3} [tag="k8.*"]
+CQL: <s/> containing [word=="..."] </s>
+CQL: <s/> containing ( [word="\\.\\.\\." | word="…"] </s> )
+CQL: [tag="k2.*"][tag="k1.*"][tag="k5.*"]
+CQL: [tag="k2.*"] [tag="k1.*"] [tag="k5.*"]
+CQL: [tag="k2.*"][tag="k2.*"]
+CQL: [tag="k2.*"] [tag="k2.*"]
+CQL: (1:[tag="k2.*"] 2:[tag="k2.*"] within <s/>) & 1.word = 2.word
+CQL: 1:[tag="k2.*"] 2:[tag="k2.*"] & 1.lemma = 2.lemma within <doc/>
+CQL: [tag="k5.*"][tag="k3.*"]
+CQL: [tag="k5.*"] [ ]{0,3} [tag="k3.*"]
+CQL: <s> []
+CQL: <s> [ ]
+CQL: <s> [tag!="kI.*"] [word=="?"] </s>
+CQL: [tag="k3.*yQ.*" | tag="k6.*yQ.*"]
+CQL: [tag="J.*"] [lemma="like"] [tag="DT"]? [tag="N.*"] within <s/>
+CQL: (  [tag="J.*"] [lc="like"] [tag="DT|J.*"]{0,2} [tag="N.*"]   |   [tag="V.*"] [lc="like"] [tag="DT|J.*"]{0,2} [tag="N.*"]   |   [lc="as" & tag="RB"] [tag="J.*"] [lc="as" & tag="IN"] [tag="DT|J.*"]{0,2} [tag="N.*"])
+CQL: [lemma="neboť"] within <s/>
+CQL: [ ]{1,50} [word="neboť"] within <s/>
+CQL: [lemma="který"][word=","]
+CQL: [lemma="který"] [word=","]
+CQL: [ws("škola-n","modifiers of \\\"%w\\\"",".*")]
+CQL: [ws("škola-n", "modifiers of \"%w\"", ".*")]
+CQL: [ws("schválit-v",".*objects of \\\"%w\\\"",".*")]
+CQL: [ws("schválit-v", "objekty \"%w\"", ".*")]
+CQL: [ws("růst-v",".*subjects of \\\"%w\\\"",".*")]
+CQL: [ws("růst-v", "subjects of \"%w\"", ".*")]
+CQL: [ws("rozhodnutí-n",".*object.*","učinit-v")]
+CQL: [ws("učinit-v", "objects of \"%w\"", "rozhodnutí-n")]
+CQL: [ws("test-n",".*modifiers of \\\"%w\\\"","krev-n")]
+CQL: [ws("test-n", "modifiers of \"%w\"", "krev-n")]
+CQL: [ws("klima-n",".*",".*změna.*")]
+CQL: [ws("klima-n", ".*", "změna-n")]
+CQL: [ws("test-n","\\.\\.\\. (o|v|na) \\\"%w\\\"",".*") | ws("test-n","\\\"%w\\\" (o|v|na) \\.\\.\\.",".*")]
+CQL: [ws(".*", "\\.\\.\\. (o|v|na) \\\"%w\\\"", ".*") | ws(".*", "\\\"%w\\\" (o|v|na) \\.\\.\\.", ".*")]
+CQL: [ws(".*","verbs with \\\"%w\\\" as subject",".*-v")]
+CQL: [ws(".*-v", "subjects of \"%w\"", ".*")]
+CQL: [word=="vládní"][]{0,1}[ws("politika-n",".*",".*")]
+CQL: (meet [ws("vládní-j", ".*", ".*")] [] -1 1)
+CQL: (meet ~"železo-n" [lemma="koroze"] -4 4)
+CQL: (meet ~"kov-n" [lemma="koroze"] -4 4)
+CQL: [word="auto"] within europarl7_en: [word="car"]
+CQL: [lemma="auto"] within :en [lemma="car"]
+CQL: [word="dům"] within europarl7_de_1: [word="Haus"]
+CQL: [lemma="dům"] within ep_de: [lemma="Haus"]
+{'error': 'CorpInfoNotFound (ep_de not aligned) near position 27', 'api_version': '5.84.8', 'manatee_version': '2.36.7-SkE-2.237.1', 'request': {'concordance_query': [{'queryselector': 'cqlrow', 'cql': '[lemma="dům"] within ep_de: [lemma="Haus"]', 'default_attr': 'word'}], 'kwicrightctx': '0', 'attrs': 'pos', 'kwicleftctx': '0', 'fromp': '1', 'cup_hl': 'q', 'structs': 's,g', 'viewmode': 'sen', 'pagesize': '1000', 'corpname': 'preloaded/europarl7_cs', 'json': '{"concordance_query": [{"queryselector": "cqlrow", "cql": "[lemma=\\"d\\u016fm\\"] within ep_de: [lemma=\\"Haus\\"]", "default_attr": "word"}]}', 'default_attr': 'word', 'attr_allpos': 'all'}}
+CQL: [word="awfully|horribly|terribly"][word="beautiful"]
+CQL: <s> [lc="awfully" | lc="horribly" | lc="terribly"] [lc="beautiful"] </s>
+CQL: [word=="("][word!==")"]+[word==")"]
+CQL: [tag!="(" & tag!=")"] within ( [word="("] []{1,500} [word=")"] )
+CQL: [word="\(|\[|\{"][word!="\)|\]|\}"]+[word="\)|\]|\}"]
+CQL: [tag!="(" & tag!=")"] within ( <s/> containing [tag="("] containing [tag=")"] )
+CQL: [word="\(|\[|\{"][word!="\)|\]|\}"]+[word="\)|\]|\}"]
+CQL: <s/> containing ( [tag="("] [tag!="(" & tag!=")"]+ [tag=")"] )
+CQL: [tag="VBZ|VBP|VV"] within [tag!="V.*"][tag="VBZ|VBP|VV"][tag!="V.*"]
+CQL: [tag="(VVP|VVZ|VHP|VHZ|VBP|VBZ)"]
+CQL: [tag="VBD|VHD|VVD"] within [tag!="V.*"][tag="VBD|VHD|VVD"][lemma="not"]?[tag!="V.*"]
+CQL: [tag="VVD|VBD|VHD"]
+CQL: [word="will" & tag="MD"][lemma="not"]?[tag!="V.*"]{0,2}[tag="VB|VH|VV"]
+CQL: [tag="MD" & (lemma_lc="will" | lemma_lc="shall")] [ ]{0,2} [tag="VB" | tag="VH" | tag="VV"]
+CQL: [tag="VBP|VBZ"][lemma="not"]?[tag!="V.*"]{0,2}[tag="VVG"]
+CQL: [lemma="be" & (tag="VBZ"|tag="VBP")] [ ]{0,3} [tag="VBG"|tag="VVG"] within <s/>
+CQL: [tag="VBD"][lemma="not"]?[tag!="V.*"]{0,2}[tag="VVG|VHG|VBG"]
+CQL: [tag="VBD"] []{0,3} [tag="VVG"|tag="VBG"|tag="VHG"]
+CQL: [lemma="will"][lemma="not"]?[word="be"][tag="VVG|VBG|VHG"]
+CQL: [(lemma="will"|lemma="shall") & tag="MD"] []{0,3} [lemma="be" & tag="VB"] []{0,3} [tag="V.*G"]
+CQL: [tag="VH|VHZ"][lemma="not"]?[tag!="V.*"]{0,2}[tag="VVN|VBN|VHN"] within [tag!="V.*"][tag="VH|VHZ"][lemma="not"]?[tag!="V.*"]{0,2}[tag="VVN|VBN|VHN"][tag!="V.*"]
+CQL: ([tag="VHP"|tag="VHZ"] []{0,5} [tag="VVN"|tag="VHN"|tag="VBN"]) within <s/>
+CQL: [tag="VHD"][lemma="not"]?[tag="VBN"][tag="VVN"]
+CQL: [lc="had" & tag="VHD"] []{0,5} [tag="VVN" | tag="VHN" | tag="VBN"]
+CQL: [word="will" & tag="MD"][lemma="not"]?[word="have"][tag="VBN|VHN|VVN"]
+CQL: ( ( [lemma="will" & tag="MD"] | [lemma="shall" & tag="MD"] ) [ ]{0,2} [tag="VB" | tag="VH" | tag="VV"] ) within <s/>
+CQL: [tag="VH|VHZ|VHP"][lemma="not"]?[tag="VBN"][tag="VVG"]
+CQL: [lemma="have" & (tag="VHP"|tag="VHZ")] [ ]{0,3} [lemma="be" & tag="VBN"] [ ]{0,3} [tag="V.G"] within <s/>
+CQL: [tag="VHD"][lemma="not"]?[tag="VBN"][tag="VVG"]
+CQL: [lemma="have" & tag="VHD"] [lemma="be" & tag="VBN"] [ ]{0,2} [tag="VVG|VBG"]
+CQL: [word="will" & tag="MD"][lemma="not"]?[tag="VH|VHP"][tag="VBN"][tag="VVG"]
+CQL: [tag="MD" & (lemma_lc="will"|lemma_lc="shall")] []{0,5} [lemma_lc="be" & tag="VB"] []{0,5} [tag="VBG"]
+CQL: < s/> within <speaker name=".*Andrej Babiš.*"/>
+CQL: <s/> within <speaker name="Andrej Babiš"/>
+CQL: <s> [ ]{42} </s> within <s/>
+CQL: <s> [ ]{42} </s>
+CQL: [tag="V.*"][tag="DT|N.*|J.*"]+[tag="RP"][tag!="IN"]
+CQL: [tag="V.*"] [ ]{0,1} [tag="RP"] within <s/>
+CQL: [tag="V.*"][tag="IN"]
+CQL: [tag="V.*"] [ ]{0,2} [tag="IN"] within <s/>
+CQL: [tag="IN"][tag="DT"]?[tag="J.*"]*[tag="N.*"]
+CQL: ([tag="RB"|tag="RBR"|tag="RBS"][tag="RB"|tag="RBR"|tag="RBS"]{0,2})|([tag="IN"][tag="DT"]?[tag="JJ.*"]*[tag="N.*"]{1,3})
+CQL: ([tag="k6.*"] | [tag="k7.*"] [tag="k1.*|k2.*|k3.*"]+) within <s/>
+CQL: [ws(".*", ".*(adverbial|příslovečné).*", ".*")]
+CQL: [tag="VB.*"][tag="VVN"]
+CQL: <s/> containing [ lemma="be" & tag="VB|VBD|VBG|VBP|VBZ|VBN" ] [ ]{0,5} [ tag="VVN" ] ( [ lemma="by" ] [ tag="N.*|NP.*" ] )?
+CQL: [tag="VB.*"][tag="VBN|VHN|VVN"][lemma!="by" & tag!="V.*"]*[lemma="by"][tag="DT"]? [tag="J.*"]*[tag="N.*"] within <s/>
+CQL: [lemma="be" & tag="VB.*"] []{0,5} [tag="V[VH]N"] []{0,15} [lemma="by" & tag="IN"] [tag="DT|J.*"]{0,4} [tag="N.*"] within <s/>
+CQL: [lemma="get"][tag="VVN"]
+CQL: [lemma="get"] [ ]{0,3} [tag="VVN"]
+CQL: [tag="J.*"][tag="N.*"]
+CQL: [tag="JJ.*"] [tag!="V.*" & tag!="SENT"]{0,3} [tag="N.*"]
+CQL: 1:[] 2:[] & 1.tag = 2.tag
+CQL: [tag="(NN|VB|JJ|IN|\.\.\.)"][tag="\\1"]
+CQL: 1:[tag="J.*"][tag="N.*"] & f(1.word)<5000
+CQL: 1:[tag="J.*"] 2:[tag="N.*"] & f(1.word) < 5000
+CQL: 1:[] 2:[] & 1.word = 2.word
+CQL: [lc="([a-zA-Z]+)"] [lc="\1"]
+CQL: (1:[] 2:[] within <s/>) & 1.lemma = 2.lemma
+CQL: 1:[lemma=".*"] within <s/>2:[lemma=".*"] within <s/>& 1.lemma = 2.lemma& 1 != 2& 1 < 2
+CQL: (1:[tag!="CD"] 2:[tag!="CD"] within <s/>) & 1.lemma = 2.lemma
+CQL: 1:[tag!="CD.*"] []* 2:[tag!="CD.*"] within <s/> & 1.lemma = 2.lemma & 1 != 2
+CQL: 1:[] 2:[] [] 3:[] & 1.tag = 2.tag & 1.lemma = 3.lemma
+CQL: < s> 1:[] 2:[] 3:[] 4:[] </s> & 1.tag = 2.tag & 1.lemma = 4.lemma
+CQL: (1:[tag="N.*"]2:[tag="V.*"] within <s/>) & 1.lemma = 2.lemma
+CQL: <p> (1: [tag="N.*"] []{0,5} 2: [tag="V.*" | tag="MD"] & 1.lemma_lc = 2.lemma_lc) </p>
+CQL: 1:[tag="J.*"]2:[tag="J.*"][tag="N.*"] & f(1.word) > 100000 & f(2.word) < 5000
+CQL: 1:[tag="J.*"] 2:[tag="J.*"] 3:[tag="N.*"] & f(1.lemma) > 100000 & f(2.lemma) < 5000
+CQL: 1:[]2:[] & 1.lemma = 2.lemma & 1.lc != 2.lc
+CQL: [lemma_lc][lemma_lc] :: 1.lemma_lc = 2.lemma_lc & 1.lc != 2.lc
+CQL: 1:[]2:[] & f(1.word) > 2000000000 | f(2.word) > 2000000000
+CQL: 1:[] 2:[] & (f(1.word) > 2000000000 | f(2.word) > 2000000000)
+CQL: [word="rocket"] within <doc urldomain="nasa\.gov" />
+CQL: [lc="raketa"] within <doc urldomain="nasa.gov"/>
+CQL: [lemma="university"] within <doc tld="edu"/>
+CQL: [lemma_lc="university"] within <doc tld="edu"/>
+CQL: [lemma="aggression"] within <doc topic="games"/>
+CQL: <doc topic="games"> [lemma="aggression"]
+CQL: [lemma="advertisement|ad"] within <doc genre="blog"/>
+CQL: <doc genre="blog"> [lemma="advertisement" | lemma="ad"]
+CQL: [word="Barack"][word="Obama"] within <doc title=".*scandal.*" />
+CQL: <doc title=".*[sS][cC][aA][nN][dD][aA][lL].*"> [lc="barack"] [lc="obama"]
+CQL: [word="COVID"] within <doc year="20[2-9]." />
+CQL: [lc="covid"] within <doc year >= "2020"/>
+CQL: [lemma="underground"] within <doc city="Brno"/>
+CQL: <doc city="Brno"> [lemma="underground" & tag="NN.*"]
+CQL: [lemma="hack" & tag="V.*"] within <doc genre="news"/>
+CQL: <doc genre="news"> [lemma="hack" & tag="V.*"]
+CQL: [lemma="leprechaun"] within <doc country="Ireland" />
+CQL: [lemma="leprechaun"] within <doc country="Ireland"/>
+CQL: [word="ice"][word="cream"] within <doc month=".+-06"/>
+CQL: ( ( [lc="ice"] [lc="cream"] ) | [lc="ice-cream"] ) within <doc month="6"/>
+CQL: <s> [word="\""]
+CQL: <s> [word="[\"'“‘]"]
+CQL: <s/> containing [tag="CD" & word>="101"]
+CQL: <s/> containing [tag="CD" & word="(1(0[1-9]|[1-9][0-9])|[2-9][0-9][0-9]|[1-9][0-9]{3,}|[0-9]{1,3}(,[0-9]{3})+|100\\.[0-9]*[1-9][0-9]*|[1-9][0-9]{2,}\\.[0-9]+)"]
+CQL: [tag="VMN.*" & lemma=".*er"]
+CQL: [tag="V.*" & lemma=".*ir|.*re"]
+CQL: [tag="V..P.*"]
+CQL: [tag="VM.I.*"]
+CQL: [tag="VMIS.*"]
+CQL: [tag="VMIF.*"]
+CQL: [tag="VMSP.*"]
+CQL: [tag="V[SA]IP.*"][tag="V.P.*"]
+CQL: [tag="V.MS.*"]
+CQL: [tag="V..C.*"]
+CQL: [lemma="être"] [tag="V.P.*"]
+CQL: [word="\""] [word!="\""]+ [word="\""] within <s/>
+CQL: [tag != "^(\\\"|\\(|\\)|,|\\$|#|:|SENT|SYM|Z)$"] within ( [tag="\""] []* [tag="\""] )
+CQL: [word="\[|\(|\{"] [word!="\]|\)|\}"]+ [word="\]|\)|\}"]
+CQL: [tag="("] []{0,50} [tag=")"]
+CQL: [word="\[|\(|\{"] [word!="\]|\)|\}"]+ [word="\]|\)|\}"]
+CQL: [word="("] []+ [word=")"]
+CQL: <s/> containing [word="\?" & tag="SENT"]
+CQL: <s> []* [word="?" & tag="SENT"] </s>
+CQL: [lc="but"] within [word=","][lc="but"]
+CQL: </s> [lemma="but"] <s>
+CQL: <s> []
+CQL: <s> [ ]
+CQL: <s> [] [tag="SENT"]? </s>
+CQL: <s/>  containing [lemma=".*"]  !containing ([lemma=".*"] []* [lemma=".*"])
+CQL: [tag="J.*"][tag="N.*"][tag="V.*"]
+CQL: [tag="J.*"] [tag="N.*"] [tag="V.*"]
+CQL: [tag="J.*"][tag="J.*"]
+CQL: [tag="J.*"] [tag="J.*"]
+CQL: [tag="V.*"] [tag="P.*"]
+CQL: [ tag="V.*|MD" ] [ tag="PP|PPZ|WP|WPZ" ]
+CQL: [tag="J.*"][tag="N.*"]
+CQL: [tag="J.*"] [tag="N.*"]
+CQL: <s> [tag="CC|IN"]
+CQL: <s> [tag="CC" | tag="IN" | tag="IN/that"]
+CQL: <s/> !containing [tag="V.*"]
+CQL: <s/> !containing [tag="V.*" | tag="MD"]
+CQL: <s/> containing <s> [tag!="V.*|CC|,"]* [tag="N.*"] [tag!="V.*|CC|,"]* [tag="CC"] [tag!="V.*|CC|,"]* [tag="N.*"] [tag!="V.*|CC|,"]* [tag="V.*"]
+CQL: <s> [tag="N.*" | tag="PP"] []{0,5} [tag="CC"] []{0,5} [tag="N.*" | tag="PP"] </s>
+CQL: <s/> containing [word=="..."][tag="SENT"]?</s>
+CQL: <s> []* [word="\.{2,}|…"] </s>
+CQL: [word=="?" | word=="!"]{2,} | [word="[!?]{2,}"]
+CQL: ( [word="[!?]{2,}"] | [word="[!?]"]{2,} )
+CQL: <s> [][][] </s>
+CQL: <s> [ ]{3} </s>
+CQL: <s/> containing ([lemma="muset" & tag="k1.*"][]*[tag="k1.*c4.*"]) | ([tag="k1.*c4.*"][]*[lemma="muset" & tag="k1.*"])
+CQL: <s/> containing [lemma="muset"] containing [tag="k1.*c4.*"]
+CQL: [lemma="muset" & tag="k5.*"] [tag="k1.*c4.*"]
+CQL: [lemma="muset" & tag="k5.*"] [ ]{0,5} [tag="k1.*c4.*"] within <s/>
+CQL: ([tag="k1.*"] [tag="k2.*"]) | ([tag="k2.*"] [tag="k1.*"])
+CQL: ( [lc="podstatné"] [lc="jméno"] [lc="přídavné"] [lc="jméno"] ) | ( [lc="přídavné"] [lc="jméno"] [lc="podstatné"] [lc="jméno"] )
+CQL: [word="pře.*ní" & tag="k1.*"]
+CQL: [tag="k1.*" & lc="pře.*ní"]
+CQL: [tag="PP.*"]
+CQL: [tag="PP|PPZ|WP|WPZ"]
+CQL: [lemma="Petr" & tag="k1.*c5.*"]
+CQL: [lemma="Petr" & tag="k1.{6}c5.*"]
+CQL: </s>
+CQL: [tag="SENT"]
+CQL: [word="potravina"]
+CQL: [lc="potravina"]
+CQL: [tag="k5.*mA.*"]
+CQL: [tag="k5.*m[AN].*"]
+CQL: [lemma="být" & tag=".*mA.*"]
+CQL: [lemma="být" & tag="k5.*mA.*"]
+CQL: [word="ne.*ný"]
+CQL: [lc="ne.*ný"]
+CQL: [word=".*stav.*"]
+CQL: [lc=".+stav.+"]
+CQL: [lemma="pro.*ní"]
+CQL: [lc="^pro.*ní$"]
+CQL: [tag="k1.*" & word=".*ka"]
+CQL: [tag="k1.*" & lc=".*ka$"]
+CQL: [tag="Z.*"]
+CQL: [tag="CD"]
+CQL: [tag="CD.*"]
+CQL: [tag="kI.*" & word!=="."]
+CQL: [tag="kI.*" & word != "."]
+CQL: [tag="k1.*nS.*c1.*"]
+CQL: [tag="k1.*nSc1.*"]
+CQL: [word="\.{3}"]
+CQL: [tag="kI.*" & (word="…" | word="\\.\\.\\.")]
+CQL: [tag="kA.*"]
+CQL: [lc="^[a-záčďéěíňóřšťúůýž]+\\.$"]
+CQL: [tag="kA.*"]
+CQL: [word="[A-Z]{2,}"]
+CQL: [word=".*[-–].*"]
+CQL: [lc=".*[-–—].*" & tag!="kI.*"]
+CQL: [lemma="věřit"]
+CQL: [lemma_lc=".*věř.*"]
+CQL: [tag="R.*"]
+CQL: [#1000]
+CQL: 1:[] & #1 = 1000
+CQL: [#1]
+CQL: <s> [ ]
+CQL: [#7831]
+CQL: [word=".*"]
+CQL: [word="COVID"] within <doc year="20[2-9].*"/>
+CQL: <doc modified_year >= "2020"> [lc="covid"]
+CQL: (meet ~"dandelion-n" [lemma="grow"] -5 5)
+CQL: (meet [tag="N.*"] [lemma_lc="grow"] -5 5)
+CQL: (meet [lemma="grow"] ~"dandelion-n" -5 5)
+CQL: (meet [lemma="grow"] ~20"flower-n" -5 5)
+CQL: [word="\""][word!="\""]+[word="\""] containing [word="\""][tag="NP|NPS"][word=","][]?[tag="PP"]
+CQL: [word="\""] [tag="NP"|tag="NPS"|tag="NN"|tag="NNS"] [word=","|word=":"|word="!"]
+CQL: [word="\""][word!="\""]+[word="\""] within (([tag="NP|NPS|PP"][lemma="say"][word=":"]?[word="\""][word!="\""]+[word="\""]) | ([word="\""][word!="\""]+[word="\""][lemma="say"][tag="NP|NPS|PP"]) | ([word="\""][word!="\""]+[word="\""][tag="NP|NPS|PP"][lemma="say"]))
+CQL: <p/> containing [word="\""] containing [lemma="say|ask|tell|exclaim|shout|declare|reply|respond|state|whisper|mutter|add|continue|conclude|answer" & tag="V.*"]
+CQL: <s/> containing ([lemma="please"] | [lemma="could"] | [lemma="would"] | [lemma="can"] | [lemma="will"] within <s/>)
+CQL: ( <s/> containing [ lc="please" ] ) | ( <s> [ tag="VB|VH|VV" ] []* </s> )
+CQL: (meet [lemma="corrosion"] ~"metal-n" -5 5)
+CQL: (meet [lemma_lc="corrosion"] [lemma_lc="metal"] -5 5)
+CQL: (meet [lemma="corrosion"] ~"metal-n" -5 5)
+CQL: (meet [lemma="corrosion"] ~20"metal-n" -5 5)
+CQL: (meet ~"metal-n" [lemma="corrosion"] -5 5)
+CQL: (meet [lemma="iron|steel|copper|aluminum|aluminium|gold|silver|zinc|lead|tin|nickel|titanium|magnesium|platinum|mercury"] [lemma="corrosion"] -5 5)
+CQL: (meet [lemma="corrosion"] ~"daisy-n" -5 5)
+CQL: (meet [lemma="corrosion"] ~50"flower-n" -5 5)
+CQL: (meet [lemma="grow"] ~"rose-n" -5 5)
+CQL: (meet [lemma="grow"] ~10"flower-n" -5 5)
+Traceback (most recent call last):
+  File "/home/xmikusek/diploma-thesis/evaluation/model_evaluation/DeepSeek_R1_0528_v7/cqlcmp.py", line 328, in <module>
+    average[k] = average.get(k, 0) + r[k]
+                 ~~~~~~~~~~~~~~~~~~^~~~~~
+TypeError: unsupported operand type(s) for +: 'int' and 'str'

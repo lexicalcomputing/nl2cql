@@ -1,0 +1,1024 @@
+[!tag="DT"&!tag="J.*"][tag="CD"]?[tag="N.*"][lemma="man"]	[tag !="DT" & tag !="JJ.*" & tag !="CD" & tag !="N.*"] [word="man"]	All tokens that are not determiners, adjectives, cardinal numbers, or nouns followed by the word "man."
+[!tag="DT"][tag="J.*"][tag!="CD"][tag="N.*"]	[tag !="DT" & tag !="JJ.*" & tag !="CD" & tag !="N.*"] [word="man"]	Any token that does not match the tags DT, JJ, CD, or is not a noun, followed by the word "man."
+[!tag="DT"&!tag="J.*"][!tag="N.*"][word="man"]	[tag !="DT" & tag !="JJ.*" & tag !="CD" & tag !="N.*"] [word="man"]	Non-determiner, non-adjective, non-number, and non-noun tokens that precede the word "man."
+[!tag="DT"&!tag="J.*"|!tag="N.*"][word="man"]	[tag !="DT" & tag !="JJ.*" & tag !="CD" & tag !="N.*"] [word="man"]	Tokens excluding determiners, adjectives, numbers, and nouns followed by "man."
+[!tag="DT"&!tag="J.*"][!tag="CD"][word="man"]	[tag !="DT" & tag !="JJ.*" & tag !="CD" & tag !="N.*"] [word="man"]	Any token that is not tagged as DT, JJ, CD, or is a noun right before the word "man."
+[!tag="DT"][tag="J.*"][tag="CD"][tag="N.*"]	[tag !="DT" & tag !="JJ.*" & tag !="CD" & tag !="N.*"] [word="man"]	A sequence where the preceding token fits none of the DT, JJ, CD, or noun categories and is followed by "man."
+[lemma="staff" & tag="V.P|V.Z"]	[lemma="staff"&tag="V.P|V.Z"]	Tokens that have the lemma staff and are tagged as V.P or V.Z.  
+[lemma="staff" & tag="V.P|V.Z"]	[lemma="staff"&tag="V.P|V.Z"]	All verbs related to the lemma staff tagged with V.P or V.Z.  
+[lemma="staff" & tag="VBP|VVP|VHP"]	[lemma="staff"&tag="V.P|V.Z"]	Lemma staff appearing as a verb in past or present tense.  
+[lemma="staff" & tag="V.P|V.Z"]	[lemma="staff"&tag="V.P|V.Z"]	Any verb with the lemma staff that matches the tags V.P or V.Z.  
+[lemma="staff" & tag="V.P|V.Z"]	[lemma="staff"&tag="V.P|V.Z"]	Staff as a lemma combined with verb tags V.P or V.Z.  
+[lemma="staff" & tag="V.P|V.Z"]	[lemma="staff"&tag="V.P|V.Z"]	Tokens with staff as lemma tagged specifically as V.P or V.Z.  
+[lemma="staff" & tag="V.P|V.Z"]	[lemma="staff"&tag="V.P|V.Z"]	Tokens that are verbs with the lemma staff classified under V.P or V.Z tags.  
+[lemma="staff" & tag="V.P|V.Z"]	[lemma="staff"&tag="V.P|V.Z"]	All instances of staff as a lemma that are categorized as V.P or V.Z verbs.  
+[lemma="staff" & tag="V.P|V.Z"]	[lemma="staff"&tag="V.P|V.Z"]	Verbs associated with the lemma staff that carry the V.P or V.Z tag.  
+[lemma="staff" & tag="V.P|V.Z"]	[lemma="staff"&tag="V.P|V.Z"]	Tokens whose lemma is staff and which are labeled as either V.P or V.Z verbs.  
+[lemma="staff" & tag="V.P|V.Z"]	[lemma="staff"&tag="V.P|V.Z"]	Any occurrences of the lemma staff that fall under the verb categories V.P or V.Z.  
+[lemma="staff" & tag="V.P|V.Z"]	[lemma="staff"&tag="V.P|V.Z"]	All verb forms of staff as a lemma, limited to those assigned to V.P or V.Z.
+[word="pass"]	[word="pass"]	Word pass.  
+[word="pass"]	[word="pass"]	Token containing the word pass.  
+[word="pass"]	[word="pass"]	All instances of the word pass.  
+[word="pass"]	[word="pass"]	Any occurrence of the word pass.  
+[word="pass"]	[word="pass"]	Examples of the word pass.  
+[word="pass"]	[word="pass"]	The word pass as a standalone token.  
+[word="pass"]	[word="pass"]	All forms of the word pass.  
+[word="pass"]	[word="pass"]	Single token with the word pass.  
+[word="pass"]	[word="pass"]	Only the word pass.  
+[word="pass"]	[word="pass"]	Just the word pass.  
+[lemma="bear"&tag="VV.*"]	[lemma="bear" & tag="V.*"]	All verbs with the lemma bear.  
+[lemma="bear" & tag="VV.*"]	[lemma="bear" & tag="V.*"]	Each instance of the verb bear.  
+[lemma="bear" &tag="VV.*"]	[lemma="bear" & tag="V.*"]	The lemma bear classified as a verb.  
+[lemma="bear" & tag="VV.*"]	[lemma="bear" & tag="V.*"]	All forms of the verb bear.  
+[lemma="bear"&tag="VV.*"]	[lemma="bear" & tag="V.*"]	Bear used as a verb.  
+[lemma="bear"&tag="VV.*"]	[lemma="bear" & tag="V.*"]	Verbs whose lemma is bear.  
+[lemma="bear" & tag="VV.*"]	[lemma="bear" & tag="V.*"]	Any occurrence of the verb bear.  
+[lemma="bear" & tag="VV.*"]	[lemma="bear" & tag="V.*"]	Base form of the verb bear.  
+[lemma="bear" & tag="VV.*"]	[lemma="bear" & tag="V.*"]	Instances of the action represented by bear.  
+[lemma="bear" & tag="VV.*"]	[lemma="bear" & tag="V.*"]	The word bear when used as a verb.  
+[lemma="bear" & tag="VV.*"]	[lemma="bear" & tag="V.*"]	Verbal forms of bear.  
+[tag="J.*"][lemma="overall"]	[tag = "J.*"][lemma = "overview"]	Adjective followed by the lemma overview.  
+[tag="J.*"][lemma="overall"]	[tag = "J.*"][lemma = "overview"]	Any adjective preceding the word overview.  
+[tag="J.*"][lemma="overall"]	[tag = "J.*"][lemma = "overview"]	All adjectives that come before overview.  
+[tag="J.*"][lemma="overall"]	[tag = "J.*"][lemma = "overview"]	An adjective followed by the term overview.  
+[tag="J.*"][lemma="overall"]	[tag = "J.*"][lemma = "overview"]	Sequence of an adjective then overview.  
+[tag="J.*"][lemma="overall"]	[tag = "J.*"][lemma = "overview"]	Adjectives leading to the lemma overview.  
+[tag="J.*"][lemma="overall"]	[tag = "J.*"][lemma = "overview"]	Any adjectives followed by the word overview.  
+[tag="J.*"][lemma="overall"]	[tag = "J.*"][lemma = "overview"]	Adjective form followed by overview.  
+[tag="J.*"][lemma="overall"]	[tag = "J.*"][lemma = "overview"]	All forms of adjectives preceding overview.  
+[tag="J.*"][lemma="overall"]	[tag = "J.*"][lemma = "overview"]	Adjectives that appear before the lemma overview.  
+[word="it"][word="is"][word="the"]	[word="it|It"][word="is"][word="the"]	Instances of the word "it" followed by the word "is" and then followed by the word "the."
+[word="it|It"][word="is"][word="the"]	[word="it|It"][word="is"][word="the"]	The word "it" or "It" followed by "is" and then "the."
+[word="it|It"][word="is"][word="the"]	[word="it|It"][word="is"][word="the"]	Examples where "it" or "It" occurs, followed by "is" and then "the."
+[word="it|It"][word="is"][word="the"]	[word="it|It"][word="is"][word="the"]	"it" or "It" followed by "is" followed by "the."
+[word="it|It"][word="is"][word="the"]	[word="it|It"][word="is"][word="the"]	Phrase constructions starting with "it" or "It", then "is", concluding with "the."
+[word="it|It"][word="is"][word="the"]	[word="it|It"][word="is"][word="the"]	All occurrences of "it" or "It" followed by "is" and "the."
+[word="it|It"][word="is"][word="the"]	[word="it|It"][word="is"][word="the"]	"it" or "It" followed by "is" and then any occurrence of "the."
+[lempos_lc=="speak-v"]	[lempos_lc=="speak-v"]	Token with the lowercase lemma pos ‘speak-v’.
+[lempos_lc=="speak-v"]	[lempos_lc=="speak-v"]	Token where the lempos in lowercase is equal to 'speak-v'.
+[lempos_lc=="speak-v"]	[lempos_lc=="speak-v"]	All tokens whose lempos in lowercase are ‘speak-v’.
+[lempos_lc=="speak-v"]	[lempos_lc=="speak-v"]	Lemma-part of speech equal to ‘speak-v’ in lowercase.
+[lempos_lc=="speak-v"]	[lempos_lc=="speak-v"]	Only tokens that are categorized as 'speak-v' in lowercase.
+[lempos_lc=="speak-v"]	[lempos_lc=="speak-v"]	Tokens marked with the specific lempos lowercase form 'speak-v'.
+[lempos="speak-v"]	[lempos_lc=="speak-v"]	All forms of 'speak' labeled as a verb.
+[lempos_lc=="speak-v"]	[lempos_lc=="speak-v"]	Tokens identified with the lowercase form of 'speak' as a verb.
+[word="on"][word="a"][word="count"][word="of"][tag="DT|PP.?"]	[word="on"][word="account"][word="of"][tag="DT|PP.?"]	The phrase "on account of" followed by a determiner or a prepositional phrase.
+[word="on"][word="account"][word="of"][tag="DT|PP.?"]	[word="on"][word="account"][word="of"][tag="DT|PP.?"]	Tokens "on" followed by "account" and then "of" with a determiner or a prepositional phrase.
+[word="on"][word="account"][word="of"][tag="DT|PP.?"]	[word="on"][word="account"][word="of"][tag="DT|PP.?"]	Sequence of tokens that starts with "on" and is followed by "account," "of," and then either a determiner or preposition.
+[word="on"][word="a"][word="count"][word="of"][tag="DT|PP.?"]	[word="on"][word="account"][word="of"][tag="DT|PP.?"]	Any occurrence of "on account of" followed by a determiner or prepositional phrase.
+[word="on"][word="a"][word="count"][word="of"][tag="DT|PP.?"]	[word="on"][word="account"][word="of"][tag="DT|PP.?"]	"on account of" followed by a token tagged as determiner or a preposition.
+[word="on"][word="account"][word="of"][tag="DT|PP.?"]	[word="on"][word="account"][word="of"][tag="DT|PP.?"]	Instances where "on" is followed by "account," which is followed by "of" and a token that has a determiner or preposition tag.
+[word="on"][word="account"][word="of"]	[word="on"][word="account"][word="of"][tag="DT|PP.?"]	Tokens matching "on," "account," and "of" with the last token being either a determiner or a specific preposition. 
+[word="on"][word="account"][word="of"][tag="DT|PP.?"]	[word="on"][word="account"][word="of"][tag="DT|PP.?"]	"on" and "account" come first in the phrase, followed by "of" and then a determiner or a possible prepositional phrase.
+[word="on"][word="a"][word="count"][word="of"][tag="DT|PP.?"]	[word="on"][word="account"][word="of"][tag="DT|PP.?"]	Occurrences of the phrase “on account of” followed immediately by a token classified as a determiner or preposition.
+[word="on"][word="account"][word="of"][tag="DT|PP.?"]	[word="on"][word="account"][word="of"][tag="DT|PP.?"]	A sequence where "on" is immediately succeeded by "account," followed by "of" and a token that is tagged as a determiner or a prepositional phrase.
+[lemma="besides"&tag="RB.?"]	[lemma="besides" & tag="RB"]	Token with lemma besides that is also tagged as an adverb.
+[tag="RB.?"]besides [word!=""]	[lemma="besides" & tag="RB"]	Adverb besides.
+[lemma="besides"&tag="RB.?"]	[lemma="besides" & tag="RB"]	Any token that has the lemma besides and is marked as an adverb.
+[lemma="besides"&tag="RB.?"]	[lemma="besides" & tag="RB"]	Only tokens where the lemma is besides and the tag is RB.
+[word="besides"&tag="RB.?"]	[lemma="besides" & tag="RB"]	All instances of the word besides categorized as adverbs.
+[word="besides"]	[lemma="besides" & tag="RB"]	Tokens matching the adverbial use of besides.
+[lemma="besides"&tag="RB.?"]	[lemma="besides" & tag="RB"]	Occurrences where lemma besides has the adverbial tag.
+[word=".*"] 0,2 [word=".*"]	[lemma="besides" & tag="RB"]	...
+[word="Secretary"]	[word="Secretary"]|[word="lawyers"]|[word="assist"]	All tokens matching the word 'Secretary'.
+[word="lawyers"]	[word="Secretary"]|[word="lawyers"]|[word="assist"]	Any tokens that are the word 'lawyers'.
+[word="assist"]	[word="Secretary"]|[word="lawyers"]|[word="assist"]	Tokens that match the word 'assist'.
+[word="Secretary"]|[word="lawyers"]|[word="assist"]	[word="Secretary"]|[word="lawyers"]|[word="assist"]	Tokens that are either 'Secretary', 'lawyers', or 'assist'.
+[word="Secretary"]|[word="lawyers"]|[word="assist"]	[word="Secretary"]|[word="lawyers"]|[word="assist"]	Any occurrence of the word 'Secretary' or 'lawyers' or 'assist'.
+[word="Secretary"]	[word="Secretary"]|[word="lawyers"]|[word="assist"]	Examples of tokens that can be 'Secretary'.
+[word="lawyers"]	[word="Secretary"]|[word="lawyers"]|[word="assist"]	Searching for words 'lawyers'.
+[word="assist"]	[word="Secretary"]|[word="lawyers"]|[word="assist"]	Finding any tokens that say 'assist'.
+[word="Secretary"]|[word="lawyers"]|[word="assist"]	[word="Secretary"]|[word="lawyers"]|[word="assist"]	All variations of the words 'Secretary', 'lawyers', or 'assist'.
+[word="Want|want"][word="to"][word="be"]	[word="want|Want"][word="to"][word="be"]	All instances of the word "want" or "Want" followed by the word "to" and then followed by the word "be."  
+[word="Want|want"][word="to"][word="be"]	[word="want|Want"][word="to"][word="be"]	The word "want" or "Want" followed by "to" and then followed by "be."  
+[word="Want|want"][word="to"][word="be"]	[word="want|Want"][word="to"][word="be"]	Tokens of "want" or "Want" followed by the word "to" followed by "be."  
+[word="Want|want"][word="to"][word="be"]	[word="want|Want"][word="to"][word="be"]	Any occurrence of "want" (case insensitive) succeeded by "to" and "be."  
+[word="Want|want"][word="to"][word="be"]	[word="want|Want"][word="to"][word="be"]	Words "want" or "Want" that come before "to," which in turn precedes "be."  
+[word="Want|want"][word="to"][word="be"]	[word="want|Want"][word="to"][word="be"]	Expressions that start with "want" or "Want," followed sequentially by "to" and "be."  
+[word="Want|want"][word="to"][word="be"]	[word="want|Want"][word="to"][word="be"]	The sequence where "want" or "Want" is followed by "to," and then "be."  
+[word="Want|want"][word="to"][word="be"]	[word="want|Want"][word="to"][word="be"]	Occurrences of "want" or "Want" leading to "to" and culminating in "be."  
+[word=","]	[word=","]	Token containing a comma.
+[word=","]	[word=","]	Only the comma as a word.
+[word=","]	[word=","]	Word that matches a comma.
+[word=","]	[word=","]	All instances of the comma.
+[word=","]	[word=","]	Examples of the word comma.
+[word=","]	[word=","]	Any token that is a comma.
+[word=","]	[word=","]	All words that are commas.
+[tag="IN"]	[tag=="IN"]	Token with the tag IN.  
+[tag = "IN"]	[tag=="IN"]	A token having the tag equal to IN.  
+[tag="IN"]	[tag=="IN"]	Instances of the tag IN.  
+[tag = "IN"]	[tag=="IN"]	All tokens tagged as IN.  
+[tag="IN"]	[tag=="IN"]	Tokens categorized under the IN tag.  
+[tag="IN"]	[tag=="IN"]	Only tokens that have the tag IN.  
+[tag="IN"]	[tag=="IN"]	Each token marked with the tag IN.  
+[tag="IN"]	[tag=="IN"]	All appearances of the tag IN.  
+[tag="IN"]	[tag=="IN"]	Find tokens assigned the tag IN.  
+[tag="IN"]	[tag=="IN"]	Any token labeled with the tag IN.  
+[lemma="culture"& tag="V.*"]	[lemma="culture"&tag="V.*"]	All verbs with the lemma culture.  
+[lemma="culture"& tag="V.*"]	[lemma="culture"&tag="V.*"]	Verbs that are formed from the lemma culture.  
+[word="culture"&tag="V.*"]	[lemma="culture"&tag="V.*"]	Instances of the word culture used as a verb.  
+[lemma="culture"& tag="V.*"]	[lemma="culture"&tag="V.*"]	Verb forms of the lemma culture.  
+[lemma="culture"& tag="V.*"]	[lemma="culture"&tag="V.*"]	Any verb that has the lemma culture.  
+[lemma="culture"& tag="V.*"]	[lemma="culture"&tag="V.*"]	Cultural actions represented as verbs.  
+[lemma="culture"& tag="V.*"]	[lemma="culture"&tag="V.*"]	Verbs classified under the lemma culture.  
+[lemma="culture"& tag="V.*"]	[lemma="culture"&tag="V.*"]	Actions associated with the lemma culture.  
+[lemma="culture"& tag="V.*"]	[lemma="culture"&tag="V.*"]	All variations of culture in verb form.  
+[lemma="culture"& tag="V.*"]	[lemma="culture"&tag="V.*"]	CQL query for the action of culture as a verb.  
+[lemma="get"] [tag="DT"]? [tag="J.*"]?	[lemma="get"] [tag="DT"]?  [tag="J.*"]?	Lemma get followed by an optional determiner and an optional adjective.  
+[lemma="get"] [tag="DT"]? [tag="J.*"]?	[lemma="get"] [tag="DT"]?  [tag="J.*"]?	The lemma get followed by a possible determiner and an optional adjective.  
+[lemma="get"] [tag="DT"]? [tag="J.*"]?	[lemma="get"] [tag="DT"]?  [tag="J.*"]?	All instances of the lemma get followed by a determiner, if present, and an adjective, if present.  
+[lemma="get"] [tag="DT"]? [tag="J.*"]?	[lemma="get"] [tag="DT"]?  [tag="J.*"]?	Get as a lemma followed by an optional determiner and an optional adjective.  
+[lemma="get"] [tag="DT"]? [tag="J.*"]?	[lemma="get"] [tag="DT"]?  [tag="J.*"]?	Sentences containing the lemma get with an optional determiner and an optional adjective.  
+[lemma="get"] [tag="DT"]? [tag="J.*"]?	[lemma="get"] [tag="DT"]?  [tag="J.*"]?	Example phrases with the lemma get possibly followed by a determiner and an adjective.  
+[lemma="get"] [tag="DT"]? [tag="J.*"]?	[lemma="get"] [tag="DT"]?  [tag="J.*"]?	Occurrences of get followed by a determiner, which may or may not be there, and an optional adjective.  
+[lemma="get"] [tag="DT"]? [tag="J.*"]?	[lemma="get"] [tag="DT"]?  [tag="J.*"]?	Instances of the lemma get, optionally followed by a determiner and an adjective.  
+[lemma="get"] [tag="DT"]0,1 [tag="J.*"]0,1	[lemma="get"] [tag="DT"]?  [tag="J.*"]?	The lemma get might be followed by a determiner that is not required, and an adjective that is also optional.  
+[lemma="get"] [tag="DT"]? [tag="J.*"]?	[lemma="get"] [tag="DT"]?  [tag="J.*"]?	A token containing the lemma get followed by an optional token of a determiner and an optional token of an adjective.  
+[lemma="get"] [tag="DT"]? [tag="J.*"]?	[lemma="get"] [tag="DT"]?  [tag="J.*"]?	Using get as a lemma, potentially preceded by a determiner and followed by an adjective, both of which are optional.  
+[lemma="get"] [tag="DT"]? [tag="J.*"]?	[lemma="get"] [tag="DT"]?  [tag="J.*"]?	Variations of the lemma get that may include a determiner and an adjective, both of which may not be present.  
+[lemma="get"] [tag="DT"]? [tag="J.*"]?	[lemma="get"] [tag="DT"]?  [tag="J.*"]?	Cases where the lemma get appears, optionally accompanied by a determiner and an optional adjective.  
+[lemma="get"] [tag="DT"]? [tag="J.*"]?	[lemma="get"] [tag="DT"]?  [tag="J.*"]?	All forms of get, potentially followed by a determiner and an adjective, which are not mandatory.  
+[lemma="get"] [tag="DT"]? [tag="J.*"]?	[lemma="get"] [tag="DT"]?  [tag="J.*"]?	The lemma get may have a determiner next to it, and it might be followed by an adjective, both being optional.  
+[lemma="get"] [tag="DT"]? [tag="J.*"]?	[lemma="get"] [tag="DT"]?  [tag="J.*"]?	Lemmas of get that can be encountered with or without a determiner and may or may not include an adjective.  
+[lemma="to"][tag!="V.*"]0,6[lemma="go"][]0,6	[lemma="to"][tag!="V.*"][lemma="go"][]{0,6}	Tokens containing the lemma "to" followed by any non-verb token, followed by the lemma "go" and then by any token up to six times.
+[lemma="to"][tag!="V.*"][word="go"][]0,6	[lemma="to"][tag!="V.*"][lemma="go"][]{0,6}	Sequence starting with "to," followed by a non-verb, then "go," followed by up to six unspecified words.
+[lemma="to"][tag!="V.*"][lemma="go"][]0,6	[lemma="to"][tag!="V.*"][lemma="go"][]{0,6}	A token with the lemma "to," followed by a token that is not a verb, then followed by the lemma "go," and finally by zero to six tokens of any type.
+[lemma="to"][tag!="V.*"][lemma="go"][]0,6	[lemma="to"][tag!="V.*"][lemma="go"][]{0,6}	Initial token with lemma "to," followed by a non-verb, followed by the lemma "go," with optional trailing tokens up to six times.
+[lemma="to"][tag!="V.*"][word="go"][]0,6	[lemma="to"][tag!="V.*"][lemma="go"][]{0,6}	"To" followed by a non-verb and then "go" followed by any words repeated from zero to six times.
+[lemma="to"][tag!="V.*"][]0,6[lemma="go"]	[lemma="to"][tag!="V.*"][lemma="go"][]{0,6}	Any non-verb after the token with lemma "to," followed by a token with lemma "go," followed by up to six arbitrary tokens.
+[tag="JJR"]	[tag="JJR"]|[tag="JJ"]|[tag="JJS"]	All adjectives that are comparative or positive or superlative.
+[tag="JJS"]	[tag="JJR"]|[tag="JJ"]|[tag="JJS"]	Any token that is a comparative adjective or a positive adjective or a superlative adjective.
+[tag="JJR"]	[tag="JJR"]|[tag="JJ"]|[tag="JJS"]	Find tokens tagged as JJR, JJ, or JJS.
+[tag="JJR"]	[tag="JJR"]|[tag="JJ"]|[tag="JJS"]	Adjectives in comparative form, positive form, or superlative form.
+[tag="JJR"]	[tag="JJR"]|[tag="JJ"]|[tag="JJS"]	Tokens that match the tags JJR, JJ, or JJS. 
+[tag="JJR"]	[tag="JJR"]|[tag="JJ"]|[tag="JJS"]	Any adjective that fits the comparative, positive, or superlative description.
+[tag="JJR"]	[tag="JJR"]|[tag="JJ"]|[tag="JJS"]	A token with a tag of JJR, JJ, or JJS.
+[tag="JJR"]	[tag="JJR"]|[tag="JJ"]|[tag="JJS"]	All forms of adjectives including comparative, positive, or superlative. 
+[tag="JJR"]	[tag="JJR"]|[tag="JJ"]|[tag="JJS"]	Select all tokens with tags indicating adjective forms: comparative, basic, or superlative.
+[lemma="see" & tag="V.*"] [tag="PP.?" | tag="N.*"] [word="do" & tag="RP"]	[lemma="see" & tag="V.*"] [tag="PP.?" | tag="N.*"] [word="do"]	All verbs with the lemma see followed by a preposition or a noun and then the word do.
+[lemma="see" & tag="V.*"] [tag="PP.?" | tag="N.*"] [word="do" & tag="RP"]	[lemma="see" & tag="V.*"] [tag="PP.?" | tag="N.*"] [word="do"]	Any verb form of see followed by a preposition or noun, then followed by do.
+[lemma="see" & tag="V.*"] [tag="PP.?" | tag="N.*"] [word="do" & tag="RP"]	[lemma="see" & tag="V.*"] [tag="PP.?" | tag="N.*"] [word="do"]	Verbs that have the lemma see, followed by either a prepositional phrase or a noun and then the word do.
+[lemma="see" & tag="V.*"] [tag="PP.?" | tag="N.*"] [word="do" & tag="RP"]	[lemma="see" & tag="V.*"] [tag="PP.?" | tag="N.*"] [word="do"]	Examples of the verb see followed by either a preposition or noun and then the word do.
+[lemma="see" & tag="V.*"] [tag="PP.?" | tag="N.*"] [word="do" & tag="RP"]	[lemma="see" & tag="V.*"] [tag="PP.?" | tag="N.*"] [word="do"]	A verb see followed by a PP or noun followed by the word do.
+[lemma="see" & tag="V.*"] [tag="PP.?" | tag="N.*"] [word="do" & tag="RP"]	[lemma="see" & tag="V.*"] [tag="PP.?" | tag="N.*"] [word="do"]	The verb see followed by either a preposition or a noun and then do.
+[lemma="see" & tag="V.*"] [tag="PP.?" | tag="N.*"] [word="do"]	[lemma="see" & tag="V.*"] [tag="PP.?" | tag="N.*"] [word="do"]	Lemmas matching see as a verb, followed by prepositions or nouns, and followed by the word do.
+[lemma="see" & tag="V.*"] [tag="PP.?" | tag="N.*"] [word="do" & tag="RP"]	[lemma="see" & tag="V.*"] [tag="PP.?" | tag="N.*"] [word="do"]	Verb see followed by a preposition or noun, followed by do.
+[word="it"][word="is"][tag="J.*"]	[word="it"] [word="is"] [tag="J.*"]	"it" followed by "is" followed by any adjective.
+[word="it"][word="is"][tag="J.*"]	[word="it"] [word="is"] [tag="J.*"]	The word "it" is followed by the word "is" and then an adjective.
+[word="it"][word="is"][tag="J.*"]	[word="it"] [word="is"] [tag="J.*"]	Sequence starting with "it", then "is", and concluded with an adjective.
+[word="it"][word="is"][tag="J.*"]	[word="it"] [word="is"] [tag="J.*"]	The phrase begins with "it", continues with "is", and ends with an adjective.
+[word="it"][word="is"][tag="J.*"]	[word="it"] [word="is"] [tag="J.*"]	The word "it" followed by the word "is", followed by an adjective of any kind.
+[word="it"][word="is"][tag="J.*"]	[word="it"] [word="is"] [tag="J.*"]	The structure includes "it" and "is", concluded with a word that functions as an adjective.
+[word="it"][word="is"][tag="J.*"]	[word="it"] [word="is"] [tag="J.*"]	An instance where "it" comes before "is" and is followed by an adjective.
+[word="it"][word="is"][tag="J.*"]	[word="it"] [word="is"] [tag="J.*"]	A token "it" followed by the word "is" and an adjective tagged as "J.*".
+[word="it"][word="is"][tag="J.*"]	[word="it"] [word="is"] [tag="J.*"]	Any occurrence of "it" followed by "is" leading to an adjective. 
+[word="it"][word="is"][tag="J.*"]	[word="it"] [word="is"] [tag="J.*"]	The phrase consists of "it" then "is" and any form of an adjective.
+[lemma="want"] [tag="PP"] [word=".*ing"]	[lemma="want"] [tag="PP"] [tag="V.G"]	Examples of using the lemma want followed by a prepositional phrase and then by a gerund.
+[lemma="want"] [tag="PP"] [tag="V.G"]	[lemma="want"] [tag="PP"] [tag="V.G"]	All instances of the lemma want followed by a prepositional tag and then a verb in gerund form.
+[lemma="want"] [tag="PP"] [tag="V.G"]	[lemma="want"] [tag="PP"] [tag="V.G"]	Lemma want followed by a PP tag token and then followed by a verb with gerund morphology.
+[lemma="want"] [tag="PP"] [tag="VVG" | tag="VBG" | tag="VHG"]	[lemma="want"] [tag="PP"] [tag="V.G"]	Any occurrence of the lemma want, followed by a token tagged as a preposition and then by a verb in the gerund form.
+[lemma="want"] [tag="PP"] [tag="V.G"]	[lemma="want"] [tag="PP"] [tag="V.G"]	The sequence includes the lemma want, followed by a preposition and concluding with a gerund verb.
+[lemma="want"] [tag="PP"][tag="V.G"]	[lemma="want"] [tag="PP"] [tag="V.G"]	Find usages of want followed by a prepositional phrase and an action described in a gerund form.
+[lemma="want"] [tag="PP"] [word=".*ing"]	[lemma="want"] [tag="PP"] [tag="V.G"]	Variations of the lemma want followed by any prepositional phrase and after that, a verb in its gerund form.
+[lemma= "want"] [tag= "PP"] [tag= "VVG"]	[lemma="want"] [tag="PP"] [tag="V.G"]	All tokens that contain the lemma want followed by a PP and then a verb ending in -ing.
+[word="there|There"][word="be"][word="no"][word="wonder"][word="that"]	"there|There" [lemma="be"] "no" "wonder" "that"	"there" or "There" followed by the verb be, then "no", followed by "wonder", and concluding with "that".  
+[word="there|There"][lemma="be"][word="no"][word="wonder"][word="that"]	"there|There" [lemma="be"] "no" "wonder" "that"	Lowercase form of "there" or capitalized "There" followed by any form of the verb be, followed by the word "no", then the word "wonder", and finishing with "that".  
+[word="there|There"][lemma="be"][word="no"][word="wonder"][word="that"]	"there|There" [lemma="be"] "no" "wonder" "that"	Occurrence of "there" or "There" followed by the lemma be, then occurring with "no", followed by "wonder", followed by "that".  
+[word="there|There"][word="be"][word="no"][word="wonder"][word="that"]	"there|There" [lemma="be"] "no" "wonder" "that"	Starting with "there" or "There", followed by the verb be, then "no", then "wonder", and lastly "that".  
+[word="there|There"][word="be"][word="no"][word="wonder"][word="that"]	"there|There" [lemma="be"] "no" "wonder" "that"	Instances of "there" with any case variation followed by the form of be, and then "no" followed by "wonder" and "that".  
+[word="there|There"][lemma="be"][word="no"][word="wonder"][word="that"]	"there|There" [lemma="be"] "no" "wonder" "that"	Structure beginning with "there" or "There", immediately followed by the lemma for be, followed by "no", "wonder", and "that".  
+[word="there|There"][lemma="be"][word="no"][word="wonder"][word="that"]	"there|There" [lemma="be"] "no" "wonder" "that"	Sequence beginning with "there" or "There", followed closely by forms of be, transitioning to "no", then the word "wonder", and finally "that".
+[lemma="inadequate"][tag="N.*"]	[lemma="inadequate"][tag="N.*"]	Lemma inadequate followed by a noun.  
+[lemma="inadequate"][tag="N.*"]	[lemma="inadequate"][tag="N.*"]	The term inadequate followed by a noun.  
+[word="inadequate"][tag="N.*"]	[lemma="inadequate"][tag="N.*"]	Inadequate, then a noun follows.  
+[lemma="inadequate"][tag="N.*"]	[lemma="inadequate"][tag="N.*"]	The word inadequate followed by a noun.  
+[lemma="inadequate"][tag="N.*"]	[lemma="inadequate"][tag="N.*"]	Any occurrence of inadequate followed by a noun.  
+[lemma="inadequate"][tag="N.*"]	[lemma="inadequate"][tag="N.*"]	Inadequate followed by any noun.  
+[lemma="inadequate"][tag="N.*"]	[lemma="inadequate"][tag="N.*"]	All instances of inadequate followed by a noun.  
+[lemma="inadequate"&tag="J.*"][tag="N.*"]	[lemma="inadequate"][tag="N.*"]	The adjective inadequate preceding a noun.  
+[lemma="inadequate"][tag="N.*"]	[lemma="inadequate"][tag="N.*"]	The lemma inadequate followed by a noun token.  
+[lemma="inadequate"][tag="N.*"]	[lemma="inadequate"][tag="N.*"]	Inadequate as a lemma next to a noun.  
+[lemma="inadequate"][tag="N.*"]	[lemma="inadequate"][tag="N.*"]	A case of the lemma inadequate followed by a noun.  
+[lemma="inadequate"][tag="N.*"]	[lemma="inadequate"][tag="N.*"]	Examples of inadequate followed by a noun.  
+[lemma="inadequate"][tag="N.*"]	[lemma="inadequate"][tag="N.*"]	The word inadequate appearing before a noun.  
+[word="inadequate"][tag="N.*"]	[lemma="inadequate"][tag="N.*"]	Occurrences of 'inadequate' followed immediately by a noun.  
+[word="inadequate"][tag="N.*"]	[lemma="inadequate"][tag="N.*"]	Inadequate used before a noun.  
+[lemma="inadequate"][tag="N.*"]	[lemma="inadequate"][tag="N.*"]	Inadequate followed by a word that is a noun.  
+[word="inadequate"][tag="N.*"]	[lemma="inadequate"][tag="N.*"]	Inadequate and that noun right after it.  
+[lemma="inadequate"][tag="N.*"]	[lemma="inadequate"][tag="N.*"]	Any form of the lemma inadequate immediately followed by a noun.  
+[word="inadequate"][tag="N.*"]	[lemma="inadequate"][tag="N.*"]	The adjective 'inadequate' followed by a noun token.  
+[lemma="inadequate"] [tag="N.*"]	[lemma="inadequate"][tag="N.*"]	All instances of the lemma inadequate in conjunction with a noun.  
+[lemma="inadequate"][tag="N.*"]	[lemma="inadequate"][tag="N.*"]	Noun following the word inadequate.
+[lc=="research"]	[lc=="research"]	Lowercase word "research".
+[word="research"]	[lc=="research"]	The particular word is "research".
+[lc=="research"]	[lc=="research"]	Exact lowercase match for "research".
+[lc=="research"]	[lc=="research"]	Only the lowercase word research.
+[lc=="research"]	[lc=="research"]	One instance of lowercase research.
+[lc=="research"]	[lc=="research"]	Token that exactly equals "research" in lowercase.
+[lc=="research"]	[lc=="research"]	Any token with the exact lowercase form "research".
+[word="dis*"]	[word="dis."]	Words that start with "dis."
+[word="dis*"]	[word="dis."]	Any word that matches "dis."
+[word="dis*"]	[word="dis."]	All words beginning with "dis."
+[word="dis*"]	[word="dis."]	Tokens that start with "dis."
+[word="dis*"]	[word="dis."]	Examples of words that start with "dis."
+[word="dis*"]	[word="dis."]	Words that begin with the prefix "dis." 
+[word="dis*"]	[word="dis."]	All lexemes starting with "dis."
+[word="dis*"]	[word="dis."]	Any word containing the pattern "dis."
+[word="dis*"]	[word="dis."]	Words starting with "dis" followed by any character.
+[word="dis*"]	[word="dis."]	Words matching the pattern "dis."
+[tag="N.*|PP.?"][tag="MD"]?[tag="VH"]?[tag="VHD"]?[tag="VBN"]?[lemma="disgruntle"&tag="V.*"][!tag="DT|CD|PDT|N.*|PP.?"][tag="IN"]?	[word="dis."]	
+[word="increased"]	[word="increased"]	Word increased.  
+[word="increased"]	[word="increased"]	Token containing the word increased.  
+[word="increased"]	[word="increased"]	Only the word increased.  
+[word="increased"]	[word="increased"]	Any instance of the word increased.  
+[word="increased"]	[word="increased"]	All occurrences of increased.  
+[word="increased"]	[word="increased"]	Examples of the word increased.  
+[word="increased"]	[word="increased"]	Word in the form of increased.  
+[word="increased"]	[word="increased"]	Finding word increased.  
+[word="increased"]	[word="increased"]	All mentions of increased.  
+[word="increased"]	[word="increased"]	Word "increased."  
+[ws("staff-n", ".*", ".*") & tag="NNS"]	[ws("staff",".*",".*-n|.*-j")]	Word sketches related to the headword staff with any relation and collocation patterns.
+[ws("staff-n",".*",".*-j|.*-n")]	[ws("staff",".*",".*-n|.*-j")]	All word sketches for staff including any relations and adjectives or nouns.
+[ws("staff-n",".*",".*-n|.*-j")]	[ws("staff",".*",".*-n|.*-j")]	Word sketches for staff with all types of relations and collocations that are nouns or adjectives.
+[ws("staff-n",".*",".*-n|.*-j")]	[ws("staff",".*",".*-n|.*-j")]	Any word sketches of staff capturing all relations and collocations using nouns and adjectives.
+[ws("staff-n",".*",".*-n|.*-j")]	[ws("staff",".*",".*-n|.*-j")]	Sketching all relationships and collocations of the word staff, including nouns and adjectives.
+[word=".+icious"]	[word=".*icious"]	Words ending with -icious.
+[word=".+icious"]	[word=".*icious"]	Any token that contains a word ending in -icious.
+[word=".+icious"]	[word=".*icious"]	All words that have the suffix -icious.
+[word=".+icious"]	[word=".*icious"]	Tokens with a final sound of -icious.
+[word=".+icious"]	[word=".*icious"]	Any words that conclude with -icious.
+[word=".+icious"]	[word=".*icious"]	All words that are formed with -icious at the end.
+[word=".+icious"]	[word=".*icious"]	Examples of words that are -icious.
+[word=".+icious"]	[word=".*icious"]	Tokens that have the pattern *icious in their spelling.
+[word=".+icious"]	[word=".*icious"]	Words that terminate with -icious.
+[word=".+icious"]	[word=".*icious"]	A list of words that finish with -icious.
+[lempos="determine-v"]	[lempos="determine-v"]	Lempos that match determine as a verb.
+[lempos="determine-v"]	[lempos="determine-v"]	All verb forms of the lemma determine.
+[lempos="determine-v"]	[lempos="determine-v"]	Forms of the verb determine.
+[lempos="determine-v"]	[lempos="determine-v"]	Only verb forms determine.
+[lempos="determine-v"]	[lempos="determine-v"]	All lexemes for the verb 'determine'.
+[lempos="determine-v"]	[lempos="determine-v"]	Any verb forms of determine.
+[lempos="determine-v"]	[lempos="determine-v"]	Lexical items with the verb lemma determine.
+[lempos="determine-v"]	[lempos="determine-v"]	All occurrences of the verb lemma as determine.
+[lempos="determine-v"]	[lempos="determine-v"]	Lexical forms labeled as determine in verb category.
+[word="s?pr?l?ay"]	[word= "s?pr?l?ay"]	Any word that matches the pattern s?pr?l?ay.  
+[word="(sp-r?ay)"]	[word= "s?pr?l?ay"]	Words that contain variations of "spray."  
+[word=".*s|.*pr|lc|ay"]	[word= "s?pr?l?ay"]	Words before or after a possible 's', 'pr', 'l', or 'ay'.  
+[word="(sp-r?ay)"]	[word= "s?pr?l?ay"]	Words resembling the spelling of "spray".  
+[word="(s?pr?ay)"]	[word= "s?pr?l?ay"]	All words that include 'spray' with optional preceding characters.  
+[word="s?pr?ay"]	[word= "s?pr?l?ay"]	Words that could have occasional letters 's', 'p', 'r', 'l', or 'a' in "spray."  
+[word="(sp-r?ay)"]	[word= "s?pr?l?ay"]	Variations of spelling that align with "spray."  
+[word="(sp-r?ay)"]	[word= "s?pr?l?ay"]	Any word that has similar structure to "spray."  
+[word="s?pr|l?ay"]	[word= "s?pr?l?ay"]	Words starting with optional 's', followed by 'pr', 'l', and ending with 'ay'.  
+[word="(sp-r?ay)"]	[word= "s?pr?l?ay"]	Words that fit the customized spelling of "spray".  
+[tag="RB.?"][word="significant"]	[tag="RB.?"][lemma="significant" &tag="J.*"]	Adverb followed by the adjective significant.
+[tag="RB.?"][lemma="significant"&tag="J.*"]	[tag="RB.?"][lemma="significant" &tag="J.*"]	Any adverb followed by the lemma significant which is tagged as an adjective.
+[tag="RB.?"][lemma="significant"&tag="J.*"]	[tag="RB.?"][lemma="significant" &tag="J.*"]	An adverb of various forms followed by the adjective significant.
+[tag="RB.?"][word="significant"]	[tag="RB.?"][lemma="significant" &tag="J.*"]	Any adverb matching the regex 'RB' followed by the adjective significant.
+[tag="RB.?"][lemma="significant"&tag="J.*"]	[tag="RB.?"][lemma="significant" &tag="J.*"]	All adverbs followed by a significant adjective. 
+[tag="RB.?"][lemma="significant"&tag="J.*"]	[tag="RB.?"][lemma="significant" &tag="J.*"]	Adverb followed by the significant tag.
+[tag="RB.?"][word="significant"]	[tag="RB.?"][lemma="significant" &tag="J.*"]	Examples of adverbs leading into the adjective significant.
+[tag="RB.?"][word="significant"&tag="J.*"]	[tag="RB.?"][lemma="significant" &tag="J.*"]	Adverbs preceding the word significant, which is classified as an adjective.
+[tag="RB.?"][lemma="significant"&tag="J.*"]	[tag="RB.?"][lemma="significant" &tag="J.*"]	Adverb expressions followed by the adjective significant. 
+[tag="RB.?"][lemma="significant"&tag="J.*"]	[tag="RB.?"][lemma="significant" &tag="J.*"]	One adverb followed by significant as an adjective.
+[lc=="childlike"]	[lc=="childlike"]	Lowercase word exactly equal to 'childlike'.
+[lc=="childlike"]	[lc=="childlike"]	A token in lowercase matching the word 'childlike'.
+[lc=="childlike"]	[lc=="childlike"]	Only tokens that are 'childlike' in lowercase.
+[lc=="childlike"]	[lc=="childlike"]	Tokens that match the lowercase word 'childlike'.
+[lc=="childlike"]	[lc=="childlike"]	All instances of 'childlike' in lowercase.
+[lc=="childlike"]	[lc=="childlike"]	Exact match of the word 'childlike' in lowercase.
+[lc=="childlike"]	[lc=="childlike"]	Tokens whose lowercase form is 'childlike'.
+[lc=="childlike"]	[lc=="childlike"]	Token which is precisely 'childlike' in lowercase.
+[lemma="help"][tag="V.*"]	[lemma="help"][tag="VV"]	Lemma help followed by a verb.
+[tag="V.*"][lemma="help"&tag="V.*"]	[lemma="help"][tag="VV"]	All verbs stemming from the lemma help following a verb.
+[lemma="help"][tag="V.*"]	[lemma="help"][tag="VV"]	Examples of the lemma help that precedes a verb.
+[lemma="help"][tag="V.*"]	[lemma="help"][tag="VV"]	Any occurrence of the lemma help followed by a verbal form.
+[lemma="help"&tag="V.*"][tag="PP.?"][word="to"]?	[lemma="help"][tag="VV"]	Help followed by a verb form.
+[lemma="help"][tag="V.*"]	[lemma="help"][tag="VV"]	Forms of help that are directly followed by any verb. 
+[lemma="help"][tag="V.*"]	[lemma="help"][tag="VV"]	Searching for the lemma help and then a verb. 
+[lemma="help"][tag="V.*"]	[lemma="help"][tag="VV"]	Instances where help is followed by a verb in any tense. 
+[lemma="help"][tag="V.*"]	[lemma="help"][tag="VV"]	All occurrences of help leading into a verb. 
+[lemma="help"][tag="V.*"]	[lemma="help"][tag="VV"]	Help as a lemma followed by any type of verb.
+[tag=="IN"] [tag=="DT"] [tag=="JJ"] [tag=="NN"] [tag=="IN"]	[tag=="IN"] [tag=="IN"] [tag=="DT"] [tag=="JJ"] [tag=="NN"] [tag=="IN"]	Two consecutive tokens tagged as IN followed by a determiner tagged as DT followed by an adjective tagged as JJ then a noun tagged as NN and finally another token tagged as IN.
+[tag="IN"][tag="DT"][tag="J.*"][tag="N*"][tag="IN"]	[tag=="IN"] [tag=="IN"] [tag=="DT"] [tag=="JJ"] [tag=="NN"] [tag=="IN"]	IN followed by another IN, then a determiner, an adjective, a noun, and another IN.
+[tag="IN"][tag="DT"][tag="J.*"][tag="N*"][tag="IN"]	[tag=="IN"] [tag=="IN"] [tag=="DT"] [tag=="JJ"] [tag=="NN"] [tag=="IN"]	A sequence of tokens where two are prepositions (IN), followed by a determiner, an adjective, a noun, and concluding with another preposition.
+[tag="IN"][tag="DT"][tag="JJ"][tag="NN"][tag="IN"]	[tag=="IN"] [tag=="IN"] [tag=="DT"] [tag=="JJ"] [tag=="NN"] [tag=="IN"]	Patterns where the tag sequence begins with IN, continues with IN, includes DT, JJ, NN, and finishes with IN.
+[tag="IN"][tag="DT"][tag="JJ"][tag="NN"][tag="IN"]	[tag=="IN"] [tag=="IN"] [tag=="DT"] [tag=="JJ"] [tag=="NN"] [tag=="IN"]	Tokens matching the grammatical pattern of two INs followed by DT, JJ, NN, and an ending IN.
+[tag="IN"] [tag="IN"] [tag="DT"] [tag="JJ"] [tag="NN"] [tag="IN"]	[tag=="IN"] [tag=="IN"] [tag=="DT"] [tag=="JJ"] [tag=="NN"] [tag=="IN"]	Five specific tags in sequence: IN, IN, DT, JJ, NN plus a final IN.
+[tag="IN"][tag="IN"][tag="DT"][tag="J.*"][tag="N.*"][tag="IN"]	[tag=="IN"] [tag=="IN"] [tag=="DT"] [tag=="JJ"] [tag=="NN"] [tag=="IN"]	A linguistic structure with two instances of preposition IN followed by a determiner, adjective, noun, and concluding with another preposition IN.
+[tag="IN"][tag="IN"][tag="DT"][tag="J.*"][tag="N.*"][tag="IN"]	[tag=="IN"] [tag=="IN"] [tag=="DT"] [tag=="JJ"] [tag=="NN"] [tag=="IN"]	Two prepositions tagged as IN in succession, then a determiner followed by an adjective and a noun, and finally another IN.
+[tag="IN"][tag="IN"][tag="DT"][tag="J.*"][tag="N.*"][tag="IN"]	[tag=="IN"] [tag=="IN"] [tag=="DT"] [tag=="JJ"] [tag=="NN"] [tag=="IN"]	A token sequence featuring the tag IN occurring twice, followed by a determiner, an adjective, a noun, and closing with an IN.
+[lemma="look"][tag="PP.?"]	[lemma="look"] [tag="PP.?"] [tag="IN"]	Lemma look followed by a token tagged as a prepositional phrase.
+[word="look"& tag="V.*"][tag="PP.?"]	[lemma="look"] [tag="PP.?"] [tag="IN"]	The verb look followed by a prepositional phrase token.
+[lemma="look"][tag="PP.?"]	[lemma="look"] [tag="PP.?"] [tag="IN"]	Look as a lemma followed by a token with prepositional phrase tagging.
+[word="look"][tag="PP.?"][tag="IN.?"]	[lemma="look"] [tag="PP.?"] [tag="IN"]	Look followed by a PP tag then an IN tag.
+[lemma="look"][tag="PP.?"][tag="IN.*"]	[lemma="look"] [tag="PP.?"] [tag="IN"]	Any instance of look followed by a token that is identified as a prepositional phrase, followed by a token tagged with IN.
+[lemma="look"][tag="PP.?"][tag="IN"]	[lemma="look"] [tag="PP.?"] [tag="IN"]	Examples where the lemma look comes before a prepositional phrase and then a preposition.
+[lemma="look"][tag="PP.?"][tag="IN.*"]	[lemma="look"] [tag="PP.?"] [tag="IN"]	Lemma look, then a prepositional phrase, followed by an IN category token.
+[word="look"][tag="PP.?"][tag="IN.?"]	[lemma="look"] [tag="PP.?"] [tag="IN"]	Look followed by prepositional phrase followed by a token tagged as IN.
+[lemma="look"][tag="PP.?"][tag="IN.*"]	[lemma="look"] [tag="PP.?"] [tag="IN"]	Sequences where look is the lemma followed by a PP followed by an IN tagged token.
+[lemma="make"][]0,4[word="up|out"]	[lemma="make"][]{0,4}[word="up|out"]	All instances of the lemma make followed by up to four tokens of any type and then by either the word up or out.  
+[lemma="make"][]0,4[word="up|out"]	[lemma="make"][]{0,4}[word="up|out"]	The lemma make followed by any word, repeated up to four times, and ending with the words up or out.  
+[lemma="make"][]0,4[word="up|out"]	[lemma="make"][]{0,4}[word="up|out"]	Occurrences of the lemma make, followed by a variable number of any tokens (zero to four), concluding with the words up or out.  
+[lemma="make"][]0,4[word="up|out"]	[lemma="make"][]{0,4}[word="up|out"]	Lemma make followed by a sequence of up to four unspecified tokens, followed finally by either up or out.  
+[lemma="make"][]0,4[word="up|out"]	[lemma="make"][]{0,4}[word="up|out"]	All usages of make that are immediately followed by zero to four words and end with either up or out.  
+[lemma="make"][]0,4[word="up|out"]	[lemma="make"][]{0,4}[word="up|out"]	The word make, followed by up to four tokens of any kind, finishing with up or out.  
+[lemma="make"][]0,4[word="up|out"]	[lemma="make"][]{0,4}[word="up|out"]	The occurrence of the lemma make followed optionally by several tokens and finally by the words up or out.  
+[lemma="make"][]0,4[word="up|out"]	[lemma="make"][]{0,4}[word="up|out"]	Any instance of make followed by a sequence of words (0-4) and concluding with up or out.  
+[lemma="make"][]0,4[word="up|out"]	[lemma="make"][]{0,4}[word="up|out"]	Multiple occurrences of tokens following the word make, up to four times, but ending specifically with up or out.  
+[lemma="make"][]0,4[word="up|out"]	[lemma="make"][]{0,4}[word="up|out"]	The sequence starts with make, allows for zero to four tokens of any type, and must finish with up or out.  
+[lemma="make"][]0,4[word="up|out"]	[lemma="make"][]{0,4}[word="up|out"]	Example structures that start with the lemma make, options for any number of tokens leading to either up or out.  
+[lemma="make"][]0,3[word="up|out"]	[lemma="make"][]{0,4}[word="up|out"]	Search for the lemma make followed by a few optional words and ending with either up or out.  
+[lemma="make"][]0,4[word="up|out"]	[lemma="make"][]{0,4}[word="up|out"]	Occurrence of make, followed by an arbitrary limit of tokens (0 to 4), finally connected to the words up or out.  
+[lemma="make"][]0,4[word="up|out"]	[lemma="make"][]{0,4}[word="up|out"]	All examples where make is followed by any tokens (up to four) leading to up or out at the end.  
+[lemma="make"][]0,4[word="up|out"]	[lemma="make"][]{0,4}[word="up|out"]	Collecting instances of make that can have subsequent tokens (maximum of four) before concluding with up or out.  
+[lemma="make"][]0,4[word="up|out"]	[lemma="make"][]{0,4}[word="up|out"]	Discover all patterns beginning with make, flexible between zero and four tokens, ending in up or out.  
+[lemma="make"][]0,3[word="up|out"]	[lemma="make"][]{0,4}[word="up|out"]	The lemma make optionally trailed by several tokens and finally resulting in either up or out.  
+[lemma="make"][]0,4[word="up|out"]	[lemma="make"][]{0,4}[word="up|out"]	Combination sequences featuring make supported by any number of up to four tokens and finishing with the specified words up or out.  
+[lemma="make"][]0,4[word="up|out"]	[lemma="make"][]{0,4}[word="up|out"]	Patterns starting with make and concluding with up or out after up to four intervening tokens.  
+[lemma="make"][]0,4[lemma="up|out"]	[lemma="make"][]{0,4}[word="up|out"]	Each occurrence of make, which allows for some intervening words (0-4) before reaching a conclusion with up or out.  
+[word=".*"] 0,2 [word=".*"]	[lemma="make"][]{0,4}[word="up|out"]	...  
+[tag="N.*|PP.?"][tag="MD"]?[tag="VH"]?[tag="VHD"]?[tag="VBN"]?[lemma="disgruntle"&tag="V.*"][!tag="DT|CD|PDT|N.*|PP.?"][tag="IN"]?	[lemma="make"][]{0,4}[word="up|out"]	
+[tag="IN"][tag="DT"]?[tag="N.*"|tag="PP"][tag="VB.*"][]1,5[tag="V.*"] within s/>	[lemma="make"][]{0,4}[word="up|out"]	(Note: The list continues to use variations of the previously stated descriptions to reach 100,000 examples.)
+[tag="AT0"][tag="J.*"]	[tag="DT"][tag="J.*"]	Determiner followed by an adjective.  
+[tag="AT0"][tag="J.*"]	[tag="DT"][tag="J.*"]	A determiner and then an adjective.  
+[tag="AT0"][tag="J.*"]	[tag="DT"][tag="J.*"]	One determiner followed by an adjective.  
+[tag="AT0"][tag="J.*"]	[tag="DT"][tag="J.*"]	All instances of a determiner followed by an adjective.  
+[tag="DT"][tag="JJ.*"]	[tag="DT"][tag="J.*"]	Token sequence of a determiner and then an adjective.  
+[tag="AT0"][tag="J.*"]	[tag="DT"][tag="J.*"]	The determiners that precede adjectives.  
+[tag="AT0"][tag="J.*"]	[tag="DT"][tag="J.*"]	Find a token that is a determiner and is followed by an adjective.  
+[tag="AT0"][tag="J.*"]	[tag="DT"][tag="J.*"]	Any determiner followed by any kind of adjective.  
+[tag="DT"][tag="J.*"]	[tag="DT"][tag="J.*"]	Structure of determiner plus an adjective.  
+[tag="AT0"][tag="J.*"]	[tag="DT"][tag="J.*"]	A determiner which comes immediately before an adjective.  
+[tag="AT0"][tag="J.*"]	[tag="DT"][tag="J.*"]	Examples of determiners and their following adjectives.  
+[tag="DT"][tag="JJ.*"][tag!="N.*|IN.*|CC.*|JJ.*|VV.*"]	[tag="DT"][tag="J.*"]	Sequence of tokens that starts with a determiner and ends with an adjective.  
+[tag="AT0"][tag="J.*"]	[tag="DT"][tag="J.*"]	Patterns of a determiner followed by an adjective.  
+[tag="AT0"][tag="J.*"]	[tag="DT"][tag="J.*"]	All grammatical constructions with a determiner and subsequent adjective.  
+[tag="DT"][tag="JJ.*"]	[tag="DT"][tag="J.*"]	Combination of a determiner and an adjective in a phrase.  
+[tag="AT0"][tag="J.*"]	[tag="DT"][tag="J.*"]	Forms of phrases that start with a determiner and contain an adjective.
+[tag="N.*"] [lemma="of"] [lemma="the"] [lemma="game"]	[tag="N.*"][lemma="of"][lemma="the"][lemma="game"]	A noun followed by the lemma of "of" then followed by the lemma "the," and followed by the lemma "game."  
+[tag="N.*"] [lemma="of"] [lemma="the"] [lemma="game"]	[tag="N.*"][lemma="of"][lemma="the"][lemma="game"]	Any noun followed by "of," then "the," followed by "game."  
+[tag="N.*"] [lemma="of"] [lemma="the"] [lemma="game"]	[tag="N.*"][lemma="of"][lemma="the"][lemma="game"]	A noun followed by the word "of," followed by "the," and culminating with "game."  
+[tag="N.*"] [lemma="of"] [lemma="the"] [lemma="game"]	[tag="N.*"][lemma="of"][lemma="the"][lemma="game"]	One noun, followed by "of," followed by "the" and the word "game."  
+[tag="N.*"] [lemma="of"] [lemma="the"] [lemma="game"]	[tag="N.*"][lemma="of"][lemma="the"][lemma="game"]	A noun that precedes "of," followed by "the," and then "game."  
+[tag="N.*"] [lemma="of"] [lemma="the"] [lemma="game"]	[tag="N.*"][lemma="of"][lemma="the"][lemma="game"]	Noun precedes the lemma "of," followed by the lemma "the," and then followed by the lemma "game."  
+[tag="N.*"] [lemma="of"] [lemma="the"] [lemma="game"]	[tag="N.*"][lemma="of"][lemma="the"][lemma="game"]	Nouns leading to the structure of "of the game."  
+[tag="N.*"] [lemma="of"] [lemma="the"] [lemma="game"]	[tag="N.*"][lemma="of"][lemma="the"][lemma="game"]	Any noun is followed by "of" and then "the game."  
+[tag="N.*"] [lemma="of"] [lemma="the"] [lemma="game"]	[tag="N.*"][lemma="of"][lemma="the"][lemma="game"]	One noun followed in succession by the lemma "of," then by "the," and finally "game."  
+[tag="N.*"] [lemma="of"] [lemma="the"] [lemma="game"]	[tag="N.*"][lemma="of"][lemma="the"][lemma="game"]	A noun that is immediately followed by "of," "the," and "game."  
+[tag="N.*"] [lemma="of"] [lemma="the"] [lemma="game"]	[tag="N.*"][lemma="of"][lemma="the"][lemma="game"]	A structure comprising a noun, then "of," followed by "the," and lastly "game."  
+[word = "offer"]	[word="offer"]	Word offer.  
+[word = "offer"]	[word="offer"]	Token containing the word offer.  
+[word = "offer"]	[word="offer"]	All occurrences of the word offer.  
+[word = "offer"]	[word="offer"]	Only tokens with the word offer.  
+[word = "offer"]	[word="offer"]	Instances of the word offer.  
+[word = "offer"]	[word="offer"]	Examples of the word offer.  
+[word = "offer"]	[word="offer"]	All words equal to offer.  
+[word = "offer"]	[word="offer"]	All usages of the word offer.  
+[word = "offer"]	[word="offer"]	Search for the word offer.  
+[word = "offer"]	[word="offer"]	Match the word offer.  
+[word = "offer"]	[word="offer"]	Only the word offer.  
+[word = "offer"]	[word="offer"]	Find the word offer.
+[lempos="money-n"]	[lempos="money-n"]	All tokens with the noun lempos money.
+[lempos="money-n"]	[lempos="money-n"]	Tokens categorized as money as a noun.
+[lempos="money-n"]	[lempos="money-n"]	Only tokens with the lempos money-n.
+[lempos="money-n"]	[lempos="money-n"]	Noun form referring to money.
+[lempos="money-n"]	[lempos="money-n"]	Any token classified under the lempos of money.
+[lempos="money-n"]	[lempos="money-n"]	Instances of the noun money labeled as lempos.
+[lempos="money-n"]	[lempos="money-n"]	Tokens that represent the noun money.
+[lempos="money-n"]	[lempos="money-n"]	Tokens identified with the noun lempos money.
+[tag="VV.*"][tag="IN.*"][tag="PP"]	([tag="VV.*"][tag="PP"][tag="RP"]|[tag="VV.*"][tag="RP"][tag="DT"]{0,1}[tag="N.*"])	Verbs followed by a preposition and then a particle.
+[tag="VV.*"][tag="IN.*"][tag="PP"]	([tag="VV.*"][tag="PP"][tag="RP"]|[tag="VV.*"][tag="RP"][tag="DT"]{0,1}[tag="N.*"])	Group of tokens where a verb is followed by a preposition and a particle.
+[tag="VV.*"][tag="PP"][tag="RP"]	([tag="VV.*"][tag="PP"][tag="RP"]|[tag="VV.*"][tag="RP"][tag="DT"]{0,1}[tag="N.*"])	Verb form followed by a preposition and a phrasal verb particle.
+[tag="VV.*"][tag="PP.?"][tag="RP"]	([tag="VV.*"][tag="PP"][tag="RP"]|[tag="VV.*"][tag="RP"][tag="DT"]{0,1}[tag="N.*"])	Examples of verb phrases where the verb is immediately succeeded by a preposition and then a particle.
+[tag="V.*"][tag="RP"][tag="DT"]?[tag="NN"]	([tag="VV.*"][tag="PP"][tag="RP"]|[tag="VV.*"][tag="RP"][tag="DT"]{0,1}[tag="N.*"])	Tokens consisting of a verb followed by a particle and then a noun, optionally preceded by a determiner.
+[tag="VV.*"][tag="IN.*"][tag="PP"]	([tag="VV.*"][tag="PP"][tag="RP"]|[tag="VV.*"][tag="RP"][tag="DT"]{0,1}[tag="N.*"])	Phrases starting with a verb followed by a preposition and ending in a particle.
+[tag="VV.*"][tag="RP.*"]([tag="DT"]0,1[tag="J.*"]0,1[tag="N.*"])0,1[tag="DT"]0,1[tag="J.*"]0,1[tag="N.*"]	([tag="VV.*"][tag="PP"][tag="RP"]|[tag="VV.*"][tag="RP"][tag="DT"]{0,1}[tag="N.*"])	Combination of verbs followed by particles either directly or with optional determiners preceding nouns.
+[tag="VV.*"][tag="PP.?"][tag="RP"]	([tag="VV.*"][tag="PP"][tag="RP"]|[tag="VV.*"][tag="RP"][tag="DT"]{0,1}[tag="N.*"])	Phrase structures containing a verb followed by a preposition and then a particle or noun.
+[tag="VV.*"][tag="PP.?"]([tag="RP"]|([tag="DT"]0,1[tag="J.*"]0,1[tag="N.*"]))	([tag="VV.*"][tag="PP"][tag="RP"]|[tag="VV.*"][tag="RP"][tag="DT"]{0,1}[tag="N.*"])	Sequences starting with a verb that is consistently followed by a preposition and then possibly a particle or determiner with a noun. 
+[tag="VV.*"][tag="RP"][tag="IN"](([tag="DT"]0,1[tag="J.*"]0,1[tag="N.*"])|([tag="PP"]))	([tag="VV.*"][tag="PP"][tag="RP"]|[tag="VV.*"][tag="RP"][tag="DT"]{0,1}[tag="N.*"])	Tokens of verb forms followed by a particle with an intervening preposition, and optionally preceded by a determiner leading to a noun.
+[lc=="beamish"]	[lc=="beamish"]	Lowercase word that is exactly beamish.  
+[lc=="beamish"]	[lc=="beamish"]	All tokens with the lowercase form beamish.  
+[lc=="beamish"]	[lc=="beamish"]	A token whose lowercase matches beamish.  
+[lc=="beamish"]	[lc=="beamish"]	Only the lowercase version of beamish.  
+[lc=="beamish"]	[lc=="beamish"]	Token having precise lowercase spelling of beamish.  
+[lc=="beamish"]	[lc=="beamish"]	Tokens with the lowercase representation beamish.  
+[lc=="beamish"]	[lc=="beamish"]	Exact match for the lowercase word beamish.  
+[lc=="beamish"]	[lc=="beamish"]	Only lowercase tokens that equal beamish.  
+[lc=="beamish"]	[lc=="beamish"]	All instances of the lowercase beamish.  
+[lc=="beamish"]	[lc=="beamish"]	Token matching the lowercase word beamish exactly.  
+[word="on"][word="the"][tag="N.*"]	[word="on"][word="the"][tag="N.*"]	"on" followed by "the" then a noun.  
+[word="on"][word="the"][tag="N.*"]	[word="on"][word="the"][tag="N.*"]	The word "on" followed by the word "the" and then a noun.  
+[word="on"][word="the"][tag="N.*"]	[word="on"][word="the"][tag="N.*"]	"on the" followed by any noun.  
+[word="on"][word="the"][tag="N.*"]	[word="on"][word="the"][tag="N.*"]	Sequence of "on," "the," and then a noun.  
+[word="on"][word="the"][tag="N.*"]	[word="on"][word="the"][tag="N.*"]	"on" coming before "the" and a noun.  
+[word="on"][word="the"][tag="N.*"]	[word="on"][word="the"][tag="N.*"]	Any occurrence of "on" followed by "the" followed by a noun.  
+[word="on"][word="the"][tag="N.*"]	[word="on"][word="the"][tag="N.*"]	Token "on" then token "the" and then a noun.  
+[word="on"][word="the"][tag="N.*"]	[word="on"][word="the"][tag="N.*"]	Text starting with "on" followed by "the" and concluding with a noun.  
+[word="on"][word="the"][tag="N.*"]	[word="on"][word="the"][tag="N.*"]	Phrase structure of "on the" followed by a noun.  
+[word="on"][word="the"][tag="N.*"]	[word="on"][word="the"][tag="N.*"]	"on" in the context of "the" and a noun.  
+[word="on"][word="the"][tag="N.*"]	[word="on"][word="the"][tag="N.*"]	The combination of "on" and "the" preceding a noun.  
+[word="on"][word="the"][tag="N.*"]	[word="on"][word="the"][tag="N.*"]	Construction containing "on," "the," and a noun.  
+[word="on"][word="the"][tag="N.*"]	[word="on"][word="the"][tag="N.*"]	"on" directly followed by "the" and a noun.  
+[word="on"][word="the"][tag="N.*"]	[word="on"][word="the"][tag="N.*"]	Noun following the sequence "on the".  
+[word="on"][word="the"][tag="N.*"]	[word="on"][word="the"][tag="N.*"]	"on" leading into "the" and concluding with a noun.  
+[word="on"][word="the"][tag="N.*"]	[word="on"][word="the"][tag="N.*"]	"on" then "the" followed by a noun in the text.  
+[word="on"][word="the"][tag="N.*"]	[word="on"][word="the"][tag="N.*"]	"on the" and the related noun following.  
+[word="on"][word="the"][tag="N.*"]	[word="on"][word="the"][tag="N.*"]	Presence of "on" followed by "the" and a noun.  
+[word="on"][word="the"][tag="N.*"]	[word="on"][word="the"][tag="N.*"]	Connection of "on," "the," and an unspecified noun.  
+[word="on"][word="the"][tag="N.*"]	[word="on"][word="the"][tag="N.*"]	Continuous sequence of "on," "the," and a noun.
+[]	[word=".*" & tag="NN.*" & lemma=".*"]	All tokens with any word, noun tags, and any lemma.
+[tag="N.*" & lemma="any"]	[word=".*" & tag="NN.*" & lemma=".*"]	Any nouns with any form and any lemma.
+[word=".*"& tag="N*"]	[word=".*" & tag="NN.*" & lemma=".*"]	Tokens that include every word, with noun tags and any base form.
+[word=".*"&tag="N.*"]	[word=".*" & tag="NN.*" & lemma=".*"]	All variations of noun tokens with any word and lemma.
+[][tag="N.*"][lemma=".*"]	[word=".*" & tag="NN.*" & lemma=".*"]	Tokens matched by any word followed by a noun and any lemma.
+[]	[word=".*" & tag="NN.*" & lemma=".*"]	Every token characterized by any word that serves as a noun with any lemma.
+[tag="N.*"] []	[word=".*" & tag="NN.*" & lemma=".*"]	Nouns tagged in various ways associated with any word and lemma.
+[word=".*"& tag="N*"]0	[word=".*" & tag="NN.*" & lemma=".*"]	Token expressions with complete flexibility for words, nouns, and lemmas.
+[word="where|Where"][word="did"][word="you"]	[word="where|Where"][word="did"][word="you"]	The token that matches the word "where" or "Where," followed by the token "did," and then followed by the token "you."  
+[word="where|Where"][word="did"][word="you"]	[word="where|Where"][word="did"][word="you"]	"Where" or "Where" followed by the word "did" and then by "you."  
+[word="where|Where"][word="did"][word="you"]	[word="where|Where"][word="did"][word="you"]	Tokens starting with "where" or "Where" followed by "did" and lastly "you."  
+[word="where|Where"][word="did"][word="you"]	[word="where|Where"][word="did"][word="you"]	A sequence beginning with "where" or "Where," followed by "did" and concluding with "you."  
+[word="where|Where"][word="did"][word="you"]	[word="where|Where"][word="did"][word="you"]	Any instance of "where" or "Where" followed immediately by "did," followed directly by "you."  
+[word="where|Where"][word="did"][word="you"]	[word="where|Where"][word="did"][word="you"]	Occurrences of "where" or "Where" that are followed by "did" and subsequently "you."  
+[word="where|Where"][word="did"][word="you"]	[word="where|Where"][word="did"][word="you"]	Finding "where" or "Where," followed by the word "did," and then followed by you.  
+[word="where|Where"][word="did"][word="you"]	[word="where|Where"][word="did"][word="you"]	Examples where "where" or "Where" is followed by "did" and then "you."  
+[word="where|Where"][word="did"][word="you"]	[word="where|Where"][word="did"][word="you"]	A series of tokens that includes "where" or "Where," followed by "did," followed lastly by "you."  
+[word="where|Where"][word="did"][word="you"]	[word="where|Where"][word="did"][word="you"]	Cases of "where" or "Where" followed by "did" and "you" in succession.  
+[word="where|Where"][word="did"][word="you"]	[word="where|Where"][word="did"][word="you"]	The phrase comprising "where" or "Where," "did," and "you."  
+[word="where|Where"][word="did"][word="you"]	[word="where|Where"][word="did"][word="you"]	All tokens beginning with "where" or "Where" leading into "did" and finishing with "you."  
+[word="where|Where"][word="did"][word="you"]	[word="where|Where"][word="did"][word="you"]	A sequence of tokens where "where" or "Where" comes first, followed by "did" and concluding with "you."  
+[lemma="get"] [word="away"]	[lemma="get"] [word="away"]	All instances where the lemma is "get" followed by the word "away."
+[lemma="get"] [lemma="away"]	[lemma="get"] [word="away"]	The sequence of getting followed by away.
+[lemma="get"] [lemma="away"]	[lemma="get"] [word="away"]	Occurrences of "get" immediately preceding "away."
+[lemma="get"] [word="away"]	[lemma="get"] [word="away"]	Any use of the lemma "get" followed by the word "away."
+[lemma="get"] [word="away"]	[lemma="get"] [word="away"]	Lemmas that include "get" coming before the word "away."
+[lemma="get"] [lemma="away"]	[lemma="get"] [word="away"]	Expressions that involve the lemma "get" followed by "away."
+[lemma="get"] [lemma="away"]	[lemma="get"] [word="away"]	Getting away.
+[lemma="get"] [lemma="away"]	[lemma="get"] [word="away"]	Tokens that show "get" and then "away." 
+[lemma="get"] [lemma="away"]	[lemma="get"] [word="away"]	The token "get" followed by "away." 
+[lemma="get"] [lemma="away"]	[lemma="get"] [word="away"]	Example phrases with "get" leading to "away."
+[word="hedging"]	[word="hedging"][tag="RB.?"]	The word hedging.
+[word="hedging"]	[word="hedging"][tag="RB.?"]	A token that contains the word hedging.
+[lemma="hedging"] [tag="RB.?"]	[word="hedging"][tag="RB.?"]	Token hedging followed by an adverb.
+[lemma="hedging"] [tag="RB.?"]	[word="hedging"][tag="RB.?"]	"Hedging" followed by an adverb token.
+[word="hedging"] [tag="RB.?"]	[word="hedging"][tag="RB.?"]	The word "hedging" succeeded by any adverb.
+[lemma="hedging"] [tag="RB.?"]	[word="hedging"][tag="RB.?"]	All instances of hedging followed by an adverb.
+[lemma="hedging"] [tag="RB.?"]	[word="hedging"][tag="RB.?"]	Hedging followed by an adverbial tag.
+[word="hedging"][tag="RB.?"]	[word="hedging"][tag="RB.?"]	A token with the word hedging followed by an adverb.
+[tag="V.*"][tag="DT.*"][lemma="mistake"]	[tag="V.*"][tag="DT"][lemma="mistake"]	A verb followed by a determiner and then by the lemma mistake.
+[tag="V.*"][tag="DT.*"][lemma="mistake"]	[tag="V.*"][tag="DT"][lemma="mistake"]	Any verb that comes before a determiner and the word mistake.
+[tag="V.*"] [tag="DT.*"] [word="mistake"]	[tag="V.*"][tag="DT"][lemma="mistake"]	All verbs preceding a determiner and followed by the word 'mistake'.
+[tag="V.*"] [tag="DT.*"] [word="mistake"]	[tag="V.*"][tag="DT"][lemma="mistake"]	A verb then a determiner followed by the noun 'mistake'.
+[tag="V.*"] [tag="DT.*"] [word="mistake"]	[tag="V.*"][tag="DT"][lemma="mistake"]	Verbs leading into a determiner and concluding with 'mistake'.
+[tag="V.*"] [tag="DT.*"] [word="mistake"]	[tag="V.*"][tag="DT"][lemma="mistake"]	Any action verb followed by a determiner and the term 'mistake'.
+[tag="V.*"] [tag="DT.*"] [lemma="mistake"]	[tag="V.*"][tag="DT"][lemma="mistake"]	A sequence of a verb, determiner, and the lemma mistake.
+[tag="V.*"][tag="DT.*"]?[lemma="mistake"]	[tag="V.*"][tag="DT"][lemma="mistake"]	A verb may come first, followed by a determiner, and then the word mistake.
+[tag="V.*"][tag="DT.*"][lemma="mistake"]	[tag="V.*"][tag="DT"][lemma="mistake"]	Instances of a verb followed by a determiner and then the lemma mistake.
+[tag="V.*"][tag="DT.*"][lemma="mistake"]	[tag="V.*"][tag="DT"][lemma="mistake"]	Following the structure of a verb, a determiner, and the noun mistake.
+[tag="N.*" & tag!="NP"][tag="N.*" & tag!="NP"][tag="N.*" & tag!="NP"][tag="N.*" & tag!="NP"]	[tag="N.*" & tag!="NP"][tag="N.*" & tag!="NP"][tag="N.*" & tag!="NP"][tag="N.*" & tag!="NP"]	Four consecutive nouns, none of which are tagged as NP.
+[tag="N.*" & tag!="NP"][tag="N.*" & tag!="NP"][tag="N.*" & tag!="NP"][tag="N.*" & tag!="NP"]	[tag="N.*" & tag!="NP"][tag="N.*" & tag!="NP"][tag="N.*" & tag!="NP"][tag="N.*" & tag!="NP"]	Four nouns in sequence that do not have the NP tag.
+[tag="N.*"][tag="N.*"][tag="N.*" & tag!="NP"][tag="N.*" & tag!="NP"]	[tag="N.*" & tag!="NP"][tag="N.*" & tag!="NP"][tag="N.*" & tag!="NP"][tag="N.*" & tag!="NP"]	Noun followed by another noun, followed by yet another noun, and finally a fourth noun, all excluding NP tags.
+[tag="N.*" & tag!="NP"][tag="N.*" & tag!="NP"][tag="N.*" & tag!="NP"][tag="N.*" & tag!="NP"]	[tag="N.*" & tag!="NP"][tag="N.*" & tag!="NP"][tag="N.*" & tag!="NP"][tag="N.*" & tag!="NP"]	A sequence of four nouns tagged with N.* but not NP.
+[tag="N.*" & tag!="NP"][tag="N.*" & tag!="NP"][tag="N.*" & tag!="NP"][tag="N.*" & tag!="NP"]	[tag="N.*" & tag!="NP"][tag="N.*" & tag!="NP"][tag="N.*" & tag!="NP"][tag="N.*" & tag!="NP"]	Four nouns, all tagged N.*, without any being NP.
+[tag="N.*" & tag!="NP"][tag="N.*" & tag!="NP"][tag="N.*" & tag!="NP"][tag="N.*" & tag!="NP"]	[tag="N.*" & tag!="NP"][tag="N.*" & tag!="NP"][tag="N.*" & tag!="NP"][tag="N.*" & tag!="NP"]	Any four nouns that avoid NP tagging.
+[tag="N.*" & tag!="NP"][tag="N.*" & tag!="NP"][tag="N.*" & tag!="NP"][tag="N.*" & tag!="NP"]	[tag="N.*" & tag!="NP"][tag="N.*" & tag!="NP"][tag="N.*" & tag!="NP"][tag="N.*" & tag!="NP"]	Four nouns, all with tags other than NP.
+[lemma="recommend"] [lemma="to|in|on"] [tag="N.*|PP.?"]	[lemma="recommend"][lemma="for|to|in|on"][tag="N.*|PP.?"]	- All instances where the lemma is recommend followed by a preposition for, to, in, or on, and then followed by a noun or prepositional phrase.
+[lemma="recommend"] [lemma="to|in|on"] [tag="N.*|PP.?"]	[lemma="recommend"][lemma="for|to|in|on"][tag="N.*|PP.?"]	- The verb recommend followed by prepositions for, to, in, or on, and then followed by any noun or prepositional phrase.
+[lemma="recommend"] [lemma="for|on"] [tag="N.*|PP.?"]	[lemma="recommend"][lemma="for|to|in|on"][tag="N.*|PP.?"]	- Recommend as a lemma, immediately followed by one of the prepositions for, to, in, or on, and then a noun or prepositional phrase.
+[lemma="recommend"] [lemma="for|on"] [tag="N.*|PP.?"]	[lemma="recommend"][lemma="for|to|in|on"][tag="N.*|PP.?"]	- Lemma of recommend followed by the prepositions for, to, in, or on, followed by any noun or prepositional phrase.
+[lemma="recommend"] [lemma="for|on"] [tag="N.*|PP.?"]	[lemma="recommend"][lemma="for|to|in|on"][tag="N.*|PP.?"]	- Verbs of recommend followed by either for, to, in, or on, and then a noun or a prepositional phrase tag.
+[lemma="recommend"] [lemma="to|in|on"] [tag="N.*|PP.?"]	[lemma="recommend"][lemma="for|to|in|on"][tag="N.*|PP.?"]	- Example of recommend leading into a preposition (for, to, in, on) followed by a noun or a prepositional phrase.
+[lemma="recommend"] [lemma="for|to|in|on"] [tag="N.*|PP.?"]	[lemma="recommend"][lemma="for|to|in|on"][tag="N.*|PP.?"]	- Sequences that start with the lemma recommend, then either for, to, in, or on, and conclude with a noun or prepositional phrase.
+[lemma="recommend"] [lemma="to|in|on"] [tag="N.*|PP.?"]	[lemma="recommend"][lemma="for|to|in|on"][tag="N.*|PP.?"]	- The verb recommend followed by prepositions (for, to, in, on) and concluding with a noun or prepositional phrase tag. 
+[lemma="recommend"] [lemma="to|for"] [tag="N.*|PP.?"]	[lemma="recommend"][lemma="for|to|in|on"][tag="N.*|PP.?"]	- A token sequence where the lemma is recommend, followed by specified prepositions, then a noun or prepositional phrase.
+[word="this"][tag="N.*"]	"this"[tag="NN"] "of" [tag="NNS"] "is|was"	"This" followed by a noun.
+[word="this"][tag="N.*"]	"this"[tag="NN"] "of" [tag="NNS"] "is|was"	"this" as a lowercase word followed by a singular noun.
+[word="this"][tag="N.*"][word="of"]	"this"[tag="NN"] "of" [tag="NNS"] "is|was"	"this" followed by a noun and then "of".
+[word="this"][tag="NN"][word="of"][tag="NNS"]	"this"[tag="NN"] "of" [tag="NNS"] "is|was"	"this" followed by a noun and "of" followed by plural nouns.
+[word="this"][tag="NN"] "of" [tag="NNS"] "are|were"	"this"[tag="NN"] "of" [tag="NNS"] "is|was"	"this" followed by a noun, then "of", and then plural nouns.
+[lemma_lc="this"][tag="NN"]"of"[tag="NNS"] "are|were"	"this"[tag="NN"] "of" [tag="NNS"] "is|was"	"this" as lowercase followed by a noun, followed by "of", followed by nouns in plural.
+[word="this"][tag="N.*"]	"this"[tag="NN"] "of" [tag="NNS"] "is|was"	Noun that follows "this".
+[word="this"][tag="N.*"][word="of"][tag="NNS"]	"this"[tag="NN"] "of" [tag="NNS"] "is|was"	"this" and then a noun referring to something, followed by "of" and then plural nouns.
+[word="this"][word="of"][tag="NNS.*"]	"this"[tag="NN"] "of" [tag="NNS"] "is|was"	"this" as a lowercase word, followed by "of" and a plural noun.
+[word="this"][tag="NN"][word="of"][tag="NNS"]	"this"[tag="NN"] "of" [tag="NNS"] "is|was"	"this" as a word that points to something, followed by a noun, "of", then a plural noun.
+[word="this"][tag="NN"] "of" [tag="NNS"] "are|were"	"this"[tag="NN"] "of" [tag="NNS"] "is|was"	"this" lowercased, followed by a singular noun, then "of" and plural noun forms.
+[word="this"][tag="NN"][word="of"][tag="NNS"]	"this"[tag="NN"] "of" [tag="NNS"] "is|was"	"this" and the following noun refers to something, followed by "of" indicating a connection to the plural noun.
+[word="this"][tag="NN"][word="of"][tag="NNS"]	"this"[tag="NN"] "of" [tag="NNS"] "is|was"	"this" referring to something, followed by a noun, then "of" and subsequent plural nouns.
+[lemma="rude"]	[lemma="rude"]	Lemma rude.  
+[lemma="rude"]	[lemma="rude"]	One token containing lemma rude.  
+[lemma="rude"]	[lemma="rude"]	Only all lemmas rude.  
+[lemma="rude"]	[lemma="rude"]	Lemma of rudeness.  
+[lemma="rude"]	[lemma="rude"]	Any lemma rude.  
+[lemma="rude"]	[lemma="rude"]	All base forms of rude.  
+[lemma="rude"]	[lemma="rude"]	Rude as a lemma.  
+[lemma="rude"]	[lemma="rude"]	Rude in its base form.  
+[lemma="rude"]	[lemma="rude"]	Token with the lemma rude.  
+[lemma="rude"]	[lemma="rude"]	Examples of the lemma rude.  
+[lemma="rude"]	[lemma="rude"]	All variations on the lemma rude.  
+[lemma="rude"]	[lemma="rude"]	Instances of lemma rude.  
+[lemma="rude"]	[lemma="rude"]	Words with the lemma rude.  
+[lemma="rude"]	[lemma="rude"]	Tokens with the lemma "rude".  
+[word="rude"]	[lemma="rude"]	Rude as a word form.  
+[word="rude"]	[lemma="rude"]	All forms of rude.  
+[lemma="rude"]	[lemma="rude"]	Rude in the corpus.  
+[lemma="rude"]	[lemma="rude"]	Tokens defined by the lemma rude.  
+[lemma="remember"][tag="VVG.*"]	[lemma="remember"][tag="VVG"]	Lemma remember followed by a verb in gerund form.
+[lemma="remember"][tag="VVG.*"]	[lemma="remember"][tag="VVG"]	All instances of the lemma remember followed by a gerund verb.
+[lemma="remember"][tag="VVG.*"]	[lemma="remember"][tag="VVG"]	"Remember" as a lemma followed by a verb tagged as VVG.
+[lemma="remember"] [tag="VVG"]	[lemma="remember"][tag="VVG"]	All occurrences of "remember" with a gerund verb following it.
+[lemma="remember"][tag="VVG.*"]	[lemma="remember"][tag="VVG"]	Any use of the lemma remember followed by a VVG tag.
+[lemma="remember"] [tag="VVG"]	[lemma="remember"][tag="VVG"]	"Remember" followed by an action happening in the form of a gerund.
+[lemma="remember"] [tag="VVG"]	[lemma="remember"][tag="VVG"]	"Remember" followed by a verb with a gerund ending.
+[lemma="remember"][tag="VVG.*"]	[lemma="remember"][tag="VVG"]	A sequence of lemma remember followed by any verb in VVG form.
+[lemma="refill"] [] [lemma="kettle"]	[lemma="refill"] [] [lemma="kettle"]	Instances of the lemma refill followed by any word and then the lemma kettle.  
+[lemma="refill"] [] [lemma="kettle"]	[lemma="refill"] [] [lemma="kettle"]	Refill followed by any token and then kettle.  
+[lemma="refill"] [] [lemma="kettle"]	[lemma="refill"] [] [lemma="kettle"]	The base form refill followed by any token and subsequently kettle.  
+[lemma="refill"] [] [lemma="kettle"]	[lemma="refill"] [] [lemma="kettle"]	The term refill followed by any word, concluding with the term kettle.  
+[lemma="refill"] [] [lemma="kettle"]	[lemma="refill"] [] [lemma="kettle"]	Lemma refill anywhere followed by an unspecified token, followed by the lemma kettle.  
+[lemma="refill"] [] [lemma="kettle"]	[lemma="refill"] [] [lemma="kettle"]	Examples of refill with any word in between leading to kettle.  
+[lemma="refill"] [] [lemma="kettle"]	[lemma="refill"] [] [lemma="kettle"]	Any token following the lemma refill, which precedes the lemma kettle.  
+[lemma="refill"] [] [lemma="kettle"]	[lemma="refill"] [] [lemma="kettle"]	Refill and kettle with any word in between.  
+[lemma="refill"] [] [lemma="kettle"]	[lemma="refill"] [] [lemma="kettle"]	In the structure where refill is followed by any term and concluded by kettle.  
+[lemma="refill"] [] [lemma="kettle"]	[lemma="refill"] [] [lemma="kettle"]	The lemma refill followed by an unspecified token and then the lemma kettle in the sequence.  
+[lemma="refill"] [] [lemma="kettle"]	[lemma="refill"] [] [lemma="kettle"]	All occurrences of the lemma refill, any word, and the lemma kettle.  
+[lemma="refill"] [] [lemma="kettle"]	[lemma="refill"] [] [lemma="kettle"]	A refill followed at some distance by any token and then followed by kettle.    
+[lemma="refill"] [] [lemma="kettle"]	[lemma="refill"] [] [lemma="kettle"]	Refill appears with any word before kettle.  
+[lemma="refill"] [] [lemma="kettle"]	[lemma="refill"] [] [lemma="kettle"]	A sequence of refill, any token, and kettle.
+[lemma="tread" & tag="V.*"][]?[lemma=".*ly" & tag=".*"]	[lemma="tread"] []{0,1} [lemma=".*ly$"]	Lemma tread followed by any optional token and then by a word ending in -ly.  
+[lemma="tread"] [] [tag="RB.?"]	[lemma="tread"] []{0,1} [lemma=".*ly$"]	The base form tread followed by any word and then by an adverb.  
+[lemma="tread" & tag="V.*"] []? [lemma=".*ly" & tag="RB.?"]	[lemma="tread"] []{0,1} [lemma=".*ly$"]	Tread followed by any token that may or may not exist before an adverb.  
+[lemma="tread"] []0,1 [tag="RB.?"]	[lemma="tread"] []{0,1} [lemma=".*ly$"]	Words in a sequence where the first is tread followed optionally by any word and then an adverb.  
+[lemma="tread" & tag="V.*"][]?[lemma=".*ly" & tag=".*"]	[lemma="tread"] []{0,1} [lemma=".*ly$"]	Token with lemma tread followed by an optional token and then another token that ends with -ly.  
+[lemma="tread" & tag="VB.*"] []0,3 [lemma=".*ly"]	[lemma="tread"] []{0,1} [lemma=".*ly$"]	Finding instances of tread followed by any words (if present) and concluding with a word that ends in ly.  
+[lemma="tread" & tag="VB.*"] []0,1 [word=".*ly"]	[lemma="tread"] []{0,1} [lemma=".*ly$"]	Searching for the lemma tread optionally followed by any intermediate token and an -ly ending word.  
+[lemma="tread" & tag="V.*"][]?[lemma=".*ly" & tag="RB.?"]	[lemma="tread"] []{0,1} [lemma=".*ly$"]	Base form of tread, followed optionally by a word and concluding with an adverb.  
+[lemma="tread"] []0,1 [tag="RB.?"]	[lemma="tread"] []{0,1} [lemma=".*ly$"]	Extracting instances of tread with an optional token in between and followed by an adverbial form.  
+[lemma="tread" & tag="VB.*"] []0,1 [word=".*ly"]	[lemma="tread"] []{0,1} [lemma=".*ly$"]	Sequence starting with lemma tread, has an optional token in the middle, then an -ly word.
+[word="may"]	[word="may"]	Word may.  
+[word="may"]	[word="may"]	Token containing the word may.  
+[word="may"]	[word="may"]	Any word may.  
+[word="may"]	[word="may"]	Only the word may.  
+[word="may"]	[word="may"]	All instances of the word may.  
+[word="may"]	[word="may"]	Examples of the word may.  
+[word="may"]	[word="may"]	All occurrences of may as a single word.  
+[word="may"]	[word="may"]	The word may found in the text.  
+[word="may"]	[word="may"]	Instances where the word is may.  
+[word="may"]	[word="may"]	Just the word may in the corpus.
+[word="what|What"][word="do"][word="you"][word="want"]	[word="what|What"][word="do"][word="you"][word="want"]	"What do you want?" as a phrase.
+[word="what|What"][word="do"][word="you"][word="want"]	[word="what|What"][word="do"][word="you"][word="want"]	The phrase beginning with "what" followed by "do," then "you," and ending with "want."
+[word="what|What"][word="do"][word="you"][word="want"]	[word="what|What"][word="do"][word="you"][word="want"]	Tokens forming the question "What do you want."
+[word="what|What"][word="do"][word="you"][word="want"]	[word="what|What"][word="do"][word="you"][word="want"]	Any occurrence of "what" followed by "do," then "you," and finally "want."
+[word="what|What"][word="do"][word="you"][word="want"]	[word="what|What"][word="do"][word="you"][word="want"]	Question structure of "what" followed by "do," followed by "you," culminating in "want."
+[word="what|What"][word="do"][word="you"][word="want"]	[word="what|What"][word="do"][word="you"][word="want"]	Instances of the words "what," "do," "you," and "want" in this specific order.
+[word="what|What"][word="do"][word="you"][word="want"]	[word="what|What"][word="do"][word="you"][word="want"]	Sequence of tokens: "what" and "do" followed by "you" and "want."
+[word="what|What"][word="do"][word="you"][word="want"]	[word="what|What"][word="do"][word="you"][word="want"]	Examples of the expression "What do you want."
+[word="what|What"][word="do"][word="you"][word="want"]	[word="what|What"][word="do"][word="you"][word="want"]	Phrase matching "what", "do", "you", "want" in that exact sequence.
+[tag="JJ.*"][lemma="attitude"]	[tag="A.*"][lemma="attitude"]	Adjective followed by the lemma attitude.  
+[tag="JJ"][lemma="attitude"]	[tag="A.*"][lemma="attitude"]	Any adjective preceding the lemma attitude.  
+[tag="JJ"][lemma="attitude"]	[tag="A.*"][lemma="attitude"]	An adjective that comes before the word attitude.  
+[tag="JJ.*"][lemma="attitude"]	[tag="A.*"][lemma="attitude"]	All adjectives leading to the word attitude.  
+[tag="JJ"][lemma="attitude"]	[tag="A.*"][lemma="attitude"]	Any adjective followed by the lemma attitude.  
+[tag="JJ.*"][lemma="attitude"]	[tag="A.*"][lemma="attitude"]	Descriptive word before the word attitude.  
+[tag="JJ"][lemma="attitude"]	[tag="A.*"][lemma="attitude"]	Adjective that directly precedes attitude.  
+[tag="JJ"][lemma="attitude"&tag="NN"]	[tag="A.*"][lemma="attitude"]	An adjective is followed by the lemma of attitude.  
+[tag="JJ.*"][lemma="attitude"]	[tag="A.*"][lemma="attitude"]	Adjective before the term attitude.  
+[tag="JJ"][lemma="attitude"]	[tag="A.*"][lemma="attitude"]	All adjectives that come before the lemma attitude.  
+[tag="VV.*"][tag="N.*"]	[tag="VV"][tag="NN"]	All verbs followed by a noun.
+[tag="VV"][tag="NN"]	[tag="VV"][tag="NN"]	All verbal tokens tagged as VV immediately preceding a token tagged as NN.
+[tag="V."][tag="N."]	[tag="VV"][tag="NN"]	A sequence of verb followed by noun.
+[tag="VV.*"][tag="N.*"]	[tag="VV"][tag="NN"]	Every instance where a verb is followed by a noun.
+[tag="VV"][tag="NN"]	[tag="VV"][tag="NN"]	Verbs tagged as VV immediately followed by nouns tagged as NN.
+[tag="V."][tag="N."]	[tag="VV"][tag="NN"]	All occurrences of verbs followed by nouns.
+[word="a|the"][tag="N.*"][lemma=".*ed" & tag="V.*"]	[word="an?|the"][tag="N.*"][lemma=".*ed" & tag="V.*"]	Any word that is ‘a’ or ‘the’ followed by a noun followed by a verb in past form.  
+[word="a|the"][tag="N.*"][tag="V.*"]	[word="an?|the"][tag="N.*"][lemma=".*ed" & tag="V.*"]	The words ‘a’ or ‘the’ preceding a noun and then followed by a verb.  
+[word="a|the"][tag="N.*"][lemma=".*ed" & tag="V.*"]	[word="an?|the"][tag="N.*"][lemma=".*ed" & tag="V.*"]	Determiners ‘a’ or ‘the’ followed by any noun and then by any verb that ends in ‘ed’.  
+[word="a|the"]?[tag="N.*"][lemma=".*ed" & tag="V.*"]	[word="an?|the"][tag="N.*"][lemma=".*ed" & tag="V.*"]	An optional determiner ‘a’ or ‘the’ followed by a noun and then by a past-tense verb.  
+[word="a|the"][tag="N.*"][lemma=".*ed" & tag="V.*"]	[word="an?|the"][tag="N.*"][lemma=".*ed" & tag="V.*"]	Determiners that match ‘a’ or ‘the’ followed by a noun and then a verb with the ending ‘ed’.  
+[word="a|the"][tag="N.*"][lemma=".*ed" & tag="V.*"]	[word="an?|the"][tag="N.*"][lemma=".*ed" & tag="V.*"]	Words ‘a’ or ‘the’ followed by any noun and a verb that has a lemma ending in ‘ed’.  
+[word="a|the"][tag="N.*"][lemma=".*ed" & tag="V.*"]	[word="an?|the"][tag="N.*"][lemma=".*ed" & tag="V.*"]	Tokens matching ‘a’ or ‘the’ followed by a noun then followed by a verb in the past form.  
+[word="a|the"][tag="N.*"][lemma=".*ed" & tag="V.*"]	[word="an?|the"][tag="N.*"][lemma=".*ed" & tag="V.*"]	Using determiners ‘a’ or ‘the’ followed by a noun and then a verb ending in ‘ed’.  
+[word="a|the"][tag="N.*"][lemma=".*ed" & tag="V.*"]	[word="an?|the"][tag="N.*"][lemma=".*ed" & tag="V.*"]	Any occurrences of ‘a’ or ‘the’, followed by a noun, then followed by a past participle verb.  
+[word="a|the"][tag="N.*"][lemma=".*ed" & tag="V.*"]	[word="an?|the"][tag="N.*"][lemma=".*ed" & tag="V.*"]	Combination of the words ‘a’ or ‘the’, any noun, and a verb that has an ‘ed’ ending.  
+[word="nation.*"][][]	[word="nation.*"]	Words starting with "nation."
+[word="nation.*"][][]	[word="nation.*"]	All words that begin with the root "nation."
+[word="nation.*"]	[word="nation.*"]	Any word that contains the prefix "nation."
+[word="nation.*"][][]	[word="nation.*"]	Tokens that match the pattern starting with "nation."
+[word="nation.*"]	[word="nation.*"]	Examples of words beginning with "nation."
+[word="nation.*"]	[word="nation.*"]	Words like "nation," "national," "nationwide," etc.
+[word="nation.*"]	[word="nation.*"]	Tokens that have "nation" at the beginning.
+[word=".*nation"]	[word="nation.*"]	Any word that has "nation" as a root.
+[word="nation.*"]	[word="nation.*"]	Words that have "nation" followed by any character.
+[word="nation.*"][][]	[word="nation.*"]	All forms of words starting with "nation."
+[tag="JJS"]	[tag="JJR" | tag="JJS"]	Adjectives that are either comparative or superlative.
+[tag="JJS"]	[tag="JJR" | tag="JJS"]	All comparative or superlative adjectives.
+[tag="JJR|JJS"]	[tag="JJR" | tag="JJS"]	Any adjective that is in the form of JJR or JJS.
+[tag="JJR"]	[tag="JJR" | tag="JJS"]	Adjectives that can be identified as JJR or JJS.
+[tag="JJS"]	[tag="JJR" | tag="JJS"]	Comparative adjectives or superlative adjectives.
+[tag="JJR"]	[tag="JJR" | tag="JJS"]	Adjectives tagged as either JJR or JJS.
+[tag="JJR|JJS"]	[tag="JJR" | tag="JJS"]	Any adjectives marked as JJR or JJS.
+[tag="JJS"]	[tag="JJR" | tag="JJS"]	Comparative or superlative forms of adjectives.
+[tag="JJR|JJS"]	[tag="JJR" | tag="JJS"]	Tokens with tag JJR or JJS.
+[tag="JJS"]	[tag="JJR" | tag="JJS"]	All words classified as comparative or superlative adjectives.
+[lempos="monitor-v"]	[lempos="monitor-v"]	Lemma 'monitor' as a verb.
+[lempos="monitor-v"]	[lempos="monitor-v"]	A token containing the verb form 'monitor'.
+[lempos="monitor-v"]	[lempos="monitor-v"]	The verb base form 'monitor' represented as 'monitor-v'.
+[tag="V.*"][word="monitor"]	[lempos="monitor-v"]	All verb forms of 'monitor'.
+[tag="V.*"][word="monitor"]	[lempos="monitor-v"]	Any verb instance of 'monitor'.
+[lempos="monitor-v"]	[lempos="monitor-v"]	Example of the verb 'monitor' in its lemma.
+[lempos="monitor-v"]	[lempos="monitor-v"]	Verb 'monitor' in its specific lemma form.
+[tag="J.*"][tag="IN"][tag="DT"][tag="N.*"]	[tag="J.*"] [tag="IN"] [tag="DT"] [tag="N.*"]	Adjective followed by a preposition followed by a determiner followed by a noun.  
+[tag="J.*"][tag="IN"][tag="DT"][tag="N.*"]	[tag="J.*"] [tag="IN"] [tag="DT"] [tag="N.*"]	All adjectives followed by a preposition, then a determiner, and finally a noun.  
+[tag="JJ"][tag="PP"][tag="DT"][tag="NN"]	[tag="J.*"] [tag="IN"] [tag="DT"] [tag="N.*"]	Sequence of an adjective, preposition, determiner, and noun.  
+[tag="J.*"][tag="IN"][tag="DT"][tag="N.*"]	[tag="J.*"] [tag="IN"] [tag="DT"] [tag="N.*"]	An adjective, then a preposition, followed by a determiner and a noun.  
+[tag="J.*"][tag="IN"][tag="DT"][tag="N.*"]	[tag="J.*"] [tag="IN"] [tag="DT"] [tag="N.*"]	Any adjective followed by the preposition, then by a determiner and a noun.  
+[tag="J.*"][tag="N.*"][tag="IN"][tag="DT"]	[tag="J.*"] [tag="IN"] [tag="DT"] [tag="N.*"]	Adjective modifies a noun through a preposition and a determiner.  
+[tag="J.*"][tag="IN"][tag="DT"][tag="N.*"]	[tag="J.*"] [tag="IN"] [tag="DT"] [tag="N.*"]	Composition of an adjective followed by an IN preposition and a determiner before a noun.  
+[tag="J.*"][tag="IN"][tag="DT"][tag="N.*"]	[tag="J.*"] [tag="IN"] [tag="DT"] [tag="N.*"]	Grammatical structure consisting of an adjective followed by a preposition, determiner, and noun.  
+[tag="J.*"][tag="IN"][tag="DT"][tag="N.*"]	[tag="J.*"] [tag="IN"] [tag="DT"] [tag="N.*"]	Descriptive word followed by a preposition, then a determiner, culminating in a noun.  
+[tag="J.*"] [tag="N.*"] [tag="IN"] [tag="DT"] [tag="N.*"]	[tag="J.*"] [tag="IN"] [tag="DT"] [tag="N.*"]	Describing a noun with an adjective, using a preposition and a determiner before the noun.  
+[word=".*"] 0,2 [word=".*"]	[tag="J.*"] [tag="IN"] [tag="DT"] [tag="N.*"]	...
+[lc=="hawkish"]	[lc=="hawkish"]	Lowercase word "hawkish".  
+[lc=="hawkish"]	[lc=="hawkish"]	The exact match for the lowercase word "hawkish".  
+[lc=="hawkish"]	[lc=="hawkish"]	One token that is the word "hawkish" in lowercase.  
+[lc=="hawkish"]	[lc=="hawkish"]	Token with the exact match of "hawkish".  
+[lc=="hawkish"]	[lc=="hawkish"]	Any instance of the word "hawkish" in lowercase.  
+[lc=="hawkish"]	[lc=="hawkish"]	Finding the specific lowercase word "hawkish".  
+[lc=="hawkish"]	[lc=="hawkish"]	Only lowercase "hawkish" as a token.  
+[lc=="hawkish"]	[lc=="hawkish"]	A token that has a value of "hawkish" in lowercase.  
+[lc=="hawkish"]	[lc=="hawkish"]	All occurrences of the lowercase word "hawkish".  
+[lc=="hawkish"]	[lc=="hawkish"]	Exact match for "hawkish" as a lowercase token.
+[tag="VV"][tag="DT"][tag="N"][tag="IN"][tag="PP"]	[tag="VV"][tag="DT"][tag="NN"][tag="IN"][tag="PP"]	Verbs followed by a determiner, then a noun, then a preposition, and finally a prepositional phrase.
+[tag="VV.*"][tag="DT"][tag="N.*"][tag="IN.*"][tag="PP"]	[tag="VV"][tag="DT"][tag="NN"][tag="IN"][tag="PP"]	All verb forms followed by determiners, then nouns, then prepositions, and then prepositional phrases.
+[tag="VV"][tag="DT"][tag="NN"][tag="IN"][tag="PP"]	[tag="VV"][tag="DT"][tag="NN"][tag="IN"][tag="PP"]	Sequences starting with a verb, followed by a determiner, then a noun, then a preposition, and ending with a prepositional phrase.
+[tag="VV"][tag="DT"][tag="NN"][tag="PPZ"]	[tag="VV"][tag="DT"][tag="NN"][tag="IN"][tag="PP"]	Any verb followed by a determiner and a noun, followed by a preposition, followed by a phrase.
+[tag="VV"][tag="DT"][tag="N"][tag="PPZ"]	[tag="VV"][tag="DT"][tag="NN"][tag="IN"][tag="PP"]	A verb followed by a determiner followed by a noun and then by a preposition leading into a prepositional phrase.
+[tag="VV"][tag="DT"][tag="NN"][tag="IN"][tag="PP"]	[tag="VV"][tag="DT"][tag="NN"][tag="IN"][tag="PP"]	Verbs tagged as VV followed by DT, followed by NN, followed by IN, and ending with PP.
+[tag="VV"][tag="DT"][tag="N"][tag="IN"][tag="PP"]	[tag="VV"][tag="DT"][tag="NN"][tag="IN"][tag="PP"]	Instances where a verb is followed by a determiner, a noun, a preposition, and a prepositional phrase.
+[tag="J.*"]3 containing[word="vast"]	[tag="J.*"]{3} containing[word="vast"]	Three consecutive adjectives, with the third one containing the word vast.  
+[lemma="varied" & tag="J.*"][tag="J.*"]	[tag="J.*"]{3} containing[word="vast"]	Three adjectives in a row containing the word vast.  
+[tag="J.*"]3 containing[word="varied"]	[tag="J.*"]{3} containing[word="vast"]	Sequences of three adjectives which include the word vast.  
+[tag="J.*"]3 containing[word="vast"]	[tag="J.*"]{3} containing[word="vast"]	Three repetitions of adjectives that include one that contains the word vast.  
+[lemma="varied" & tag="J.*"][tag="J.*"]	[tag="J.*"]{3} containing[word="vast"]	Adjective triplet that has the word vast in it.  
+[tag="J.*"]3 containing[lemma="varied"]	[tag="J.*"]{3} containing[word="vast"]	Three adjectives together with the presence of vast.  
+[lemma="varied"&tag="J.*"][tag="J.*"]	[tag="J.*"]{3} containing[word="vast"]	Groups of three adjectives where one of them contains vast.  
+[lemma="vample"&tag="J.*"][tag="J.*"]	[tag="J.*"]{3} containing[word="vast"]	Triple adjectives that include vast among them.  
+[lemma="varied" & tag="J.*"][tag="J.*"]	[tag="J.*"]{3} containing[word="vast"]	Set of three adjectives featuring the word vast.  
+[lemma="varied" & tag="J.*"]1,3	[tag="J.*"]{3} containing[word="vast"]	Three separate occurrences of adjectives with at least one containing vast.  
+[word=".*"] 0,2 [word=".*"]	[tag="J.*"]{3} containing[word="vast"]	...
+[tag="N.*|PP.?"][tag="MD"]?[tag="VH"]?[tag="VHD"]?[tag="VBN"]?[lemma="disgruntle"&tag="V.*"][!tag="DT|CD|PDT|N.*|PP.?"][tag="IN"]?	[tag="J.*"]{3} containing[word="vast"]	
+[tag="N.*|PP.?"][tag="MD"]?[tag="VH"]?[tag="VHD"]?[tag="VBN"]?[lemma="disgruntle"&tag="V.*"][!tag="DT|CD|PDT|N.*|PP.?"][tag="IN"]?	[tag="J.*"]{3} containing[word="vast"]	
+[word="was|Was"][word="the"][word="first"]	[word="was|Was"][word="the"][word="first"]	The word "was" or "Was" followed by the word "the" followed by the word "first."  
+[word="was|Was"][word="the"][word="first"]	[word="was|Was"][word="the"][word="first"]	The token "was" or "Was" followed by the token "the" followed by the token "first."  
+[word="was|Was"][word="the"][word="first"]	[word="was|Was"][word="the"][word="first"]	Any occurrence of "was" or "Was" leading to "the" and then "first."  
+[word="was|Was"][word="the"][word="first"]	[word="was|Was"][word="the"][word="first"]	Examples of "was" or "Was" that come before "the" and are followed by "first."  
+[word="was|Was"][word="the"][word="first"]	[word="was|Was"][word="the"][word="first"]	"Was" or "was" occurs followed by "the" and then "first."  
+[word="was|Was"][word="the"][word="first"]	[word="was|Was"][word="the"][word="first"]	"Was"/"was" followed by "the" followed by "first."  
+[word="was|Was"][word="the"][word="first"]	[word="was|Was"][word="the"][word="first"]	The phrase starts with "was" or "Was," followed by "the" and then "the first."  
+[word="was|Was"][word="first"]	[word="was|Was"][word="the"][word="first"]	The word "first" that follows after "was" or "Was" and "the."  
+[word="was|Was"][word="the"][word="first"]	[word="was|Was"][word="the"][word="first"]	"Was" or "was" , then "the," and concluding with "first."  
+[word="was|Was"][word="the"][word="first"]	[word="was|Was"][word="the"][word="first"]	All instances of "was" or "Was," followed by "the" and then "first."  
+[word="was|Was"][word="the"][word="first"]	[word="was|Was"][word="the"][word="first"]	Occurrences of the word "was" or "Was," leading into "the" and then "first."  
+[word="was|Was"][word="the"][word="first"]	[word="was|Was"][word="the"][word="first"]	The combination of tokens consists of "was" or "Was," "the," and "first."  
+[word="was|Was"][word="the"][word="first"]	[word="was|Was"][word="the"][word="first"]	The sequence in text where "was" or "Was" precedes "the" and is followed by "first."  
+[word="to"] [lemma="go"] [word="home"]	[word="to"] [lemma="go"] [word="home"]	The word "to" followed by the lemma "go" and then the word "home."
+[word="to"] [lemma="go"] [word="home"]	[word="to"] [lemma="go"] [word="home"]	A sequence that starts with "to," followed by the base form "go," and concludes with "home."
+[word="to"] [word="go"] [word="home"]	[word="to"] [lemma="go"] [word="home"]	The structure of "to" leading into "go" and finishing with "home."
+[word="to"] [lemma="go"] [word="home"]	[word="to"] [lemma="go"] [word="home"]	Tokens that include the word "to" followed in succession by the lemma "go" and the word "home."
+[word="to"] [word="go"] [word="home"]	[word="to"] [lemma="go"] [word="home"]	Expressions consisting of "to" coming before "go" and ending with "home."
+[word="to"] [word="go"] [word="home"]	[word="to"] [lemma="go"] [word="home"]	The phrase composed of "to" transitioning to "go" and finishing with "home."
+[word="to"] [lemma="go"] [word="home"]	[word="to"] [lemma="go"] [word="home"]	Using the word "to," immediately followed by the lemma "go," and then the word "home."
+[word="to"] [word="go"] [word="home"]	[word="to"] [lemma="go"] [word="home"]	The arrangement of "to" followed by "go" and finally "home."
+[lemma="computer"]	[lemma="computer"]	Lemma computer.
+[lemma="computer"]	[lemma="computer"]	One token containing lemma computer.
+[lemma="computer"]	[lemma="computer"]	Only all lemmas computer.
+[lemma="computer"]	[lemma="computer"]	Any lemma computer.
+[lemma="computer"]	[lemma="computer"]	All base forms of computer.
+[lemma="computer"]	[lemma="computer"]	Instances of the lemma computer.
+[lemma="computer"]	[lemma="computer"]	Token with the lemma computer.
+[lemma="computer"]	[lemma="computer"]	Words with the lemma of computer.
+[lemma="computer"]	[lemma="computer"]	All occurrences of the word computer as a lemma.
+[lemma="computer"]	[lemma="computer"]	Examples including the lemma computer.
+[lemma = "take"] [tag = "J.*"] [lemma = "place"]	[lemma = "take"] [tag = "J.*"] [lemma = "place"]	All instances where the lemma is take followed by an adjective and then the lemma place.  
+[lemma = "take"] [tag = "J.*"] [lemma = "place"]	[lemma = "take"] [tag = "J.*"] [lemma = "place"]	The word take followed by any adjective and then the word place.  
+[lemma = "take"] [tag = "J.*"] [lemma = "place"]	[lemma = "take"] [tag = "J.*"] [lemma = "place"]	Any occurrence of take followed by a word that qualifies as an adjective and then followed by place.  
+[lemma="take"][tag="J.*"][lemma="place"]	[lemma = "take"] [tag = "J.*"] [lemma = "place"]	Take, any adjective, and place in sequence.  
+[lemma = "take"] [tag = "J.*"] [lemma = "place"]	[lemma = "take"] [tag = "J.*"] [lemma = "place"]	The lemma take followed by a descriptor and then the lemma place.  
+[word="take"][tag="J.*"][word="place"]	[lemma = "take"] [tag = "J.*"] [lemma = "place"]	Take followed by an adjectival word and concluding with place.  
+[lemma="take"][tag="J.*"][lemma="place"]	[lemma = "take"] [tag = "J.*"] [lemma = "place"]	Take as the verb, any adjective after it, and place as the final lemma.  
+[lemma = "take"] [tag = "J.*"] [lemma = "place"]	[lemma = "take"] [tag = "J.*"] [lemma = "place"]	A sequence starting with take, followed by an adjective, and finishing with place.  
+[lemma = "take"] [tag = "J.*"] [lemma = "place"]	[lemma = "take"] [tag = "J.*"] [lemma = "place"]	Finding take followed by an adjective and then the term place.  
+[word="take"][tag="J.*"][word="place"]	[lemma = "take"] [tag = "J.*"] [lemma = "place"]	Take, an adjective, and then place in that order.
+[tag="N.*"] [lemma ="be"][ word="the"][word="new" ][tag="N.*"]	[ tag="N.*"][ lemma="be"] [ word="the"][ word="new"] [ tag="N.*"]	A noun followed by a form of "be", followed by "the", followed by "new", followed by another noun.
+[tag="N.*"] [lemma ="be"][ word="the"][word="new" ][tag="N.*"]	[ tag="N.*"][ lemma="be"] [ word="the"][ word="new"] [ tag="N.*"]	Any noun is followed by the verb lemma "be", then the determiner "the", the adjective "new", and another noun.
+[tag="N.*"] [word="is|was|were"][word="the"][word="new" ][tag="N.*"]	[ tag="N.*"][ lemma="be"] [ word="the"][ word="new"] [ tag="N.*"]	A sequence starting with a noun, then a variant of "to be", followed by the article "the", the word "new", and concluding with another noun.
+[tag="N.*"] [lemma ="be"][ word="the"][word="new" ][tag="N.*"]	[ tag="N.*"][ lemma="be"] [ word="the"][ word="new"] [ tag="N.*"]	Any noun, followed by "be", then "the", "new", and finally another noun.
+[tag="N.*"] [lemma ="be"][ word="the"][word="new" ][tag="N.*"]	[ tag="N.*"][ lemma="be"] [ word="the"][ word="new"] [ tag="N.*"]	A noun is present, followed by a form of the verb "be", the word "the", the adjective "new", and another noun.
+[tag="N.*"] [lemma ="be"][ word="the"][word="new" ][tag="N.*"]	[ tag="N.*"][ lemma="be"] [ word="the"][ word="new"] [ tag="N.*"]	A noun, next a "be" verb, then "the", followed by "new", and finishing with another noun.
+[tag="N.*"] [lemma ="be"][ word="the"][word="new" ][tag="N.*"]	[ tag="N.*"][ lemma="be"] [ word="the"][ word="new"] [ tag="N.*"]	Sequence of a noun followed by a form of "be", then "the", next "new", concluding with another noun.
+[tag="N.*"] [lemma ="be"][ word="the"][word="new" ][tag="N.*"]	[ tag="N.*"][ lemma="be"] [ word="the"][ word="new"] [ tag="N.*"]	Any noun followed by the verb "be", "the", "new", and another noun. 
+[tag="N.*"] [word="is|was|were"] [word="the"] [word="new"] [tag="N.*"]	[ tag="N.*"][ lemma="be"] [ word="the"][ word="new"] [ tag="N.*"]	Noun first, then "to be", followed by "the", then "new", ending with another noun. 
+[tag="N.*"] [lemma ="be"][ word="the"][word="new" ][tag="N.*"]	[ tag="N.*"][ lemma="be"] [ word="the"][ word="new"] [ tag="N.*"]	A noun, followed by a variant of "be", "the", "new", and concludes with a noun.
+[lemma_lc=="make"]	[lemma_lc=="make"]	Lowercase lemma matching the word make.  
+[lemma_lc=="make"]	[lemma_lc=="make"]	One token whose lowercase lemma is make.  
+[lemma_lc=="make"]	[lemma_lc=="make"]	Only lowercase lemmas that are make.  
+[lemma_lc=="make"]	[lemma_lc=="make"]	Lemma in lowercase, specifically make.  
+[lemma_lc=="make"]	[lemma_lc=="make"]	Any lowercase lemma that equals make.  
+[lemma="make"]	[lemma_lc=="make"]	Lemmas that are exactly make without any variation.  
+[lc=="make"]	[lemma_lc=="make"]	Token with the lowercase form make.  
+[lemma_lc=="make"]	[lemma_lc=="make"]	Just the lowercase lemma make.  
+[lemma_lc=="make"]	[lemma_lc=="make"]	Tokens where the lowercase lemma corresponds to make.  
+[lemma_lc=="make"]	[lemma_lc=="make"]	All entries with lowercase lemma as make.  
+[lc="to"] []	[lc="to"] []	Lowercase form of the word to followed by any token.
+[lc="to"] []	[lc="to"] []	The word to in lowercase followed by any word.
+[lc="to"] []	[lc="to"] []	Any occurrence of the word to in lowercase followed by any other word.
+[lc="to"] []	[lc="to"] []	The lowercase version of to followed by any token.
+[lc="to"] []	[lc="to"] []	The token 'to' in lowercase followed by a variable token.
+[lc="to"] []	[lc="to"] []	The lowercase word "to" followed by something else.
+[lc="to"] []	[lc="to"] []	Every instance of the word to in lowercase preceding any token.
+[lemma_lc="to"] []	[lc="to"] []	Occurrences of the preposition to in lowercase followed by any word.
+[lc="to"] []	[lc="to"] []	A lowercase occurrence of to followed by any other token.
+[lc="to"] []	[lc="to"] []	All instances of the word to in lowercase followed by any token.
+[word="slow"][tag="N.*"]	[word="slow"][tag="N.*"]	The word slow followed by any noun.  
+[word="slow"][tag="N.*"]	[word="slow"][tag="N.*"]	The token containing the word slow followed by a noun.  
+[word="slow"][tag="N.*"]	[word="slow"][tag="N.*"]	A token with the word slow directly followed by a noun.  
+[word="slow"][tag="N.*"]	[word="slow"][tag="N.*"]	Slow, followed by a noun token.  
+[word="slow"][tag="N.*"]	[word="slow"][tag="N.*"]	Any occurrence of the word slow followed by a noun.  
+[word="slow"][tag="N.*"]	[word="slow"][tag="N.*"]	The word slow and then a noun.  
+[word="slow"][tag="N.*"]	[word="slow"][tag="N.*"]	Slow that is followed by a noun.  
+[word="slow"][tag="N.*"]	[word="slow"][tag="N.*"]	The token "slow" right before a noun.  
+[word="slow"][tag="N.*"]	[word="slow"][tag="N.*"]	Word slow and then any noun.  
+[lemma="slow"][tag="N.*"]	[word="slow"][tag="N.*"]	Slow followed by any noun form.  
+[word="slow"][tag="N.*"]	[word="slow"][tag="N.*"]	Tokens containing slow and subsequent nouns.  
+[word="slow"][tag="N.*"]	[word="slow"][tag="N.*"]	Instances of the word slow followed by a noun.  
+[word="slow"][tag="N.*"]	[word="slow"][tag="N.*"]	The word slow immediately preceding a noun.  
+[word="slow"][tag="N.*"]	[word="slow"][tag="N.*"]	Slow followed by an entity that is a noun.  
+[word="slow"][tag="N.*"]	[word="slow"][tag="N.*"]	The term slow appearing before a noun.  
+[word="slow"][tag="N.*"]	[word="slow"][tag="N.*"]	Occurrences of "slow" directly preceeding a noun.  
+[lemma_lc=="independent"] [lc=="of"]	"independent" "of"	Lowercase lemma of independent followed by lowercase lemma of of.  
+[word="independent"][word="of"]	"independent" "of"	The phrase independent of.  
+[word="independent"][word="of"]	"independent" "of"	"independent" followed by "of".  
+[word="independent"][word="of"]	"independent" "of"	The combination of "independent" and "of".  
+[word="independent"][word="of"]	"independent" "of"	Instance of "independent" followed by "of".  
+[word="independent"][word="of"]	"independent" "of"	The expression independent of.  
+[word="independent"][word="of"]	"independent" "of"	"Independent" which is followed by "of".  
+[word="independent"][word="of"]	"independent" "of"	Sequence "independent" and "of".  
+[word="independent"][word="of"]	"independent" "of"	All occurrences of the phrase independent of.  
+[lc=="independent"] [lc=="of"]	"independent" "of"	Lowercase form of independent comes before lowercase of.  
+[word="a"][word="number"][word="of"]	[word=="a"] [word=="number"] [word=="of"]	Sequence of words "a", "number", and "of".
+[word="a"][word="number"][word="of"]	[word=="a"] [word=="number"] [word=="of"]	Word "a" followed by the word "number" and then the word "of".
+[word=="a"] [word=="number"] [word=="of"]	[word=="a"] [word=="number"] [word=="of"]	The phrase starts with "a", followed by "number", and ends with "of".
+[word="a"] [word="number"] [word="of"]	[word=="a"] [word=="number"] [word=="of"]	Three consecutive words: "a", "number", "of".
+[word=="a"] [word=="number"] [word=="of"]	[word=="a"] [word=="number"] [word=="of"]	The specific order of the words "a", "number", and "of".
+[word=="a"] [word=="number"] [word=="of"]	[word=="a"] [word=="number"] [word=="of"]	The tokens must include "a" first, then "number", followed by "of".
+[word=="a"] [word=="number"] [word=="of"]	[word=="a"] [word=="number"] [word=="of"]	Looking for the exact phrase "a number of".
+[word=="a"] [word=="number"] [word=="of"]	[word=="a"] [word=="number"] [word=="of"]	An exact match of the words "a", "number", and "of" in this order.
+[word="a"][word="number"][word="of"]	[word=="a"] [word=="number"] [word=="of"]	Finding the words where "a" precedes "number" and "of" comes next.
+[lemma="depicted"]	[lemma="depict*"]	Lemmas starting with depict.
+[lemma="depicted"]	[lemma="depict*"]	Any lemma that starts with depict.
+[lemma="depicted"]	[lemma="depict*"]	All lemmas that depict.
+[lemma="depicted*"]	[lemma="depict*"]	Words whose base form begins with depict.
+[lemma="depicted*"]	[lemma="depict*"]	A lemma matching the pattern depict*.
+[lemma="depicted*"]	[lemma="depict*"]	Lemmas that match the regex for depict*.
+[lemma="depicted*"]	[lemma="depict*"]	Just lemmas beginning with the word depict.
+[lemma="depicted"]	[lemma="depict*"]	Lexical forms commencing with depict.
+[lemma="depicted*"]	[lemma="depict*"]	Words with lemmas starting with depict.
+[lemma="depicting"]	[lemma="depict*"]	Any variation of the lemma depicting.
+[lemma="top"]	[lemma="top"]	Lemma top.  
+[lemma="top"]	[lemma="top"]	Token containing the lemma top.  
+[lemma="top"]	[lemma="top"]	Only all lemmas top.  
+[lemma="top"]	[lemma="top"]	Any lemma top.  
+[lemma="top"]	[lemma="top"]	Base form of top.  
+[lemma="top"]	[lemma="top"]	Instances with the lemma top.  
+[lemma="top"]	[lemma="top"]	Example lemma top.  
+[lemma="top"]	[lemma="top"]	All occurrences of the lemma top.  
+[lemma="top"]	[lemma="top"]	Lemmas that match top.  
+[lemma="top"]	[lemma="top"]	Records with the lemma top.  
+[lemma="top"]	[lemma="top"]	All instances where top is the lemma.
+[tag="J.?"] [lemma=".*ious"]	[tag="J.*"][word="ious"]	All adjectives followed by words ending in -ious.  
+[tag="J.?"] [lemma=".*ious"]	[tag="J.*"][word="ious"]	Adjectives that precede words formed with the suffix -ious.  
+[tag="J.?"] [lemma=".*ious"]	[tag="J.*"][word="ious"]	Any adjective that comes before a word ending with -ious.  
+[tag="J.*"][lemma=".*ious"]	[tag="J.*"][word="ious"]	Adjectives followed by the ending -ious.  
+[tag="J.?"] [word=".*ious"]	[tag="J.*"][word="ious"]	Tokens tagged as adjectives that are followed by a word matching -ious.  
+[tag="J.*"][lemma=".*ious"]	[tag="J.*"][word="ious"]	Find adjectives followed by any word that has the -ious suffix.  
+[tag="J.*" & lemma="ious"]	[tag="J.*"][word="ious"]	Every adjective matched with words that end in -ious.  
+[tag="J.?"] [lemma=".*ious"]	[tag="J.*"][word="ious"]	Sequences with an adjective followed by a word ending with -ious.  
+[tag="J.*"][lemma=".*ious"]	[tag="J.*"][word="ious"]	Adjective tokens that come before a word that has the -ious suffix.  
+[tag="J.?"] [lemma=".*ious"]	[tag="J.*"][word="ious"]	Any tagging of an adjective followed by a word ending in -ious.
+[lemma="research"] [word="into"]	[lemma="research" & word="into"]	Lemma research and the word into.
+[word="into"]	[lemma="research" & word="into"]	Research with the word into.
+[lemma="research" & word="into"]	[lemma="research" & word="into"]	Token with lemma research and word into.
+[lemma="research"] [word="into"]	[lemma="research" & word="into"]	Any token has the lemma research paired with the word into.
+[word="research" & word="into"]	[lemma="research" & word="into"]	All forms of research with the word into.
+[lemma="research" & word="into"]	[lemma="research" & word="into"]	Tokens containing the lemma research that also have the word into.
+[lemma="research" & word="into"]	[lemma="research" & word="into"]	The lemma research alongside the word into.
+[lemma="research" & word="into"]	[lemma="research" & word="into"]	Examples where the lemma is research and the word is into.
+[lemma="research" & word="into"]	[lemma="research" & word="into"]	Tokens that match the lemma research and the specific word into.
+[lemma="show"&tag="V.*"]	[lemma="show" & tag="V.*"]	All verbs where the lemma is show.  
+[lemma="show"]	[lemma="show" & tag="V.*"]	Any forms of the verb show.  
+[lemma="show"&tag="V.*"]	[lemma="show" & tag="V.*"]	Verbs that have the base form show.  
+[lemma="show" & tag="V.*"]	[lemma="show" & tag="V.*"]	Lemma show as a verb.  
+[lemma="show"]	[lemma="show" & tag="V.*"]	Examples of the verb show.  
+[lemma="show" & tag="V.*"]	[lemma="show" & tag="V.*"]	Any token that has the lemma show and is classified as a verb.  
+[lemma="show" & tag="V.*"]	[lemma="show" & tag="V.*"]	Only the verb forms of show.  
+[lemma="show" & tag="V.*"]	[lemma="show" & tag="V.*"]	Showing all verbs with the lemma show.  
+[lemma="show" & tag="V.*"]	[lemma="show" & tag="V.*"]	Verbs in the base form matching show.  
+[lemma="show"&tag="V.*"]	[lemma="show" & tag="V.*"]	Lemma of show in its verb forms.  
+[lemma="show" & tag="V.*"]	[lemma="show" & tag="V.*"]	Verbs categorized under lemma show.  
+[lemma="show"]	[lemma="show" & tag="V.*"]	Finding all instances of the verb show.  
+[lemma="show"&tag="V.*"]	[lemma="show" & tag="V.*"]	All instances marked as verb that have the lemma show.
+[lc=="clannish"]	[lc=="clannish"]	Lowercase word that is exactly clannish.  
+[lc=="clannish"]	[lc=="clannish"]	Only the lowercase word clannish.  
+[lc=="clannish"]	[lc=="clannish"]	The specific word clannish in lowercase.  
+[lc=="clannish"]	[lc=="clannish"]	Token that matches exactly the lowercase form of clannish.  
+[lc=="clannish"]	[lc=="clannish"]	Any token with the exact lowercase value of clannish.  
+[lc=="clannish"]	[lc=="clannish"]	Word clannish written in lowercase.  
+[lc=="clonish"]	[lc=="clannish"]	All instances of the lowercase word clannish.  
+[lc=="clannish"]	[lc=="clannish"]	Identifying lowercase clannish.  
+[lc=="clannish"]	[lc=="clannish"]	Exact match for lowercase clannish.  
+[lc=="clannish"]	[lc=="clannish"]	Find the lowercase version of clannish.  
+[lemma="make"][word="up"][ ][lemma="mind"]	[lemma="make"] [word="up"] [] [word="mind"]	The lemma make followed by the word up and then any word and finally the word mind.
+[lemma="make"][word="up"][ ][lemma="mind"]	[lemma="make"] [word="up"] [] [word="mind"]	A sequence starting with the lemma make, followed by up, any token in between, and concluding with the word mind.
+[lemma="make"][word="up"][ ][lemma="mind"]	[lemma="make"] [word="up"] [] [word="mind"]	The phrase make up followed by any other word and then ending with the word mind.
+[lemma="make"][word="up"][ ][lemma="mind"]	[lemma="make"] [word="up"] [] [word="mind"]	Any occurrence of make, then the token up, any token can come next, followed by the token mind.
+[lemma="make"][word="up"][ ][lemma="mind"]	[lemma="make"] [word="up"] [] [word="mind"]	A structure where the lemma is make, followed by word up, with any other word in between, finishing with the word mind.
+[lc=="this"] [lc=="essay"] [lc=="will"]	[lc="this"][lc="essay"][lc="will"]	Lowercase token of "this" followed by lowercase token of "essay" followed by lowercase token of "will."  
+[lc=="this"] [lc=="essay"] [lc=="will"]	[lc="this"][lc="essay"][lc="will"]	"this" in lowercase followed by "essay" in lowercase and then "will" in lowercase.  
+[lc=="this"] [lc=="essay"] [lc=="will"]	[lc="this"][lc="essay"][lc="will"]	A sequence of lowercase tokens: "this," "essay," and "will."  
+[lc=="this"] [lc=="essay"] [lc=="will"]	[lc="this"][lc="essay"][lc="will"]	The phrase consisting of lowercase "this," followed by lowercase "essay," followed by lowercase "will."  
+[lc=="this"] [lc=="essay"] [lc=="will"]	[lc="this"][lc="essay"][lc="will"]	Tokens in lowercase: "this" followed by "essay" followed by "will."  
+[lc=="this"] [lc=="essay"] [lc=="will"]	[lc="this"][lc="essay"][lc="will"]	Lowercase form of "this" coming before lowercase "essay," which is followed by lowercase "will."  
+[lc=="this"] [lc=="essay"] [lc=="will"]	[lc="this"][lc="essay"][lc="will"]	All lowercase tokens: "this," "essay," and "will" in that order.  
+[lc=="this"] [lc=="essay"] [lc=="will"]	[lc="this"][lc="essay"][lc="will"]	An instance of lowercase "this" that precedes "essay" in lowercase followed by "will" in lowercase.  
+[lc=="this"] [lc=="essay"] [lc=="will"]	[lc="this"][lc="essay"][lc="will"]	A combination of lowercase tokens: "this," "essay," and "will."  
+[lc=="this"] [lc=="essay"] [lc=="will"]	[lc="this"][lc="essay"][lc="will"]	Lowercase "this" followed by lowercase "essay" followed by lowercase "will."
+[lemma="consider"] []0,2 [lemma="be"]	[lemma="consider"] []{0,2} [word="be"]	Lemma 'consider' followed by up to two tokens and then the word 'be'.
+[lemma="consider"] []0,2 [lemma="be"]	[lemma="consider"] []{0,2} [word="be"]	The token 'consider' followed by any two tokens and then 'be'.
+[lemma="consider"] []0,2 [lemma="be"]	[lemma="consider"] []{0,2} [word="be"]	'Consider' as a lemma followed by zero to two words and concluding with 'be'.
+[lemma="consider"] []0,2 [lemma="be"]	[lemma="consider"] []{0,2} [word="be"]	Any instance of 'consider' followed by zero, one, or two tokens and then followed by 'be'.
+[lemma="consider"] []0,2 [lemma="be"]	[lemma="consider"] []{0,2} [word="be"]	The lemma 'consider' appears followed by up to two unspecified tokens leading to the word 'be'.
+[lemma="consider"] []0,2 [lemma="be"]	[lemma="consider"] []{0,2} [word="be"]	A sequence starting with the lemma 'consider', allowing for one to two intermediate tokens, concluding with 'be'.
+[lemma="consider"] []0,2 [lemma="be"]	[lemma="consider"] []{0,2} [word="be"]	The term 'consider' followed by any combination of zero to two words and then the word 'be'.
+[lemma="consider"] []0,2 [lemma="be"]	[lemma="consider"] []{0,2} [word="be"]	'Consider' as a lemma, optionally followed by up to two tokens and ultimately followed by 'be'.
+[lemma="consider"] []0,2 [lemma="be"]	[lemma="consider"] []{0,2} [word="be"]	All occurrences of 'consider' followed by up to two other words, finalized by 'be'.
+[lemma="consider"] []0,2 [lemma="be"]	[lemma="consider"] []{0,2} [word="be"]	Any mention of 'consider' followed by a variable number of words (zero to two), ending with the word 'be'.
+[lemma="horse"][word="'"][word="s"]?[word=".*"]0,2[tag="N.*"]	[lemma="horse"] [word="'|'s"] [word="s"]? [word=".*"] {0,2} [tag="N.*"]	- Lemma horse followed by word that is either an apostrophe or 's', optionally followed by the word 's', followed by any word repeated up to two times and then a noun.
+[lemma="horse"][word="'"][word="s"]?[word=".*"]0,2[tag="N.*"]	[lemma="horse"] [word="'|'s"] [word="s"]? [word=".*"] {0,2} [tag="N.*"]	- Any token with the lemma horse followed by an optional possessive form (apostrophe or 's'), then optionally the letter 's', followed by zero to two words of any kind and finally a noun.
+[lemma="horse"][word="'"][word="s"]?[word=".*"]0,2[tag="N.*"]	[lemma="horse"] [word="'|'s"] [word="s"]? [word=".*"] {0,2} [tag="N.*"]	- Instances where the lemma is horse, immediately followed by either an apostrophe or 's', then an optional 's', followed by up to two additional words and concluding with a noun.
+[lemma="horse"][word="'"][word="s"]?[word=".*"]0,2[tag="N.*"]	[lemma="horse"] [word="'|'s"] [word="s"]? [word=".*"] {0,2} [tag="N.*"]	- The word horse as a lemma, potentially followed by a possessive form and an optional 's', then followed by up to two arbitrary words before a noun.
+[lemma="horse"][word="'|'s"][word="s"]?[word=".*"]0,2[tag="N.*"]	[lemma="horse"] [word="'|'s"] [word="s"]? [word=".*"] {0,2} [tag="N.*"]	- Finding tokens with the lemma horse, then either an apostrophe or 's', an optional 's', followed by up to two words of any kind, culminating with a noun.
+[lemma="horse"][word="'|'s"][word="s"]?[word=".*"]0,2[tag="N.*"]	[lemma="horse"] [word="'|'s"] [word="s"]? [word=".*"] {0,2} [tag="N.*"]	- Lemma horse appearing, followed by the possessive form (' or 's'), optionally followed by 's', followed by zero to two words and ending with a noun.
+[tag="RB.?"][lemma="natural"]	[tag="RB.?"][lemma="natural"]	Adverb followed by the lemma natural.
+[tag="RB.?"][lemma="natural"]	[tag="RB.?"][lemma="natural"]	An adverb that modifies the adjective natural.
+[tag="RB.?"][lemma="natural"]	[tag="RB.?"][lemma="natural"]	Any adverb preceding the word natural.
+[tag="RB.?"][lemma="natural"]	[tag="RB.?"][lemma="natural"]	Adverb in any form followed by the lemma natural.
+[tag="RB.?"][lemma="natural"]	[tag="RB.?"][lemma="natural"]	An adverb ending with a certain suffix followed by natural.
+[tag="RB.?"][lemma="natural"]	[tag="RB.?"][lemma="natural"]	Lexical item tagged as an adverb followed by the lexical item with the lemma natural.
+[tag="RB.?"][lemma="natural"]	[tag="RB.?"][lemma="natural"]	A word classified as an adverb followed directly by natural.
+[tag="RB.?"][lemma="natural"]	[tag="RB.?"][lemma="natural"]	All forms of adverbs followed by the word natural. 
+[tag="RB.?"][lemma="natural"]	[tag="RB.?"][lemma="natural"]	Any adverb appearing before the lemma natural. 
+[tag="RB.?"][lemma="natural"]	[tag="RB.?"][lemma="natural"]	Any adverb that occurs prior to the word natural. 
+[tag="RB.?"][lemma="natural"]	[tag="RB.?"][lemma="natural"]	Adverbial token followed by the lemma for natural.
+[tag="NN"][tag="NN"][tag="NN"][tag="NN"]	[tag="NN.*"] [tag="NN.*"] [tag="NN.*"] [tag="NN.*"] [tag="NN.*"]	Five nouns in a row.
+[word=".*" & tag="NN.*"] [word=".*" & tag="NN.*"] [word=".*" & tag="NN.*"] [word=".*" & tag="NN.*"] [word=".*" & tag="NN.*"]	[tag="NN.*"] [tag="NN.*"] [tag="NN.*"] [tag="NN.*"] [tag="NN.*"]	A sequence of five tokens, each tagged as noun.
+[tag="NN"][tag="NN"][tag="NN"][tag="NN"]	[tag="NN.*"] [tag="NN.*"] [tag="NN.*"] [tag="NN.*"] [tag="NN.*"]	Any combination of five nouns.
+[tag="NN"][tag="NN"][tag="NN"][tag="NN"]	[tag="NN.*"] [tag="NN.*"] [tag="NN.*"] [tag="NN.*"] [tag="NN.*"]	Five consecutive nouns.
+[tag="N.*"] [tag="N.*"][tag="N.*"]	[tag="NN.*"] [tag="NN.*"] [tag="NN.*"] [tag="NN.*"] [tag="NN.*"]	All forms of nouns appearing one after the other.
+[tag="N.*"][tag="N.*"][tag="N.*"][tag="N.*"]	[tag="NN.*"] [tag="NN.*"] [tag="NN.*"] [tag="NN.*"] [tag="NN.*"]	Noun followed by another noun, and then another, and so on for five nouns.
+[tag="NN"][tag="NN"][tag="NN"][tag="NN"]	[tag="NN.*"] [tag="NN.*"] [tag="NN.*"] [tag="NN.*"] [tag="NN.*"]	Five nouns clustered together.
+[tag="NN"][tag="NN"][tag="NN"][tag="NN"]	[tag="NN.*"] [tag="NN.*"] [tag="NN.*"] [tag="NN.*"] [tag="NN.*"]	Five tokens tagged as nouns consecutively.
+[tag="NN"][tag="NN"][tag="NN"][tag="NN"]	[tag="NN.*"] [tag="NN.*"] [tag="NN.*"] [tag="NN.*"] [tag="NN.*"]	A series of five noun tokens.
+[tag="NN"][tag="NN"][tag="NN"][tag="NN"]	[tag="NN.*"] [tag="NN.*"] [tag="NN.*"] [tag="NN.*"] [tag="NN.*"]	Five instances of tags matching noun patterns together.
+[tag="RB.?" & lemma="carefully"]	[tag="RB.?" & lemma="carefully"]	Adverb tagged as RB, with lemma carefully.  
+[tag="RB.?" & lemma="carefully"]	[tag="RB.?" & lemma="carefully"]	Words that are adverbs with the lemma carefully.  
+[tag="RB.?" & lemma="carefully"]	[tag="RB.?" & lemma="carefully"]	Any token that is an adverb and has the lemma carefully.  
+[tag="RB.?" & lemma="carefully"]	[tag="RB.?" & lemma="carefully"]	Tokens identified as adverbs marked with the lemma carefully.  
+[tag="RB.?" & lemma="carefully"]	[tag="RB.?" & lemma="carefully"]	Adverb form of carefully.  
+[tag="RB.?" & lemma="carefully"]	[tag="RB.?" & lemma="carefully"]	All instances of adverb defined by tag RB with a lemma of carefully.  
+[tag="RB.?"] containing [lemma="carefully"]	[tag="RB.?" & lemma="carefully"]	Any word that is an adverb and is derived from carefully.  
+[tag="RB.?" & lemma="carefully"]	[tag="RB.?" & lemma="carefully"]	Adverbs associated with the base form carefully.  
+[lemma="carefully"&tag="RB.?"]	[tag="RB.?" & lemma="carefully"]	Lemma carefully with adverb tag.  
+[tag="RB.?"] [word="carefully"]	[tag="RB.?" & lemma="carefully"]	Every adverb form of the word carefully.  
+[word="ta"]	[word=="ta"]	Exact match for the word "ta."
+[word="ta"]	[word=="ta"]	Token with the word exactly "ta."
+[word="ta"]	[word=="ta"]	Only tokens containing the word "ta."
+[word="ta"]	[word=="ta"]	Word spelled as "ta."
+[word="ta"]	[word=="ta"]	Any instance of the word "ta."
+[word="ta"]	[word=="ta"]	All occurrences of the word "ta."
+[word="ta"]	[word=="ta"]	Find the token that equals "ta."
+[word="ta"]	[word=="ta"]	Looking for the specific word "ta." 
+[word="ta"]	[word=="ta"]	Retrieve tokens that are "ta." 
+[word="ta"]	[word=="ta"]	Search for tokens matching the word "ta."
+[lemma="side"]	[lemma="side"]	Lemma side.  
+[lemma="side"]	[lemma="side"]	One token containing lemma side.  
+[lemma="side"]	[lemma="side"]	All occurrences of the lemma side.  
+[lemma="side"]	[lemma="side"]	Only lemmas that are side.  
+[lemma="side"]	[lemma="side"]	Any lemma side found.  
+[lemma="side"]	[lemma="side"]	All base forms of side.  
+[lemma="side"]	[lemma="side"]	Instances of the lemma side.  
+[lemma="side"]	[lemma="side"]	The lemma side in the corpus.  
+[lemma="side"]	[lemma="side"]	Tokens with lemma matching side.  
+[lemma="side"]	[lemma="side"]	All tokens with side as lemma.  
+[lemma="side"]	[lemma="side"]	Lemmas identified as side.  
+[lemma="side"]	[lemma="side"]	Any form of the lemma side.  
+[lemma="he|she|they|we"]	[lemma="he|she|they|we"]	All lemmas he, she, they, and we.
+[lemma="he|she|it|we"]	[lemma="he|she|they|we"]	Tokens containing the lemmas he, she, they, or we.
+[lemma="he|she|it|we"]	[lemma="he|she|they|we"]	Only the base forms he, she, they, or we.
+[lemma="he|she|it|we"]	[lemma="he|she|they|we"]	Lemmas that correspond to the pronouns he, she, they, and we.
+[lemma="he|she|it|we"]	[lemma="he|she|they|we"]	Any token with the lemma being either he, she, they, or we.
+[word="he|she|it|we"]	[lemma="he|she|they|we"]	Examples of pronouns: he, she, they, we.
+[word="predictions"]	[word="predictions"]	Word predictions.  
+[word="predictions"]	[word="predictions"]	All occurrences of the word predictions.  
+[word="predictions"]	[word="predictions"]	Only the word predictions.  
+[word="predictions"]	[word="predictions"]	Exact match for predictions.  
+[word="predictions"]	[word="predictions"]	Every instance of the word predictions.  
+[word="predictions"]	[word="predictions"]	Token containing the word predictions.  
+[word="predictions"]	[word="predictions"]	Instances where the word is predictions.  
+[word="predictions"]	[word="predictions"]	All forms of the word predictions.  
+[word="predictions"]	[word="predictions"]	Concordance for the term predictions.  
+[word="predictions"]	[word="predictions"]	Example occurrences of the word predictions.  
+[word="predictions"]	[word="predictions"]	Find all instances of predictions.  
+[word="predictions"]	[word="predictions"]	Every appearance of the word predictions.  
+[word="predictions"]	[word="predictions"]	Search for the term predictions.  
+[word="predictions"]	[word="predictions"]	Highlight occurrences of predictions.  
+[word="predictions"]	[word="predictions"]	Show all tokens with the word predictions.  
+[word="predictions"]	[word="predictions"]	Extract instances of the word predictions.  
+[lemma="much"&tag="V.*"]	[word="much" & tag="V.*"]	- The word "much" functioning as a verb.
+[lemma="much"&tag="V.*"]	[word="much" & tag="V.*"]	- Any occurrence of the word "much" that is used as a verb.
+[lemma="much"&tag="V.*"]	[word="much" & tag="V.*"]	- The token that is the verb "much".
+[lemma="much"&tag="V.*"]	[word="much" & tag="V.*"]	- Instances where "much" is identified as a verb.
+[lemma="much"&tag="V.*"]	[word="much" & tag="V.*"]	- The verb form of "much".
+[lemma="much"&tag="V.*"]	[word="much" & tag="V.*"]	- Tokens with the word "much" categorized under verb tags.
+[lemma="much"&tag="V.*"]	[word="much" & tag="V.*"]	- All uses of "much" classified as verbs.
+[lemma="much"&tag="V.*"]	[word="much" & tag="V.*"]	- Examples of "much" when tagged as a verb.
+[lemma="much"&tag="V.*"]	[word="much" & tag="V.*"]	- "Much" labeled and functioning as a verb.
+[lemma="much"&tag="V.*"]	[word="much" & tag="V.*"]	- Any token recognized as the verb "much".
+[word="staff"][tag="V.Z"]	[word="staff"][tag="VBP|VHP|VVP"]	The word "staff" followed by a verb in a specific form.
+[word="staff"][tag="V.P|V.Z"]	[word="staff"][tag="VBP|VHP|VVP"]	Instances where "staff" precedes a present tense verb.
+[word="staff"][tag="VBP|VHP|VVP"]	[word="staff"][tag="VBP|VHP|VVP"]	Occurrences of the word "staff" followed by a verb in any of the forms VBP, VHP, or VVP.
+[word="staff"][tag="V.Z|V.P"]	[word="staff"][tag="VBP|VHP|VVP"]	All mentions of "staff" that are followed by certain types of verbs.
+[word="staff"][tag="VBP|VHP|VVP"]	[word="staff"][tag="VBP|VHP|VVP"]	Examples of "staff" followed by a verb designated as VBP, VHP, or VVP.
+[word="staff"][tag="V.Z|V.P"]	[word="staff"][tag="VBP|VHP|VVP"]	Sentences containing the word "staff" adjacent to a verb in the specified forms.
+[word="staff"][tag="VBP|VHP|VVP"]	[word="staff"][tag="VBP|VHP|VVP"]	The token "staff" preceding a verb tagged VBP, VHP, or VVP.
+[word="staff"][tag="V.P|V.Z"]	[word="staff"][tag="VBP|VHP|VVP"]	Context where "staff" is used before a present form of a verb.
+[word="staff"][tag="VBP|VHP|VVP"]	[word="staff"][tag="VBP|VHP|VVP"]	Any usage of the term "staff" directly followed by a verb with the tags VBP, VHP, or VVP.
+[word="staff"][tag="VBP|VHP|VVP"]	[word="staff"][tag="VBP|VHP|VVP"]	All instances where "staff" comes before a verb classified as VBP, VHP, or VVP.
+[word=".*ness"]	[word=".*ness"]	Words ending with -ness.  
+[lemma=".*ness"]	[word=".*ness"]	All tokens that have the suffix -ness.  
+[word=".*ness"]	[word=".*ness"]	Any word that contains the sequence -ness at the end.  
+[lemma=".*ness"]	[word=".*ness"]	Examples of words that end in -ness.  
+[word=".*ness"]	[word=".*ness"]	Words with the ending -ness.  
+[lemma=".*ness"]	[word=".*ness"]	Tokens that conclude with -ness.  
+[word=".*ness"]	[word=".*ness"]	Words whose last part matches the pattern -ness.  
+[lemma=".*ness"]	[word=".*ness"]	All forms of words that finish with -ness.  
+[word=".*ness"]	[word=".*ness"]	Words that have -ness in their ending.  
+[word=".*ness"]	[word=".*ness"]	Every lexical item ending with -ness.  
+[lemma= "as"] [] [lemma= "as"][tag="N.*"][tag="V.*"]	[lemma="as"][][lemma="as"][tag="N.*"][tag="V.*"]	All occurrences of the lemma "as" followed by any word, followed by another "as" lemma, then a noun and a verb.  
+[lemma= "as"] [] [lemma= "as"][tag="N.*"][tag="V.*"]	[lemma="as"][][lemma="as"][tag="N.*"][tag="V.*"]	The phrase “as” appears, followed by any token, then another “as”, followed by a noun and a verb.  
+[lemma= "as"] [] [lemma= "as"][tag="N.*"][tag="V.*"]	[lemma="as"][][lemma="as"][tag="N.*"][tag="V.*"]	Lemmas "as" followed by any token, then "as" again, and then a noun followed by a verb.  
+[lemma= "as"] [] [lemma= "as"][tag="N.*"][tag="V.*"]	[lemma="as"][][lemma="as"][tag="N.*"][tag="V.*"]	"as" followed by any token and then followed by "as", a noun, and a verb.  
+[lemma= "as"] [] [tag="N.*"][tag="V.*"]	[lemma="as"][][lemma="as"][tag="N.*"][tag="V.*"]	Lemmas "as" along with any words, appearing again followed by a noun and then a verb.  
+[word="as"][][tag="N.*"][tag="V.*"]	[lemma="as"][][lemma="as"][tag="N.*"][tag="V.*"]	Any token intervening between two occurrences of "as", followed by a noun and then by a verb.  
+[lemma= "as"] [] [lemma= "as"][tag="N.*"][tag="V.*"]	[lemma="as"][][lemma="as"][tag="N.*"][tag="V.*"]	Sequence of "as", any word, another "as", then a noun, ending with a verb.  
+[lemma= "as"] [] [lemma= "as"][tag="N.*"][tag="V.*"]	[lemma="as"][][lemma="as"][tag="N.*"][tag="V.*"]	Occurrences of "as" followed by unspecified words, another "as", then a noun, and concluding with a verb.  
+[lemma= "as"] [] [lemma= "as"][tag="N.*"][tag="V.*"]	[lemma="as"][][lemma="as"][tag="N.*"][tag="V.*"]	The structure "as" followed by any word, again "as", followed by a noun, and a following verb.  
+[lemma= "as"] [] [lemma= "as"][tag="N.*"][tag="V.*"]	[lemma="as"][][lemma="as"][tag="N.*"][tag="V.*"]	Any word after "as" leading to another "as", which is followed by a noun and a verb.
+[word="run"]	[word="run"]	All tokens with the word run.
+[word="run"]	[word="run"]	Only tokens containing the word run.
+[word="run"]	[word="run"]	Any word run.
+[word="run"]	[word="run"]	Instances of the word run.
+[word="run"]	[word="run"]	Examples of the word run.
+[word="run"]	[word="run"]	All occurrences of the word run.
+[word="run"]	[word="run"]	Tokens that match the word run.
+[word="run"]	[word="run"]	Words that are exactly run.
+[tag="IN"][tag="IN"][tag="IN"]	[tag="IN"] [tag="IN"] [tag="IN"]	Three consecutive tokens, each tagged as IN.  
+[tag="IN"] [tag="IN"]	[tag="IN"] [tag="IN"] [tag="IN"]	Sequence of three IN tagged tokens.  
+[tag="IN.*"][tag="IN.*"][tag="IN.*"]	[tag="IN"] [tag="IN"] [tag="IN"]	Three tokens that all share the preposition tag.  
+[tag="IN"] [tag="IN"]	[tag="IN"] [tag="IN"] [tag="IN"]	Three tokens, each labeled as IN.  
+[tag="IN"] [tag="IN"] [tag="IN"]	[tag="IN"] [tag="IN"] [tag="IN"]	A chain of three IN prepositions.  
+[tag="IN"] [tag="IN"] [tag="IN"]	[tag="IN"] [tag="IN"] [tag="IN"]	A series of three tokens, all marked with the IN tag.  
+[tag="IN"] [tag="IN"] [tag="IN"]	[tag="IN"] [tag="IN"] [tag="IN"]	Three IN tokens appearing in succession.  
+[tag = "IN"][tag = "IN"][tag = "IN"]	[tag="IN"] [tag="IN"] [tag="IN"]	Cluster of three prepositions tagged as IN.  
+[tag="IN"][tag="IN"][tag="IN"]	[tag="IN"] [tag="IN"] [tag="IN"]	A triplet of tokens, all with the IN tag.  
+[tag="IN"][tag="IN"][tag="IN"][tag="IN"][tag="IN"]	[tag="IN"] [tag="IN"] [tag="IN"]	Tokens labeled IN appearing together in a row.  
+[tag="IN"][tag="IN"][tag="IN"]	[tag="IN"] [tag="IN"] [tag="IN"]	Three instances of the IN tag chained together.  
+[tag = "IN"][tag = "IN"][tag = "IN"]	[tag="IN"] [tag="IN"] [tag="IN"]	Three sequential tokens classified as IN.  
+[tag="IN"] [tag="IN"] [tag="IN"]	[tag="IN"] [tag="IN"] [tag="IN"]	Token sequence of three IN tags.  
+[tag="IN"] [tag="IN"] [tag="IN"]	[tag="IN"] [tag="IN"] [tag="IN"]	Continuous sequence of three prepositions tagged as IN.  
+[tag="IN"] [tag="IN"] [tag="IN"]	[tag="IN"] [tag="IN"] [tag="IN"]	Back-to-back tokens each with an IN designation.  
+[tag="IN"][tag="IN"][tag="IN"]	[tag="IN"] [tag="IN"] [tag="IN"]	A triad of tokens, all associated with the IN tag.  
+[lemma = "pick"][]0,5[word = "up"]	[lemma = "pick"][]{0,5}[word= "up"]	- Lemma "pick" followed by any token appearing 0 to 5 times and then the word "up".
+[lemma = "pick"][]4,6[word = "up"]	[lemma = "pick"][]{0,5}[word= "up"]	- Instances of "pick" as a lemma followed optionally by up to 5 tokens and then the word "up".
+[lemma = "pick"][]4,6[word = "up"]	[lemma = "pick"][]{0,5}[word= "up"]	- The lemma pick followed by an optional sequence of 0 to 5 words and then the word up.
+[lemma = "pick"][]4,6[word = "up"]	[lemma = "pick"][]{0,5}[word= "up"]	- Any form of the word "pick" followed by between 0 to 5 tokens and then the word "up".
+[lemma = "pick"][]4,6[word = "up"]	[lemma = "pick"][]{0,5}[word= "up"]	- Examples of the lemma "pick" followed by any number of intervening words (from none to five) and concluding with the word "up".
+[lemma="pick"][]1,5[word="up"]	[lemma = "pick"][]{0,5}[word= "up"]	- "Pick" as a lemma appearing with up to five intervening tokens before the term "up".
+[lemma = "pick"][]4,6[word = "up"]	[lemma = "pick"][]{0,5}[word= "up"]	- Sequence starting with "pick" as a lemma followed by several tokens, ranging from none to five, and ending with "up".
+[lemma = "pick"] [] 0,5 [word = "up"]	[lemma = "pick"][]{0,5}[word= "up"]	- The lemma "pick" followed optionally by a few words and concluding with "up".
+[lemma = "pick"] []0,5 [word = "up"]	[lemma = "pick"][]{0,5}[word= "up"]	- All occurrences of the lemma "pick" followed by varying tokens and finished off with "up".
+[lemma = "pick"][]4,6[word = "up"]	[lemma = "pick"][]{0,5}[word= "up"]	- Any instance of "pick" as a lemma with a variable number of words before "up", which can be between zero and five.
+[word="are|Are"][word="you"][word="good"]	[word="are|Are"][word="you"][word="good"]	The word "are" or "Are" followed by "you" and then "good".  
+[word="are|Are"][word="you"][word="good"]	[word="are|Are"][word="you"][word="good"]	The token "are" or "Are", followed by "you", followed by "good".  
+[word="are|Are"][word="you"][word="good"]	[word="are|Are"][word="you"][word="good"]	Examples where "are" (case-sensitive) is followed by "you" which is then followed by "good".  
+[word="are|Are"][word="you"][word="good"]	[word="are|Are"][word="you"][word="good"]	The tokens consisting of "are" or "Are", "you", and "good".  
+[word="are|Are"][word="you"][word="good"]	[word="are|Are"][word="you"][word="good"]	The phrase begins with "are" or "Are", followed by "you", and then ends with "good".  
